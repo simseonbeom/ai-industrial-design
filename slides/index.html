@@ -1,0 +1,962 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W01 Define &amp; Explore · Slides</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"><style>
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { background:#0B0B0D; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+section { position:relative; width:1920px; height:1080px; overflow:hidden; page-break-after:always; break-after:page;
+  display:flex; flex-direction:column; font-family:'IBM Plex Sans KR', sans-serif; color:#EDEBE7; }
+section:last-child { page-break-after:auto; break-after:auto; }
+div { display:flex; flex-direction:column; min-width:0; }
+h1 { font-size:96px; font-weight:600; line-height:1.1; }
+h2 { font-size:64px; font-weight:600; line-height:1.15; }
+h3 { font-size:44px; font-weight:600; line-height:1.2; }
+p { font-size:32px; line-height:1.4; }
+ul, ol { padding-left:1.2em; }
+img { display:block; object-fit:cover; }
+hr { border:none; height:0; }
+x-shape { display:block; }
+x-connector { display:block; }
+[data-build-out] { visibility:hidden !important; }
+svg.xc { position:absolute; left:0; top:0; width:1px; height:1px; overflow:visible; pointer-events:none; }
+
+html,body{margin:0;height:100%;overflow:hidden;background:#000}
+#stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+#stage>section{position:absolute;left:0;top:0;display:none !important;page-break-after:auto}
+#stage>section.on{display:flex !important}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:10px 16px;font:13px 'Instrument Sans',sans-serif;color:#8E8C88;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transition:opacity .2s}
+body:hover #bar{opacity:1}
+#bar a,#bar button{color:#EDEBE7;background:none;border:1px solid #333336;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer;text-decoration:none}
+</style></head><body>
+<div id="stage"><section id="s01" data-transition="fade" style="background:#0b0b0d">
+  <img src="../assets/img/cover.jpg" alt="Edge-lit silhouette of an abstract industrial design object in darkness" data-build-in="fade 1 auto" style="position:absolute; top:50%; left:50%; width:1920px; height:1080px; transform:translate(-50%, -50%)">
+  <div data-build-in="rise 2 auto" style="position:absolute; top:620px; left:128px; width:860px; display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; text-transform:uppercase; color:#8e8c88">AI × Industrial Design</p>
+    <h1 style="font-family:'Instrument Sans', sans-serif; font-size:96px; font-weight:500; line-height:1.05; letter-spacing:-3px; color:#edebe7">Define &amp; Explore</h1>
+    <p style="font-family:'Instrument Serif', Georgia, serif; font-size:40px; font-style:italic; line-height:1.2; color:#8e8c88">From Problem to AI Concept</p>
+  </div>
+  <p data-build-in="fade 3 auto" style="position:absolute; bottom:64px; left:128px; width:900px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5e5d5a">Kyung Hee University — Industrial Design</p>
+  
+</section>
+<section id="ov" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Course Overview</h2>
+<div style="position:absolute; left:128px; top:210px; width:1500px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; text-transform:uppercase; color:#8E8C88">AI × Industrial Design · 6 Weeks · 12 Sessions</p>
+<div style="display:flex; flex-direction:column">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:88px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">From Problem to</p>
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:100px; line-height:1.05; color:#B9A488">Final Presentation</p>
+</div>
+</div>
+<div style="position:absolute; left:128px; top:580px; width:1664px; display:flex; flex-direction:row; justify-content:space-between" data-build-in="rise 2">
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:2px solid #B9A488"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">W01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25">Define &amp; Explore</p><p style="font-size:24px; color:#8E8C88">문제 정의·탐색</p></div>
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">W02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25; color:#8E8C88">Form &amp; CMF</p><p style="font-size:24px; color:#5E5D5A">형태·색채·재료·마감</p></div>
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">W03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25; color:#8E8C88">Multi-view</p><p style="font-size:24px; color:#5E5D5A">다각도 정합성</p></div>
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">W04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25; color:#8E8C88">Detail</p><p style="font-size:24px; color:#5E5D5A">디테일 구체화</p></div>
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">W05</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25; color:#8E8C88">In-use</p><p style="font-size:24px; color:#5E5D5A">사용 장면</p></div>
+<div style="width:262px; display:flex; flex-direction:column; gap:10px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">W06</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; line-height:1.25; color:#8E8C88">Presentation</p><p style="font-size:24px; color:#5E5D5A">최종 발표</p></div>
+</div>
+<p style="position:absolute; left:128px; top:860px; width:1400px; font-size:24px; color:#5E5D5A" data-build-in="fade 3 auto">강사 2인 교차 진행 · 매주 2회 · 최종 결과물: 콘셉트 1개의 완성 프레젠테이션</p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p>
+
+</section>
+<section id="s02" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">What We Make Today</h2>
+<div style="position:absolute; left:128px; top:300px; width:480px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 1">
+<img src="../assets/img/brief.jpg" alt="Handwritten design brief on paper" style="width:480px; height:360px; object-fit:cover">
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01 — Design Brief</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:4px">DEFINE</p>
+<p style="font-size:24px; color:#8E8C88">무엇을 만들 것인가</p>
+</div>
+<div style="position:absolute; left:720px; top:300px; width:480px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 2">
+<img src="../assets/img/sketch.jpg" alt="Rough marker sketch of the compact lounge chair" style="width:480px; height:360px; object-fit:cover">
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02 — Rough Sketch</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:4px">EXPLORE</p>
+<p style="font-size:24px; color:#8E8C88">어떤 형태가 가능한가</p>
+</div>
+<div style="position:absolute; left:1312px; top:300px; width:480px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 3">
+<img src="../assets/img/hero.jpg" alt="AI visualization render of the compact lounge chair" style="width:480px; height:360px; object-fit:cover">
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03 — AI Visualization</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:4px">VISUALIZE</p>
+<p style="font-size:24px; color:#8E8C88">아이디어를 눈으로 확인한다</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p>
+
+</section>
+<section id="s03" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Industrial Design Process</h2>
+<hr style="position:absolute; left:209px; top:556px; width:1518px; height:0px; border-top:1px solid #333336" data-build-in="left 1 auto">
+<div style="position:absolute; left:100px; top:500px; width:1736px; display:flex; flex-direction:row" data-build-in="rise 2 auto">
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Research</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Problem</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Ideation</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Sketch</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Concept</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">06</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Prototype</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">07</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Visualization</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:16px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">08</p><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Presentation</p></div>
+</div>
+<p style="position:absolute; left:128px; top:800px; width:1000px; font-size:28px; line-height:1.5; color:#8E8C88" data-build-in="rise 3">하나의 제품은 여러 단계를 거치며 조금씩 구체화된다.</p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p>
+
+</section>
+<section id="s04" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:128px; width:1500px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 1 auto">
+<h2 style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:56px; font-weight:500; line-height:1.15; letter-spacing:-1.5px">Design starts before the final form.</h2>
+<p style="font-size:26px; line-height:1.5; color:#8E8C88">좋은 결과물보다 먼저 필요한 것은 <span style="color:#EDEBE7">좋은 문제와 좋은 방향</span>입니다.</p>
+</div>
+<div style="position:absolute; left:128px; top:320px; width:1040px; display:flex; flex-direction:column; gap:24px" data-build-in="rise 2">
+<img src="../assets/img/sketchbook.jpg" alt="Sketchbook spread full of rough chair ideation sketches" style="width:1040px; height:500px; object-fit:cover">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">Process — 문제 · 아이디어 · 스케치</p>
+</div>
+<div style="position:absolute; left:1216px; top:320px; width:576px; display:flex; flex-direction:column; gap:24px" data-build-in="rise 3">
+<img src="../assets/img/hero.jpg" alt="Final render of the compact lounge chair" style="width:576px; height:500px; object-fit:cover">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">Final Form</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p>
+
+</section>
+<section id="s05" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Where Does AI Fit In?</h2>
+<hr style="position:absolute; left:200px; top:540px; width:1520px; height:0px; border-top:1px solid #333336" data-build-in="left 1 auto">
+<div style="position:absolute; left:92px; top:534px; width:1736px; display:flex; flex-direction:row" data-build-in="fade 2 auto">
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Research</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Problem</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Ideation</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Sketch</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Concept</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Prototype</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Visualization</p></div>
+<div style="width:217px; display:flex; flex-direction:column; align-items:center; gap:24px"><div style="width:12px; height:12px; background:#EDEBE7; border-radius:50%"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Presentation</p></div>
+</div>
+<p style="position:absolute; left:128px; top:376px; width:1664px; text-align:center; font-family:'IBM Plex Sans KR', sans-serif; font-size:22px; line-height:1.4; color:#5E5D5A" data-build-in="fade 3">모든 단계에 걸쳐 함께 쓰는 도구</p>
+<hr style="position:absolute; left:200px; top:452px; width:1520px; height:0px; border-top:1px solid #B9A488" data-build-in="fade 3">
+<div style="position:absolute; left:200px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:418px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:634px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:852px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:1068px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:1286px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:1502px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<div style="position:absolute; left:1720px; top:452px; width:1px; height:62px; background:#B9A488; opacity:0.6" data-build-in="fade 3"></div>
+<p style="position:absolute; left:908px; top:424px; width:104px; height:56px; padding:0px 0px 0px 4px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; line-height:2.2; letter-spacing:4px; color:#B9A488; background:#0D0D0F; border:1px solid #B9A488; border-radius:28px" data-build-in="fade 3">AI</p>
+<p style="position:absolute; left:128px; top:740px; width:1200px; font-size:40px; font-weight:500; line-height:1.45; letter-spacing:-0.5px" data-build-in="rise 4">AI는 하나의 단계가 아니라<br><span style="color:#8E8C88">디자인 과정 전체를 가속하는 도구입니다.</span></p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">06</p>
+
+</section>
+<section id="s06" data-transition="fade" style="background:#0d0d0f">
+<h2 style="position:absolute; top:64px; left:128px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5e5d5a">What AI Can't Replace</h2>
+<div style="position:absolute; top:410px; left:128px; width:1664px; display:flex; flex-direction:row" data-build-in="rise 1">
+<p style="width:416px; font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:400; letter-spacing:4px; text-align:center; color:#8e8c88">WHY</p>
+<p style="width:416px; font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:400; letter-spacing:4px; text-align:center; color:#8e8c88">JUDGMENT</p>
+<p style="width:416px; font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:400; letter-spacing:4px; text-align:center; color:#8e8c88">CONTEXT</p>
+<p style="width:416px; font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:400; letter-spacing:4px; text-align:center; color:#8e8c88">DECISION</p>
+</div>
+<x-shape kind="line" style="position:absolute; top:540px; left:128px; width:1664px; height:1px; border:1px solid #262629" data-build-in="fade 2"></x-shape>
+<div style="position:absolute; top:600px; left:128px; width:1664px; display:flex; flex-direction:column; gap:24px" data-build-in="scale 2">
+<p style="font-family:Merriweather, serif; font-size:91px; font-style:italic; line-height:1.4; text-align:center; color:#edebe7">DESIGNER</p>
+<p style="font-family:'IBM Plex Sans KR', Arial, sans-serif; font-size:26px; line-height:1.5; text-align:center; color:#8e8c88">생성은 AI가 돕지만, <span style="color:#edebe7">무엇을 만들고 무엇을 고를지</span>는 디자이너가 결정한다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; font-family:'Instrument Sans', sans-serif; font-size:24px; text-align:right; color:#5e5d5a">07</p>
+
+</section>
+<section id="s07" data-transition="fade" style="background:#0B0B0D; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/sketchbook.jpg" alt="" style="position:absolute; left:0px; top:0px; width:1920px; height:1080px; object-fit:cover; opacity:0.07; filter:blur(8px) grayscale(1)" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:380px; width:1664px; display:flex; flex-direction:column" data-build-in="rise 2 auto">
+<div style="display:flex; flex-direction:row; justify-content:space-between; padding:0px 0px 16px; border-bottom:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#8E8C88">01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#8E8C88">Define the Problem</p></div>
+<div style="height:36px"></div>
+<h1 style="font-family:'Instrument Sans', sans-serif; font-size:120px; font-weight:500; line-height:1.05; letter-spacing:-4px">Define</h1>
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:44px; color:#8E8C88">What are we designing?</p>
+</div>
+
+</section>
+<section id="s08" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Start with the Problem, Not the Product</h2>
+<div style="position:absolute; left:128px; top:320px; width:1400px; display:flex; flex-direction:column; gap:16px" data-build-in="fade 1 auto" data-build-out="fade 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#5E5D5A">Product-first</p>
+<p style="font-size:48px; font-weight:400; line-height:1.3; color:#EDEBE7">새로운 의자를 만들자.</p>
+</div>
+<div style="position:absolute; left:128px; top:320px; width:1400px; display:flex; flex-direction:column; gap:16px" data-build-in="fade 3 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#46454A">Product-first</p>
+<p style="font-size:48px; font-weight:400; line-height:1.3; color:#46454A; text-decoration:line-through #46454A">새로운 의자를 만들자.</p>
+</div>
+<div style="position:absolute; left:128px; top:540px; width:1600px; display:flex; flex-direction:column; gap:16px" data-build-in="rise 4 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#B9A488">Problem-first</p>
+<p style="font-size:72px; font-weight:500; line-height:1.3; letter-spacing:-1.5px">좁은 공간에서도<br>편하게 쉴 수 없을까?</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">09</p>
+
+</section>
+<section id="s09" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Three Questions to Define the Problem</h2>
+<div style="position:absolute; left:128px; top:440px; width:480px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 1">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:72px; font-weight:500; line-height:1.05; letter-spacing:1px">WHO</p>
+<p style="font-size:28px; color:#8E8C88">누구를 위한 것인가?</p>
+</div>
+<div style="position:absolute; left:720px; top:440px; width:480px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:72px; font-weight:500; line-height:1.05; letter-spacing:1px">PROBLEM</p>
+<p style="font-size:28px; color:#8E8C88">무엇이 불편한가?</p>
+</div>
+<div style="position:absolute; left:1312px; top:440px; width:480px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 3">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:72px; font-weight:500; line-height:1.05; letter-spacing:1px">CONTEXT</p>
+<p style="font-size:28px; color:#8E8C88">언제, 어디에서 사용하는가?</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">10</p>
+
+</section>
+<section id="s10" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/room.jpg" alt="Small studio apartment where a bulky armchair blocks the walking path and a person squeezes past" style="position:absolute; left:832px; top:128px; width:960px; height:792px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:620px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Example — A Chair for Small Spaces</h2>
+<div style="position:absolute; left:128px; top:300px; width:600px; display:flex; flex-direction:column; gap:10px; padding:20px 0px 0px; border-top:1px solid #333336" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#5E5D5A">WHO</p>
+<p style="font-size:44px; font-weight:500; line-height:1.3">작은 원룸의 1인 거주자</p>
+</div>
+<div style="position:absolute; left:128px; top:480px; width:600px; display:flex; flex-direction:column; gap:10px; padding:20px 0px 0px; border-top:1px solid #333336" data-build-in="rise 3">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#5E5D5A">PROBLEM</p>
+<p style="font-size:44px; font-weight:500; line-height:1.3">휴식용 가구가<br>침대와 책상 사이 이동을 방해한다</p>
+</div>
+<div style="position:absolute; left:128px; top:720px; width:600px; display:flex; flex-direction:column; gap:10px; padding:20px 0px 0px; border-top:1px solid #333336" data-build-in="rise 4">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#5E5D5A">CONTEXT</p>
+<p style="font-size:44px; font-weight:500; line-height:1.3">침대·책상과 나눠 쓰는 공간</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">11</p>
+
+</section>
+<section id="s11" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Design Goal</h2>
+<p style="position:absolute; left:128px; top:320px; width:1664px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:400; letter-spacing:3px; color:#8E8C88" data-build-in="rise 1 auto">WHO&#160;&#160;<span style="color:#46454A">+</span>&#160;&#160;PROBLEM&#160;&#160;<span style="color:#46454A">+</span>&#160;&#160;CONTEXT</p>
+<x-connector x1="960" y1="420" x2="960" y2="500" head="end" style="color:#5E5D5A; border-width:1px" data-build-in="fade 2"></x-connector>
+<div style="position:absolute; left:128px; top:540px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:24px" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; color:#B9A488">DESIGN GOAL</p>
+<p style="text-align:center; font-size:64px; font-weight:500; line-height:1.35; letter-spacing:-1.5px">작은 공간에서도<br>충분한 휴식을 제공하는 의자</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">12</p>
+
+</section>
+<section id="s12" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Design Brief</h2>
+<p style="position:absolute; left:128px; top:128px; width:1200px; font-size:28px; color:#8E8C88" data-build-in="fade 1 auto">좋은 브리프는 다섯 가지 질문에 답한다</p>
+<div style="position:absolute; left:128px; top:300px; width:1664px; height:116px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629" data-build-in="rise 2"><p style="width:112px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="width:560px; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:2px">USER</p><p style="flex:1; font-size:28px; color:#8E8C88">누구를 위한 것인가</p></div>
+<div style="position:absolute; left:128px; top:416px; width:1664px; height:116px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629" data-build-in="rise 3"><p style="width:112px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="width:560px; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:2px">PROBLEM</p><p style="flex:1; font-size:28px; color:#8E8C88">어떤 문제를 해결하는가</p></div>
+<div style="position:absolute; left:128px; top:532px; width:1664px; height:116px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629" data-build-in="rise 4"><p style="width:112px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="width:560px; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:2px">CONTEXT</p><p style="flex:1; font-size:28px; color:#8E8C88">어디에서 사용하는가</p></div>
+<div style="position:absolute; left:128px; top:648px; width:1664px; height:116px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629" data-build-in="rise 5"><p style="width:112px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="width:560px; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:2px">FUNCTION</p><p style="flex:1; font-size:28px; color:#8E8C88">무엇을 해야 하는가</p></div>
+<div style="position:absolute; left:128px; top:764px; width:1664px; height:116px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629; border-bottom:1px solid #262629" data-build-in="rise 6"><p style="width:112px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p><p style="width:560px; font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:2px">EXPERIENCE</p><p style="flex:1; font-size:28px; color:#8E8C88">어떤 경험을 제공하는가</p></div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">13</p>
+
+</section>
+<section id="brief-ex" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Design Brief — Example</h2>
+<div style="position:absolute; left:128px; top:140px; width:760px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 1 auto">
+<p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">가상의 교육용 브리프 · A Chair for Small Spaces</p>
+<p style="font-size:44px; font-weight:500; line-height:1.3; letter-spacing:-1px">한 장으로 정리한 Design Brief</p>
+<p style="font-size:24px; color:#5E5D5A">다섯 질문에 모두 답한 브리프 예시</p>
+</div>
+<img src="../assets/img/sketch.jpg" alt="Rough marker sketch of the compact lounge chair drawn from this brief" style="position:absolute; left:128px; top:320px; width:760px; height:520px; object-fit:cover" data-build-in="fade 1 auto">
+<p style="position:absolute; left:128px; top:856px; width:760px; font-size:24px; color:#8E8C88" data-build-in="fade 1 auto"><span style="color:#EDEBE7">ROUGH SKETCH</span> · 이 브리프에서 출발한 첫 스케치</p>
+<div style="position:absolute; left:960px; top:320px; width:832px; display:flex; flex-direction:column" data-build-in="rise 2">
+<div style="height:112px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629"><div style="width:240px; display:flex; flex-direction:column; gap:2px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">USER</p></div><p style="flex:1; font-size:26px; line-height:1.4">작은 원룸에서 작업 후 앉아서 쉬고 싶은 1인 거주자</p></div>
+<div style="height:112px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629"><div style="width:240px; display:flex; flex-direction:column; gap:2px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">PROBLEM</p></div><p style="flex:1; font-size:26px; line-height:1.4">휴식용 가구가 침대와 책상 사이의 이동을 방해한다</p></div>
+<div style="height:112px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629"><div style="width:240px; display:flex; flex-direction:column; gap:2px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">CONTEXT</p></div><p style="flex:1; font-size:26px; line-height:1.4">침대·책상·휴식 가구가 같은 공간을 나누어 쓴다</p></div>
+<div style="height:112px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629"><div style="width:240px; display:flex; flex-direction:column; gap:2px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">FUNCTION</p></div><p style="flex:1; font-size:26px; line-height:1.4">작은 바닥 면적으로 기대어 쉬는 자세를 받쳐 준다</p></div>
+<div style="height:112px; display:flex; flex-direction:row; align-items:center; border-top:1px solid #262629; border-bottom:1px solid #262629"><div style="width:240px; display:flex; flex-direction:column; gap:2px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">EXPERIENCE</p></div><p style="flex:1; font-size:26px; line-height:1.4; color:#B9A488">"방을 좁히지 않고, 가볍게 놓인 휴식"</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">14</p>
+
+</section>
+<section id="layout" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1000px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Layout Check — What Would Solve It?</h2>
+<div style="position:absolute; left:128px; top:160px; width:720px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 1 auto">
+<div style="display:flex; flex-direction:column; gap:6px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">A · 현재 배치</p><p style="font-size:28px; font-weight:500; line-height:1.35">의자가 침대와 책상 사이의<br>이동 경로와 겹친다</p></div>
+<svg aria-label="Plan A: lounge chair placed on the walking path between bed and desk" width="720" height="500" viewBox="0 0 720 500" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="10" width="700" height="480" fill="#111114" stroke="#5E5D5A" stroke-width="2"/>
+<line x1="290" y1="10" x2="560" y2="10" stroke="#8E8C88" stroke-width="8"/>
+<rect x="60" y="490" width="110" height="4" fill="#0D0D0F"/>
+<path d="M60 490 A110 110 0 0 1 170 380" fill="none" stroke="#46454A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<rect x="30" y="30" width="230" height="300" fill="#1E1E22" stroke="#46454A" stroke-width="2"/>
+<rect x="610" y="110" width="80" height="230" fill="#1E1E22" stroke="#46454A" stroke-width="2"/>
+<rect x="548" y="200" width="44" height="44" rx="6" fill="#1E1E22" stroke="#46454A" stroke-width="2"/>
+<polyline points="115,480 115,410 420,340 560,250" fill="none" stroke="#EDEBE7" stroke-width="3" stroke-dasharray="12 10"/>
+<rect x="320" y="280" width="120" height="120" rx="16" fill="#B9A488" fill-opacity="0.85"/>
+</svg>
+</div>
+<div style="position:absolute; left:1072px; top:160px; width:720px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 2">
+<div style="display:flex; flex-direction:column; gap:6px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">B · 해결안이 만족할 조건</p><p style="font-size:28px; font-weight:500; line-height:1.35">어떤 배치든,<br>세 가지를 함께 만족해야 한다</p></div>
+<div style="height:500px; display:flex; flex-direction:column; justify-content:space-between; padding:0px 0px 0px">
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px; padding:28px 0px 0px; border-top:1px solid #333336"><p style="width:48px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488">01</p><p style="flex:1; font-size:32px; font-weight:500; line-height:1.4">침대와 책상 사이<br>이동이 막히지 않는다</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px; padding:28px 0px 0px; border-top:1px solid #333336"><p style="width:48px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488">02</p><p style="flex:1; font-size:32px; font-weight:500; line-height:1.4">기대어 쉬는 자세를<br>받쳐 준다</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px; padding:28px 0px 28px; border-top:1px solid #333336; border-bottom:1px solid #333336"><p style="width:48px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488">03</p><p style="flex:1; font-size:32px; font-weight:500; line-height:1.4">가구를 크게 옮기지 않고<br>휴식으로 전환된다</p></div>
+</div>
+</div>
+<div style="position:absolute; left:128px; top:830px; width:1664px; display:flex; flex-direction:row; align-items:center; gap:40px" data-build-in="fade 3">
+<div style="display:flex; flex-direction:row; align-items:center; gap:12px"><div style="width:28px; height:28px; background:#1E1E22; border:2px solid #46454A"></div><p style="font-size:24px; color:#8E8C88">침대 · 책상</p></div>
+<div style="display:flex; flex-direction:row; align-items:center; gap:12px"><div style="width:28px; height:28px; background:#B9A488; border-radius:6px"></div><p style="font-size:24px; color:#8E8C88">휴식 의자</p></div>
+<div style="display:flex; flex-direction:row; align-items:center; gap:12px"><div style="width:40px; height:0px; border-top:3px dashed #EDEBE7"></div><p style="font-size:24px; color:#8E8C88">이동 경로</p></div>
+<div style="display:flex; flex-direction:row; align-items:center; gap:12px"><div style="width:40px; height:8px; background:#8E8C88"></div><p style="font-size:24px; color:#8E8C88">창</p></div>
+<div style="flex:1"></div>
+<p style="font-size:24px; color:#5E5D5A">정답은 하나가 아니다 · 방법은 Explore에서 여러 안으로 그려 본다</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">15</p>
+
+</section>
+<section id="tracks" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Three Tracks</h2>
+<p style="position:absolute; left:128px; top:130px; width:1664px; font-size:48px; font-weight:500; line-height:1.3; letter-spacing:-1px" data-build-in="rise 1 auto">같은 다섯 질문, 세 가지 대상</p>
+<div style="position:absolute; left:128px; top:240px; width:1664px; display:flex; flex-direction:row; gap:40px" data-build-in="rise 2">
+<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
+<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">제품</p>
+<p style="font-size:32px; font-weight:500; line-height:1.3">소형 주거용 휴식 의자</p>
+<div style="height:6px"></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">원룸의 1인 거주자</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">휴식 가구가 이동을 막음</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">침대·책상과 공간 공유</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">작은 면적으로 휴식 자세 지지</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">방을 좁히지 않는 휴식</p></div>
+<div style="height:6px"></div>
+<p style="font-size:24px; line-height:1.45; color:#B9A488">형태·작동·배치안<br><span style="color:#8E8C88">제품 스케치 · 사용 자세</span></p>
+</div>
+<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
+<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">공간·경험</p>
+<p style="font-size:32px; font-weight:500; line-height:1.3">원룸의 휴식 코너</p>
+<div style="height:6px"></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">원룸의 1인 거주자</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">일·휴식 구역이 섞여 쉬는 느낌이 없음</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">책상 옆 창가 모서리</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">작업 영역과 휴식 영역을 구분</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">앉는 순간 일에서 벗어남</p></div>
+<div style="height:6px"></div>
+<p style="font-size:24px; line-height:1.45; color:#B9A488">배치·조명·경계안<br><span style="color:#8E8C88">평면도 · 스토리보드</span></p>
+</div>
+<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
+<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">모빌리티</p>
+<p style="font-size:32px; font-weight:500; line-height:1.3">원룸까지 짐 옮기기</p>
+<div style="height:6px"></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">엘리베이터 없는 원룸 거주자</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">장본 짐을 계단으로 옮기기 힘듦</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">정류장 → 현관 → 계단 구간</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">짐을 싣고 계단을 오를 수 있음</p></div>
+<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">귀가가 부담이 아닌 마무리</p></div>
+<div style="height:6px"></div>
+<p style="font-size:24px; line-height:1.45; color:#B9A488">이동·운반·보관안<br><span style="color:#8E8C88">제품과 사용자의 관계</span></p>
+</div>
+</div>
+<div style="position:absolute; left:128px; top:820px; width:1664px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 3">
+<p style="font-size:26px; line-height:1.45">세 트랙 모두 같은 사람, 같은 원룸에서 출발한다 — 대상이 제품이든 공간이든 이동이든, 다섯 질문은 같다.</p>
+<p style="font-size:24px; color:#5E5D5A">공간/경험은 "물건"이 아니라 "상황"을, 모빌리티는 "이동 중의 행동"을 정의한다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">16</p>
+
+</section>
+<section id="s13" data-transition="fade" style="background:#141417; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Practice 01</p>
+<h2 style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:80px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">Your Design Brief</h2>
+<p style="text-align:center; font-size:28px; color:#8E8C88">제품 · 공간/경험 · 모빌리티 중 하나를 선택하세요.</p>
+</div>
+<div style="position:absolute; left:128px; top:440px; width:1664px; display:flex; flex-direction:row; justify-content:center; gap:82px" data-build-in="rise 2">
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 트랙 하나 선택<br>2. 다섯 항목 작성<br>3. Design Goal 한 문장</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">제출물</p><p style="font-size:24px; line-height:1.6">브리프 1장</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">다섯 항목이 모두 채워짐<br>문제가 한 문장으로 정리됨</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">17</p>
+
+</section>
+<section id="s14" data-transition="fade" style="background:#0B0B0D; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/messy.jpg" alt="" style="position:absolute; left:0px; top:0px; width:1920px; height:1080px; object-fit:cover; opacity:0.08; filter:blur(8px) grayscale(1)" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:380px; width:1664px; display:flex; flex-direction:column" data-build-in="rise 2 auto">
+<div style="display:flex; flex-direction:row; justify-content:space-between; padding:0px 0px 16px; border-bottom:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#8E8C88">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#8E8C88">Research &amp; Reference</p></div>
+<div style="height:36px"></div>
+<h1 style="font-family:'Instrument Sans', sans-serif; font-size:120px; font-weight:500; line-height:1.05; letter-spacing:-4px">Research</h1>
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:44px; color:#8E8C88">Don't collect. <span style="color:#EDEBE7">Analyze.</span></p>
+</div>
+
+</section>
+<section id="s15" data-transition="fade" style="background:#0d0d0f">
+  <img src="../assets/img/messy.jpg" alt="Disorganized pile of scattered reference printouts" data-build-in="fade 1 auto" style="position:absolute; top:280px; left:128px; width:760px; height:600px">
+  <h2 style="position:absolute; top:64px; left:128px; width:1400px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5e5d5a">Reference Is More Than Collecting</h2>
+  <x-connector x1="920" y1="580" x2="980" y2="580" data-build-in="fade 2" style="color:#5e5d5a; border-width:1px"></x-connector>
+  <div data-build-in="rise 2" style="position:absolute; top:280px; left:1008px; width:784px; display:grid; gap:48px; grid-template-columns:368px 368px">
+    <div style="display:flex; flex-direction:column; gap:8px; padding:20px 0 0; border-top:1px solid #333336">
+      <p style="font-family:'IBM Plex Sans KR', Arial, sans-serif; font-size:24px; color:#5e5d5a">01 · 형태</p>
+      <p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px; color:#edebe7">FORM</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; padding:20px 0 0; border-top:1px solid #333336">
+      <p style="font-family:'IBM Plex Sans KR', Arial, sans-serif; font-size:24px; color:#5e5d5a">02 · 소재</p>
+      <p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px; color:#edebe7">CMF</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; padding:20px 0 0; border-top:1px solid #333336">
+      <p style="font-family:'IBM Plex Sans KR', Arial, sans-serif; font-size:24px; color:#5e5d5a">03 · 디테일</p>
+      <p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px; color:#edebe7">DETAIL</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; padding:20px 0 0; border-top:1px solid #333336">
+      <p style="font-family:'IBM Plex Sans KR', Arial, sans-serif; font-size:24px; color:#5e5d5a">04 · 맥락</p>
+      <p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px; color:#edebe7">CONTEXT</p>
+    </div>
+  </div>
+  <div data-build-in="rise 3" style="position:absolute; top:720px; left:1008px; width:784px; display:flex; flex-direction:column; gap:12px">
+    <p style="font-family:'Instrument Sans', sans-serif; font-size:36px; color:#5e5d5a">Reference ≠ Decoration</p>
+    <p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500; color:#edebe7">Reference = Decision</p>
+  </div>
+  <p style="position:absolute; right:128px; bottom:64px; width:160px; font-family:'Instrument Sans', sans-serif; font-size:24px; text-align:right; color:#5e5d5a">19</p>
+  <p id="c1c4d8f6" style="position:absolute; top:50%; left:50%; width:800px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; transform:translate(-50%, -50%)"></p>
+  
+</section>
+<section id="ref-form" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/form2.jpg" alt="Side profile of the lounge chair with thin annotation lines for silhouette, proportion, curvature and joint" style="position:absolute; left:800px; top:150px; width:992px; height:747px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Reference 01 — Form</h2>
+<div style="position:absolute; left:128px; top:150px; width:620px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 2 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; line-height:1.1; letter-spacing:2px">FORM</p>
+<p style="font-size:28px; font-weight:500">어떤 형태적 특징을 가져올 것인가?</p>
+<p style="font-size:24px; color:#8E8C88">'생김새'가 아니라 형태를 만드는 원리를 찾는다</p>
+</div>
+<div style="position:absolute; left:128px; top:380px; width:620px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 3"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">SILHOUETTE · 실루엣</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">멀리서 봐도 구분되는 전체적인 외형은 무엇인가?</p></div>
+<p style="position:absolute; left:850px; top:196px; width:220px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500" data-build-in="fade 3">01 Silhouette</p>
+<x-connector x1="1060" y1="213" x2="1494" y2="252" head="none" style="color:#8E8C88; border-width:1px" data-build-in="fade 3"></x-connector>
+<div style="position:absolute; left:128px; top:510px; width:620px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 4"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">PROPORTION · 비례</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">길이, 높이, 두께와 각 부분의 비율은 어떻게 구성되어 있는가?</p></div>
+<p style="position:absolute; left:1180px; top:764px; width:240px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500" data-build-in="fade 4">02 Proportion</p>
+<div style="position:absolute; left:128px; top:640px; width:620px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 5"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">GEOMETRY · 조형</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">직선/곡선, 각진/둥근 형태 중 어떤 조형 언어를 사용하는가?</p></div>
+<p style="position:absolute; left:850px; top:380px; width:200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500" data-build-in="fade 5">03 Geometry</p>
+<x-connector x1="1020" y1="397" x2="1250" y2="480" head="none" style="color:#8E8C88; border-width:1px" data-build-in="fade 5"></x-connector>
+<div style="position:absolute; left:128px; top:770px; width:620px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 6"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">STRUCTURE · 구조</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">각 덩어리와 부품은 어떤 방식으로 연결되어 있는가?</p></div>
+<p style="position:absolute; left:850px; top:600px; width:200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500" data-build-in="fade 6">04 Structure</p>
+<x-connector x1="1020" y1="617" x2="1088" y2="528" head="none" style="color:#8E8C88; border-width:1px" data-build-in="fade 6"></x-connector>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">20</p>
+
+</section>
+<section id="ref-cmf" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/cmf2.jpg" alt="Sage green colorway of the lounge chair beside CMF samples: sage color chip, matte polymer, brushed aluminum, soft-touch surface" style="position:absolute; left:880px; top:150px; width:912px; height:513px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Reference 02 — CMF</h2>
+<div style="position:absolute; left:128px; top:150px; width:680px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 2 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; line-height:1.1; letter-spacing:2px">CMF</p>
+<p style="font-size:28px; font-weight:500">어떤 감각과 인상을 만들 것인가?</p>
+<p style="font-size:24px; color:#8E8C88">어떤 색인가보다 '어떤 인상을 만드는가'를 찾는다</p>
+</div>
+<div style="position:absolute; left:128px; top:380px; width:680px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 3"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">COLOR · 색상</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">색상 자체뿐 아니라 저채도/고채도, 따뜻함/차가움, 색상 조합은 어떠한가?</p></div>
+<div style="position:absolute; left:128px; top:510px; width:680px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 4"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">MATERIAL · 소재</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">Metal · Plastic · Wood · Fabric · Glass 등 어떤 재료를 사용하고 있는가?</p></div>
+<div style="position:absolute; left:128px; top:640px; width:680px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 5"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">FINISH · 마감</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">Glossy · Matte · Brushed · Transparent — 표면은 빛과 촉감을 어떻게 표현하는가?</p></div>
+<div style="position:absolute; left:128px; top:770px; width:680px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 6"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">COMBINATION · 조합</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">서로 다른 소재가 어떤 비율과 방식으로 함께 사용되는가?</p></div>
+<p style="position:absolute; left:880px; top:684px; width:912px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A" data-build-in="fade 2 auto">Sage Green · Matte Polymer · Brushed Aluminum · Soft-touch</p>
+<div style="position:absolute; left:880px; top:752px; width:912px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 7">
+<p style="font-size:24px; color:#5E5D5A; text-decoration:line-through #5E5D5A">연두색이 예뻐서 가져왔다.</p>
+<p style="font-size:26px; line-height:1.5; color:#EDEBE7">저채도의 Sage Green과 Matte Plastic 조합이 부드럽고 생활공간에 자연스럽게 어울리는 인상을 만들어 참고했다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">21</p>
+
+</section>
+<section id="ref-detail" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/mob.jpg" alt="Full view of a compact electric scooter concept" style="position:absolute; left:860px; top:150px; width:400px; height:516px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Reference 03 — Detail</h2>
+<div style="position:absolute; left:128px; top:150px; width:660px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 2 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; line-height:1.1; letter-spacing:2px">DETAIL</p>
+<p style="font-size:28px; font-weight:500">완성도는 어디에서 만들어지는가?</p>
+<p style="font-size:24px; color:#8E8C88">전체 형태보다 '완성도를 만드는 작은 결정'을 찾는다</p>
+</div>
+<div style="position:absolute; left:128px; top:380px; width:660px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 3"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">JOINT · 결합</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">부품과 부품이 어디서, 어떻게 만나는가?</p></div>
+<img src="../assets/img/d_joint.jpg" alt="Macro: handlebar-to-stem hinge joint" style="position:absolute; left:1276px; top:150px; width:250px; height:250px; object-fit:cover" data-build-in="fade 3">
+<p style="position:absolute; left:1288px; top:350px; width:120px; padding:4px 10px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; background:rgba(13,13,15,0.7)" data-build-in="fade 3">Joint</p>
+<div style="position:absolute; left:128px; top:510px; width:660px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 4"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">EDGE · 엣지</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">모서리가 Sharp한가, Round한가? 곡률은 어느 정도인가?</p></div>
+<img src="../assets/img/d_edge.jpg" alt="Macro: rounded edge and chamfer of the front body" style="position:absolute; left:1542px; top:150px; width:250px; height:250px; object-fit:cover" data-build-in="fade 4">
+<p style="position:absolute; left:1554px; top:350px; width:120px; padding:4px 10px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; background:rgba(13,13,15,0.7)" data-build-in="fade 4">Edge</p>
+<div style="position:absolute; left:128px; top:640px; width:660px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 5"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">INTERFACE · 인터페이스</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">버튼, 손잡이, 디스플레이 등 사용자가 만지는 부분은 어떻게 디자인되어 있는가?</p></div>
+<img src="../assets/img/d_button.jpg" alt="Macro: flush round display and tactile button" style="position:absolute; left:1276px; top:416px; width:250px; height:250px; object-fit:cover" data-build-in="fade 5">
+<p style="position:absolute; left:1288px; top:616px; width:150px; padding:4px 10px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; background:rgba(13,13,15,0.7)" data-build-in="fade 5">Interface</p>
+<div style="position:absolute; left:128px; top:770px; width:660px; display:flex; flex-direction:column; gap:8px; padding:18px 0px 0px; border-top:1px solid #262629" data-build-in="rise 6"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">TRANSITION · 연결</p><p style="font-size:24px; line-height:1.45; color:#8E8C88">서로 다른 형태나 소재가 만날 때 어떻게 자연스럽게 전환되는가?</p></div>
+<img src="../assets/img/d_trans.jpg" alt="Macro: transition between aluminum frame and polymer panel" style="position:absolute; left:1542px; top:416px; width:250px; height:250px; object-fit:cover" data-build-in="fade 6">
+<p style="position:absolute; left:1554px; top:616px; width:160px; padding:4px 10px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; background:rgba(13,13,15,0.7)" data-build-in="fade 6">Transition</p>
+<div style="position:absolute; left:860px; top:700px; width:932px; display:flex; flex-direction:column; gap:16px" data-build-in="rise 7">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:1px; color:#8E8C88">+ Seam · Gap · Pattern · Texture · Fastener</p>
+<p style="font-size:24px; line-height:1.5; color:#5E5D5A">모빌리티라면 전체 사진이 아니라 핸들 연결부 · 버튼 · 디스플레이 · 프레임 접합부 · 조명 · 소재가 바뀌는 경계를 확대해서 찾는다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">22</p>
+
+</section>
+<section id="ref-context" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/inuse.jpg" alt="A commuter on the e-scooter gripping the handlebar and checking the display on a city sidewalk" style="position:absolute; left:800px; top:150px; width:992px; height:558px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Reference 04 — Context</h2>
+<div style="position:absolute; left:128px; top:150px; width:620px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 2 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; line-height:1.1; letter-spacing:2px">CONTEXT</p>
+<p style="font-size:28px; font-weight:500">어디에서, 누가, 어떻게 사용하는가?</p>
+<p style="font-size:24px; color:#8E8C88">제품이 아니라 '제품이 존재하는 상황'을 찾는다</p>
+</div>
+<div style="position:absolute; left:128px; top:350px; width:620px; display:flex; flex-direction:column; gap:4px; padding:14px 0px 0px; border-top:1px solid #262629" data-build-in="rise 3"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:26px; font-weight:500; letter-spacing:2px">USER · 사용자</p><p style="font-size:24px; line-height:1.4; color:#8E8C88">누가 사용하는가? 연령, 신체 조건, 행동 특성은?</p></div>
+<x-shape kind="ellipse" style="position:absolute; left:1068px; top:294px; width:10px; height:10px; background:#EDEBE7" data-build-in="fade 3"></x-shape>
+<x-connector x1="1000" y1="262" x2="1068" y2="299" head="none" style="color:#EDEBE7; border-width:1px" data-build-in="fade 3"></x-connector>
+<p style="position:absolute; left:880px; top:240px; width:120px; padding:4px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:2px; background:rgba(13,13,15,0.72)" data-build-in="fade 3">USER</p>
+<div style="position:absolute; left:128px; top:462px; width:620px; display:flex; flex-direction:column; gap:4px; padding:14px 0px 0px; border-top:1px solid #262629" data-build-in="rise 4"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:26px; font-weight:500; letter-spacing:2px">ENVIRONMENT · 환경</p><p style="font-size:24px; line-height:1.4; color:#8E8C88">Indoor · Outdoor · Home · Office · Public — 어떤 공간인가?</p></div>
+<x-shape kind="ellipse" style="position:absolute; left:1564px; top:393px; width:10px; height:10px; background:#EDEBE7" data-build-in="fade 4"></x-shape>
+<x-connector x1="1546" y1="286" x2="1569" y2="393" head="none" style="color:#EDEBE7; border-width:1px" data-build-in="fade 4"></x-connector>
+<p style="position:absolute; left:1440px; top:240px; width:212px; padding:4px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:2px; white-space:nowrap; background:rgba(13,13,15,0.72)" data-build-in="fade 4">ENVIRONMENT</p>
+<div style="position:absolute; left:128px; top:574px; width:620px; display:flex; flex-direction:column; gap:4px; padding:14px 0px 0px; border-top:1px solid #262629" data-build-in="rise 5"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:26px; font-weight:500; letter-spacing:2px">BEHAVIOR · 행동</p><p style="font-size:24px; line-height:1.4; color:#8E8C88">어떻게 접근하고, 잡고, 조작하고, 사용하는가?</p></div>
+<x-shape kind="ellipse" style="position:absolute; left:1167px; top:340px; width:10px; height:10px; background:#EDEBE7" data-build-in="fade 5"></x-shape>
+<x-connector x1="1236" y1="322" x2="1177" y2="345" head="none" style="color:#EDEBE7; border-width:1px" data-build-in="fade 5"></x-connector>
+<p style="position:absolute; left:1236px; top:304px; width:170px; padding:4px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:2px; background:rgba(13,13,15,0.72)" data-build-in="fade 5">BEHAVIOR</p>
+<div style="position:absolute; left:128px; top:686px; width:620px; display:flex; flex-direction:column; gap:4px; padding:14px 0px 0px; border-top:1px solid #262629" data-build-in="rise 6"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:26px; font-weight:500; letter-spacing:2px">SCALE · 스케일</p><p style="font-size:24px; line-height:1.4; color:#8E8C88">사람과 제품, 제품과 공간의 크기 관계는?</p></div>
+<x-shape kind="ellipse" style="position:absolute; left:1115px; top:517px; width:10px; height:10px; background:#EDEBE7" data-build-in="fade 6"></x-shape>
+<x-connector x1="1236" y1="580" x2="1125" y2="524" head="none" style="color:#EDEBE7; border-width:1px" data-build-in="fade 6"></x-connector>
+<p style="position:absolute; left:1236px; top:562px; width:160px; padding:4px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:2px; background:rgba(13,13,15,0.72)" data-build-in="fade 6">PRODUCT</p>
+<div style="position:absolute; left:128px; top:798px; width:620px; display:flex; flex-direction:column; gap:4px; padding:14px 0px 0px; border-top:1px solid #262629" data-build-in="rise 7"><p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:26px; font-weight:500; letter-spacing:2px; color:#B9A488">MOMENT · 순간</p><p style="font-size:24px; line-height:1.4; color:#8E8C88">어떤 순간이 제품의 가치를 가장 잘 전달하는가?</p></div>
+<div style="position:absolute; left:800px; top:740px; width:992px; display:flex; flex-direction:column; gap:16px" data-build-in="rise 7">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:28px; letter-spacing:2px; color:#5E5D5A">Approach&#160;&#160;→&#160;&#160;Grip&#160;&#160;→&#160;&#160;<span style="color:#EDEBE7">Check</span>&#160;&#160;→&#160;&#160;Ride&#160;&#160;→&#160;&#160;Arrive</p>
+<p style="font-size:24px; line-height:1.5; color:#8E8C88">하나의 순간이 이후 In-use 이미지와 Motion 제작으로 이어진다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">23</p>
+
+</section>
+<section id="ref-check" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Reference Checklist</h2>
+<p style="position:absolute; left:128px; top:190px; width:1664px; font-size:56px; font-weight:500; line-height:1.3; letter-spacing:-1.5px" data-build-in="rise 1 auto">왜 이 이미지를 가져왔나요?</p>
+<div style="position:absolute; left:128px; top:380px; width:380px; display:flex; flex-direction:column; gap:16px; padding:24px 0px 0px; border-top:1px solid #333336" data-build-in="rise 2"><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px">FORM</p><p style="font-size:26px; line-height:1.45; color:#8E8C88">어떤 형태를<br>참고할 것인가?</p></div>
+<div style="position:absolute; left:556px; top:380px; width:380px; display:flex; flex-direction:column; gap:16px; padding:24px 0px 0px; border-top:1px solid #333336" data-build-in="rise 3"><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px">CMF</p><p style="font-size:26px; line-height:1.45; color:#8E8C88">어떤 소재와 인상을<br>참고할 것인가?</p></div>
+<div style="position:absolute; left:984px; top:380px; width:380px; display:flex; flex-direction:column; gap:16px; padding:24px 0px 0px; border-top:1px solid #333336" data-build-in="rise 4"><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px">DETAIL</p><p style="font-size:26px; line-height:1.45; color:#8E8C88">어떤 디테일을<br>참고할 것인가?</p></div>
+<div style="position:absolute; left:1412px; top:380px; width:380px; display:flex; flex-direction:column; gap:16px; padding:24px 0px 0px; border-top:1px solid #333336" data-build-in="rise 5"><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:1px">CONTEXT</p><p style="font-size:26px; line-height:1.45; color:#8E8C88">어떤 사용 상황을<br>참고할 것인가?</p></div>
+<div style="position:absolute; left:128px; top:700px; width:1664px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 6">
+<p style="font-size:56px; font-weight:500; line-height:1.3; letter-spacing:-1.5px"><span style="color:#B9A488">"예뻐서"</span>는 이유가 될 수 없습니다.<br><span style="color:#8E8C88">형태 · 색 · 소재 · 맥락의 언어로 말합니다.</span></p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:1px; color:#5E5D5A">Reference ≠ Decoration&#160;&#160;·&#160;&#160;Reference = Decision</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">24</p>
+
+</section>
+<section id="ai-research" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">AI in Research</h2>
+<div style="position:absolute; left:128px; top:200px; width:740px; display:flex; flex-direction:column; gap:24px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:96px; line-height:1; color:#B9A488">Categorize</p>
+<p style="font-size:48px; font-weight:500; line-height:1.3; letter-spacing:-1px">모은 이미지를<br>AI에게 분류시킨다</p>
+<p style="font-size:26px; line-height:1.6; color:#8E8C88">고르는 건 내가, 정리하는 건 AI가.<br>"왜 가져왔나"의 초안을 문장으로 받는다.</p>
+</div>
+<div style="position:absolute; left:960px; top:200px; width:720px; display:flex; flex-direction:column; gap:18px; padding:56px; background:#141417; border:1px solid #26262A" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; color:#B9A488">PROMPT · 이미지 첨부</p>
+<p style="font-size:28px; line-height:1.6">"이 이미지들을 FORM / CMF / DETAIL / CONTEXT 기준으로 분류하고(복수 가능), 각 이미지에서 참고할 만한 요소를 한 줄씩 적어 줘. '예쁘다' 같은 표현은 쓰지 마."</p>
+<div style="height:10px"></div>
+<div style="height:1px; background:#2E2E33"></div>
+<div style="height:10px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; color:#8E8C88">THEN YOU CHECK</p>
+<p style="font-size:26px; line-height:1.55; color:#8E8C88">AI가 쓴 설명이 이미지와 맞는지 검토하고 내 문장으로 고쳐 쓴다.</p>
+</div>
+<p style="position:absolute; left:128px; top:830px; width:1664px; font-size:26px; line-height:1.5" data-build-in="rise 3">AI 설명의 정확성을 검토하고 직접 수정한다. 브리프와 무관한 자료만 제외한다. <span style="color:#B9A488">판단은 디자이너가 한다.</span></p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">25</p>
+
+</section>
+<section id="s19" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1100px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Visual Direction — Analysis Board</h2>
+<div style="position:absolute; left:128px; top:130px; width:1664px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 1 auto">
+<p style="font-size:44px; font-weight:500; line-height:1.3; letter-spacing:-1px">콜라주가 아니라, 분석 보드</p>
+<p style="font-size:24px; color:#8E8C88">각 이미지에 범주 태그(복수 가능) · 참고 요소 · 선택 이유를 적는다</p>
+</div>
+<div style="position:absolute; left:128px; top:280px; width:1664px; display:flex; flex-direction:row; justify-content:space-between" data-build-in="rise 2">
+<div style="width:392px; display:flex; flex-direction:column; gap:12px"><img src="../assets/img/form.jpg" alt="Four products with different form languages, including a cantilevered tube chair" style="width:392px; height:240px; object-fit:cover"><div style="display:flex; flex-direction:row; gap:8px; align-items:center"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#0D0D0F; background:#B9A488">FORM</p></div><p style="font-size:24px; line-height:1.4"><span style="color:#5E5D5A">참고</span> 캔틸레버 튜브의 연속된 선</p><p style="font-size:24px; line-height:1.4; color:#8E8C88"><span style="color:#5E5D5A">이유</span> 다리 수를 줄여 바닥 점유를 가볍게 보이게 하는 방식</p></div>
+<div style="width:392px; display:flex; flex-direction:column; gap:12px"><img src="../assets/img/cmf.jpg" alt="CMF material sample board" style="width:392px; height:240px; object-fit:cover"><div style="display:flex; flex-direction:row; gap:8px; align-items:center"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#0D0D0F; background:#B9A488">CMF</p></div><p style="font-size:24px; line-height:1.4"><span style="color:#5E5D5A">참고</span> 브러시드 금속과 회색 패브릭의 대비</p><p style="font-size:24px; line-height:1.4; color:#8E8C88"><span style="color:#5E5D5A">이유</span> 원룸의 차분한 톤 안에서 재질 차이로 인상을 만든다</p></div>
+<div style="width:392px; display:flex; flex-direction:column; gap:12px"><img src="../assets/img/d_joint.jpg" alt="Macro detail of a tube hinge joint" style="width:392px; height:240px; object-fit:cover"><div style="display:flex; flex-direction:row; gap:8px; align-items:center"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#0D0D0F; background:#B9A488">DETAIL</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488; border:1px solid #B9A488">FORM</p></div><p style="font-size:24px; line-height:1.4"><span style="color:#5E5D5A">참고</span> 튜브와 부품이 만나는 결합부</p><p style="font-size:24px; line-height:1.4; color:#8E8C88"><span style="color:#5E5D5A">이유</span> 가는 프레임에서 연결부가 정리되어 보이는 방식</p></div>
+<div style="width:392px; display:flex; flex-direction:column; gap:12px"><img src="../assets/img/ctx_home.jpg" alt="A lounge chair placed in a small apartment corner by a window" style="width:392px; height:240px; object-fit:cover"><div style="display:flex; flex-direction:row; gap:8px; align-items:center"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#0D0D0F; background:#B9A488">CONTEXT</p><p style="padding:2px 12px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488; border:1px solid #B9A488">CMF</p></div><p style="font-size:24px; line-height:1.4"><span style="color:#5E5D5A">참고</span> 창가 코너에 놓인 1인 의자의 스케일</p><p style="font-size:24px; line-height:1.4; color:#8E8C88"><span style="color:#5E5D5A">이유</span> 침대·책상과 공간을 나누는 배치 관계</p></div>
+</div>
+<div style="position:absolute; left:128px; top:760px; width:1664px; display:flex; flex-direction:column; gap:16px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 3">
+<div style="display:flex; flex-direction:row; align-items:center; gap:16px"><p style="width:220px; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#B9A488">KEYWORDS</p><p style="padding:4px 16px; font-size:24px; border:1px solid #46454A; border-radius:999px">연속된 프레임</p><p style="padding:4px 16px; font-size:24px; border:1px solid #46454A; border-radius:999px">차분한 금속과 패브릭</p><p style="padding:4px 16px; font-size:24px; border:1px solid #46454A; border-radius:999px">작은 점유</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:16px"><p style="width:220px; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#B9A488">DIRECTION</p><p style="font-size:30px; font-weight:500">"작은 방에서 가볍게 보이는, 연속된 프레임의 휴식 의자"</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">26</p>
+
+</section>
+<section id="s20" data-transition="fade" style="background:#141417; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Practice 02</p>
+<h2 style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:80px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">Build Your Visual Direction</h2>
+<p style="text-align:center; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:28px; color:#8E8C88">Form 3 · CMF 3 · Detail 3 · Context 3 — 총 12장</p>
+</div>
+<div style="position:absolute; left:128px; top:440px; width:1664px; display:flex; flex-direction:row; justify-content:center; gap:82px" data-build-in="rise 2">
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 범주별 3장씩 12장<br>2. 이미지마다 참고 요소 한 줄<br>3. 키워드 3 + 방향 문장 1</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">제출물</p><p style="font-size:24px; line-height:1.6">분석 보드 1장<br>키워드 3개<br>방향 문장 1개</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">모든 이미지에 참고 요소 한 줄<br>'예쁘다' 대신 형태·색·소재·맥락의 언어</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">27</p>
+
+</section>
+<section id="s21" data-transition="fade" style="background:#0B0B0D; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/sketchbook.jpg" alt="" style="position:absolute; left:0px; top:0px; width:1920px; height:1080px; object-fit:cover; opacity:0.07; filter:blur(6px) grayscale(1)" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:380px; width:1664px; display:flex; flex-direction:column" data-build-in="rise 2 auto">
+<div style="display:flex; flex-direction:row; justify-content:space-between; padding:0px 0px 16px; border-bottom:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#8E8C88">03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#8E8C88">Ideation</p></div>
+<div style="height:36px"></div>
+<h1 style="font-family:'Instrument Sans', sans-serif; font-size:120px; font-weight:500; line-height:1.05; letter-spacing:-4px">Explore</h1>
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:44px; color:#8E8C88">One problem. <span style="color:#EDEBE7">Many possibilities.</span></p>
+</div>
+
+</section>
+<section id="s22" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Is the First Idea the Right One?</h2>
+<div style="position:absolute; left:260px; top:360px; width:200px; height:380px; display:flex; flex-direction:column; align-items:center" data-build-in="pop 1 auto">
+<div style="flex:1"></div>
+<div style="width:48px; height:48px; display:grid; grid-template-columns:48px; gap:12px"><div style="width:48px; height:48px; background:#EDEBE7"></div></div>
+<div style="flex:1"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:500">1</p>
+</div>
+<x-connector x1="440" y1="516" x2="680" y2="516" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 2"></x-connector>
+<div style="position:absolute; left:660px; top:360px; width:200px; height:380px; display:flex; flex-direction:column; align-items:center" data-build-in="pop 2">
+<div style="flex:1"></div>
+<div style="width:48px; height:168px; display:grid; grid-template-columns:48px; gap:12px"><div style="width:48px; height:48px; background:#EDEBE7"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div></div>
+<div style="flex:1"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:500">3</p>
+</div>
+<x-connector x1="840" y1="516" x2="1080" y2="516" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 3"></x-connector>
+<div style="position:absolute; left:1060px; top:360px; width:200px; height:380px; display:flex; flex-direction:column; align-items:center" data-build-in="pop 3">
+<div style="flex:1"></div>
+<div style="width:108px; height:168px; display:grid; grid-template-columns:48px 48px; gap:12px"><div style="width:48px; height:48px; background:#EDEBE7"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div></div>
+<div style="flex:1"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:500">6</p>
+</div>
+<x-connector x1="1240" y1="516" x2="1440" y2="516" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 4"></x-connector>
+<div style="position:absolute; left:1460px; top:360px; width:200px; height:380px; display:flex; flex-direction:column; align-items:center" data-build-in="pop 4">
+<div style="flex:1"></div>
+<div style="width:168px; height:228px; display:grid; grid-template-columns:48px 48px 48px; gap:12px"><div style="width:48px; height:48px; background:#EDEBE7"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div><div style="width:48px; height:48px; border:1px solid #46454A"></div></div>
+<div style="flex:1"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:48px; font-weight:500">12</p>
+</div>
+<p style="position:absolute; left:128px; top:800px; width:1664px; text-align:center; font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:64px" data-build-in="rise 5">Quantity before Quality</p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">29</p>
+
+</section>
+<section id="s23" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/sketchbook.jpg" alt="Overhead photo of a student sketchbook with ten quick rough chair sketches, arrows and notes" style="position:absolute; left:800px; top:152px; width:992px; height:744px; object-fit:cover" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:320px; width:600px; display:flex; flex-direction:column; gap:24px" data-build-in="rise 2 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#5E5D5A">Rough Sketch</p>
+<h2 style="font-family:'Instrument Sans', sans-serif; font-size:72px; font-weight:500; line-height:1.1; letter-spacing:-2px">Think with<br>your hands.</h2>
+<p style="font-size:26px; line-height:1.6; color:#8E8C88">잘 그리는 것이 목적이 아닙니다.<br><span style="color:#EDEBE7">빠르게 생각을 꺼내는 것</span>이 목적입니다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">30</p>
+
+</section>
+<section id="s24" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Diverge → Converge</h2>
+<p style="position:absolute; left:223px; top:568px; width:220px; font-family:'Instrument Sans', sans-serif; font-size:40px; font-weight:500" data-build-in="rise 1 auto">Explore</p>
+<x-connector x1="415" y1="596" x2="675" y2="596" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 2"></x-connector>
+<div style="position:absolute; left:635px; top:280px; width:200px; display:flex; flex-direction:column; align-items:center; gap:12px" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#5E5D5A">Diverge</p>
+<div style="height:8px"></div>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">A</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">B</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">C</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">D</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">E</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">F</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">G</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #46454A">H</p>
+</div>
+<x-connector x1="795" y1="596" x2="1075" y2="596" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 3"></x-connector>
+<p style="position:absolute; left:1035px; top:280px; width:200px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#5E5D5A" data-build-in="rise 3">Converge</p>
+<div style="position:absolute; left:1035px; top:474px; width:200px; display:flex; flex-direction:column; align-items:center; gap:44px" data-build-in="rise 3">
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #8E8C88">A</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #8E8C88">C</p>
+<p style="width:52px; height:52px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; line-height:2.15; border:1px solid #8E8C88">F</p>
+</div>
+<x-connector x1="1195" y1="596" x2="1425" y2="596" head="end" style="color:#46454A; border-width:1px" data-build-in="fade 4"></x-connector>
+<div style="position:absolute; left:1451px; top:556px; width:300px; display:flex; flex-direction:row; align-items:center; gap:48px" data-build-in="scale 4">
+<p style="width:80px; height:80px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:600; line-height:2.2; color:#0D0D0F; background:#EDEBE7">C</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:40px; font-weight:500; color:#B9A488">Select</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">31</p>
+
+</section>
+<section id="s25" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">What Do We Compare?</h2>
+<p style="position:absolute; left:128px; top:128px; width:1200px; font-size:28px; color:#8E8C88" data-build-in="fade 1 auto">가장 예쁜 것이 아니라, 가장 맞는 것을 고른다</p>
+<div style="position:absolute; left:128px; top:440px; width:380px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 2"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; line-height:1.05">FORM</p><p style="font-size:28px; color:#8E8C88">의도한 형태인가</p></div>
+<div style="position:absolute; left:556px; top:440px; width:380px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 3"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; line-height:1.05">FUNCTION</p><p style="font-size:28px; color:#8E8C88">기능이 드러나는가</p></div>
+<div style="position:absolute; left:984px; top:440px; width:380px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 4"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; line-height:1.05">USABILITY</p><p style="font-size:28px; color:#8E8C88">실제로 쓸 수 있는가</p></div>
+<div style="position:absolute; left:1412px; top:440px; width:380px; display:flex; flex-direction:column; gap:20px; padding:28px 0px 0px; border-top:1px solid #333336" data-build-in="rise 5"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; line-height:1.05">CONTEXT</p><p style="font-size:28px; color:#8E8C88">환경에 어울리는가</p></div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">32</p>
+
+</section>
+<section id="s26" data-transition="fade" style="background:#141417; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Practice 03</p>
+<h2 style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:80px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">Sketch 6+ Ideas</h2>
+<p style="text-align:center; font-size:28px; color:#8E8C88">같은 문제를 서로 다른 6가지 방법으로 해결해보세요.</p>
+</div>
+<div style="position:absolute; left:128px; top:440px; width:1664px; display:flex; flex-direction:row; justify-content:center; gap:82px" data-build-in="rise 2">
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 해결안 6개 이상 스케치<br>2. 변형이 아닌 다른 해결 방식<br>3. 네 기준으로 2안 선택</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">제출물</p><p style="font-size:24px; line-height:1.6">서로 다른 해결안 6개<br>선택 이유 2개</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">6안의 해결 방식이 서로 다름<br>선택 이유를 FORM · FUNCTION · USABILITY · CONTEXT로 설명</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">33</p>
+
+</section>
+<section id="s27" data-transition="fade" style="background:#0B0B0D; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/hero.jpg" alt="" style="position:absolute; left:0px; top:0px; width:1920px; height:1080px; object-fit:cover; opacity:0.1; filter:blur(10px) grayscale(1)" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:380px; width:1664px; display:flex; flex-direction:column" data-build-in="rise 2 auto">
+<div style="display:flex; flex-direction:row; justify-content:space-between; padding:0px 0px 16px; border-bottom:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#8E8C88">04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#8E8C88">AI Visualization</p></div>
+<div style="height:36px"></div>
+<h1 style="font-family:'Instrument Sans', sans-serif; font-size:120px; font-weight:500; line-height:1.05; letter-spacing:-4px">Visualize</h1>
+<div style="height:16px"></div>
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:44px; color:#8E8C88">Sketch → AI → Concept</p>
+</div>
+
+</section>
+<section id="s28" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Handing It Over to AI</h2>
+<div style="position:absolute; left:128px; top:250px; width:440px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 1"><img src="../assets/img/sketch.jpg" alt="Rough chair sketch" style="width:440px; height:280px; object-fit:cover"><div style="height:10px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500">Sketch</p><p style="font-size:24px; color:#8E8C88">나의 형태</p></div>
+<p style="position:absolute; left:568px; top:364px; width:172px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:40px; font-weight:300; color:#5E5D5A" data-build-in="fade 2">+</p>
+<div style="position:absolute; left:740px; top:250px; width:440px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 2"><img src="../assets/img/form.jpg" alt="Form reference products" style="width:440px; height:280px; object-fit:cover"><div style="height:10px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500">Reference</p><p style="font-size:24px; color:#8E8C88">판단의 근거</p></div>
+<p style="position:absolute; left:1180px; top:364px; width:172px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:40px; font-weight:300; color:#5E5D5A" data-build-in="fade 3">+</p>
+<div style="position:absolute; left:1352px; top:250px; width:440px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 3"><img src="../assets/img/mood.jpg" alt="Visual direction moodboard" style="width:440px; height:280px; object-fit:cover"><div style="height:10px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500">Direction</p><p style="font-size:24px; color:#8E8C88">시각적 방향</p></div>
+<x-connector x1="960" y1="676" x2="960" y2="736" head="end" style="color:#5E5D5A; border-width:1px" data-build-in="fade 4"></x-connector>
+<div style="position:absolute; left:128px; top:756px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 4">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:56px; font-weight:500; letter-spacing:4px">AI VISUALIZATION</p>
+<p style="text-align:center; font-size:24px; color:#8E8C88">프롬프트 한 줄이 아니라, 나의 의도와 시각 정보를 전달한다</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">35</p>
+
+</section>
+<section id="s29" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Sketch → AI Visualization</h2>
+<p style="position:absolute; left:128px; top:150px; width:780px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:4px; color:#8E8C88" data-build-in="fade 1 auto">ROUGH SKETCH</p>
+<img src="../assets/img/sketch.jpg" alt="Rough marker sketch of a compact single-person lounge chair" style="position:absolute; left:128px; top:220px; width:780px; height:560px; object-fit:cover" data-build-in="fade 1 auto">
+<p style="position:absolute; left:908px; top:470px; width:104px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:40px; color:#B9A488" data-build-in="fade 2">→</p>
+<p style="position:absolute; left:1012px; top:150px; width:780px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:4px; color:#8E8C88" data-build-in="fade 2">AI VISUALIZATION</p>
+<img src="../assets/img/hero.jpg" alt="AI visualization compared against the sketch's silhouette, proportions and structure" style="position:absolute; left:1012px; top:220px; width:780px; height:560px; object-fit:cover" data-build-in="fade 2">
+<div style="position:absolute; left:128px; top:840px; width:1664px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 3">
+<p style="font-size:30px; color:#EDEBE7">실루엣 · 비율 · 구조의 보존을 지시하고,<br><span style="color:#B9A488">원본과 결과를 대조한다.</span></p>
+<p style="font-size:24px; color:#8E8C88">AI가 자동으로 지켜주지 않는다.</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">36</p>
+
+</section>
+<section id="s30" data-transition="fade" style="background:#111113; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/hero.jpg" alt="The compact lounge chair at center, with directing elements pointing to its parts" style="position:absolute; left:460px; top:260px; width:1000px; height:562px; object-fit:cover" data-build-in="fade 1 auto">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">What Do We Direct?</h2>
+<p style="position:absolute; left:128px; top:318px; width:260px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 2">LIGHT</p>
+<x-connector x1="250" y1="337" x2="960" y2="335" head="none" style="color:#46454A; border-width:1px; border-style:dashed" data-build-in="fade 2"></x-connector>
+<p style="position:absolute; left:128px; top:458px; width:260px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 2">FORM</p>
+<x-connector x1="250" y1="477" x2="760" y2="477" head="none" style="color:#46454A; border-width:1px" data-build-in="fade 2"></x-connector>
+<p style="position:absolute; left:128px; top:598px; width:260px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 2">MATERIAL</p>
+<x-connector x1="310" y1="617" x2="960" y2="527" head="none" style="color:#46454A; border-width:1px" data-build-in="fade 2"></x-connector>
+<p style="position:absolute; left:128px; top:758px; width:260px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 2">CAMERA</p>
+<x-connector x1="290" y1="777" x2="877" y2="760" head="none" style="color:#46454A; border-width:1px; border-style:dashed" data-build-in="fade 2"></x-connector>
+<p style="position:absolute; left:1560px; top:333px; width:232px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 3">COLOR</p>
+<x-connector x1="1540" y1="352" x2="1093" y2="352" head="none" style="color:#46454A; border-width:1px" data-build-in="fade 3"></x-connector>
+<p style="position:absolute; left:1560px; top:541px; width:232px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px" data-build-in="fade 3">PROPORTION</p>
+<x-connector x1="1540" y1="560" x2="1177" y2="560" head="none" style="color:#46454A; border-width:1px" data-build-in="fade 3"></x-connector>
+<p style="position:absolute; left:1560px; top:741px; width:232px; font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px" data-build-in="fade 3">CONTEXT</p>
+<x-connector x1="1540" y1="760" x2="1393" y2="760" head="none" style="color:#46454A; border-width:1px" data-build-in="fade 3"></x-connector>
+<p style="position:absolute; left:128px; top:870px; width:1664px; text-align:center; font-size:28px; color:#8E8C88" data-build-in="rise 4">AI가 정하게 두지 말고, 하나씩 <span style="color:#EDEBE7">내가 결정</span>한다</p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">37</p>
+
+</section>
+<section id="s31" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Prompt Anatomy</h2>
+<p style="position:absolute; left:128px; top:128px; width:1200px; font-size:28px; color:#8E8C88" data-build-in="fade 1 auto">문장이 아니라, 구조로 생각한다</p>
+<div style="position:absolute; left:128px; top:340px; width:1664px; display:flex; flex-direction:row; justify-content:space-between" data-build-in="rise 2">
+<div style="width:300px; display:flex; flex-direction:column; gap:14px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:1px">WHAT</p><p style="font-size:24px; color:#8E8C88">무엇인가</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:14px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:1px">FORM</p><p style="font-size:24px; color:#8E8C88">어떤 형태인가</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:14px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:1px">MATERIAL</p><p style="font-size:24px; color:#8E8C88">무엇으로 만들어졌는가<br><span style="color:#5E5D5A">색상·마감 포함</span></p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:14px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:1px">CAMERA</p><p style="font-size:24px; color:#8E8C88">어떻게 볼 것인가</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:14px; padding:24px 0px 0px; border-top:1px solid #333336"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p><p style="font-family:'Instrument Sans', sans-serif; font-size:44px; font-weight:500; letter-spacing:1px">CONTEXT</p><p style="font-size:24px; color:#8E8C88">어디에 있는가<br><span style="color:#5E5D5A">배경·조명 포함</span></p></div>
+</div>
+<div style="position:absolute; left:128px; top:660px; width:1664px; display:flex; flex-direction:column; gap:20px" data-build-in="rise 3">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Prompt Structure</p>
+<p style="padding:36px 40px; font-family:'Instrument Sans', sans-serif; font-size:40px; font-weight:400; letter-spacing:2px; border:1px solid #3A3A3E">WHAT&#160;&#160;+&#160;&#160;FORM&#160;&#160;+&#160;&#160;MATERIAL&#160;&#160;+&#160;&#160;CAMERA&#160;&#160;+&#160;&#160;CONTEXT</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">38</p>
+
+</section>
+<section id="prompt-ex" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Prompt — Example</h2>
+<div style="position:absolute; left:128px; top:130px; width:1664px; display:flex; flex-direction:row; align-items:flex-end; gap:40px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:88px; line-height:1; color:#B9A488">Prompt</p>
+<div style="display:flex; flex-direction:column; gap:6px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:3px; text-transform:uppercase; color:#8E8C88">Structure → Sentence</p><p style="font-size:40px; font-weight:500; line-height:1.2; letter-spacing:-1px">같은 스케치, 다른 프롬프트</p></div>
+</div>
+<div style="position:absolute; left:128px; top:280px; width:520px; display:flex; flex-direction:column; gap:18px; padding:40px; border:1px solid #26262A; opacity:0.6" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; color:#8E8C88">BEFORE</p>
+<p style="font-size:32px; line-height:1.45; color:#8E8C88">"현대적인 의자, 미니멀, 고품질, 4K, 예쁘게"</p>
+<div style="height:8px"></div>
+<p style="font-size:24px; line-height:1.55; color:#5E5D5A">→ 품질 키워드만으로는 의도가 전달되지 않는다.<br>형태도 소재도 AI가 정한다.</p>
+</div>
+<div style="position:absolute; left:728px; top:280px; width:984px; display:flex; flex-direction:column; gap:12px; padding:40px; background:#141417; border:1px solid #B9A488" data-build-in="rise 3">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:500; letter-spacing:4px; color:#B9A488">AFTER · 스케치 이미지와 함께 입력</p>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#B9A488">[WHAT]</p><p style="flex:1; font-size:24px; line-height:1.45">작은 원룸을 위한 1인 휴식 의자</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#B9A488">[FORM]</p><p style="flex:1; font-size:24px; line-height:1.45">하나로 이어진 튜브 프레임, 낮은 좌면, 슬링형 좌판</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#B9A488">[MATERIAL]</p><p style="flex:1; font-size:24px; line-height:1.45">은색 브러시드 알루미늄 프레임, 중간 회색 패브릭 좌판, 은색 금속 등판 (시각화 목표)</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#B9A488">[CAMERA]</p><p style="flex:1; font-size:24px; line-height:1.45">전면 3/4 시점, 눈높이(eye-level), 50mm</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#B9A488">[CONTEXT]</p><p style="flex:1; font-size:24px; line-height:1.45">스튜디오, 부드러운 자연광, 단색 다크 배경</p></div>
+<div style="height:1px; background:#3A3730"></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#EDEBE7">[유지 조건]</p><p style="flex:1; font-size:24px; line-height:1.45">스케치의 실루엣·비율·구조를 유지해 줘<br><span style="color:#8E8C88">keep the silhouette, proportion and structure of the sketch</span></p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:20px"><p style="width:190px; font-family:'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:500; color:#EDEBE7">[이번 변경]</p><p style="flex:1; font-size:24px; line-height:1.45">등판 높이만 조금 낮춘다. 그 외는 바꾸지 않는다.</p></div>
+</div>
+<p style="position:absolute; left:128px; top:880px; width:1664px; font-size:26px; line-height:1.45" data-build-in="rise 4">유지 조건은 지시일 뿐 보장이 아니다. <span style="color:#B9A488">결과는 매번 원본 스케치와 대조한다.</span></p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">39</p>
+
+</section>
+<section id="s32" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:280px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:8px" data-build-in="scale 1 auto">
+<p style="text-align:center; font-size:36px; color:#8E8C88">AI 결과가 나오면 끝?</p>
+<p style="text-align:center; font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:220px; line-height:1.05">No.</p>
+</div>
+<div style="position:absolute; left:128px; top:630px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:28px" data-build-in="rise 2">
+<p style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; letter-spacing:-1px">Generate ≠ Design</p>
+<p style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:36px; letter-spacing:1px; color:#5E5D5A">Generate&#160;&#160;→&#160;&#160;<span style="color:#EDEBE7">Judge</span>&#160;&#160;→&#160;&#160;Modify</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">40</p>
+
+</section>
+<section id="s33" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Design Loop</h2>
+<p style="position:absolute; left:128px; top:128px; width:1200px; font-size:28px; color:#8E8C88" data-build-in="fade 1 auto">생성하고, 판단하고, 고친다</p>
+<div style="position:absolute; left:128px; top:320px; width:300px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 2"><img src="../assets/img/sketch.jpg" alt="Step 1: rough sketch" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">01&#160;&#160;SKETCH</p><p style="font-size:24px; color:#8E8C88">Rough Sketch</p></div>
+<div style="position:absolute; left:469px; top:320px; width:300px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 3"><img src="../assets/img/firstgen.jpg" alt="Step 2: first AI render, bulky and unrefined" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">02&#160;&#160;AI</p><p style="font-size:24px; color:#8E8C88">First Render</p></div>
+<div style="position:absolute; left:810px; top:320px; width:300px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 4"><img src="../assets/img/firstgen.jpg" alt="Step 3: first render with problem areas circled" style="width:300px; height:225px; object-fit:cover; filter:brightness(0.6)"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px; color:#C9B08E">03&#160;&#160;REVIEW</p><p style="font-size:24px; color:#8E8C88">문제 영역 표시</p></div>
+<x-shape kind="ellipse" style="position:absolute; left:850px; top:375px; width:80px; height:60px; background:transparent; border:2px solid #C9B08E" data-build-in="pop 4"></x-shape>
+<x-shape kind="ellipse" style="position:absolute; left:915px; top:328px; width:120px; height:56px; background:transparent; border:2px solid #C9B08E" data-build-in="pop 4"></x-shape>
+<x-shape kind="ellipse" style="position:absolute; left:905px; top:420px; width:110px; height:56px; background:transparent; border:2px solid #C9B08E" data-build-in="pop 4"></x-shape>
+<div style="position:absolute; left:1151px; top:320px; width:300px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 5"><img src="../assets/img/modsketch.jpg" alt="Step 4: modified sketch with red correction notes" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">04&#160;&#160;MODIFY</p><p style="font-size:24px; color:#8E8C88">Modified Sketch</p></div>
+<div style="position:absolute; left:1492px; top:320px; width:300px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 6"><img src="../assets/img/hero.jpg" alt="Step 5: refined AI render" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:2px">05&#160;&#160;AI</p><p style="font-size:24px; color:#8E8C88">Refined Render</p></div>
+<x-connector x1="1642" y1="680" x2="960" y2="730" route="vh" head="none" style="color:#C9B08E; border-width:1px" data-build-in="fade 7"></x-connector>
+<x-connector x1="960" y1="730" x2="960" y2="676" head="end" style="color:#C9B08E; border-width:1px" data-build-in="fade 7"></x-connector>
+<p style="position:absolute; left:1100px; top:746px; width:400px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:3px; color:#C9B08E" data-build-in="fade 7">LOOP — REVIEW AGAIN</p>
+<p style="position:absolute; left:128px; top:830px; width:1300px; font-size:32px; line-height:1.5" data-build-in="fade 7">제품의 정체성은 유지하고, <span style="color:#8E8C88">판단을 통해 다듬어 간다.</span></p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">41</p>
+
+</section>
+<section id="s34" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">What Do We Judge?</h2>
+<div style="position:absolute; left:128px; top:250px; width:800px; display:flex; flex-direction:column; gap:36px" data-build-in="rise 1">
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="font-size:40px; font-weight:400">의도한 형태인가?</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-size:40px; font-weight:400">기능이 보이는가?</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="font-size:40px; font-weight:400">사용 가능해 보이는 구조인가?</p></div>
+</div>
+<div style="position:absolute; left:992px; top:250px; width:800px; display:flex; flex-direction:column; gap:36px" data-build-in="rise 2">
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="font-size:40px; font-weight:400">사용 맥락에 적합한가?</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">05</p><p style="font-size:40px; font-weight:400; color:#8E8C88">무엇을 <span style="color:#EDEBE7">유지</span>할 것인가?</p></div>
+<div style="display:flex; flex-direction:row; align-items:baseline; gap:28px"><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">06</p><p style="font-size:40px; font-weight:400; color:#8E8C88">무엇을 <span style="color:#EDEBE7">바꿀</span> 것인가?</p></div>
+</div>
+<div style="position:absolute; left:128px; top:620px; width:1664px; display:flex; flex-direction:column; gap:16px; padding:56px 0px 0px; border-top:1px solid #262629" data-build-in="rise 3">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:64px; font-weight:500; line-height:1.2; letter-spacing:-1.5px; color:#8E8C88">Don't ask AI. <span style="color:#EDEBE7">Decide.</span></p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">42</p>
+
+</section>
+<section id="p04" data-transition="fade" style="background:#141417; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 1 auto">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Practice 04</p>
+<h2 style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:80px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">Generate · Judge · Modify</h2>
+<p style="text-align:center; font-size:28px; color:#8E8C88">첫 생성 1회 + 수정 생성 2회 = <span style="color:#EDEBE7">총 3회 생성</span></p>
+</div>
+<div style="position:absolute; left:128px; top:440px; width:1664px; display:flex; flex-direction:row; justify-content:center; gap:82px" data-build-in="rise 2">
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 스케치 1개 선택, 유지 조건 적기<br>2. 첫 생성 1회<br>3. 판단 · 문제 영역 표시<br>4. 수정 생성 2회</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">제출물</p><p style="font-size:24px; line-height:1.6">첫 렌더 + 문제 영역 표시<br>최종 렌더 1장<br>유지한 것 / 바꾼 것 각 한 줄</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">원본 스케치와 결과를 대조함<br>유지한 것과 바꾼 것을 설명할 수 있음</p></div>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">43</p>
+
+</section>
+<section id="s35" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Before → After</h2>
+<div style="position:absolute; left:128px; top:230px; width:640px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 1 auto"><img src="../assets/img/firstgen.jpg" alt="First generation: bulky frame, oversized seat and backrest" style="width:640px; height:480px; object-fit:cover"><div style="height:14px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500; letter-spacing:2px; color:#8E8C88">FIRST GENERATION</p></div>
+<div style="position:absolute; left:768px; top:380px; width:384px; display:flex; flex-direction:column; align-items:center; gap:24px" data-build-in="rise 2">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px">PROPORTION</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px">STRUCTURE</p>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; letter-spacing:3px">CMF</p>
+</div>
+<x-connector x1="880" y1="650" x2="1040" y2="650" head="end" style="color:#5E5D5A; border-width:1px" data-build-in="fade 2"></x-connector>
+<div style="position:absolute; left:1152px; top:230px; width:640px; display:flex; flex-direction:column; gap:10px" data-build-in="rise 3"><img src="../assets/img/hero.jpg" alt="Refined concept render with slimmer-looking frame and balanced proportions" style="width:640px; height:480px; object-fit:cover"><div style="height:14px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488">05</p><p style="font-family:'Instrument Sans', sans-serif; font-size:36px; font-weight:500; letter-spacing:2px">REFINED CONCEPT</p></div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">44</p>
+
+</section>
+<section id="s36" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">What You Made Today</h2>
+<div style="position:absolute; left:128px; top:250px; width:1664px; display:flex; flex-direction:row; justify-content:space-between" data-build-in="rise 1">
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/brief.jpg" alt="Design brief" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">01</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Design Brief</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/mood.jpg" alt="Visual direction moodboard" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">02</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Visual Direction</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/sketchbook.jpg" alt="Rough sketches" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">03</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Rough Sketch</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/explore.jpg" alt="Grid of AI exploration variations" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">04</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">AI Exploration</p></div>
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/hero.jpg" alt="Selected concept render" style="width:300px; height:225px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:24px; color:#B9A488">05</p><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Selected Concept</p></div>
+</div>
+<div style="position:absolute; left:128px; top:660px; width:1664px; display:flex; flex-direction:column; align-items:center; padding:72px 0px 0px; border-top:1px solid #333336" data-build-in="rise 2">
+<p style="text-align:center; font-family:'Instrument Serif', Georgia, serif; font-style:italic; font-size:96px; line-height:1.1">Your First Concept</p>
+</div>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">45</p>
+
+</section>
+<section id="s37" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">From Idea to Concept</h2>
+<div style="position:absolute; left:128px; top:250px; width:560px; display:flex; flex-direction:row; gap:40px" data-build-in="rise 1">
+<div style="width:240px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/brief.jpg" alt="Problem definition memo" style="width:240px; height:440px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Problem</p><p style="font-size:24px; color:#8E8C88">문제 정의 메모</p></div>
+<div style="width:280px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/mood.jpg" alt="Moodboard" style="width:280px; height:440px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Reference</p><p style="font-size:24px; color:#8E8C88">Moodboard</p></div>
+</div>
+<div style="position:absolute; left:728px; top:250px; width:660px; display:flex; flex-direction:row; gap:40px" data-build-in="rise 2">
+<div style="width:300px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/sketch.jpg" alt="Hand-drawn rough sketch" style="width:300px; height:440px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">Sketch</p><p style="font-size:24px; color:#8E8C88">Rough Sketch</p></div>
+<div style="width:320px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/explore.jpg" alt="Several AI product renders" style="width:320px; height:440px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500">AI Exploration</p><p style="font-size:24px; color:#8E8C88">여러 개의 렌더링</p></div>
+</div>
+<div style="position:absolute; left:1428px; top:250px; width:364px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 3"><img src="../assets/img/hero.jpg" alt="Selected final concept render" style="width:364px; height:440px; object-fit:cover"><div style="height:12px"></div><p style="font-family:'Instrument Sans', sans-serif; font-size:28px; font-weight:500; color:#B9A488">Selected Concept</p><p style="font-size:24px; color:#8E8C88">최종 Concept Render</p></div>
+<p style="position:absolute; left:128px; top:860px; width:1664px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:28px; letter-spacing:2px; color:#5E5D5A" data-build-in="rise 4">Problem&#160;&#160;→&#160;&#160;Think&#160;&#160;→&#160;&#160;Sketch&#160;&#160;→&#160;&#160;Generate&#160;&#160;→&#160;&#160;<span style="color:#EDEBE7">Judge</span>&#160;&#160;→&#160;&#160;Modify</p>
+<p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">46</p>
+
+</section>
+<section id="s38" data-transition="fade" style="background:#111113; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
+<img src="../assets/img/hero.jpg" alt="The selected concept chair from this session" style="position:absolute; left:510px; top:120px; width:900px; height:506px; object-fit:cover" data-build-in="fade 1 auto">
+<div style="position:absolute; left:128px; top:670px; width:1664px; display:flex; flex-direction:row; justify-content:space-between" data-build-in="rise 2">
+<p style="width:300px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:32px; font-weight:500; letter-spacing:3px; color:#8E8C88">FORM</p>
+<p style="width:300px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:32px; font-weight:500; letter-spacing:3px; color:#8E8C88">CMF</p>
+<p style="width:300px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:32px; font-weight:500; letter-spacing:3px; color:#8E8C88">MULTI-VIEW</p>
+<p style="width:300px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:32px; font-weight:500; letter-spacing:3px; color:#8E8C88">DETAIL</p>
+<p style="width:300px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:32px; font-weight:500; letter-spacing:3px; color:#8E8C88">IN-USE</p>
+</div>
+<p style="position:absolute; left:128px; top:790px; width:1664px; text-align:center; font-family:'Instrument Sans', sans-serif; font-size:72px; font-weight:500; line-height:1.1; letter-spacing:-2px" data-build-in="rise 3">From Concept <span style="color:#5E5D5A">to Design</span></p>
+
+</section>
+</div>
+<div id="bar"><a href="../">← 홈</a><span id="cnt"></span><span><button onclick="go(i-1)">‹</button> <button onclick="go(i+1)">›</button> <button onclick="document.documentElement.requestFullscreen()">전체화면</button></span></div>
+<script>(
+() => {
+  // x-shape
+  document.querySelectorAll('x-shape').forEach(el => {
+    const k = el.getAttribute('kind');
+    if (k === 'ellipse') el.style.borderRadius = '50%';
+    if (k === 'rounded') el.style.borderRadius = '24px';
+    if (k === 'line') { const b = el.style.borderTop || el.style.border; el.style.border='none'; el.style.borderTop = b; el.style.height='0px'; }
+  });
+  // x-connector
+  const NS = 'http://www.w3.org/2000/svg';
+  document.querySelectorAll('x-connector').forEach(el => {
+    const g = n => parseFloat(el.getAttribute(n));
+    let [x1,y1,x2,y2] = [g('x1'),g('y1'),g('x2'),g('y2')];
+    const cs = getComputedStyle(el);
+    const color = el.style.color || cs.color;
+    const w = parseFloat(el.style.borderWidth) || 2;
+    const dash = (el.style.borderStyle||'').includes('dashed') ? `${w*6} ${w*4}` : ((el.style.borderStyle||'').includes('dotted') ? `${w} ${w*2}` : null);
+    const head = el.getAttribute('head') || 'end';
+    const route = el.getAttribute('route') || 'straight';
+    let pts;
+    if (route === 'vh') pts = [[x1,y1],[x1,y2],[x2,y2]];
+    else if (route === 'hv') pts = [[x1,y1],[x2,y1],[x2,y2]];
+    else if (route === 'elbow') { const mx=(x1+x2)/2; pts=[[x1,y1],[mx,y1],[mx,y2],[x2,y2]]; }
+    else pts = [[x1,y1],[x2,y2]];
+    const svg = document.createElementNS(NS,'svg'); svg.setAttribute('class','xc');
+    const pl = document.createElementNS(NS,'polyline');
+    pl.setAttribute('points', pts.map(p=>p.join(',')).join(' '));
+    pl.setAttribute('fill','none'); pl.setAttribute('stroke',color); pl.setAttribute('stroke-width',w);
+    if (dash) pl.setAttribute('stroke-dasharray',dash);
+    svg.appendChild(pl);
+    const arrow = (a,b) => { // head at b, coming from a
+      const ang = Math.atan2(b[1]-a[1], b[0]-a[0]); const L = 10 + w*3, W = 5 + w*1.5;
+      const p = [[b[0],b[1]],[b[0]-L*Math.cos(ang)+W*Math.sin(ang), b[1]-L*Math.sin(ang)-W*Math.cos(ang)],
+                 [b[0]-L*Math.cos(ang)-W*Math.sin(ang), b[1]-L*Math.sin(ang)+W*Math.cos(ang)]];
+      const pg = document.createElementNS(NS,'polygon'); pg.setAttribute('points', p.map(q=>q.join(',')).join(' '));
+      pg.setAttribute('fill', color); svg.appendChild(pg);
+    };
+    if (head==='end'||head==='both') arrow(pts[pts.length-2], pts[pts.length-1]);
+    if (head==='both') arrow(pts[1], pts[0]);
+    el.replaceWith(svg);
+  });
+}
+)();
+const S=[...document.querySelectorAll('#stage>section')];let i=0;
+function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform=`translate(-50%,-50%) scale(${k})`}
+function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,j)=>s.classList.toggle('on',j===i));document.getElementById('cnt').textContent=(i+1)+' / '+S.length;history.replaceState(null,'','#'+(i+1))}
+addEventListener('resize',fit);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0);if(e.key==='End')go(S.length-1);if(e.key==='f')document.documentElement.requestFullscreen?.()});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX);addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null});
+document.getElementById('stage').addEventListener('click',e=>go(i+(e.clientX>innerWidth/2?1:-1)));
+addEventListener('hashchange',()=>go((parseInt(location.hash.slice(1))||1)-1));fit();go((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>
