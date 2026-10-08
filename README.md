@@ -4,7 +4,7 @@
 
 | 자료 | 경로 | 설명 |
 |---|---|---|
-| 수업 슬라이드 | [`slides/`](slides/) | 47장 웹 슬라이드 (← → 키 · 스와이프 · `F` 전체화면) |
+| 수업 슬라이드 | [`slides/`](slides/) | 47장 웹 슬라이드 · 애니메이션 포함 (→·클릭으로 진행, ← 이전 장, `F` 전체화면) |
 | 교안 | [`handbook/`](handbook/) · [`handbook.md`](handbook/handbook.md) | 슬라이드별 설명, 실습 안내, 제출 체크리스트 |
 | PDF | [`assets/AI_x_ID_W01.pdf`](assets/AI_x_ID_W01.pdf) | 슬라이드 PDF (16:9, 47쪽) |
 

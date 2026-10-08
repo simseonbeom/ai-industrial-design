@@ -23,6 +23,17 @@ html,body{margin:0;height:100%;overflow:hidden;background:#000}
 #stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
 #stage>section{position:absolute;left:0;top:0;display:none !important;page-break-after:auto}
 #stage>section.on{display:flex !important}
+[data-build-out]{visibility:visible !important}
+#stage [data-build-in],#stage [data-build-out]{transition:opacity .6s cubic-bezier(.2,.7,.2,1),translate .6s cubic-bezier(.2,.7,.2,1),scale .6s cubic-bezier(.2,.7,.2,1)}
+#stage .noanim,#stage .noanim *{transition:none !important}
+#stage .bh{opacity:0 !important}
+#stage .bh[data-fx=rise]{translate:0 40px}
+#stage .bh[data-fx=drop]{translate:0 -40px}
+#stage .bh[data-fx=left]{translate:-60px 0}
+#stage .bh[data-fx=right]{translate:60px 0}
+#stage .bh[data-fx=scale]{scale:.94}
+#stage .bh[data-fx=pop]{scale:.7}
+#stage .bo{opacity:0 !important}
 #bar{position:fixed;left:0;right:0;bottom:0;display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:10px 16px;font:13px 'Instrument Sans',sans-serif;color:#8E8C88;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transition:opacity .2s}
 body:hover #bar{opacity:1}
 #bar a,#bar button{color:#EDEBE7;background:none;border:1px solid #333336;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer;text-decoration:none}
@@ -304,50 +315,57 @@ body:hover #bar{opacity:1}
 
 </section>
 <section id="tracks" data-transition="fade" style="background:#0D0D0F; color:#EDEBE7; font-family:'IBM Plex Sans KR', Arial, sans-serif; padding:128px; display:flex; flex-direction:column">
-<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Three Tracks</h2>
-<p style="position:absolute; left:128px; top:130px; width:1664px; font-size:48px; font-weight:500; line-height:1.3; letter-spacing:-1px" data-build-in="rise 1 auto">같은 다섯 질문, 세 가지 대상</p>
-<div style="position:absolute; left:128px; top:240px; width:1664px; display:flex; flex-direction:row; gap:40px" data-build-in="rise 2">
-<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
-<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">제품</p>
-<p style="font-size:32px; font-weight:500; line-height:1.3">소형 주거용 휴식 의자</p>
-<div style="height:6px"></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">원룸의 1인 거주자</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">휴식 가구가 이동을 막음</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">침대·책상과 공간 공유</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">작은 면적으로 휴식 자세 지지</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">방을 좁히지 않는 휴식</p></div>
-<div style="height:6px"></div>
-<p style="font-size:24px; line-height:1.45; color:#B9A488">형태·작동·배치안<br><span style="color:#8E8C88">제품 스케치 · 사용 자세</span></p>
+<h2 style="position:absolute; left:128px; top:64px; width:1200px; font-family:'Instrument Sans', sans-serif; font-size:24px; font-weight:400; line-height:1.4; letter-spacing:1px; color:#5E5D5A">Same User, Different Problem</h2>
+<div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; gap:12px" data-build-in="rise 1 auto">
+<p style="font-size:48px; font-weight:500; line-height:1.3; letter-spacing:-1px">같은 사람, 다른 문제, <span style="color:#B9A488">다른 제품</span></p>
+<p style="font-size:28px; line-height:1.4; color:#8E8C88">문제가 바뀌면, 만들 것이 바뀐다</p>
 </div>
-<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
-<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">공간·경험</p>
-<p style="font-size:32px; font-weight:500; line-height:1.3">원룸의 휴식 코너</p>
-<div style="height:6px"></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">원룸의 1인 거주자</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">일·휴식 구역이 섞여 쉬는 느낌이 없음</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">책상 옆 창가 모서리</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">작업 영역과 휴식 영역을 구분</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">앉는 순간 일에서 벗어남</p></div>
-<div style="height:6px"></div>
-<p style="font-size:24px; line-height:1.45; color:#B9A488">배치·조명·경계안<br><span style="color:#8E8C88">평면도 · 스토리보드</span></p>
+<div style="position:absolute; left:128px; top:319px; width:1664px; display:flex; flex-direction:row; padding:28px 0px; border-top:1px solid #262629; border-bottom:1px solid #262629" data-build-in="rise 2">
+<div style="flex:1; display:flex; flex-direction:row; align-items:baseline; gap:16px"><p style="width:140px; white-space:nowrap; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">USER</p><p style="flex:1; font-size:26px; line-height:1.5">작은 원룸에서 작업 후 쉬고 싶은 1인 거주자</p></div>
+<div style="flex:1; display:flex; flex-direction:row; align-items:baseline; gap:16px"><p style="width:140px; white-space:nowrap; font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:26px; line-height:1.5">침대 · 책상 · 휴식 가구가 한 공간을 나누어 쓴다</p></div>
 </div>
-<div style="width:528px; display:flex; flex-direction:column; gap:10px; padding:36px; background:#141417; border:1px solid #26262A">
-<p style="font-size:24px; letter-spacing:2px; color:#8E8C88">모빌리티</p>
-<p style="font-size:32px; font-weight:500; line-height:1.3">원룸까지 짐 옮기기</p>
+<div style="position:absolute; left:128px; top:462px; width:1664px; display:flex; flex-direction:row; gap:28px" data-build-in="rise 3">
+<div style="flex:1; display:flex; flex-direction:column; padding:40px 32px 44px; background:#141417; border:1px solid #B9A488">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; line-height:1.4; color:#B9A488">PROBLEM 01</p>
+<div style="height:16px"></div>
+<p style="font-size:30px; font-weight:500; line-height:1.4">휴식 가구가 침대와 책상<br>사이의 이동을 방해한다</p>
+<div style="height:24px"></div>
+<div style="height:0px; border-top:1px solid #262629"></div>
+<div style="height:24px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:22px; letter-spacing:2px; line-height:1.4; color:#5E5D5A">→ 만들 것</p>
 <div style="height:6px"></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">USER</p><p style="flex:1; font-size:24px; line-height:1.4">엘리베이터 없는 원룸 거주자</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">PROBLEM</p><p style="flex:1; font-size:24px; line-height:1.4">장본 짐을 계단으로 옮기기 힘듦</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">CONTEXT</p><p style="flex:1; font-size:24px; line-height:1.4">정류장 → 현관 → 계단 구간</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">FUNCTION</p><p style="flex:1; font-size:24px; line-height:1.4">짐을 싣고 계단을 오를 수 있음</p></div>
-<div style="display:flex; flex-direction:row; gap:12px; padding:10px 0px 0px; border-top:1px solid #2E2E33"><p style="width:150px; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">EXPERIENCE</p><p style="flex:1; font-size:24px; line-height:1.4">귀가가 부담이 아닌 마무리</p></div>
+<p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:34px; font-weight:500; line-height:1.25; color:#B9A488">휴식 의자</p>
+<div style="height:8px"></div>
+<p style="font-size:22px; line-height:1.5; color:#8E8C88">이 교안이 따라가는 예시</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; padding:40px 32px 44px; border:1px solid #262629">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; line-height:1.4; color:#5E5D5A">PROBLEM 02</p>
+<div style="height:16px"></div>
+<p style="font-size:30px; font-weight:500; line-height:1.4">일하던 자리에서 쉬면<br>일과 휴식이 구분되지 않는다</p>
+<div style="height:24px"></div>
+<div style="height:0px; border-top:1px solid #262629"></div>
+<div style="height:24px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:22px; letter-spacing:2px; line-height:1.4; color:#5E5D5A">→ 만들 것</p>
 <div style="height:6px"></div>
-<p style="font-size:24px; line-height:1.45; color:#B9A488">이동·운반·보관안<br><span style="color:#8E8C88">제품과 사용자의 관계</span></p>
+<p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:34px; font-weight:500; line-height:1.25">조명 · 파티션</p>
+<div style="height:8px"></div>
+<p style="font-size:22px; line-height:1.5; color:#8E8C88">같은 사람에게서 나온 다른 답</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; padding:40px 32px 44px; border:1px solid #262629">
+<p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:2px; line-height:1.4; color:#5E5D5A">PROBLEM 03</p>
+<div style="height:16px"></div>
+<p style="font-size:30px; font-weight:500; line-height:1.4">쉴 자리가 늘<br>옷과 물건에 덮여 있다</p>
+<div style="height:24px"></div>
+<div style="height:0px; border-top:1px solid #262629"></div>
+<div style="height:24px"></div>
+<p style="font-family:'Instrument Sans', sans-serif; font-size:22px; letter-spacing:2px; line-height:1.4; color:#5E5D5A">→ 만들 것</p>
+<div style="height:6px"></div>
+<p style="font-family:'Instrument Sans', 'IBM Plex Sans KR', sans-serif; font-size:34px; font-weight:500; line-height:1.25">수납이 결합된 좌석</p>
+<div style="height:8px"></div>
+<p style="font-size:22px; line-height:1.5; color:#8E8C88">같은 사람에게서 나온 다른 답</p>
 </div>
 </div>
-<div style="position:absolute; left:128px; top:820px; width:1664px; display:flex; flex-direction:column; gap:8px" data-build-in="rise 3">
-<p style="font-size:26px; line-height:1.45">세 트랙 모두 같은 사람, 같은 원룸에서 출발한다 — 대상이 제품이든 공간이든 이동이든, 다섯 질문은 같다.</p>
-<p style="font-size:24px; color:#5E5D5A">공간/경험은 "물건"이 아니라 "상황"을, 모빌리티는 "이동 중의 행동"을 정의한다.</p>
-</div>
+<p style="position:absolute; left:128px; top:902px; width:1664px; font-size:26px; line-height:1.45" data-build-in="rise 4">제품 이름이 아니라 문제에서 출발한다.<span style="color:#8E8C88"> 사용자와 상황이 같아도, 어떤 불편을 고르느냐에 따라 만들 것이 달라진다.</span></p>
 <p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">16</p>
 
 </section>
@@ -355,12 +373,12 @@ body:hover #bar{opacity:1}
 <div style="position:absolute; left:128px; top:150px; width:1664px; display:flex; flex-direction:column; align-items:center; gap:16px" data-build-in="rise 1 auto">
 <p style="font-family:'Instrument Sans', sans-serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#B9A488">Practice 01</p>
 <h2 style="text-align:center; font-family:'Instrument Sans', sans-serif; font-size:80px; font-weight:500; line-height:1.1; letter-spacing:-2.5px">Your Design Brief</h2>
-<p style="text-align:center; font-size:28px; color:#8E8C88">제품 · 공간/경험 · 모빌리티 중 하나를 선택하세요.</p>
+<p style="text-align:center; font-size:28px; color:#8E8C88">나의 사용자와 문제를 정하고, 다섯 질문에 답하세요.</p>
 </div>
 <div style="position:absolute; left:128px; top:440px; width:1664px; display:flex; flex-direction:row; justify-content:center; gap:82px" data-build-in="rise 2">
-<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 트랙 하나 선택<br>2. 다섯 항목 작성<br>3. Design Goal 한 문장</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">작성 절차</p><p style="font-size:24px; line-height:1.6">1. 사용자와 문제 정하기<br>2. 다섯 항목 작성<br>3. Design Goal 한 문장</p></div>
 <div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">제출물</p><p style="font-size:24px; line-height:1.6">브리프 1장</p></div>
-<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">다섯 항목이 모두 채워짐<br>문제가 한 문장으로 정리됨</p></div>
+<div style="width:500px; display:flex; flex-direction:column; gap:12px; padding:24px 0px 0px; border-top:1px solid #46454A"><p style="font-size:24px; font-weight:500; letter-spacing:2px; color:#B9A488">완료 기준</p><p style="font-size:24px; line-height:1.6">다섯 항목이 모두 채워짐<br>문제와 만들 것이 한 문장으로 정리됨</p></div>
 </div>
 <p style="position:absolute; right:128px; bottom:64px; width:160px; text-align:right; font-family:'Instrument Sans', sans-serif; font-size:24px; color:#5E5D5A">17</p>
 
@@ -906,7 +924,7 @@ body:hover #bar{opacity:1}
 
 </section>
 </div>
-<div id="bar"><a href="../">← 홈</a><span id="cnt"></span><span><button onclick="go(i-1)">‹</button> <button onclick="go(i+1)">›</button> <button onclick="document.documentElement.requestFullscreen()">전체화면</button></span></div>
+<div id="bar"><a href="../">← 홈</a><span id="cnt"></span><span><button onclick="prev()">‹</button> <button onclick="next()">›</button> <button onclick="document.documentElement.requestFullscreen()">전체화면</button></span></div>
 <script>(
 () => {
   // x-shape
@@ -947,16 +965,32 @@ body:hover #bar{opacity:1}
     };
     if (head==='end'||head==='both') arrow(pts[pts.length-2], pts[pts.length-1]);
     if (head==='both') arrow(pts[1], pts[0]);
-    el.replaceWith(svg);
+    ['data-build-in','data-build-out'].forEach(a=>{if(el.hasAttribute(a))svg.setAttribute(a,el.getAttribute(a))});el.replaceWith(svg);
   });
 }
 )();
-const S=[...document.querySelectorAll('#stage>section')];let i=0;
+const S=[...document.querySelectorAll('#stage>section')];let i=0,step=0,steps=[],timer=null;
+function parse(v){const t=(v||'').trim().split(/\s+/);return{fx:t[0]||'fade',ord:parseInt(t[1])||1,auto:t.includes('auto')}}
+function buildSteps(sec){const m=new Map();
+  sec.querySelectorAll('[data-build-in],[data-build-out]').forEach(el=>{
+    if(el.dataset.buildIn){const b=parse(el.dataset.buildIn);el.dataset.fx=b.fx;if(!m.has(b.ord))m.set(b.ord,{ins:[],outs:[],auto:true});const g=m.get(b.ord);g.ins.push(el);if(!b.auto)g.auto=false}
+    if(el.dataset.buildOut){const b=parse(el.dataset.buildOut);if(!m.has(b.ord))m.set(b.ord,{ins:[],outs:[],auto:true});const g=m.get(b.ord);g.outs.push(el);if(!b.auto)g.auto=false}});
+  return [...m.keys()].sort((a,b)=>a-b).map(k=>m.get(k))}
+function setState(sec,shown){sec.querySelectorAll('[data-build-in]').forEach(el=>el.classList.toggle('bh',!shown));sec.querySelectorAll('[data-build-out]').forEach(el=>el.classList.toggle('bo',shown))}
+function play(k){const g=steps[k];g.ins.forEach(el=>el.classList.remove('bh'));g.outs.forEach(el=>el.classList.add('bo'))}
+function runAuto(){clearTimeout(timer);if(step<steps.length&&steps[step].auto){timer=setTimeout(()=>{play(step);step++;runAuto()},step===0?250:550)}}
 function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform=`translate(-50%,-50%) scale(${k})`}
-function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,j)=>s.classList.toggle('on',j===i));document.getElementById('cnt').textContent=(i+1)+' / '+S.length;history.replaceState(null,'','#'+(i+1))}
+function show(n,built){clearTimeout(timer);i=Math.max(0,Math.min(S.length-1,n));const sec=S[i];
+  S.forEach((s,j)=>s.classList.toggle('on',j===i));steps=buildSteps(sec);
+  sec.classList.add('noanim');setState(sec,!!built);void sec.offsetWidth;sec.classList.remove('noanim');
+  step=built?steps.length:0;document.getElementById('cnt').textContent=(i+1)+' / '+S.length;history.replaceState(null,'','#'+(i+1));if(!built)runAuto()}
+function next(){if(step<steps.length){clearTimeout(timer);play(step);step++;runAuto()}else if(i<S.length-1)show(i+1)}
+function prev(){if(i>0)show(i-1,true)}
+function go(n){show(n,n<i)}
 addEventListener('resize',fit);
-addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0);if(e.key==='End')go(S.length-1);if(e.key==='f')document.documentElement.requestFullscreen?.()});
-let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX);addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null});
-document.getElementById('stage').addEventListener('click',e=>go(i+(e.clientX>innerWidth/2?1:-1)));
-addEventListener('hashchange',()=>go((parseInt(location.hash.slice(1))||1)-1));fit();go((parseInt(location.hash.slice(1))||1)-1);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();next()}if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();prev()}if(e.key==='Home')show(0);if(e.key==='End')show(S.length-1,true);if(e.key==='f')document.documentElement.requestFullscreen?.()});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX);addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)(d<0?next:prev)();x0=null});
+document.getElementById('stage').addEventListener('click',e=>(e.clientX>innerWidth/2?next:prev)());
+addEventListener('hashchange',()=>{const n=(parseInt(location.hash.slice(1))||1)-1;if(n!==i)show(n,true)});
+fit();show((parseInt(location.hash.slice(1))||1)-1);
 </script></body></html>
