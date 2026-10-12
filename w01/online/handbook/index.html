@@ -1,0 +1,1381 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W01 Online · Sketch to Concept · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 01 · Online</a><a class="swap" href="../../offline/handbook/">→ Offline 교안 보기</a><div><div class="toc">
+<ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#_3">학습 목표</a></li>
+<li><a href="#_4">이 수업에서 기억할 네 가지</a></li>
+<li><a href="#_5">공통 예제 — 휴대용 무선 테이블 램프</a></li>
+<li><a href="#_6">수업 흐름</a></li>
+<li><a href="#_7">준비물</a></li>
+<li><a href="#_8">이번 수업 제출물</a></li>
+</ul>
+</li>
+<li><a href="#part-01-ai-visualization">PART 01 · AI Visualization</a><ul>
+<li><a href="#01-sketch-to-concept">01 · Sketch to Concept</a></li>
+<li><a href="#02-your-sketch-your-concept">02 · Your Sketch. Your Concept.</a></li>
+<li><a href="#03-does-ai-understand-your-design">03 · Does AI understand your design?</a></li>
+<li><a href="#04-good-image-good-design">04 · GOOD IMAGE ≠ GOOD DESIGN</a></li>
+</ul>
+</li>
+<li><a href="#part-02-sketch-preparation-before-you-generate">PART 02 · Sketch Preparation — Before You Generate</a><ul>
+<li><a href="#05-before-you-generate">05 · BEFORE YOU GENERATE (섹션)</a></li>
+<li><a href="#06">06 · 오늘 필요한 준비물</a></li>
+<li><a href="#07-ai">07 · 어떤 스케치가 AI에 적합할까?</a></li>
+<li><a href="#08-what-must-remain">08 · What must remain? — 스케치에서 무엇을 읽어야 할까?</a></li>
+<li><a href="#09-design-intent-describe-the-intention-not-just-the-appearance">09 · DESIGN INTENT — Describe the intention, not just the appearance.</a></li>
+<li><a href="#10-practice-01-prepare-your-sketch">10 · Practice 01 · Prepare Your Sketch</a></li>
+</ul>
+</li>
+<li><a href="#part-03-sketch-to-render-from-lines-to-product">PART 03 · Sketch to Render — From Lines to Product</a><ul>
+<li><a href="#11-from-lines-to-product">11 · FROM LINES TO PRODUCT (섹션)</a></li>
+<li><a href="#12">12 · 스케치만 전달하면 어떻게 될까? (강사 시연)</a></li>
+<li><a href="#13-product-visualization-prompt">13 · PRODUCT VISUALIZATION PROMPT — 제품 이미지 생성에 필요한 정보</a></li>
+<li><a href="#14">14 · 제품을 설명하는 프롬프트</a></li>
+<li><a href="#15">15 · 이미지를 표현하는 프롬프트</a></li>
+<li><a href="#16-prompt-example-full-structure">16 · PROMPT EXAMPLE — FULL STRUCTURE (강사 시연용 프롬프트)</a></li>
+<li><a href="#17-generate-review">17 · GENERATE → REVIEW</a></li>
+<li><a href="#18-practice-02-first-render">18 · Practice 02 · First Render</a></li>
+</ul>
+</li>
+<li><a href="#part-04-reference-directing-reference-is-a-direction">PART 04 · Reference Directing — Reference Is a Direction</a><ul>
+<li><a href="#19-reference-is-a-direction">19 · REFERENCE IS A DIRECTION (섹션)</a></li>
+<li><a href="#20">20 · 하나의 레퍼런스에도 여러 정보가 있다</a></li>
+<li><a href="#21-reference-copy">21 · REFERENCE ≠ COPY (강사 시연)</a></li>
+<li><a href="#22">22 · 레퍼런스를 구체적인 지시로 바꾸기</a></li>
+<li><a href="#23-reference-priority-what-is-the-primary-reference">23 · REFERENCE PRIORITY — What is the primary reference?</a></li>
+<li><a href="#24-practice-03-apply-your-reference">24 · Practice 03 · Apply Your Reference</a></li>
+</ul>
+</li>
+<li><a href="#part-05-image-editing-direct-the-change">PART 05 · Image Editing — Direct the Change</a><ul>
+<li><a href="#25-direct-the-change">25 · DIRECT THE CHANGE (섹션)</a></li>
+<li><a href="#26-ai">26 · AI가 자주 잘못 만드는 부분 (퀴즈)</a></li>
+<li><a href="#27-regenerate-vs-local-edit">27 · REGENERATE vs LOCAL EDIT</a></li>
+<li><a href="#28-keep-change-avoid">28 · KEEP / CHANGE / AVOID</a></li>
+<li><a href="#29">29 · 좋은 수정 요청과 나쁜 수정 요청</a></li>
+<li><a href="#30-before-after-partial-edit">30 · BEFORE / AFTER — PARTIAL EDIT (강사 시연)</a></li>
+<li><a href="#31-practice-04-fix-your-design">31 · Practice 04 · Fix Your Design</a></li>
+</ul>
+</li>
+<li><a href="#part-06-concept-exploration-explore-possibilities">PART 06 · Concept Exploration — Explore Possibilities</a><ul>
+<li><a href="#32-explore-possibilities">32 · EXPLORE POSSIBILITIES (섹션)</a></li>
+<li><a href="#33-exploration-vs-refinement">33 · EXPLORATION vs REFINEMENT</a></li>
+<li><a href="#34-three-design-directions">34 · THREE DESIGN DIRECTIONS (강사 시연)</a></li>
+<li><a href="#35-practice-05-explore-three-concepts">35 · Practice 05 · Explore Three Concepts</a></li>
+</ul>
+</li>
+<li><a href="#part-07-review-selection-dont-choose-the-prettiest">PART 07 · Review &amp; Selection — Don't Choose the Prettiest</a><ul>
+<li><a href="#36-dont-choose-the-prettiest">36 · DON'T CHOOSE THE PRETTIEST. (섹션)</a></li>
+<li><a href="#37-concept-selection-criteria">37 · CONCEPT SELECTION CRITERIA</a></li>
+<li><a href="#38-concept-comparison-board">38 · CONCEPT COMPARISON BOARD</a></li>
+<li><a href="#39-concept-visualization-board">39 · CONCEPT VISUALIZATION BOARD — 최종 제출물</a></li>
+<li><a href="#40-week-02-develop">40 · WEEK 02 — DEVELOP (다음 주 예고)</a></li>
+</ul>
+</li>
+<li><a href="#_9">부록</a><ul>
+<li><a href="#a">A. 핵심 용어</a></li>
+<li><a href="#b">B. 프롬프트 모음 (복사용)</a></li>
+<li><a href="#c">C. 온라인 수업 제출 체크리스트</a></li>
+<li><a href="#d">D. 수업 후 스스로 점검하기</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></nav><main><h1 id="ai-industrial-design-1-sketch-to-concept">AI × Industrial Design · 1주차 온라인 — Sketch to Concept</h1>
+<blockquote>
+<p><strong>From Rough Sketch to AI Product Visualization</strong> · 경희대학교 산업디자인
+1주차 온라인 수업 슬라이드(1–40)의 내용을 정리한 교안입니다. 수업을 들으며 옆에 펼쳐 두고, 실습할 때 프롬프트와 체크리스트를 그대로 가져다 쓰세요.</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>오프라인 수업에서 여러분은 이미 세 가지를 만들었다. 제품의 목적·사용자·문제·사용 환경을 정리한 <strong>Design Brief</strong>, FORM · CMF · DETAIL · CONTEXT 관점으로 모은 <strong>Reference</strong>, 그리고 아이디어를 손으로 그린 <strong>러프 스케치 2~3개</strong>다.</p>
+<p>이번 온라인 수업은 새 제품을 처음부터 기획하는 시간이 <strong>아니다.</strong> 이미 정한 디자인 방향을 AI로 <strong>시각화</strong>하고, 결과를 <strong>비교</strong>하고, 잘못된 부분을 <strong>수정</strong>하는 실습이다. 오늘의 출발점은 언제나 여러분의 스케치이고, 오늘의 끝은 다음 주에 발전시킬 <strong>Selected Concept</strong> 하나다.</p>
+<h3 id="_3">학습 목표</h3>
+<p>수업을 마치면 다음을 할 수 있어야 한다.</p>
+<ol>
+<li>자신의 러프 스케치를 AI 이미지 생성에 적합한 입력 자료로 준비한다.</li>
+<li>제품의 형태, 기능, 소재, 시점 등 디자인 요구사항을 프롬프트로 설명한다.</li>
+<li>스케치 기반 AI 제품 렌더 이미지를 생성한다.</li>
+<li>레퍼런스 이미지의 특징을 구분하여 AI 생성 결과에 반영한다.</li>
+<li>AI가 잘못 해석한 부분을 찾아 선택적으로 수정한다.</li>
+<li>서로 다른 콘셉트 방향을 탐색하고 결과를 비교한다.</li>
+<li>다음 주차에 발전시킬 Selected Concept를 선정한다.</li>
+</ol>
+<h3 id="_4">이 수업에서 기억할 네 가지</h3>
+<blockquote>
+<ul>
+<li><strong>AI는 해석을 만들 뿐, 검증된 디자인을 만들지 않는다.</strong> 결과는 언제나 내 스케치와 대조한다.</li>
+<li><strong>멋진 이미지와 좋은 디자인은 다르다.</strong> 조명과 분위기가 아니라 형태 · 구조 · 기능으로 판단한다.</li>
+<li><strong>바꿀 것과 지킬 것을 함께 말한다.</strong> 수정 요청에는 KEEP · CHANGE · AVOID가 모두 들어가야 한다.</li>
+<li><strong>이번 주는 탐색, 다음 주는 구체화다.</strong> 오늘은 방향을 고르는 데까지 간다.</li>
+</ul>
+</blockquote>
+<h3 id="_5">공통 예제 — 휴대용 무선 테이블 램프</h3>
+<p>강사 시연과 슬라이드의 예시는 모두 하나의 제품으로 통일되어 있다. <strong>작은 원통형 베이스, 베이스에서 이어지는 하나의 곡선형 지지대, 얇은 디스크형 조명 헤드</strong>를 가진 휴대용 무선 테이블 램프다. 같은 제품이 스케치에서 렌더, 수정, 콘셉트 탐색까지 이어지므로, 각 단계에서 <strong>무엇이 바뀌고 무엇이 남았는지</strong> 따라가며 보자.</p>
+<blockquote>
+<p>💡 슬라이드의 예시 이미지는 이해를 돕기 위해 미리 만든 시연용 이미지다. 실제 수업 도구에서 나오는 결과는 이와 다를 수 있으며, 그 차이를 판단하는 것이 바로 오늘의 실습이다.</p>
+</blockquote>
+<h3 id="_6">수업 흐름</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PART</th>
+<th>단계</th>
+<th>슬라이드</th>
+<th>핵심 질문</th>
+<th>실습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>AI Visualization</td>
+<td>1–4</td>
+<td>AI는 내 스케치를 정말 이해하는가?</td>
+<td>—</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Sketch Preparation</td>
+<td>5–10</td>
+<td>AI에게 무엇을, 어떤 상태로 넘겨야 하는가?</td>
+<td>Practice 01 · Prepare Your Sketch</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Sketch to Render</td>
+<td>11–18</td>
+<td>스케치를 어떻게 제품 렌더로 바꾸는가?</td>
+<td>Practice 02 · First Render</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Reference Directing</td>
+<td>19–24</td>
+<td>레퍼런스에서 무엇을 가져오고 무엇을 지키는가?</td>
+<td>Practice 03 · Apply Your Reference</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Image Editing</td>
+<td>25–31</td>
+<td>잘못된 부분만 어떻게 고치는가?</td>
+<td>Practice 04 · Fix Your Design</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Concept Exploration</td>
+<td>32–35</td>
+<td>같은 아이디어를 어떤 방향들로 풀 수 있는가?</td>
+<td>Practice 05 · Explore Three Concepts</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Review &amp; Selection</td>
+<td>36–40</td>
+<td>어떤 방향을 다음 주에 발전시킬 것인가?</td>
+<td>최종 보드 제출</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_7">준비물</h3>
+<ul>
+<li>오프라인 수업에서 만든 <strong>Design Brief</strong>, <strong>Reference Board</strong>, <strong>러프 스케치 2~3개</strong></li>
+<li>스케치를 촬영하거나 스캔할 수 있는 휴대폰 또는 스캐너</li>
+<li>이미지 생성과 편집이 가능한 AI 도구 (수업에서 안내하는 도구)</li>
+<li>결과 이미지를 모아 둘 폴더와 비교 보드 (Figma, Miro, 슬라이드 등 무엇이든)</li>
+</ul>
+<h3 id="_8">이번 수업 제출물</h3>
+<ol>
+<li>정리된 스케치 이미지 + Design Intent (Practice 01)</li>
+<li>원본 스케치 + 첫 AI 렌더 + 잘된 점 2 · 잘못된 점 2 (Practice 02)</li>
+<li>레퍼런스 적용 전후 이미지 (Practice 03)</li>
+<li>문제 → 수정 지시 → 결과 기록 2세트 (Practice 04)</li>
+<li>Concept A / B / C (Practice 05)</li>
+<li><strong>Concept Visualization Board</strong> — 위 결과를 한 장에 모은 최종 보드 (39쪽 참고)</li>
+</ol>
+<hr />
+<h2 id="part-01-ai-visualization">PART 01 · AI Visualization</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — AI 시각화의 목표가 '멋진 이미지'가 아니라 '내 디자인 의도를 보이게 하는 것'임을 이해하고, AI가 스케치를 어떻게 잘못 해석할 수 있는지 미리 알아 둔다.</p>
+</blockquote>
+<h3 id="01-sketch-to-concept">01 · Sketch to Concept</h3>
+<ul>
+<li><strong>SKETCH</strong> → <strong>FIRST AI RENDER</strong> → <strong>REFINED CONCEPT</strong></li>
+</ul>
+<p>같은 램프가 같은 시점에서 세 단계로 바뀌는 모습이다. 손으로 그린 러프 스케치가 AI의 첫 렌더가 되고, 수정을 거쳐 완성도 높은 콘셉트 렌더가 된다. 세 이미지가 <strong>같은 제품</strong>으로 보인다는 점이 중요하다. 오늘 여러분이 만들 결과도 이 흐름을 따른다.</p>
+<blockquote>
+<p><strong>내가 그린 아이디어를 AI로 시각화하고, 디자인 의도에 맞게 수정한다.</strong></p>
+</blockquote>
+<h3 id="02-your-sketch-your-concept">02 · Your Sketch. Your Concept.</h3>
+<ul>
+<li>ROUGH SKETCH → PREPARE → GENERATE → DIRECT → EDIT → EXPLORE → SELECT → <strong>Selected Concept</strong></li>
+</ul>
+<p>오늘의 일곱 단계다. 각 단계의 결과물이 다음 단계의 입력이 된다. 준비한 스케치로 렌더를 만들고, 레퍼런스로 방향을 지시하고, 잘못된 곳을 고치고, 여러 방향을 탐색한 뒤 하나를 고른다.</p>
+<p>목표는 <strong>멋진 제품 이미지 한 장이 아니다.</strong> 원래 스케치의 의도를 유지하며 시각화하고, AI 결과를 평가하고, 필요한 수정을 <strong>직접 지시하는 능력</strong>이 오늘의 목표다.</p>
+<h3 id="03-does-ai-understand-your-design">03 · Does AI understand your design?</h3>
+<p>AI는 스케치를 입력받아 제품처럼 보이는 이미지를 만들 수 있지만, 스케치 속 모든 형태와 기능을 정확히 이해한다고 <strong>보장할 수 없다.</strong> AI는 다음을 스스로 추정하거나 임의로 채운다.</p>
+<ul>
+<li>스케치에 표현되지 않은 뒷면</li>
+<li>실제로 연결되지 않은 구조</li>
+<li>불분명한 소재와 마감</li>
+<li>제품의 실제 크기와 비율</li>
+<li>의도하지 않은 장식 요소</li>
+</ul>
+<p>슬라이드의 세 결과는 <strong>같은 스케치 한 장</strong>에서 나왔다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>결과</th>
+<th>무엇이 일어났나</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A · 원본에 비교적 충실</strong></td>
+<td>곡선 지지대 1개 · 디스크 헤드 · 원통 베이스가 유지됨</td>
+</tr>
+<tr>
+<td><strong>B · 구조와 비율이 바뀜</strong></td>
+<td>곡선 지지대가 꺾인 2단 암으로, 헤드는 커짐</td>
+</tr>
+<tr>
+<td><strong>C · 장식 요소 추가</strong></td>
+<td>스케치에 없는 링 · 핀 · 주름 패턴이 붙음</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong><em>AI generates an interpretation, not a verified design.</em></strong></p>
+</blockquote>
+<p>세 장 모두 그럴듯한 이미지다. 그래서 위험하다. 결과를 볼 때 "잘 나왔나?"보다 먼저 <strong>"이게 내 스케치인가?"</strong>를 묻자.</p>
+<h3 id="04-good-image-good-design">04 · GOOD IMAGE ≠ GOOD DESIGN</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>GOOD IMAGE</th>
+<th>GOOD DESIGN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>조명이 아름답다</td>
+<td>원래 의도가 유지된다</td>
+</tr>
+<tr>
+<td>재질 표현이 사실적이다</td>
+<td>형태와 기능이 일치한다</td>
+</tr>
+<tr>
+<td>배경이 세련됐다</td>
+<td>사용자가 이해할 수 있다</td>
+</tr>
+<tr>
+<td>사진처럼 보인다</td>
+<td>구조와 비율이 설득력 있다</td>
+</tr>
+</tbody>
+</table></div>
+<p>왼쪽 렌더는 청록과 주황 조명, 연기, 반사 바닥으로 분위기가 강렬하지만, 지지대가 베이스와 어떻게 만나는지, 어떤 소재인지가 빛에 묻혀 보이지 않는다. 오른쪽은 단순한 스튜디오 이미지지만 형태 · 비율 · 사용 방식이 명확하다.</p>
+<p>이 수업에서 평가하는 것은 <strong>오른쪽</strong>이다. 이미지의 시각적 완성도와 제품 디자인의 타당성을 구분하는 눈을 기르자.</p>
+<hr />
+<h2 id="part-02-sketch-preparation-before-you-generate">PART 02 · Sketch Preparation — Before You Generate</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 생성 버튼을 누르기 전에, AI가 참고할 자료를 정리한다. 입력이 흐리면 결과도 흐리다.</p>
+</blockquote>
+<h3 id="05-before-you-generate">05 · BEFORE YOU GENERATE (섹션)</h3>
+<p>좋은 결과를 얻으려면 먼저 AI가 참고할 자료를 정리해야 한다. 이 파트에서는 무엇을 준비하고, 스케치를 어떤 상태로 넘기며, 무엇을 지켜 달라고 말할지 정한다.</p>
+<h3 id="06">06 · 오늘 필요한 준비물</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>준비물</th>
+<th>질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><strong>DESIGN BRIEF</strong></td>
+<td>무엇을 만들고 왜 만드는가?</td>
+</tr>
+<tr>
+<td>02</td>
+<td><strong>ROUGH SKETCH</strong></td>
+<td>제품의 기본 형태를 표현한 스케치</td>
+</tr>
+<tr>
+<td>03</td>
+<td><strong>REFERENCE BOARD</strong></td>
+<td>형태 · 소재 · 디테일 · 사용 환경 레퍼런스</td>
+</tr>
+<tr>
+<td>04</td>
+<td><strong>DESIGN INTENT</strong></td>
+<td>반드시 유지해야 하는 디자인 특징</td>
+</tr>
+</tbody>
+</table></div>
+<p>네 가지를 <strong>한 장의 작업 보드</strong>에 모아 두자. 생성할 때마다 이 보드를 옆에 두고, 결과가 브리프와 의도에 맞는지 확인한다. 1~3은 오프라인 수업에서 이미 만들었다. 새로 쓰는 것은 4번 Design Intent뿐이다(9쪽).</p>
+<h3 id="07-ai">07 · 어떤 스케치가 AI에 적합할까?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>POOR INPUT</th>
+<th>BETTER INPUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>여러 제품이 한 화면에 복잡하게 섞여 있음</td>
+<td>제품 하나가 명확하게 보임</td>
+</tr>
+<tr>
+<td>스케치가 흐릿하거나 그림자가 심함</td>
+<td>실루엣과 주요 부품이 구분됨</td>
+</tr>
+<tr>
+<td>제품 외곽선이 잘 보이지 않음</td>
+<td>충분한 대비와 해상도</td>
+</tr>
+<tr>
+<td>어떤 부분이 중요한지 알 수 없음</td>
+<td>필요한 부분에 간단한 주석이 있음</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI는 사진 속 <strong>모든 것</strong>을 형태 정보로 읽을 수 있다. 손 그림자, 기울어진 종이, 옆 페이지의 낙서, 커피잔까지 결과에 섞여 들어갈 수 있다.</p>
+<p><strong>촬영 요령</strong></p>
+<ul>
+<li>종이를 평평하게 펴고 <strong>정면 위에서</strong> 찍는다.</li>
+<li>그림자가 생기지 않게 밝은 곳에서, 손과 주변 물건은 화면 밖으로 뺀다.</li>
+<li>한 장에 <strong>아이디어 하나</strong>만 담는다. 여러 안이 그려진 페이지라면 잘라 내자.</li>
+<li>선이 흐리면 펜으로 외곽선을 한 번 더 정리한다.</li>
+</ul>
+<h3 id="08-what-must-remain">08 · What must remain? — 스케치에서 무엇을 읽어야 할까?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SILHOUETTE</strong></td>
+<td>제품의 전체 외곽 형태</td>
+</tr>
+<tr>
+<td><strong>PROPORTION</strong></td>
+<td>주요 부분의 상대적 크기</td>
+</tr>
+<tr>
+<td><strong>STRUCTURE</strong></td>
+<td>각 부분이 연결되는 방식</td>
+</tr>
+<tr>
+<td><strong>FUNCTION</strong></td>
+<td>사용을 위해 필요한 형태</td>
+</tr>
+<tr>
+<td><strong>SIGNATURE FEATURE</strong></td>
+<td>제품을 구분하는 핵심 특징</td>
+</tr>
+</tbody>
+</table></div>
+<p>예제 램프 스케치에서는 ① 원통형 베이스, ② 곡선형 지지대, ③ 디스크형 헤드, ④ 지지대와 헤드의 연결부, ⑤ 헤드 아래 조명 영역을 읽어 낼 수 있다. 내 스케치에서도 이 다섯 항목을 하나씩 짚어 보고, <strong>바뀌면 더 이상 내 디자인이 아닌 부분</strong>이 어디인지 표시하자. 그 부분이 이후 모든 프롬프트의 유지 조건이 된다.</p>
+<h3 id="09-design-intent-describe-the-intention-not-just-the-appearance">09 · DESIGN INTENT — Describe the intention, not just the appearance.</h3>
+<p>외형만 묘사하지 말고 <strong>의도</strong>를 적는다. 예제 램프의 Design Intent는 이렇다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>USER</strong></td>
+<td>작은 공간에서 독서하거나 작업하는 사용자</td>
+</tr>
+<tr>
+<td><strong>PURPOSE</strong></td>
+<td>필요한 곳으로 쉽게 이동할 수 있는 조명</td>
+</tr>
+<tr>
+<td><strong>FORM</strong></td>
+<td>부드러운 곡선형 지지대와 얇은 조명 헤드</td>
+</tr>
+<tr>
+<td><strong>FEATURE</strong></td>
+<td>컴팩트한 베이스와 간결한 실루엣</td>
+</tr>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>곡선형 지지대, 디스크형 헤드, 전체 비례</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>학생 활동</strong> — 자신의 제품에 대해 위 다섯 항목을 한두 문장씩 작성한다. 특히 <strong>KEEP</strong>은 구체적인 부위로 쓰자. "전체 느낌 유지"보다 "곡선 지지대 1개, 얇은 헤드, 낮은 베이스"가 AI에게도, 나중의 나에게도 쓸모 있다.</p>
+<h3 id="10-practice-01-prepare-your-sketch">10 · Practice 01 · Prepare Your Sketch</h3>
+<blockquote>
+<p>✏️ <strong>Practice 01 · Prepare Your Sketch</strong> — AI에 입력할 스케치와 디자인 의도를 준비합니다.</p>
+<p><strong>학생 실습</strong></p>
+<ol>
+<li>러프 스케치 중 하나를 선택합니다.</li>
+<li>스케치를 선명하게 촬영하거나 스캔합니다.</li>
+<li>제품의 핵심 형태 3개를 표시합니다.</li>
+<li>반드시 유지할 특징 3개를 작성합니다.</li>
+<li>제품의 용도와 사용자를 한 문장으로 설명합니다.</li>
+</ol>
+<p><strong>실습 결과물</strong> — Sketch Image + Design Intent</p>
+<p><strong>확인 기준</strong></p>
+<ul>
+<li>☐ AI에 입력할 이미지가 준비됨 (정면 · 그림자 없음 · 아이디어 하나)</li>
+<li>☐ 텍스트 설명(Design Intent)이 준비됨</li>
+</ul>
+</blockquote>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>2~3개 스케치 중 <strong>가장 마음에 드는 것</strong>보다 <strong>형태가 가장 분명하게 그려진 것</strong>을 고르는 편이 실습에 유리하다.</li>
+<li>핵심 형태 3개는 스케치 위에 번호나 화살표로 표시해도 좋다. 단, 표시가 제품 선과 겹치지 않게 여백에 쓰자.</li>
+</ul>
+<hr />
+<h2 id="part-03-sketch-to-render-from-lines-to-product">PART 03 · Sketch to Render — From Lines to Product</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 러프 스케치를 제품의 형태와 소재가 읽히는 렌더로 발전시킨다. 제품을 설명하는 정보와 이미지를 표현하는 정보를 나눠 쓰는 법을 익힌다.</p>
+</blockquote>
+<h3 id="11-from-lines-to-product">11 · FROM LINES TO PRODUCT (섹션)</h3>
+<p>러프 스케치를 제품의 형태와 소재가 읽히는 이미지로 발전시킨다. 강사 시연을 먼저 보고, 같은 구조로 자신의 첫 렌더를 만든다.</p>
+<h3 id="12">12 · 스케치만 전달하면 어떻게 될까? (강사 시연)</h3>
+<p>같은 스케치로 두 가지 방식으로 생성한 결과다. 카메라 시점과 배경은 같게 맞췄다.</p>
+<ul>
+<li><strong>A · 스케치만 입력</strong> — AI가 자유롭게 해석했다. 곡선 지지대가 직선 기둥으로, 디스크 헤드가 사각 헤드로 바뀌었다. (FORM DRIFT)</li>
+<li><strong>B · 스케치 + 디자인 설명</strong> — 곡선 지지대 · 디스크 헤드 · 원통 베이스가 유지됐다.</li>
+</ul>
+<p><strong>비교 질문</strong></p>
+<ul>
+<li>어느 쪽이 원본 실루엣을 더 잘 유지했는가?</li>
+<li>제품의 기능이 제대로 표현되었는가?</li>
+<li>AI가 임의로 추가한 요소가 있는가?</li>
+<li>어느 결과가 다음 수정 작업에 적합한가?</li>
+</ul>
+<blockquote>
+<p>⚠️ 설명을 함께 넣어도 결과가 항상 B처럼 나온다는 보장은 없다. 설명은 확률을 높일 뿐이다. 매번 원본과 대조하자.</p>
+</blockquote>
+<h3 id="13-product-visualization-prompt">13 · PRODUCT VISUALIZATION PROMPT — 제품 이미지 생성에 필요한 정보</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>요소</th>
+<th>질문</th>
+<th>구분</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>PRODUCT</strong></td>
+<td>어떤 제품인가?</td>
+<td>제품 정보</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>PURPOSE</strong></td>
+<td>어떤 용도로 사용하는가?</td>
+<td>제품 정보</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>FORM</strong></td>
+<td>어떤 형태인가?</td>
+<td>제품 정보</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>STRUCTURE</strong></td>
+<td>각 부분이 어떻게 연결되는가?</td>
+<td>제품 정보</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>MATERIAL</strong></td>
+<td>어떤 소재인가?</td>
+<td>제품 정보</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>VIEW</strong></td>
+<td>어떤 시점에서 보여줄 것인가?</td>
+<td>이미지 정보</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>LIGHTING</strong></td>
+<td>어떤 조명 환경인가?</td>
+<td>이미지 정보</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>CONSTRAINT</strong></td>
+<td>무엇을 유지해야 하는가?</td>
+<td>유지 조건</td>
+</tr>
+</tbody>
+</table></div>
+<p>제품을 설명하는 정보(<strong>무엇을 만들 것인가</strong>)와 이미지를 표현하는 정보(<strong>어떻게 보여줄 것인가</strong>)를 구분해서 쓰자. 이렇게 나눠 두면 나중에 조명이나 시점만 바꾸고 싶을 때 제품 정보는 건드리지 않고 이미지 정보만 고칠 수 있다.</p>
+<h3 id="14">14 · 제품을 설명하는 프롬프트</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRODUCT</strong></td>
+<td>Portable cordless table lamp</td>
+</tr>
+<tr>
+<td><strong>FORM</strong></td>
+<td>Cylindrical base, curved support, thin circular lamp head</td>
+</tr>
+<tr>
+<td><strong>STRUCTURE</strong></td>
+<td>One continuous support connects the base to the lamp head</td>
+</tr>
+<tr>
+<td><strong>MATERIAL</strong></td>
+<td>Matte aluminum body and frosted diffuser</td>
+</tr>
+<tr>
+<td><strong>FUNCTION</strong></td>
+<td>Portable lighting for small workspaces</td>
+</tr>
+</tbody>
+</table></div>
+<p>형태를 설명할 때 '세련된', '미래적인' 같은 추상적 표현만 쓰기보다 <strong>구체적인 형상과 부품 관계</strong>를 설명하는 편이 유용하다.</p>
+<ul>
+<li>✕ <code>sleek, futuristic lamp</code></li>
+<li>○ <code>cylindrical base, one curved support, thin circular head</code></li>
+</ul>
+<h3 id="15">15 · 이미지를 표현하는 프롬프트</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VIEW</strong></td>
+<td>Three-quarter product view</td>
+</tr>
+<tr>
+<td><strong>BACKGROUND</strong></td>
+<td>Neutral studio background</td>
+</tr>
+<tr>
+<td><strong>LIGHTING</strong></td>
+<td>Soft diffused studio lighting</td>
+</tr>
+<tr>
+<td><strong>COMPOSITION</strong></td>
+<td>Full product visible, centered composition</td>
+</tr>
+<tr>
+<td><strong>RENDER STYLE</strong></td>
+<td>Realistic industrial design product visualization</td>
+</tr>
+</tbody>
+</table></div>
+<p>슬라이드의 두 이미지는 같은 램프를 밝은 스튜디오와 어두운 배경 + 측면광으로 표현한 것이다. 이미지 정보만 바꿨으므로 <strong>형태는 같아야 한다.</strong> 배경과 조명을 바꿨는데 제품 형태까지 바뀌었다면, 그 결과는 실패다.</p>
+<h3 id="16-prompt-example-full-structure">16 · PROMPT EXAMPLE — FULL STRUCTURE (강사 시연용 프롬프트)</h3>
+<p>아래 프롬프트는 그대로 복사해 쓸 수 있다. 램프 대신 자신의 제품 정보로 바꿔 넣자.</p>
+<pre><code class="language-text">Use the uploaded rough sketch as the primary design reference.
+Create a realistic industrial design visualization of a portable cordless table lamp.
+Preserve the original silhouette and major proportions from the sketch.
+The product consists of a compact cylindrical base, a single curved support, and a thin circular lamp head.
+The curved support must connect continuously from the base to the lamp head.
+Use a matte aluminum body with a frosted light diffuser.
+Show the entire product in a three-quarter view against a neutral studio background.
+Use soft diffused lighting to clearly reveal the product's shape and material.
+Do not introduce additional arms, buttons, decorative elements, or structural parts that are not present in the original sketch.
+</code></pre>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>문장</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use the uploaded rough sketch… / Preserve the original silhouette…</td>
+<td><strong>유지 조건</strong></td>
+</tr>
+<tr>
+<td>Create a realistic … portable cordless table lamp.</td>
+<td><strong>제품 정의</strong></td>
+</tr>
+<tr>
+<td>The product consists of… / The curved support must connect…</td>
+<td><strong>형태 설명</strong></td>
+</tr>
+<tr>
+<td>Use a matte aluminum body…</td>
+<td><strong>소재 설명</strong></td>
+</tr>
+<tr>
+<td>Show the entire product… / Use soft diffused lighting…</td>
+<td><strong>이미지 표현</strong></td>
+</tr>
+<tr>
+<td>Do not introduce…</td>
+<td><strong>제외 조건</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>자기 프롬프트를 쓸 때도 이 여섯 역할이 모두 들어 있는지 확인하자. 특히 마지막 <strong>제외 조건</strong>은 AI가 장식이나 부품을 덧붙이는 것을 줄이는 데 효과가 있다.</p>
+<h3 id="17-generate-review">17 · GENERATE → REVIEW</h3>
+<ul>
+<li>INPUT → GENERATE → OBSERVE → <strong>COMPARE</strong> → REVISE</li>
+</ul>
+<p>생성은 한 번으로 끝나지 않는다. 가장 중요한 단계는 <strong>COMPARE</strong>다. 원본 스케치와 결과를 나란히 놓고 다음 다섯 질문으로 확인한다.</p>
+<ol>
+<li>스케치와 같은 제품인가?</li>
+<li>전체 실루엣이 유지되었는가?</li>
+<li>주요 부품이 빠지거나 추가되지 않았는가?</li>
+<li>구조가 자연스럽게 연결되어 있는가?</li>
+<li>제품의 목적이 이미지에서 읽히는가?</li>
+</ol>
+<p>슬라이드 예시에서는 첫 렌더의 지지대가 스케치보다 두꺼워졌다. 이런 차이를 찾아 기록하는 것이 다음 단계(수정)의 출발점이다.</p>
+<h3 id="18-practice-02-first-render">18 · Practice 02 · First Render</h3>
+<blockquote>
+<p>✏️ <strong>Practice 02 · First Render</strong> — 내 스케치로 첫 번째 제품 렌더를 만듭니다.</p>
+<p><strong>학생 실습</strong></p>
+<ol>
+<li>자신의 스케치를 AI에 업로드합니다.</li>
+<li>제품 설명과 이미지 표현 프롬프트를 작성합니다.</li>
+<li>제품 렌더 이미지를 생성합니다.</li>
+<li>원본 스케치와 생성 결과를 나란히 배치합니다.</li>
+<li>잘 구현된 부분 2개와 잘못 구현된 부분 2개를 기록합니다.</li>
+</ol>
+<p><strong>실습 결과물</strong> — Original Sketch + First AI Render</p>
+<p><strong>확인 기준</strong></p>
+<ul>
+<li>☐ 17쪽의 다섯 질문으로 결과를 점검함</li>
+<li>☐ 잘된 점 2개 · 잘못된 점 2개가 구체적인 부위로 적혀 있음</li>
+</ul>
+</blockquote>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>16쪽 프롬프트를 틀로 쓰되, PRODUCT · FORM · STRUCTURE · MATERIAL을 내 제품으로 바꾸자.</li>
+<li>"잘못된 점"은 "어색하다"가 아니라 "지지대가 스케치보다 두껍다", "헤드와 지지대 연결이 끊겨 보인다"처럼 <strong>부위 + 상태</strong>로 쓴다.</li>
+<li>여기서 기록한 잘못된 점 두 개는 <strong>Practice 04(수정)</strong>에서 그대로 다시 쓴다. 꼭 저장해 두자.</li>
+</ul>
+<hr />
+<h2 id="part-04-reference-directing-reference-is-a-direction">PART 04 · Reference Directing — Reference Is a Direction</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 레퍼런스를 단순히 첨부하는 대신, 어떤 특징을 가져오고 무엇을 지킬지 말로 지시한다.</p>
+</blockquote>
+<h3 id="19-reference-is-a-direction">19 · REFERENCE IS A DIRECTION (섹션)</h3>
+<p>레퍼런스는 단순히 이미지를 첨부하는 것이 아니라, <strong>어떤 특징을 적용할지 설명하기 위한 자료</strong>다. 레퍼런스 한 장을 그냥 넣으면 AI는 그 이미지 전체를 따라가려 한다.</p>
+<h3 id="20">20 · 하나의 레퍼런스에도 여러 정보가 있다</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>기준</th>
+<th>뜻</th>
+<th>예시 레퍼런스(브러시드 알루미늄 조명)에서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FORM</strong></td>
+<td>전체 형태와 실루엣</td>
+<td>알약형 긴 바 실루엣</td>
+</tr>
+<tr>
+<td><strong>CMF</strong></td>
+<td>색상, 소재, 마감</td>
+<td>브러시드 알루미늄 · 반투명 확산판</td>
+</tr>
+<tr>
+<td><strong>DETAIL</strong></td>
+<td>연결부, 모서리, 버튼, 표면 처리</td>
+<td>둥근 끝단 · 얇은 받침 연결부</td>
+</tr>
+<tr>
+<td><strong>CONTEXT</strong></td>
+<td>사용자와 사용 환경</td>
+<td>책상 위 간접 조명</td>
+</tr>
+</tbody>
+</table></div>
+<p>오프라인 수업에서 쓴 네 기준을 다시 꺼내 쓴다. 레퍼런스 한 장에도 네 가지 정보가 섞여 있다. <strong>전체를 따라 하지 말고, 필요한 특징만 골라 적용하자.</strong></p>
+<h3 id="21-reference-copy">21 · REFERENCE ≠ COPY (강사 시연)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>이미지</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · REFERENCE</strong></td>
+<td>브러시드 알루미늄과 부드러운 곡면의 미니멀 조명</td>
+</tr>
+<tr>
+<td><strong>2 · COPY THE REFERENCE</strong> (실패)</td>
+<td>램프가 레퍼런스와 거의 같은 바 형태로 바뀌어 원래 스케치가 사라짐</td>
+</tr>
+<tr>
+<td><strong>3 · EXTRACT THE REFERENCE</strong> (성공)</td>
+<td>램프의 실루엣은 유지하고, 알루미늄 마감과 곡면 처리만 반영</td>
+</tr>
+</tbody>
+</table></div>
+<p>"이 레퍼런스처럼"이라고만 요청하면 2번 같은 결과가 나오기 쉽다. 레퍼런스에서 <strong>무엇을</strong> 가져올지 정하지 않았기 때문이다.</p>
+<h3 id="22">22 · 레퍼런스를 구체적인 지시로 바꾸기</h3>
+<p><strong>잘못된 요청</strong></p>
+<pre><code class="language-text">Make it look like this reference.
+</code></pre>
+<p><strong>개선된 요청</strong></p>
+<pre><code class="language-text">Keep the original product silhouette and structure.
+Apply the brushed aluminum finish from the reference image.
+Use a similar soft edge treatment, but do not copy the reference product's overall form.
+</code></pre>
+<blockquote>
+<p><strong><em>Specify what to borrow. Specify what to preserve.</em></strong></p>
+</blockquote>
+<p>개선된 요청에는 세 가지가 들어 있다. <strong>유지할 것</strong>(실루엣과 구조), <strong>가져올 것</strong>(브러시드 알루미늄 마감, 부드러운 모서리 처리), <strong>가져오지 않을 것</strong>(레퍼런스의 전체 형태). 내 요청을 쓸 때도 이 세 문장을 갖추자.</p>
+<h3 id="23-reference-priority-what-is-the-primary-reference">23 · REFERENCE PRIORITY — What is the primary reference?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>순위</th>
+<th>레퍼런스</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRIMARY</strong></td>
+<td>Original Sketch</td>
+<td>전체 형태와 구조</td>
+</tr>
+<tr>
+<td><strong>SECONDARY</strong></td>
+<td>Material Reference</td>
+<td>소재와 마감</td>
+</tr>
+<tr>
+<td><strong>TERTIARY</strong></td>
+<td>Visual Reference</td>
+<td>조명과 이미지 표현</td>
+</tr>
+</tbody>
+</table></div>
+<p>이미지를 여러 장 입력할 때는 <strong>각 이미지의 역할을 프롬프트에 적는다.</strong> 형태를 지켜야 한다면 원본 스케치가 가장 중요한 기준이다.</p>
+<pre><code class="language-text">Image 1 is the original sketch: keep its form and structure.
+Image 2 is a material reference: use only its surface finish.
+Image 3 is a lighting reference: use only its lighting mood.
+</code></pre>
+<blockquote>
+<p>💡 레퍼런스의 우선순위나 적용 강도를 따로 조정하는 기능이 있는지는 도구마다 다르다. 수업에서 쓰는 도구에서 어떤 방식이 가능한지는 강사 안내를 따르자.</p>
+</blockquote>
+<h3 id="24-practice-03-apply-your-reference">24 · Practice 03 · Apply Your Reference</h3>
+<blockquote>
+<p>✏️ <strong>Practice 03 · Apply Your Reference</strong> — 레퍼런스에서 필요한 특징만 골라 적용합니다.</p>
+<p><strong>학생 실습</strong></p>
+<ol>
+<li>기존 AI 렌더 이미지를 선택합니다.</li>
+<li>레퍼런스에서 적용할 특징 1~2개를 정합니다.</li>
+<li>원래 디자인에서 유지할 요소를 명시합니다.</li>
+<li>레퍼런스를 반영한 이미지를 생성합니다.</li>
+<li>적용 전후를 비교합니다.</li>
+</ol>
+<p><strong>결과물</strong> — Before / After Reference Application</p>
+<p><strong>확인 질문</strong></p>
+<ul>
+<li>☐ 레퍼런스의 특징이 반영되면서도 자신의 제품 정체성이 유지되었는가?</li>
+</ul>
+</blockquote>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>가져올 특징은 <strong>1~2개</strong>로 제한하자. 소재 · 모서리 · 색 · 조명을 한꺼번에 가져오면 무엇이 효과였는지 알 수 없다.</li>
+<li>오프라인에서 만든 Reference Board의 CMF · DETAIL 칸이 좋은 출발점이다.</li>
+</ul>
+<hr />
+<h2 id="part-05-image-editing-direct-the-change">PART 05 · Image Editing — Direct the Change</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — AI가 만든 결과를 그대로 받아들이지 않고, 잘못된 부분만 골라 구체적으로 수정한다.</p>
+</blockquote>
+<h3 id="25-direct-the-change">25 · DIRECT THE CHANGE (섹션)</h3>
+<p>AI가 만든 결과를 그대로 받아들이지 않고 필요한 부분을 수정한다. 먼저 AI가 자주 만드는 오류를 눈에 익히고, 수정 요청을 쓰는 구조를 배운다.</p>
+<h3 id="26-ai">26 · AI가 자주 잘못 만드는 부분 (퀴즈)</h3>
+<p>기준 제품과 다섯 장의 결과를 비교해 무엇이 달라졌는지 먼저 찾아보자. 정답은 아래 표에 있다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>문제 유형</th>
+<th>뜻</th>
+<th>퀴즈 이미지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FORM DRIFT</strong></td>
+<td>원래 스케치와 다른 형태로 변함</td>
+<td>Q1 · 곡선 지지대가 직선으로</td>
+</tr>
+<tr>
+<td><strong>PROPORTION ERROR</strong></td>
+<td>부품의 상대적 크기가 달라짐</td>
+<td>Q2 · 조명 헤드가 과도하게 커짐</td>
+</tr>
+<tr>
+<td><strong>STRUCTURAL ERROR</strong></td>
+<td>연결부가 불분명하거나 끊어짐</td>
+<td>Q3 · 지지대와 베이스 연결이 불분명</td>
+</tr>
+<tr>
+<td><strong>UNWANTED DETAILS</strong></td>
+<td>요청하지 않은 부품이 추가됨</td>
+<td>Q4 · 두 번째 지지대가 생김</td>
+</tr>
+<tr>
+<td><strong>MATERIAL MISMATCH</strong></td>
+<td>의도와 다른 소재로 표현됨</td>
+<td>Q5 · 알루미늄 대신 광택 플라스틱</td>
+</tr>
+</tbody>
+</table></div>
+<p>다섯 가지 모두 한눈에 보면 "괜찮은 램프"처럼 보인다는 점이 핵심이다. 내 결과를 볼 때도 이 다섯 유형을 체크리스트처럼 하나씩 대입해 보자.</p>
+<h3 id="27-regenerate-vs-local-edit">27 · REGENERATE vs LOCAL EDIT</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>REGENERATE · 전체 재생성</th>
+<th>LOCAL EDIT · 부분 수정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>방식</strong></td>
+<td>전체 디자인을 다시 생성</td>
+<td>특정 영역이나 요소를 중심으로 수정</td>
+</tr>
+<tr>
+<td><strong>장점</strong></td>
+<td>새로운 가능성을 탐색하기 쉽다</td>
+<td>유지할 요소를 보존하면서 수정할 수 있다</td>
+</tr>
+<tr>
+<td><strong>한계</strong></td>
+<td>기존의 좋은 요소까지 바뀔 수 있다</td>
+<td>도구에 따라 마스킹이나 선택 영역 편집이 필요할 수 있고, 주변 영역이 함께 변할 수도 있다</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong><em>What should change? What should stay?</em></strong></p>
+</blockquote>
+<p>이미 좋은 결과를 얻었다면 전체를 다시 생성하기보다 부분 수정이 유리하다. 반대로 방향 자체가 틀렸다면 재생성이 낫다. 어느 쪽이든 먼저 <strong>바꿀 것과 지킬 것</strong>을 정하자.</p>
+<h3 id="28-keep-change-avoid">28 · KEEP / CHANGE / AVOID</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>현재 제품의 전체 실루엣, 베이스, 조명 헤드</td>
+</tr>
+<tr>
+<td><strong>CHANGE</strong></td>
+<td>곡선형 지지대의 두께</td>
+</tr>
+<tr>
+<td><strong>AVOID</strong></td>
+<td>제품의 높이, 헤드 크기, 소재, 카메라 시점 변경</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>예시 프롬프트</strong></p>
+<pre><code class="language-text">Keep the existing lamp silhouette, base, and circular lamp head unchanged.
+Reduce only the thickness of the curved support to create a lighter visual appearance.
+Preserve the original product height, proportions, material, camera angle, and lighting.
+Do not add or remove any components.
+</code></pre>
+<p><strong>CHANGE는 한 번에 한두 가지</strong>로 제한하자. 여러 곳을 한꺼번에 바꾸면 무엇이 효과였는지 알 수 없고, 의도하지 않은 변화도 늘어난다.</p>
+<h3 id="29">29 · 좋은 수정 요청과 나쁜 수정 요청</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>BAD</th>
+<th>BETTER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Make it more elegant.</td>
+<td>Reduce the support thickness while preserving the original curve.</td>
+</tr>
+<tr>
+<td>Fix the proportions.</td>
+<td>Reduce the lamp head diameter slightly while keeping the base width unchanged.</td>
+</tr>
+<tr>
+<td>Make the design more realistic.</td>
+<td>Correct the connection between the curved support and the base so that it appears structurally continuous.</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong><em>Describe the problem. Direct the change.</em></strong></p>
+</blockquote>
+<p>나쁜 요청은 결과의 <strong>느낌</strong>만 말한다. 좋은 요청은 <strong>어느 부위를</strong>(지지대, 헤드 지름, 연결부), <strong>어떻게</strong>(줄이기, 고치기), <strong>무엇을 유지하며</strong>(원래 곡선, 베이스 폭) 바꿀지 말한다. 오른쪽 문장은 그대로 복사해 내 제품에 맞게 고쳐 쓰자.</p>
+<h3 id="30-before-after-partial-edit">30 · BEFORE / AFTER — PARTIAL EDIT (강사 시연)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>BEFORE</th>
+<th>AFTER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>지지대가 지나치게 두꺼움</td>
+<td>지지대 두께 감소</td>
+</tr>
+<tr>
+<td>베이스 연결부가 부자연스러움</td>
+<td>연결부 자연스럽게 수정</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>나머지 형태 유지</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>바꾸지 않은 조건</strong> — 카메라 시점, 소재, 배경, 조명, 헤드 크기, 화면 속 제품 크기</p>
+<p>수정 전후 비교에서는 <strong>지시한 요소만</strong> 달라져야 한다. 다만 AI 이미지 생성의 특성상 완벽한 동일성은 보장되지 않는다. 다른 곳이 바뀌었다면 기준 이미지로 다시 편집하거나, 비교에 적합한 결과를 골라 쓰자.</p>
+<h3 id="31-practice-04-fix-your-design">31 · Practice 04 · Fix Your Design</h3>
+<blockquote>
+<p>✏️ <strong>Practice 04 · Fix Your Design</strong> — AI 렌더의 문제를 찾아 구체적으로 수정합니다.</p>
+<p><strong>학생 실습</strong></p>
+<ol>
+<li>자신의 AI 렌더에서 문제점 두 가지를 찾습니다.</li>
+<li>문제를 구체적인 문장으로 작성합니다.</li>
+<li>유지할 요소와 수정할 요소를 구분합니다.</li>
+<li>이미지 편집 기능 또는 프롬프트로 수정합니다.</li>
+<li>수정 전후를 비교합니다.</li>
+</ol>
+<p><strong>제출할 기록</strong></p>
+<ul>
+<li>Problem 01 → Editing Instruction → Result</li>
+<li>Problem 02 → Editing Instruction → Result</li>
+</ul>
+</blockquote>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>문제 두 가지는 Practice 02에서 기록한 "잘못된 점"에서 가져온다. 26쪽의 다섯 유형 중 어디에 해당하는지도 함께 적어 보자.</li>
+<li>첫 수정에서 원하는 결과가 나오지 않아도 괜찮다. <strong>조건을 다시 구체화하고 재시도하는 과정 자체</strong>가 이 실습의 핵심이다. 몇 번 시도했는지, 지시를 어떻게 바꿨는지도 기록하자.</li>
+</ul>
+<p><strong>기록 예시</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Problem</strong></td>
+<td>지지대가 스케치보다 두꺼워 무거워 보인다 (PROPORTION)</td>
+</tr>
+<tr>
+<td><strong>Editing Instruction</strong></td>
+<td>Keep the base and lamp head unchanged. Reduce only the thickness of the curved support. Preserve the camera angle, material, and lighting.</td>
+</tr>
+<tr>
+<td><strong>Result</strong></td>
+<td>지지대가 얇아짐. 헤드 크기가 약간 커져서 2차 수정에서 "keep the lamp head diameter unchanged"를 추가함</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="part-06-concept-exploration-explore-possibilities">PART 06 · Concept Exploration — Explore Possibilities</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 같은 아이디어를 서로 다른 디자인 방향으로 표현해 보고, 탐색(Exploration)과 구체화(Refinement)의 차이를 구분한다.</p>
+</blockquote>
+<h3 id="32-explore-possibilities">32 · EXPLORE POSSIBILITIES (섹션)</h3>
+<blockquote>
+<p><strong>같은 아이디어를 어떤 디자인 방향으로 표현할 수 있을까?</strong></p>
+</blockquote>
+<p>지금까지는 하나의 렌더를 다듬었다. 이 파트에서는 반대로, 같은 제품 목적과 기본 구성을 유지한 채 <strong>형태 언어와 인상</strong>을 크게 바꿔 본다.</p>
+<h3 id="33-exploration-vs-refinement">33 · EXPLORATION vs REFINEMENT</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>EXPLORATION · 이번 주</th>
+<th>REFINEMENT · 다음 주</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>하는 일</strong></td>
+<td>디자인 방향의 가능성을 탐색한다</td>
+<td>선택한 방향 안에서 특정 요소를 개선한다</td>
+</tr>
+<tr>
+<td><strong>예</strong></td>
+<td>Soft &amp; Organic · Geometric &amp; Minimal · Compact &amp; Functional</td>
+<td>지지대 두께 조정 · 조명 헤드 비율 수정 · 연결부 개선</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong><em>Explore directions first. Refine the selected direction later.</em></strong></p>
+</blockquote>
+<p>이번 주에는 여러 방향을 탐색해 <strong>하나의 콘셉트를 고르는 데까지</strong> 간다. 선택한 콘셉트의 비율과 구조를 정밀하게 다듬는 일은 다음 주에 한다. 탐색 단계에서 세부 수정에 너무 오래 머물지 말자.</p>
+<h3 id="34-three-design-directions">34 · THREE DESIGN DIRECTIONS (강사 시연)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>방향</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A — SOFT &amp; ORGANIC</strong></td>
+<td>부드러운 곡선, 둥근 연결부, 친근한 인상</td>
+</tr>
+<tr>
+<td><strong>B — GEOMETRIC &amp; MINIMAL</strong></td>
+<td>명확한 기하학적 형태, 단순한 구조, 절제된 인상</td>
+</tr>
+<tr>
+<td><strong>C — COMPACT &amp; FUNCTIONAL</strong></td>
+<td>작은 공간에 적합한 비례, 기능 중심의 간결한 형태</td>
+</tr>
+</tbody>
+</table></div>
+<p>세 콘셉트는 <strong>원통형 베이스 · 지지대 · 조명 헤드 · 휴대용 조명이라는 목적</strong>을 공유한다. 바뀐 것은 형태 언어와 전체 인상뿐이다. 비교가 공정하도록 모두 같은 스튜디오 환경, 비슷한 카메라 시점으로 만들었다.</p>
+<p><strong>방향 탐색 프롬프트 예시</strong> — 마지막 문장의 방향 키워드만 바꿔 세 번 생성한다.</p>
+<pre><code class="language-text">Keep the core components and purpose: a portable lamp with a cylindrical base, one support, and a circular lamp head.
+Use the same neutral studio background and a similar three-quarter camera view.
+Explore a soft and organic form language with rounded joints and a friendly impression.
+</code></pre>
+<h3 id="35-practice-05-explore-three-concepts">35 · Practice 05 · Explore Three Concepts</h3>
+<blockquote>
+<p>✏️ <strong>Practice 05 · Explore Three Concepts</strong> — 같은 제품 목적으로 세 가지 디자인 방향을 탐색합니다.</p>
+<p><strong>학생 실습</strong></p>
+<ol>
+<li>자신의 제품에서 탐색할 디자인 방향을 세 가지 정의합니다.</li>
+<li>각 방향을 설명하는 키워드를 작성합니다.</li>
+<li>기본 제품 목적과 핵심 기능을 유지합니다.</li>
+<li>방향별 AI 콘셉트 이미지를 생성합니다.</li>
+<li>세 결과를 동일한 화면에서 비교합니다.</li>
+</ol>
+<p><strong>결과물</strong> — Concept A / Concept B / Concept C</p>
+<p><strong>주의사항</strong> — AI가 전혀 다른 제품을 만들었다면, 새로운 콘셉트로 인정하기 전에 원래 Design Brief와 연결되는지 확인합니다.</p>
+</blockquote>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>세 방향은 <strong>서로 충분히 달라야</strong> 한다. "부드러운 / 조금 더 부드러운 / 아주 부드러운"은 세 방향이 아니라 하나의 방향이다.</li>
+<li>방향마다 키워드를 2~3개씩 정하자. 예: Soft &amp; Organic = rounded joints, continuous curve, warm matte finish.</li>
+<li>세 결과는 같은 크기로 한 화면에 나란히 놓고 비교한다. 다음 파트에서 이 비교 화면을 그대로 쓴다.</li>
+</ul>
+<hr />
+<h2 id="part-07-review-selection-dont-choose-the-prettiest">PART 07 · Review &amp; Selection — Don't Choose the Prettiest</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 이미지의 화려함이 아니라 프로젝트 목표와의 적합성을 기준으로 다음 주에 발전시킬 콘셉트를 고르고, 그 이유를 문장으로 설명한다.</p>
+</blockquote>
+<h3 id="36-dont-choose-the-prettiest">36 · DON'T CHOOSE THE PRETTIEST. (섹션)</h3>
+<blockquote>
+<p><strong><em>Choose the most meaningful direction.</em></strong></p>
+</blockquote>
+<p>이미지의 화려함보다 <strong>프로젝트 목표와의 적합성</strong>을 우선한다. 가장 예쁜 이미지가 아니라, 내 브리프의 문제를 가장 잘 풀고 다음 주에 발전시킬 여지가 큰 방향을 고르자.</p>
+<h3 id="37-concept-selection-criteria">37 · CONCEPT SELECTION CRITERIA</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>기준</th>
+<th>질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DESIGN GOAL</strong></td>
+<td>처음 정의한 문제 해결 방향과 일치하는가?</td>
+</tr>
+<tr>
+<td><strong>FORM</strong></td>
+<td>형태적 특징이 명확한가?</td>
+</tr>
+<tr>
+<td><strong>FUNCTION</strong></td>
+<td>제품의 목적과 기능이 이해되는가?</td>
+</tr>
+<tr>
+<td><strong>USER</strong></td>
+<td>사용자의 요구와 연결되는가?</td>
+</tr>
+<tr>
+<td><strong>FEASIBILITY</strong></td>
+<td>구조와 사용 방식이 어느 정도 설득력 있는가?</td>
+</tr>
+<tr>
+<td><strong>DEVELOPMENT POTENTIAL</strong></td>
+<td>다음 단계에서 발전시킬 가능성이 있는가?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>학생 활동</strong> — A / B / C 콘셉트의 강점과 우려 사항을 정리한다. 점수표를 써도 좋지만, <strong>점수만으로 고르지 말고 선택 이유를 문장으로</strong> 설명하자.</p>
+<h3 id="38-concept-comparison-board">38 · CONCEPT COMPARISON BOARD</h3>
+<p>34쪽의 세 콘셉트를 <strong>다시 생성하지 않고 그대로</strong> 비교한다. 같은 결과를 비교해야 공정하다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>A — Soft &amp; Organic</th>
+<th>B — Geometric &amp; Minimal</th>
+<th>C — Compact &amp; Functional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key Feature</strong></td>
+<td>One flowing curve, soft joints</td>
+<td>Straight column, graphite finish</td>
+<td>Low height, accent ring at the head</td>
+</tr>
+<tr>
+<td><strong>Strength</strong></td>
+<td>Friendly silhouette</td>
+<td>Clear structure</td>
+<td>Appropriate for small spaces</td>
+</tr>
+<tr>
+<td><strong>Concern</strong></td>
+<td>Unclear structural connection</td>
+<td>Less distinctive identity</td>
+<td>Limited adjustment range</td>
+</tr>
+</tbody>
+</table></div>
+<p>여러분의 비교 보드도 같은 형식으로 만든다. 각 이미지 아래에 <strong>Design Direction · Key Feature · Strength · Concern</strong> 네 줄을 적자.</p>
+<h3 id="39-concept-visualization-board">39 · CONCEPT VISUALIZATION BOARD — 최종 제출물</h3>
+<p>오늘의 결과를 한 장의 보드로 모은다. 이 보드는 다음 오프라인 수업에서 피드백을 받는 자료가 된다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>영역</th>
+<th>담을 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>DESIGN BRIEF</strong></td>
+<td>제품 목적, 사용자, 해결할 문제</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>ORIGINAL SKETCH</strong></td>
+<td>오프라인에서 만든 러프 스케치</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>DESIGN REFERENCES</strong></td>
+<td>형태와 소재 등 참고한 레퍼런스</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>FIRST AI RENDER</strong></td>
+<td>스케치 기반 초기 AI 생성 결과</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>BEFORE / AFTER</strong></td>
+<td>수정 전후 이미지와 수정 내용</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>CONCEPT A/B/C</strong></td>
+<td>서로 다른 디자인 방향의 콘셉트</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>SELECTED CONCEPT</strong></td>
+<td>최종 선택한 콘셉트와 선택 이유</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>NEXT STEPS</strong></td>
+<td>다음 주에 개선할 요소 3가지</td>
+</tr>
+</tbody>
+</table></div>
+<p>슬라이드 예시에서는 작은 공간 사용자와 휴대 목적에 가장 잘 맞는 <strong>C(Compact &amp; Functional)</strong>를 골랐고, 다음 주 개선 요소로 헤드 각도 조절 범위 · 포인트 링의 비율과 위치 · 베이스 높이와 무게감을 적었다.</p>
+<blockquote>
+<p>💡 각 영역에는 이미지와 <strong>짧은 설명 한 줄</strong>이 함께 있어야 한다. 이미지만 있는 보드는 피드백하기 어렵다.</p>
+</blockquote>
+<h3 id="40-week-02-develop">40 · WEEK 02 — DEVELOP (다음 주 예고)</h3>
+<blockquote>
+<p><strong><em>From Selected Concept to Refined Concept</em></strong></p>
+</blockquote>
+<p>다음 주에 다룰 내용</p>
+<ul>
+<li>선택한 디자인의 형태 분석</li>
+<li>유지할 요소와 수정할 요소 결정</li>
+<li>제품 비율 및 구조 개선</li>
+<li>특정 부위의 Controlled Variation</li>
+<li>수정 결과 비교</li>
+<li>Refined Concept 완성</li>
+</ul>
+<blockquote>
+<p><strong><em>This week, we found a direction. Next week, we develop it.</em></strong></p>
+<p>📁 <strong>다음 주 준비</strong> — Concept Visualization Board와 Selected Concept 원본 이미지를 꼭 저장해 오세요. 다음 주 작업은 이 이미지에서 시작합니다.</p>
+</blockquote>
+<hr />
+<h2 id="_9">부록</h2>
+<h3 id="a">A. 핵심 용어</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>용어</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI Visualization</strong></td>
+<td>내 스케치의 디자인 의도를 유지한 채 제품 이미지를 만드는 일. AI가 형태를 정하는 '생성'과 구분한다</td>
+</tr>
+<tr>
+<td><strong>Design Intent</strong></td>
+<td>제품의 사용자 · 목적 · 형태 · 특징과, 반드시 유지할 요소(KEEP)를 정리한 문장</td>
+</tr>
+<tr>
+<td><strong>유지 조건 / 제외 조건</strong></td>
+<td>바뀌면 안 되는 요소 / 추가되면 안 되는 요소. 지시일 뿐 보장은 아니므로 결과를 원본과 대조한다</td>
+</tr>
+<tr>
+<td><strong>Product Information / Visual Information</strong></td>
+<td>무엇을 만들 것인가(제품 · 형태 · 구조 · 소재) / 어떻게 보여줄 것인가(시점 · 배경 · 조명 · 구도)</td>
+</tr>
+<tr>
+<td><strong>Reference Directing</strong></td>
+<td>레퍼런스에서 가져올 특징과 지킬 요소를 문장으로 지정하는 것</td>
+</tr>
+<tr>
+<td><strong>Form Drift</strong></td>
+<td>AI 결과가 원래 스케치와 다른 형태로 변하는 현상</td>
+</tr>
+<tr>
+<td><strong>KEEP / CHANGE / AVOID</strong></td>
+<td>수정 요청의 세 부분 — 유지할 것 / 바꿀 것 / 바뀌면 안 되는 것</td>
+</tr>
+<tr>
+<td><strong>Exploration / Refinement</strong></td>
+<td>여러 방향의 가능성을 넓히는 탐색 / 선택한 방향 안에서 요소를 다듬는 구체화</td>
+</tr>
+<tr>
+<td><strong>Selected Concept</strong></td>
+<td>다음 주에 발전시키기로 고른 콘셉트 하나와 그 선택 이유</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="b">B. 프롬프트 모음 (복사용)</h3>
+<p><strong>스케치 → 렌더 (16쪽)</strong></p>
+<pre><code class="language-text">Use the uploaded rough sketch as the primary design reference.
+Create a realistic industrial design visualization of a [PRODUCT].
+Preserve the original silhouette and major proportions from the sketch.
+The product consists of [PARTS AND HOW THEY CONNECT].
+Use [MATERIAL AND FINISH].
+Show the entire product in a three-quarter view against a neutral studio background.
+Use soft diffused lighting to clearly reveal the product's shape and material.
+Do not introduce additional parts, buttons, decorative elements, or structural parts that are not present in the original sketch.
+</code></pre>
+<p><strong>레퍼런스 적용 (22쪽)</strong></p>
+<pre><code class="language-text">Keep the original product silhouette and structure.
+Apply the [FEATURE, e.g. brushed aluminum finish] from the reference image.
+Do not copy the reference product's overall form.
+</code></pre>
+<p><strong>부분 수정 (28쪽)</strong></p>
+<pre><code class="language-text">Keep the [PARTS TO KEEP] unchanged.
+Change only the [PART] to [HOW].
+Preserve the original product height, proportions, material, camera angle, and lighting.
+Do not add or remove any components.
+</code></pre>
+<p><strong>방향 탐색 (34쪽)</strong></p>
+<pre><code class="language-text">Keep the core components and purpose: [CORE PARTS AND PURPOSE].
+Use the same neutral studio background and a similar three-quarter camera view.
+Explore a [DIRECTION] form language with [2–3 KEYWORDS].
+</code></pre>
+<h3 id="c">C. 온라인 수업 제출 체크리스트</h3>
+<ul>
+<li>☐ 정리된 스케치 이미지 + Design Intent 다섯 항목</li>
+<li>☐ 원본 스케치 + 첫 AI 렌더 + 잘된 점 2 · 잘못된 점 2</li>
+<li>☐ 레퍼런스 적용 전후 이미지 + 가져온 특징 1~2개</li>
+<li>☐ Problem → Editing Instruction → Result 기록 2세트</li>
+<li>☐ Concept A / B / C + 방향별 키워드</li>
+<li>☐ Concept Visualization Board (8개 영역) + Selected Concept 선택 이유</li>
+</ul>
+<h3 id="d">D. 수업 후 스스로 점검하기</h3>
+<blockquote>
+<ol>
+<li>내 첫 렌더를 보고, 원본 스케치와 달라진 곳을 부위 이름으로 말할 수 있는가?</li>
+<li>내 프롬프트에 제품 정보 · 이미지 정보 · 유지 조건 · 제외 조건이 모두 들어 있는가?</li>
+<li>레퍼런스에서 무엇을 가져왔고 무엇을 가져오지 않았는지 설명할 수 있는가?</li>
+<li>수정 요청에 KEEP · CHANGE · AVOID가 모두 있었는가?</li>
+<li>세 콘셉트는 서로 다른 방향인가, 같은 방향의 변형인가?</li>
+<li>Selected Concept를 고른 이유를, 이미지가 예뻐서가 아니라 브리프와 기준으로 설명할 수 있는가?</li>
+</ol>
+</blockquote></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>
