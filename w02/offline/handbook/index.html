@@ -1,0 +1,1244 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W02 Offline · Develop · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 02 · Offline</a><a class="swap" href="../../online/handbook/">→ Online 교안 보기</a><div><div class="toc">
+<ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#_3">오늘 가져올 자료</a></li>
+<li><a href="#_4">핵심 질문</a></li>
+<li><a href="#_5">학습 목표</a></li>
+<li><a href="#_6">공통 예제</a></li>
+<li><a href="#_7">수업 흐름</a></li>
+</ul>
+</li>
+<li><a href="#part-01-concept-review-ai">PART 01 · Concept Review — AI 결과물을 디자인 관점에서 다시 보기</a><ul>
+<li><a href="#01-develop">01 · DEVELOP</a></li>
+<li><a href="#02-what-we-do-today">02 · WHAT WE DO TODAY</a></li>
+<li><a href="#03-from-idea-to-image">03 · FROM IDEA TO IMAGE</a></li>
+<li><a href="#04-selected-finished">04 · SELECTED ≠ FINISHED</a></li>
+<li><a href="#05-good-image-good-design">05 · GOOD IMAGE ≠ GOOD DESIGN</a></li>
+<li><a href="#06-who-made-the-decision">06 · WHO MADE THE DECISION?</a></li>
+<li><a href="#07-review-your-concept-concept-audit">07 · REVIEW YOUR CONCEPT — Concept Audit</a></li>
+</ul>
+</li>
+<li><a href="#part-02-form-proportion">PART 02 · Form &amp; Proportion — 제품의 형태와 비례를 분석하기</a><ul>
+<li><a href="#08-form-proportion">08 · FORM &amp; PROPORTION (섹션)</a></li>
+<li><a href="#09-form-is-not-decoration">09 · FORM IS NOT DECORATION</a></li>
+<li><a href="#10-silhouette">10 · SILHOUETTE</a></li>
+<li><a href="#11-deconstruct-the-form">11 · DECONSTRUCT THE FORM</a></li>
+<li><a href="#12-same-product-different-proportion">12 · SAME PRODUCT, DIFFERENT PROPORTION</a></li>
+<li><a href="#13-visual-balance">13 · VISUAL BALANCE</a></li>
+<li><a href="#14-design-for-human-scale">14 · DESIGN FOR HUMAN SCALE</a></li>
+<li><a href="#15-what-should-change">15 · WHAT SHOULD CHANGE? — 형태 분석 사례</a></li>
+<li><a href="#16-practice-01-concept-form-analysis">16 · Practice 01 · Concept &amp; Form Analysis</a></li>
+</ul>
+</li>
+<li><a href="#part-03-function-usability">PART 03 · Function &amp; Usability — 사용자 행동을 기준으로 검토하기</a><ul>
+<li><a href="#17-function-usability">17 · FUNCTION &amp; USABILITY (섹션)</a></li>
+<li><a href="#18-think-in-actions">18 · THINK IN ACTIONS</a></li>
+<li><a href="#19-user-action-map">19 · USER ACTION MAP — 사례: 휴대용 무선 램프</a></li>
+<li><a href="#20-function-creates-form">20 · FUNCTION CREATES FORM</a></li>
+<li><a href="#21-how-does-the-product-communicate">21 · HOW DOES THE PRODUCT COMMUNICATE?</a></li>
+<li><a href="#22-design-around-the-body">22 · DESIGN AROUND THE BODY</a></li>
+<li><a href="#23-what-happens-in-real-life">23 · WHAT HAPPENS IN REAL LIFE?</a></li>
+<li><a href="#24-practice-02-user-action-mapping">24 · Practice 02 · User Action Mapping</a></li>
+</ul>
+</li>
+<li><a href="#part-04-structure-feasibility">PART 04 · Structure &amp; Feasibility — 제품의 구조적 타당성 검토하기</a><ul>
+<li><a href="#25-can-this-product-exist">25 · CAN THIS PRODUCT EXIST? (섹션)</a></li>
+<li><a href="#26-looks-possible-works-possible">26 · LOOKS POSSIBLE ≠ WORKS POSSIBLE</a></li>
+<li><a href="#27-what-supports-the-product">27 · WHAT SUPPORTS THE PRODUCT?</a></li>
+<li><a href="#28-how-do-parts-connect">28 · HOW DO PARTS CONNECT?</a></li>
+<li><a href="#29-find-the-weak-point">29 · FIND THE WEAK POINT — 구조 분석 사례</a></li>
+<li><a href="#30-practice-03-structural-review">30 · Practice 03 · Structural Review</a></li>
+</ul>
+</li>
+<li><a href="#part-05-design-direction">PART 05 · Design Direction — 수정 방향과 우선순위 결정하기</a><ul>
+<li><a href="#31-decide-before-you-modify">31 · DECIDE BEFORE YOU MODIFY (섹션)</a></li>
+<li><a href="#32-analysis-decision">32 · ANALYSIS → DECISION</a></li>
+<li><a href="#33-keep-what-should-remain">33 · KEEP — What should remain?</a></li>
+<li><a href="#34-change-what-should-change">34 · CHANGE — What should change?</a></li>
+<li><a href="#35-constraint-what-must-not-change">35 · CONSTRAINT — What must not change?</a></li>
+<li><a href="#36-priority-what-should-we-fix-first">36 · PRIORITY — What should we fix first?</a></li>
+<li><a href="#37-design-revision-plan">37 · DESIGN REVISION PLAN — 예시</a></li>
+<li><a href="#38-sketch-the-change">38 · SKETCH THE CHANGE</a></li>
+<li><a href="#39-practice-04-design-revision-board">39 · Practice 04 · Design Revision Board</a></li>
+</ul>
+</li>
+<li><a href="#part-06-feedback-assignment">PART 06 · Feedback &amp; Assignment — 다음 온라인 실습으로 연결하기</a><ul>
+<li><a href="#40-explain-your-decision-design-critique">40 · EXPLAIN YOUR DECISION — Design Critique</a></li>
+<li><a href="#41-specific-feedback">41 · SPECIFIC FEEDBACK</a></li>
+<li><a href="#42-review-each-other-peer-review">42 · REVIEW EACH OTHER — Peer Review</a></li>
+<li><a href="#43-define-your-next-move-final-revision-decision">43 · DEFINE YOUR NEXT MOVE — Final Revision Decision</a></li>
+<li><a href="#44-design-revision-board">44 · DESIGN REVISION BOARD — 최종 제출물</a></li>
+<li><a href="#45-next-refine-with-ai">45 · NEXT — REFINE WITH AI (다음 온라인 실습 예고)</a></li>
+</ul>
+</li>
+<li><a href="#_8">부록</a><ul>
+<li><a href="#a">A. 핵심 용어</a></li>
+<li><a href="#b-2">B. 2주차 오프라인 제출 체크리스트</a></li>
+<li><a href="#c">C. 수업 후 스스로 점검하기</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></nav><main><h1 id="ai-industrial-design-2-develop">AI × Industrial Design · 2주차 오프라인 — Develop</h1>
+<blockquote>
+<p><strong>From Selected Concept to Design Revision</strong> · 경희대학교 산업디자인
+2주차 오프라인 수업 슬라이드(1–45)의 내용을 정리한 교안입니다. 수업 중 자신의 Selected Concept를 옆에 두고, 각 파트의 질문을 그대로 대입해 보세요.</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>1주차에는 아이디어를 AI로 시각화하고 하나의 콘셉트를 골랐다. 하지만 AI가 만든 제품 이미지는 <strong>실제 사용성, 구조적 타당성, 인간공학적 조건을 검증한 결과가 아니다.</strong></p>
+<p>이번 주에는 고른 콘셉트를 산업디자인 관점에서 다시 검토하고, 실제 제품 디자인으로 발전시키기 위해 <strong>무엇을 유지하고 무엇을 수정할지 결정</strong>한다. 새 아이디어를 내는 시간이 아니라, 이미 고른 콘셉트를 판단하는 시간이다.</p>
+<h3 id="_3">오늘 가져올 자료</h3>
+<ul>
+<li>Design Brief · Original Rough Sketch · Reference Board</li>
+<li>AI로 탐색한 렌더들과 <strong>Selected Concept</strong> (출력본 또는 태블릿)</li>
+<li>콘셉트 선택 이유와 다음 단계에서 개선하고 싶은 요소</li>
+<li>펜 · 트레이싱지 또는 이미지 위에 그릴 수 있는 도구</li>
+</ul>
+<h3 id="_4">핵심 질문</h3>
+<blockquote>
+<ul>
+<li>AI가 만든 제품 이미지가 멋있어 보인다는 것만으로 좋은 디자인이라고 할 수 있을까?</li>
+<li>이 제품을 실제 사람이 사용한다면 어떤 문제가 발생할까?</li>
+<li>무엇을 유지하고, 무엇을 수정해야 할까?</li>
+</ul>
+</blockquote>
+<h3 id="_5">학습 목표</h3>
+<ol>
+<li>자신의 Selected Concept를 디자인 목표와 비교하여 평가한다.</li>
+<li>제품의 실루엣, 형태, 비율, 시각적 균형을 분석한다.</li>
+<li>사용자의 행동을 기준으로 제품의 기능과 사용성을 검토한다.</li>
+<li>제품의 연결부, 지지 구조, 움직임 등 구조적 문제를 찾아낸다.</li>
+<li>수정할 요소와 유지할 요소를 구분한다.</li>
+<li>개선 방향을 러프 스케치로 표현한다.</li>
+<li>다음 온라인 AI 실습에서 사용할 Design Revision Plan을 완성한다.</li>
+</ol>
+<h3 id="_6">공통 예제</h3>
+<p>슬라이드의 예시는 <strong>강의 예시</strong>인 <strong>휴대용 무선 테이블 램프</strong>(낮은 원통형 베이스, 하나의 곡선형 지지대, 얇은 원형 헤드, 매트 알루미늄)로 통일되어 있다. 예시 이미지의 분석 표시와 문구는 슬라이드에서 덧붙인 것이다.</p>
+<h3 id="_7">수업 흐름</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PART</th>
+<th>단계</th>
+<th>슬라이드</th>
+<th>핵심 질문</th>
+<th>실습 · 결과물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Concept Review</td>
+<td>1–7</td>
+<td>선택한 콘셉트는 완성된 디자인인가?</td>
+<td>—</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Form &amp; Proportion</td>
+<td>8–16</td>
+<td>왜 이 제품은 이런 형태여야 하는가?</td>
+<td>Practice 01 · Concept &amp; Form Analysis Sheet</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Function &amp; Usability</td>
+<td>17–24</td>
+<td>사람이 실제로 쓸 수 있는가?</td>
+<td>Practice 02 · User Action Map</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Structure &amp; Feasibility</td>
+<td>25–30</td>
+<td>이 제품은 존재할 수 있는가?</td>
+<td>Practice 03 · Structural Review Sheet</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Design Direction</td>
+<td>31–39</td>
+<td>무엇을 바꾸고 무엇을 지킬 것인가?</td>
+<td>Practice 04 · Design Revision Board</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Feedback &amp; Assignment</td>
+<td>40–45</td>
+<td>내 결정을 설명할 수 있는가?</td>
+<td>최종 Revision Decision</td>
+</tr>
+</tbody>
+</table></div>
+<p>각 실습의 결과가 다음 파트의 입력이 된다. 시트를 지우지 말고 계속 덧붙여 쓰자. 설명은 램프 예시로, 실습은 <strong>각자의 Selected Concept</strong>로 진행한다.</p>
+<hr />
+<h2 id="part-01-concept-review-ai">PART 01 · Concept Review — AI 결과물을 디자인 관점에서 다시 보기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 선택한 콘셉트를 "완성품"이 아니라 "검토 대상"으로 다시 보고, AI가 대신 결정한 부분을 찾아낸다.</p>
+</blockquote>
+<h3 id="01-develop">01 · DEVELOP</h3>
+<ul>
+<li><strong>ROUGH SKETCH</strong> → <strong>AI SELECTED CONCEPT</strong> → <strong>DESIGN REVISION</strong></li>
+</ul>
+<p>같은 램프가 러프 스케치에서 AI 콘셉트 렌더로, 그리고 수정할 부분을 스케치로 표시한 검토안으로 이어진다. 세 번째 이미지는 완성안이 아니다. 오늘 수업이 끝날 때 여러분이 만들어야 할 <strong>"무엇을 왜 고칠지 표시한 상태"</strong>다.</p>
+<h3 id="02-what-we-do-today">02 · WHAT WE DO TODAY</h3>
+<blockquote>
+<p>새 아이디어를 만드는 날이 아니라, <strong>선택한 콘셉트를 검토하고 수정 방향을 결정하는 날</strong>이다.</p>
+</blockquote>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PART</th>
+<th>단계</th>
+<th>하는 일</th>
+<th>실습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Concept Review</td>
+<td>선택한 콘셉트를 디자인 관점에서 다시 보기</td>
+<td>—</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Form &amp; Proportion</td>
+<td>형태와 비례 분석</td>
+<td>Practice 01</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Function &amp; Usability</td>
+<td>사용자 행동 기준으로 검토</td>
+<td>Practice 02</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Structure &amp; Feasibility</td>
+<td>구조적 타당성 검토</td>
+<td>Practice 03</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Design Direction</td>
+<td>수정 방향과 우선순위 결정</td>
+<td>Practice 04</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Feedback</td>
+<td>보드를 돌려 보고 메모로 피드백</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>진행 방식</strong> — 설명은 램프 예시로, 실습은 각자의 Selected Concept로</li>
+<li><strong>결과물</strong> — Design Revision Board</li>
+</ul>
+<h3 id="03-from-idea-to-image">03 · FROM IDEA TO IMAGE</h3>
+<p><strong>1주차 과정을 거친 예시 — 램프</strong></p>
+<ul>
+<li>DESIGN BRIEF → REFERENCE → ROUGH SKETCH → AI EXPLORATION(여러 렌더 중 탐색) → <strong>SELECTED CONCEPT</strong></li>
+</ul>
+<p>1주차는 아이디어를 시각적으로 탐색하고 하나의 방향을 고르는 과정이었다. 수업은 이 램프 예시로, 실습은 각자의 콘셉트로 진행한다. 사용성 · 구조 · 비율은 아직 충분히 검토되지 않았다.</p>
+<blockquote>
+<p><strong>질문</strong> — 여러분이 선택한 이미지는 완성된 제품 디자인일까요?</p>
+</blockquote>
+<h3 id="04-selected-finished">04 · SELECTED ≠ FINISHED</h3>
+<p>하나의 콘셉트를 선택했다는 것은 디자인이 끝났다는 뜻이 아니라, <strong>발전시킬 출발점</strong>을 정했다는 뜻이다. 아직 검토해야 할 항목은 다음과 같다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>검토 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FORM</strong></td>
+<td>제품의 전체적인 형태</td>
+</tr>
+<tr>
+<td><strong>PROPORTION</strong></td>
+<td>부품 사이의 비율</td>
+</tr>
+<tr>
+<td><strong>USE</strong></td>
+<td>사용자의 행동과 사용 방식</td>
+</tr>
+<tr>
+<td><strong>STRUCTURE</strong></td>
+<td>구조적 연결과 안정성</td>
+</tr>
+<tr>
+<td><strong>SCALE</strong></td>
+<td>제품의 실제 크기</td>
+</tr>
+<tr>
+<td><strong>GOAL</strong></td>
+<td>디자인 목표와의 적합성</td>
+</tr>
+</tbody>
+</table></div>
+<p>슬라이드의 렌더는 완성품처럼 보이지만 ① 헤드에 비해 지나치게 작은 베이스 ② 두꺼운 지지대 ③ 보이지 않는 전원 버튼 ④ 움직일 수 없어 보이는 헤드라는 네 가지 문제가 있다.</p>
+<h3 id="05-good-image-good-design">05 · GOOD IMAGE ≠ GOOD DESIGN</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>GOOD IMAGE</th>
+<th>GOOD DESIGN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시각적으로 매력적이다</td>
+<td>사용자의 문제를 해결한다</td>
+</tr>
+<tr>
+<td>조명과 소재 표현이 사실적이다</td>
+<td>기능과 형태가 연결된다</td>
+</tr>
+<tr>
+<td>구도가 좋다</td>
+<td>사용 방법을 이해할 수 있다</td>
+</tr>
+<tr>
+<td>완성된 제품처럼 보인다</td>
+<td>구조적으로 설득력이 있다</td>
+</tr>
+<tr>
+<td></td>
+<td>실제 사용 환경에 적합하다</td>
+</tr>
+</tbody>
+</table></div>
+<p>왼쪽 렌더는 아름답지만 지지대가 머리카락처럼 가늘고, 헤드가 작은 베이스 바깥으로 멀리 나가 있으며, 조작부가 보이지 않는다. 오른쪽은 평범하지만 넓은 베이스, 전원 버튼, 헤드의 회전 연결부가 보인다. AI는 완성도 높은 이미지를 빠르게 만들지만, 그 이미지가 <strong>실제로 쓸 수 있는 제품인지는 따로 판단</strong>해야 한다. (오른쪽도 구조가 검증된 것은 아니다. 판단할 단서가 더 많을 뿐이다.)</p>
+<h3 id="06-who-made-the-decision">06 · WHO MADE THE DECISION?</h3>
+<p>AI 이미지 생성 과정에서 다음과 같은 부분이 <strong>자동으로 결정되었을 수 있다.</strong></p>
+<ul>
+<li>스케치에 없던 연결부</li>
+<li>소재와 마감</li>
+<li>버튼 위치</li>
+<li>제품의 두께</li>
+<li>부품 간 비율</li>
+<li>뒷면의 구조</li>
+<li>실제 크기</li>
+</ul>
+<blockquote>
+<p>AI가 만들어 준 형태가 <strong>모두 디자이너의 의도는 아니다.</strong></p>
+</blockquote>
+<p>스케치와 AI 렌더를 나란히 놓고, 스케치에 있던 것(내가 결정한 것)과 렌더에서 처음 나타난 것(AI가 채운 것)을 구분해 보자. AI가 채운 부분이 틀렸다는 뜻이 아니라, <strong>아직 내가 판단하지 않았다</strong>는 뜻이다.</p>
+<blockquote>
+<p><strong>질문</strong> — 여러분의 제품에서 직접 결정한 부분은 무엇이고, AI가 임의로 만든 부분은 무엇인가요?</p>
+</blockquote>
+<h3 id="07-review-your-concept-concept-audit">07 · REVIEW YOUR CONCEPT — Concept Audit</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>기준</th>
+<th>질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><strong>PURPOSE</strong></td>
+<td>이 제품은 어떤 문제를 해결하는가?</td>
+</tr>
+<tr>
+<td>02</td>
+<td><strong>IDENTITY</strong></td>
+<td>이 제품을 구분하는 핵심 특징은 무엇인가?</td>
+</tr>
+<tr>
+<td>03</td>
+<td><strong>FUNCTION</strong></td>
+<td>제품의 기능이 형태에서 읽히는가?</td>
+</tr>
+<tr>
+<td>04</td>
+<td><strong>USABILITY</strong></td>
+<td>사람이 실제로 사용하기 쉬운가?</td>
+</tr>
+<tr>
+<td>05</td>
+<td><strong>STRUCTURE</strong></td>
+<td>구조적으로 이해되지 않는 부분은 없는가?</td>
+</tr>
+<tr>
+<td>06</td>
+<td><strong>AI ASSUMPTION</strong></td>
+<td>AI가 임의로 만들어낸 요소는 무엇인가?</td>
+</tr>
+</tbody>
+</table></div>
+<p>바로 답하지 못하는 질문이 있다면, 그 부분이 오늘 집중해서 볼 곳이다. 이 여섯 질문은 PART 02 끝의 Practice 01에서 GOOD · QUESTION · PROBLEM을 표시할 때 기준이 된다.</p>
+<hr />
+<h2 id="part-02-form-proportion">PART 02 · Form &amp; Proportion — 제품의 형태와 비례를 분석하기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 형태가 왜 그런 모양이어야 하는지 설명하고, 실루엣 · 덩어리 · 비율 · 균형 · 사람과의 크기 관계로 콘셉트를 분석한다.</p>
+</blockquote>
+<h3 id="08-form-proportion">08 · FORM &amp; PROPORTION (섹션)</h3>
+<blockquote>
+<p><strong>How does the product take shape?</strong> — 왜 이 제품은 이런 형태여야 할까요?</p>
+</blockquote>
+<h3 id="09-form-is-not-decoration">09 · FORM IS NOT DECORATION</h3>
+<p>제품의 형태는 시각적인 취향만으로 정해지지 않는다. 형태를 결정하는 요소는 <strong>사용 목적 · 기능 · 사용자 · 사용 환경 · 구조 · 소재 · 디자인 정체성</strong>이다.</p>
+<p><strong>사례 · 작은 책상에서 쓰는 램프라면</strong></p>
+<ul>
+<li>공간을 적게 차지하는 베이스</li>
+<li>필요한 방향으로 빛을 전달하는 헤드</li>
+<li>제품을 안정적으로 지지하는 구조</li>
+<li>이동하기 편리한 크기</li>
+</ul>
+<p>내 콘셉트의 곡선이나 비례를 설명할 때, "예뻐서" 말고 이 일곱 요소 중 무엇 때문인지 말할 수 있어야 한다.</p>
+<h3 id="10-silhouette">10 · SILHOUETTE</h3>
+<blockquote>
+<p><strong>질문</strong> — 색상과 소재를 제거해도 제품의 특징이 남아 있을까요?</p>
+</blockquote>
+<p>같은 램프를 <strong>렌더 → 실루엣 → 외곽선</strong>으로 보면, 색과 빛 없이도 "곡선 하나로 헤드를 띄운 램프"라는 특징이 남는지 확인할 수 있다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>기준</th>
+<th>볼 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OUTLINE</strong></td>
+<td>전체 외곽선</td>
+</tr>
+<tr>
+<td><strong>LINES</strong></td>
+<td>주요 곡선과 직선</td>
+</tr>
+<tr>
+<td><strong>DIRECTION</strong></td>
+<td>형태의 방향성</td>
+</tr>
+<tr>
+<td><strong>WEIGHT</strong></td>
+<td>제품의 시각적 무게</td>
+</tr>
+<tr>
+<td><strong>IDENTITY</strong></td>
+<td>다른 제품과 구분되는 특징</td>
+</tr>
+</tbody>
+</table></div>
+<p>내 콘셉트도 펜으로 채우거나 이미지 편집으로 실루엣만 남겨 보자.</p>
+<h3 id="11-deconstruct-the-form">11 · DECONSTRUCT THE FORM</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>뜻</th>
+<th>램프 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRIMARY FORM</strong></td>
+<td>제품의 전체 형태를 결정하는 가장 큰 덩어리</td>
+<td>전체적인 곡선형 실루엣</td>
+</tr>
+<tr>
+<td><strong>SECONDARY FORM</strong></td>
+<td>기능을 구성하는 주요 부분과 부품</td>
+<td>베이스, 지지대, 조명 헤드</td>
+</tr>
+<tr>
+<td><strong>DETAIL</strong></td>
+<td>연결부, 버튼, 모서리 등 작은 요소</td>
+<td>전원 버튼, 연결부, 조명 확산판</td>
+</tr>
+</tbody>
+</table></div>
+<p>분석은 큰 덩어리에서 작은 요소 순서로 한다. <strong>PRIMARY가 흔들리면 DETAIL을 다듬어도 해결되지 않는다.</strong> 슬라이드의 분해도는 구조를 검증한 도면이 아니라 덩어리를 구분하기 위한 개념 이미지다. (CMF와 세부 디테일은 3주차에 다룬다.)</p>
+<h3 id="12-same-product-different-proportion">12 · SAME PRODUCT, DIFFERENT PROPORTION</h3>
+<p>같은 정체성을 유지하고 비율만 바꾼 네 안: <strong>A · Tall &amp; Narrow / B · Low &amp; Wide / C · Balanced / D · Compact</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>비율 관계</th>
+<th>볼 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WIDTH : HEIGHT</strong></td>
+<td>제품의 전체 폭과 높이</td>
+</tr>
+<tr>
+<td><strong>BODY : SUPPORT</strong></td>
+<td>본체와 지지 구조의 비율</td>
+</tr>
+<tr>
+<td><strong>THICK : THIN</strong></td>
+<td>두꺼운 부분과 얇은 부분의 관계</td>
+</tr>
+<tr>
+<td><strong>SOLID : VOID</strong></td>
+<td>채워진 공간과 빈 공간의 관계</td>
+</tr>
+<tr>
+<td><strong>PRODUCT : HUMAN</strong></td>
+<td>제품과 사용자의 크기 관계</td>
+</tr>
+</tbody>
+</table></div>
+<p>비율이 바뀌면 인상뿐 아니라 <strong>사용성</strong>도 달라진다. A는 빛이 높이 퍼지고, B는 넓은 면을 비추고, D는 들고 다니기 쉽다. 정답 비율을 찾는 것이 아니라, <strong>내 브리프의 사용 상황에 맞는 비율</strong>을 고르는 것이다.</p>
+<h3 id="13-visual-balance">13 · VISUAL BALANCE</h3>
+<ul>
+<li>무게감이 어느 부분에 집중되는가?</li>
+<li>위쪽과 아래쪽의 비례는 적절한가?</li>
+<li>제품이 불안정해 보이지 않는가?</li>
+<li>좌우의 형태가 의도적으로 균형을 이루는가?</li>
+<li>시각적 중심과 실제 지지 구조는 어떻게 다른가?</li>
+</ul>
+<p>슬라이드의 다이어그램은 베이스의 중심축(점선), 시각적 무게가 모이는 헤드와 지지 면적인 베이스(원), 눈으로 느끼는 무게 중심(점)을 표시한 것이다.</p>
+<h3 id="14-design-for-human-scale">14 · DESIGN FOR HUMAN SCALE</h3>
+<blockquote>
+<p><strong>질문</strong> — 제품을 사람과 함께 놓으면 무엇이 달라 보일까요?</p>
+</blockquote>
+<p>제품 단독 렌더에서는 실제 크기를 판단하기 어렵다. 같은 램프를 <strong>단독 → 책상 위 → 손 안</strong>에 놓으면 크기가 보인다.</p>
+<ul>
+<li><strong>HAND</strong> — 사람의 손과 제품 크기</li>
+<li><strong>REACH</strong> — 사용자가 닿아야 하는 위치</li>
+<li><strong>POSTURE</strong> — 사용 자세</li>
+<li><strong>LIFT</strong> — 제품을 들어 올리는 방식</li>
+<li><strong>SPACE</strong> — 사용 환경과 제품 크기의 관계</li>
+</ul>
+<p>내 콘셉트 옆에 손, 노트북, 컵 같은 기준 사물을 그려 넣어 크기를 확인해 보자.</p>
+<h3 id="15-what-should-change">15 · WHAT SHOULD CHANGE? — 형태 분석 사례</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>문제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>베이스가 지나치게 두꺼워 제품이 무겁게 보인다.</td>
+</tr>
+<tr>
+<td>02</td>
+<td>조명 헤드가 너무 커서 전체 비례가 불균형하다.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>곡선형 지지대의 두께가 일정하지 않다.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>지지대와 헤드의 연결이 어색하다.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>개선 방향</strong> — 베이스 두께 재검토 · 헤드와 베이스의 비율 조정 · 지지대의 곡률과 두께 일관성 확보 · 연결부 구조 검토</p>
+<p>문제는 "무겁다"에서 멈추지 말고 <strong>어느 부분이 왜</strong> 그런지 쓰고, 개선 방향은 "줄인다, 맞춘다, 검토한다"처럼 행동으로 쓴다. 이 문장들이 PART 05의 CHANGE가 된다.</p>
+<h3 id="16-practice-01-concept-form-analysis">16 · Practice 01 · Concept &amp; Form Analysis</h3>
+<blockquote>
+<p>✏️ <strong>Practice 01 · Concept &amp; Form Analysis</strong> — 자신의 Selected Concept를 점검하고, 형태와 비례를 분석합니다.</p>
+<p><strong>이미지 위에 표시</strong></p>
+<ul>
+<li>GOOD · QUESTION · PROBLEM — 각 2개 이상</li>
+<li>SILHOUETTE · PRIMARY / SECONDARY FORM</li>
+<li>PROPORTION · VISUAL BALANCE</li>
+</ul>
+<p><strong>작성할 내용</strong> — 유지할 형태 2개 · 수정할 형태 2개 · 수정해야 하는 이유</p>
+<p><strong>결과물</strong> — Concept &amp; Form Analysis Sheet → PART 05의 KEEP · CHANGE로 이어짐</p>
+</blockquote>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>표시</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GOOD</strong></td>
+<td>잘 구현된 부분</td>
+</tr>
+<tr>
+<td><strong>QUESTION</strong></td>
+<td>검토가 필요한 부분</td>
+</tr>
+<tr>
+<td><strong>PROBLEM</strong></td>
+<td>명확하게 수정해야 하는 부분</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>실습 팁</strong></p>
+<ul>
+<li>표시는 <strong>부위 + 상태</strong>로 쓴다. "이상하다" ✕ → "조작부가 없다" ○</li>
+<li>REVIEW YOUR CONCEPT의 여섯 질문을 하나씩 대입하면 QUESTION과 PROBLEM을 찾기 쉽다.</li>
+<li>이유는 "예뻐서/안 예뻐서"가 아니라 기능, 사용자, 구조, 정체성 중 무엇과 관련되는지로 쓴다.</li>
+</ul>
+<hr />
+<h2 id="part-03-function-usability">PART 03 · Function &amp; Usability — 사용자 행동을 기준으로 검토하기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 제품을 명사가 아니라 사용자의 행동으로 분석하고, 행동에서 필요한 조건과 형태를 끌어낸다.</p>
+</blockquote>
+<h3 id="17-function-usability">17 · FUNCTION &amp; USABILITY (섹션)</h3>
+<blockquote>
+<p><strong>Can people actually use it?</strong> — 제품은 보기 위한 물체가 아니라 사람이 사용하는 물체다.</p>
+</blockquote>
+<h3 id="18-think-in-actions">18 · THINK IN ACTIONS</h3>
+<ul>
+<li>LAMP → <strong>MOVE</strong> → <strong>PLACE</strong> → <strong>TURN ON</strong> → <strong>ADJUST</strong> → <strong>TURN OFF</strong></li>
+</ul>
+<p>"램프"라는 명사 대신 "옮긴다, 놓는다, 켠다, 조절한다, 끈다"라는 동사로 제품을 다시 본다. 동사마다 손이 제품의 어디에 닿는지, 무엇이 필요한지가 드러난다.</p>
+<blockquote>
+<p><strong>질문</strong> — 사용자는 이 제품을 사용하기 위해 어떤 행동을 해야 할까요?</p>
+</blockquote>
+<h3 id="19-user-action-map">19 · USER ACTION MAP — 사례: 휴대용 무선 램프</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>행동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · <strong>APPROACH</strong></td>
+<td>사용자가 제품에 접근한다.</td>
+</tr>
+<tr>
+<td>2 · <strong>GRAB</strong></td>
+<td>제품을 손으로 잡는다.</td>
+</tr>
+<tr>
+<td>3 · <strong>MOVE</strong></td>
+<td>원하는 위치로 이동한다.</td>
+</tr>
+<tr>
+<td>4 · <strong>PLACE</strong></td>
+<td>책상 위에 제품을 놓는다.</td>
+</tr>
+<tr>
+<td>5 · <strong>OPERATE</strong></td>
+<td>전원을 켜고 필요한 방향으로 조절한다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>각 장면에서 <strong>손이 닿는 위치 · 필요한 힘과 방향 · 시선이 가는 곳 · 행동이 막히는 순간</strong>을 본다. 예를 들어 2번에서 손이 지지대 아래쪽을 잡는다면, 그 부분은 손에 맞는 굵기와 표면이 필요하다.</p>
+<h3 id="20-function-creates-form">20 · FUNCTION CREATES FORM</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>ACTION</th>
+<th>REQUIREMENT</th>
+<th>FORM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제품을 잡는다</td>
+<td>손이 안정적으로 닿을 수 있어야 한다</td>
+<td>잡기 쉬운 형태 또는 그립 영역</td>
+</tr>
+<tr>
+<td>조명 방향을 조절한다</td>
+<td>헤드가 움직이거나 방향을 바꿀 수 있어야 한다</td>
+<td>회전축이나 조절 구조</td>
+</tr>
+<tr>
+<td>제품을 책상 위에 놓는다</td>
+<td>사용 중 안정적으로 서 있어야 한다</td>
+<td>베이스의 크기와 지지 구조 검토</td>
+</tr>
+</tbody>
+</table></div>
+<p>내 콘셉트에서 <strong>형태는 있는데 행동과 연결되지 않는 부분</strong>, <strong>행동은 필요한데 형태가 없는 부분</strong>을 찾아보자.</p>
+<h3 id="21-how-does-the-product-communicate">21 · HOW DOES THE PRODUCT COMMUNICATE?</h3>
+<ul>
+<li><strong>AFFORDANCE</strong> — 제품과 사용자의 관계에서 가능한 행동</li>
+<li><strong>SIGNIFIER</strong> — 어디서 어떻게 행동해야 하는지 알려주는 단서</li>
+</ul>
+<p>예: 손가락이 들어갈 수 있는 홈 · 누를 수 있음을 알려주는 버튼의 형태 · 잡는 위치를 구분하는 표면 처리 · 회전 방향을 나타내는 표시</p>
+<p>처음 보는 사람이 내 제품의 사용 방법을 추측할 수 있는지 검토해 보자.</p>
+<h3 id="22-design-around-the-body">22 · DESIGN AROUND THE BODY</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>REACH</strong></td>
+<td>사용자가 필요한 위치에 손을 뻗을 수 있는가?</td>
+</tr>
+<tr>
+<td><strong>GRIP</strong></td>
+<td>제품을 안정적으로 잡을 수 있는가?</td>
+</tr>
+<tr>
+<td><strong>POSTURE</strong></td>
+<td>사용 중 불편한 자세가 요구되지 않는가?</td>
+</tr>
+<tr>
+<td><strong>FORCE</strong></td>
+<td>사용에 과도한 힘이 필요하지 않은가?</td>
+</tr>
+<tr>
+<td><strong>VISIBILITY</strong></td>
+<td>조작부와 상태를 확인하기 쉬운가?</td>
+</tr>
+</tbody>
+</table></div>
+<p>슬라이드의 선은 시선(노트를 보는 방향)과 팔을 뻗는 거리를 설명하기 위한 표시이며 측정값이 아니다.</p>
+<h3 id="23-what-happens-in-real-life">23 · WHAT HAPPENS IN REAL LIFE?</h3>
+<ul>
+<li><strong>USER</strong> — 작은 책상에서 공부하는 대학생</li>
+<li><strong>SPACE</strong> — 좁은 책상, 노트북, 책, 필기구</li>
+<li><strong>GOAL</strong> — 필요한 위치에 조명을 배치하고 쉽게 조절하기</li>
+</ul>
+<p><strong>검토 질문</strong></p>
+<ul>
+<li>제품을 놓을 충분한 공간이 있는가?</li>
+<li>손이 닿기 어려운 부분은 없는가?</li>
+<li>조명 헤드가 다른 물건과 간섭하지 않는가?</li>
+<li>이동하거나 조절할 때 불편하지 않은가?</li>
+</ul>
+<p>내 제품의 실제 사용 환경 한 장면을 그리거나 이미지로 만들어 네 질문에 답해 보자.</p>
+<h3 id="24-practice-02-user-action-mapping">24 · Practice 02 · User Action Mapping</h3>
+<blockquote>
+<p>✏️ <strong>Practice 02 · User Action Mapping</strong> — 자신의 제품을 사용하는 과정을 3~5단계로 정리합니다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>ACTION</th>
+<th>CONTACT</th>
+<th>REQUIREMENT</th>
+<th>PROBLEM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>사용자는 무엇을 하는가?</td>
+<td>제품의 어느 부분과 접촉하는가?</td>
+<td>필요한 조건은?</td>
+<td>현재 콘셉트의 문제는?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>결과물</strong> — User Action Map</p>
+<p><strong>추가 실습</strong> — 사용 과정에서 개선이 필요한 부분을 이미지 또는 스케치 위에 표시합니다.</p>
+</blockquote>
+<p><strong>실습 팁</strong> — PROBLEM이 비어 있는 단계가 많다면 장면을 더 구체적으로 상상해 보자. 손이 어디에 닿고, 몇 번 움직이고, 무엇을 보는가?</p>
+<hr />
+<h2 id="part-04-structure-feasibility">PART 04 · Structure &amp; Feasibility — 제품의 구조적 타당성 검토하기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — AI 이미지의 그럴듯함과 실제 구조를 구분하고, 지지 · 연결 · 움직임 · 조립의 관점에서 약점을 찾는다.</p>
+</blockquote>
+<h3 id="25-can-this-product-exist">25 · CAN THIS PRODUCT EXIST? (섹션)</h3>
+<blockquote>
+<p>AI가 생성한 이미지는 구조적으로 가능한 제품임을 보장하지 않는다.</p>
+</blockquote>
+<h3 id="26-looks-possible-works-possible">26 · LOOKS POSSIBLE ≠ WORKS POSSIBLE</h3>
+<p>AI 제품 이미지에서 생기는 문제:</p>
+<ul>
+<li>연결되지 않은 부품</li>
+<li>실제 지지 구조가 없는 형태</li>
+<li>불가능해 보이는 움직임</li>
+<li>지나치게 얇은 연결부</li>
+<li>조립 방법이 불분명한 구조</li>
+<li>소재의 특성과 맞지 않는 형태</li>
+</ul>
+<p><strong>A</strong>는 지지대가 헤드에 녹아든 듯 이어져 어떻게 연결되는지, 움직이는지 알 수 없다. <strong>B</strong>는 같은 계열의 램프에서 연결부를 정리한 버전으로, 원통형 피벗 허브가 보여 연결 방식과 회전 가능성이 읽힌다. B도 실제 강도나 작동이 검증된 것은 아니며, <strong>설명 가능한 구조를 제안한 단계</strong>다.</p>
+<h3 id="27-what-supports-the-product">27 · WHAT SUPPORTS THE PRODUCT?</h3>
+<ul>
+<li>하중이 어느 부분에 작용하는가?</li>
+<li>제품은 어떤 부분을 통해 지지되는가?</li>
+<li>베이스는 충분한 안정성을 제공하는가?</li>
+<li>돌출된 부품은 어떻게 지지되는가?</li>
+<li>사용 중 움직이거나 넘어질 가능성은 없는가?</li>
+</ul>
+<p>슬라이드의 개념도는 헤드의 하중이 지지대를 따라 베이스로 전달되고, 베이스의 지지 폭이 버티는 관계를 단순하게 보여 준다. 헤드가 베이스 바깥으로 멀리 나갈수록 베이스가 넓거나 무거워야 할 가능성이 커진다.</p>
+<blockquote>
+<p>슬라이드 왼쪽은 하중의 흐름을 이해하기 위한 개념도다.</p>
+</blockquote>
+<h3 id="28-how-do-parts-connect">28 · HOW DO PARTS CONNECT?</h3>
+<p>확인할 것: 하나로 이어져 있는가? · 별도 부품이 결합되는가? · 움직이는 연결부인가? · 분리하거나 조립할 수 있는가? · 연결부가 외부로 드러나는가?</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>연결 방식</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>INTEGRATED</strong></td>
+<td>하나의 연속된 형태</td>
+</tr>
+<tr>
+<td><strong>EXPOSED JOINT</strong></td>
+<td>연결부가 드러나는 구조</td>
+</tr>
+<tr>
+<td><strong>HIDDEN JOINT</strong></td>
+<td>연결부가 외부에서 잘 보이지 않는 구조</td>
+</tr>
+<tr>
+<td><strong>MOVING JOINT</strong></td>
+<td>회전 또는 움직임이 필요한 구조</td>
+</tr>
+</tbody>
+</table></div>
+<p>어느 방식이 맞는지는 기능(헤드를 움직여야 하는가), 조립과 수리, 형태 언어에 따라 다르다. 이번 주는 연결 방식을 고르는 데까지, 소재와 마감은 3주차에 다룬다.</p>
+<h3 id="29-find-the-weak-point">29 · FIND THE WEAK POINT — 구조 분석 사례</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>문제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>조명 헤드와 지지대가 실제로 연결되어 있는지 불분명하다.</td>
+</tr>
+<tr>
+<td>02</td>
+<td>베이스에 비해 헤드가 너무 크고 무겁게 보인다.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>각도 조절이 가능한 형태처럼 보이지만 회전 구조가 없다.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>전원 공급 방식과 부품 배치가 표현되지 않았다.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>개선 방향</strong> — 연결부 구조를 명확히 표현한다 · 헤드와 베이스의 비례를 검토한다 · 필요한 경우 조절 구조를 제안한다 · 주요 부품의 배치와 작동 방식을 설명한다</p>
+<p>아직 검증하지 않은 구조를 "구현 가능하다"고 단정하지 않는다. "명확히 표현한다, 검토한다, 제안한다"가 이 단계의 언어다.</p>
+<h3 id="30-practice-03-structural-review">30 · Practice 03 · Structural Review</h3>
+<blockquote>
+<p>✏️ <strong>Practice 03 · Structural Review</strong> — 자신의 Selected Concept에서 구조적 요소를 찾습니다.</p>
+<p><strong>찾을 요소</strong></p>
+<ul>
+<li><strong>SUPPORT</strong> — 제품을 지지하는 부분</li>
+<li><strong>CONNECTION</strong> — 부품이 연결되는 부분</li>
+<li><strong>MOVEMENT</strong> — 움직임이 필요한 부분</li>
+<li><strong>ASSEMBLY</strong> — 조립 또는 분리가 필요한 부분</li>
+</ul>
+<p><strong>작성할 내용</strong> — 구조적으로 의문이 있는 부분 2개 이상 · 각 문제의 개선 방향 · 필요한 경우 수정 스케치</p>
+<p><strong>결과물</strong> — Structural Review Sheet</p>
+</blockquote>
+<p><strong>실습 팁</strong> — HOW DO PARTS CONNECT?의 네 연결 방식 중 내 제품에 어떤 방식이 맞는지 고민해 보자. 정답을 확정하기보다 "어떤 구조라면 설명이 되는가"를 제안하는 단계다.</p>
+<hr />
+<h2 id="part-05-design-direction">PART 05 · Design Direction — 수정 방향과 우선순위 결정하기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 지금까지의 분석을 KEEP · CHANGE · CONSTRAINT · PRIORITY라는 네 가지 결정으로 바꾸고, Design Revision Plan과 수정 스케치를 만든다.</p>
+</blockquote>
+<h3 id="31-decide-before-you-modify">31 · DECIDE BEFORE YOU MODIFY (섹션)</h3>
+<blockquote>
+<p>수정 작업을 시작하기 전에 무엇을 바꾸고 무엇을 유지할지 결정해야 한다.</p>
+</blockquote>
+<h3 id="32-analysis-decision">32 · ANALYSIS → DECISION</h3>
+<ul>
+<li>지금까지 분석한 항목 — <strong>FORM · PROPORTION · FUNCTION · USABILITY · STRUCTURE</strong></li>
+<li>다음 단계 — <strong>KEEP</strong>(유지할 것) · <strong>CHANGE</strong>(수정할 것) · <strong>CONSTRAINT</strong>(바뀌면 안 되는 조건) · <strong>PRIORITY</strong>(먼저 고칠 것)</li>
+</ul>
+<p>분석 자체가 목적은 아니다. 분석을 통해 <strong>실제 수정 작업에 쓸 디자인 의사결정</strong>을 만들어야 한다.</p>
+<h3 id="33-keep-what-should-remain">33 · KEEP — What should remain?</h3>
+<p>디자인을 수정하더라도 반드시 유지해야 하는 특징을 정의한다. 예: 전체 실루엣 · 주요 곡선 · 제품의 기본 구조 · 핵심 기능 · 사용자가 인식하는 제품 정체성</p>
+<blockquote>
+<p><strong>질문</strong> — 이 요소가 사라지면 여전히 같은 디자인이라고 할 수 있을까요?</p>
+</blockquote>
+<p>KEEP이 너무 많으면 고칠 수 있는 것이 없고, 너무 적으면 다음 주 AI 수정에서 콘셉트가 쉽게 바뀐다. <strong>3개 안팎</strong>이 적당하다.</p>
+<h3 id="34-change-what-should-change">34 · CHANGE — What should change?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>문제</th>
+<th>수정 방향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>베이스가 너무 두꺼워 보인다.</td>
+<td>베이스 두께를 줄여 전체 비례를 개선한다.</td>
+</tr>
+<tr>
+<td>전원 버튼의 위치가 불분명하다.</td>
+<td>사용자가 쉽게 접근할 수 있는 위치에 조작부를 배치한다.</td>
+</tr>
+<tr>
+<td>지지대와 헤드의 연결이 어색하다.</td>
+<td>연결 구조를 명확하게 표현한다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>좋은 CHANGE에는 <strong>부위 + 방향 + 이유</strong>가 있다. 다음 주에는 이 문장을 그대로 AI 편집 지시로 옮긴다.</p>
+<h3 id="35-constraint-what-must-not-change">35 · CONSTRAINT — What must not change?</h3>
+<ul>
+<li>제품의 주요 실루엣 유지</li>
+<li>핵심 기능 유지</li>
+<li>전체적인 크기 범위 유지</li>
+<li>사용 목적 변경 금지</li>
+<li>불필요한 부품 추가 금지</li>
+</ul>
+<p>KEEP이 "지켜야 할 특징"이라면 CONSTRAINT는 "수정할 때 넘으면 안 되는 선"이다. 수정 조건이 없으면 다음 온라인 실습에서 AI를 쓸 때 원래 콘셉트가 크게 달라질 수 있다.</p>
+<h3 id="36-priority-what-should-we-fix-first">36 · PRIORITY — What should we fix first?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>HIGH PRIORITY</th>
+<th>MEDIUM PRIORITY</th>
+<th>LOW PRIORITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기능을 수행하기 어려운 문제</td>
+<td>주요 비율과 형태 개선</td>
+<td>작은 모서리 처리</td>
+</tr>
+<tr>
+<td>구조적으로 큰 의문이 있는 문제</td>
+<td>조작부 위치 조정</td>
+<td>미세한 표면 디테일</td>
+</tr>
+<tr>
+<td>사용자 행동을 방해하는 문제</td>
+<td>형태 언어의 일관성 개선</td>
+<td>장식 요소</td>
+</tr>
+<tr>
+<td>핵심 디자인 목표와 충돌하는 문제</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong><em>Fix the important problems first.</em></strong></p>
+</blockquote>
+<p>큰 문제를 먼저 고치면 작은 문제는 저절로 바뀌기도 한다.</p>
+<h3 id="37-design-revision-plan">37 · DESIGN REVISION PLAN — 예시</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PROJECT</strong></td>
+<td>휴대용 무선 테이블 램프</td>
+</tr>
+<tr>
+<td><strong>DESIGN GOAL</strong></td>
+<td>작은 작업 공간에 적합한 휴대용 조명</td>
+</tr>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>곡선형 지지대 · 얇은 원형 헤드 · 간결한 실루엣</td>
+</tr>
+<tr>
+<td><strong>CHANGE</strong></td>
+<td>1. 베이스 두께 감소 2. 조명 헤드와 지지대 연결부 개선 3. 전원 버튼 위치 명확화</td>
+</tr>
+<tr>
+<td><strong>CONSTRAINT</strong></td>
+<td>제품의 기본 실루엣 유지 · 휴대용 조명 기능 유지 · 불필요한 부품 추가 금지</td>
+</tr>
+<tr>
+<td><strong>PRIORITY</strong></td>
+<td>1. 연결 구조 → 2. 전체 비례 → 3. 조작부</td>
+</tr>
+</tbody>
+</table></div>
+<p>이 표의 문장이 다음 주 AI 편집 지시가 된다. 예를 들어 CHANGE 1과 CONSTRAINT를 합치면:</p>
+<pre><code class="language-text">Reduce only the base thickness.
+Keep the curved support, the thin round head and the overall silhouette unchanged.
+Do not add any new parts.
+</code></pre>
+<h3 id="38-sketch-the-change">38 · SKETCH THE CHANGE</h3>
+<p>수정 방향은 텍스트뿐 아니라 스케치로도 표현할 수 있어야 한다.</p>
+<ul>
+<li>베이스 두께를 줄인 스케치</li>
+<li>조명 헤드 크기를 조정한 스케치</li>
+<li>연결부를 개선한 스케치</li>
+<li>버튼 위치를 변경한 스케치</li>
+</ul>
+<p>렌더를 출력하거나 태블릿에 띄워 그 위에 직접 그린다. <strong>수정선 · 비율 표시 · 확대 스케치 · 화살표</strong>면 충분하다. 잘 그리는 것보다 무엇을 바꾸는지가 보이는 것이 중요하다.</p>
+<h3 id="39-practice-04-design-revision-board">39 · Practice 04 · Design Revision Board</h3>
+<blockquote>
+<p>✏️ <strong>Practice 04 · Design Revision Board</strong> — 지금까지의 분석 결과를 하나의 보드로 정리합니다.</p>
+<p><strong>포함할 항목</strong></p>
+<ol>
+<li>SELECTED CONCEPT</li>
+<li>FORM ANALYSIS</li>
+<li>USER ACTION MAP</li>
+<li>STRUCTURAL REVIEW</li>
+<li>KEEP / CHANGE</li>
+<li>CONSTRAINT</li>
+<li>PRIORITY</li>
+<li>REVISION SKETCH</li>
+</ol>
+<p><strong>결과물</strong> — Design Revision Board</p>
+<p><strong>확인 기준</strong> — 수정 사항마다 답할 수 있어야 합니다.</p>
+<ul>
+<li>"무엇을 수정할 것인가?"</li>
+<li>"왜 수정해야 하는가?"</li>
+<li>"어떤 요소는 유지해야 하는가?"</li>
+</ul>
+</blockquote>
+<p>답하지 못하는 항목은 아직 결정이 아니라 관찰 단계다.</p>
+<hr />
+<h2 id="part-06-feedback-assignment">PART 06 · Feedback &amp; Assignment — 다음 온라인 실습으로 연결하기</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 내 수정 계획을 근거와 함께 보드에 적고, 구체적인 피드백을 주고받아 최종 수정 결정을 확정한다.</p>
+</blockquote>
+<h3 id="40-explain-your-decision-design-critique">40 · EXPLAIN YOUR DECISION — Design Critique</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>순서</th>
+<th>적을 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · <strong>ORIGINAL INTENT</strong></td>
+<td>처음 만들고자 했던 제품</td>
+</tr>
+<tr>
+<td>2 · <strong>CURRENT CONCEPT</strong></td>
+<td>현재 선택한 콘셉트</td>
+</tr>
+<tr>
+<td>3 · <strong>IDENTIFIED PROBLEM</strong></td>
+<td>분석 과정에서 발견한 문제</td>
+</tr>
+<tr>
+<td>4 · <strong>REVISION DIRECTION</strong></td>
+<td>수정할 내용과 이유</td>
+</tr>
+</tbody>
+</table></div>
+<p>자신의 수정 계획을 네 단계로 Revision Board 옆에 적는다. 길게 쓰지 말고, 이유를 분명하게. "예쁘게", "세련되게" 대신 분석에서 나온 근거를 적는다.</p>
+<h3 id="41-specific-feedback">41 · SPECIFIC FEEDBACK</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>잘못된 피드백</th>
+<th>개선된 피드백</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"조금 더 세련되게 만들면 좋겠어요."</td>
+<td>"현재 조명 헤드가 베이스에 비해 지나치게 커서 상단이 무거워 보입니다. 헤드의 지름을 줄인 안과 베이스의 폭을 넓힌 안을 각각 비교해 보면 좋겠습니다."</td>
+</tr>
+<tr>
+<td>"비율이 좀 이상해요."</td>
+<td></td>
+</tr>
+<tr>
+<td>"더 예쁘게 수정하면 좋겠어요."</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>피드백 구조</strong></p>
+<ul>
+<li><strong>OBSERVATION</strong> — 무엇이 문제인가?</li>
+<li><strong>REASON</strong> — 왜 문제가 되는가?</li>
+<li><strong>SUGGESTION</strong> — 어떻게 수정할 수 있는가?</li>
+</ul>
+<h3 id="42-review-each-other-peer-review">42 · REVIEW EACH OTHER — Peer Review</h3>
+<p>2~3인이 서로의 Design Revision Board를 돌려 보고, 아래 세 가지를 메모로 적어 준다. 피드백은 앞의 OBSERVATION → REASON → SUGGESTION 구조로 쓴다.</p>
+<ol>
+<li>가장 잘 유지해야 할 특징 1개</li>
+<li>가장 먼저 수정해야 할 문제 1개</li>
+<li>추가로 검토하면 좋을 사항 1개</li>
+</ol>
+<p>받은 피드백 중 동의하는 것은 KEEP · CHANGE에 반영하고, 동의하지 않는 것은 이유를 적어 두자. 다른 사람의 의견을 그대로 받아들이는 것이 아니라 <strong>다시 판단하는 연습</strong>이다.</p>
+<h3 id="43-define-your-next-move-final-revision-decision">43 · DEFINE YOUR NEXT MOVE — Final Revision Decision</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>개수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>3개</td>
+</tr>
+<tr>
+<td><strong>CHANGE</strong></td>
+<td>3개</td>
+</tr>
+<tr>
+<td><strong>CONSTRAINT</strong></td>
+<td>2개 이상</td>
+</tr>
+<tr>
+<td><strong>FIRST PRIORITY</strong></td>
+<td>1개</td>
+</tr>
+<tr>
+<td><strong>REVISION SKETCH</strong></td>
+<td>최소 1개</td>
+</tr>
+</tbody>
+</table></div>
+<p>다음 온라인 실습에서는 이 내용을 <strong>그대로 AI에 전달</strong>해 제품을 수정한다. 모호한 표현을 피하자.</p>
+<ul>
+<li>✕ "좀 더 가볍게"</li>
+<li>○ "베이스 높이를 줄이고 지지대 두께를 일정하게 맞춘다"</li>
+</ul>
+<h3 id="44-design-revision-board">44 · DESIGN REVISION BOARD — 최종 제출물</h3>
+<ol>
+<li>Selected Concept Image</li>
+<li>Concept Review</li>
+<li>Form Analysis</li>
+<li>User Action Map</li>
+<li>Structural Review</li>
+<li>Keep / Change / Constraint</li>
+<li>Revision Priority</li>
+<li>Revision Sketch</li>
+</ol>
+<p>보드는 <strong>Selected Concept → Analysis → Identified Problems → Revision Sketch → Revision Plan</strong>의 흐름이 한눈에 보여야 한다. 각 칸에는 이미지와 짧은 설명이 함께 있어야 한다.</p>
+<h3 id="45-next-refine-with-ai">45 · NEXT — REFINE WITH AI (다음 온라인 실습 예고)</h3>
+<ul>
+<li>SELECTED CONCEPT + DESIGN REVISION BOARD → KEEP / CHANGE / CONSTRAINT → AI IMAGE EDITING → CONTROLLED VARIATION → COMPARE → <strong>REFINED CONCEPT</strong></li>
+</ul>
+<p>이번 오프라인 수업에서는 <strong>무엇을 수정할지 결정</strong>했다. 다음 온라인 수업에서는 그 결정을 <strong>AI로 실제 구현</strong>한다.</p>
+<blockquote>
+<p><strong><em>Don't change everything. Change what matters.</em></strong></p>
+<p>📁 <strong>다음 수업 준비</strong> — Design Revision Board와 Selected Concept 원본 이미지, 수정 스케치를 꼭 저장해 오세요.</p>
+</blockquote>
+<hr />
+<h2 id="_8">부록</h2>
+<h3 id="a">A. 핵심 용어</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>용어</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Selected Concept</strong></td>
+<td>1주차에 고른 콘셉트. 완성품이 아니라 발전의 출발점</td>
+</tr>
+<tr>
+<td><strong>Concept Audit</strong></td>
+<td>PURPOSE · IDENTITY · FUNCTION · USABILITY · STRUCTURE · AI ASSUMPTION으로 콘셉트를 점검하는 것</td>
+</tr>
+<tr>
+<td><strong>Silhouette</strong></td>
+<td>색과 소재를 지운 제품의 외곽. 형태의 정체성을 확인하는 기준</td>
+</tr>
+<tr>
+<td><strong>Primary / Secondary / Detail</strong></td>
+<td>전체 덩어리 / 기능을 구성하는 주요 부분 / 연결부 · 버튼 등 작은 요소</td>
+</tr>
+<tr>
+<td><strong>Visual Balance</strong></td>
+<td>눈으로 느끼는 무게의 분포. 실제 물리적 안정성과는 다르다</td>
+</tr>
+<tr>
+<td><strong>Human Scale</strong></td>
+<td>제품과 사람(손, 팔, 자세, 공간)의 크기 관계</td>
+</tr>
+<tr>
+<td><strong>User Action Map</strong></td>
+<td>사용 과정을 단계별 ACTION · CONTACT · REQUIREMENT · PROBLEM으로 정리한 표</td>
+</tr>
+<tr>
+<td><strong>Affordance / Signifier</strong></td>
+<td>가능한 행동 / 그 행동을 어디서 어떻게 할지 알려주는 단서</td>
+</tr>
+<tr>
+<td><strong>Feasibility</strong></td>
+<td>제품이 구조적으로 존재하고 작동할 수 있는지에 대한 타당성</td>
+</tr>
+<tr>
+<td><strong>KEEP / CHANGE / CONSTRAINT / PRIORITY</strong></td>
+<td>유지할 것 / 수정할 것 / 넘으면 안 되는 조건 / 먼저 고칠 순서</td>
+</tr>
+<tr>
+<td><strong>Design Revision Board</strong></td>
+<td>분석과 수정 결정을 한 장에 모은 보드. 다음 온라인 AI 실습의 입력 자료</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="b-2">B. 2주차 오프라인 제출 체크리스트</h3>
+<ul>
+<li>☐ Concept &amp; Form Analysis Sheet — GOOD · QUESTION · PROBLEM 각 2개 이상 + 형태 5개 항목 표시 + 유지할 형태 2 · 수정할 형태 2 + 이유</li>
+<li>☐ User Action Map — 3~5단계, 단계마다 ACTION · CONTACT · REQUIREMENT · PROBLEM</li>
+<li>☐ Structural Review Sheet — 구조적 의문 2개 이상 + 개선 방향</li>
+<li>☐ KEEP 3 · CHANGE 3 · CONSTRAINT 2+ · FIRST PRIORITY 1</li>
+<li>☐ Revision Sketch 최소 1개</li>
+<li>☐ Design Revision Board (8개 항목)</li>
+</ul>
+<h3 id="c">C. 수업 후 스스로 점검하기</h3>
+<blockquote>
+<ol>
+<li>내 콘셉트에서 내가 결정한 부분과 AI가 채운 부분을 구분할 수 있는가?</li>
+<li>색과 소재를 지워도 내 제품의 특징이 남아 있는가?</li>
+<li>사용자가 내 제품을 쓰는 과정을 동사 3~5개로 설명할 수 있는가?</li>
+<li>구조적으로 설명하지 못하는 부분이 어디인지 알고 있는가?</li>
+<li>각 CHANGE에 부위 · 방향 · 이유가 모두 들어 있는가?</li>
+<li>"무엇을 수정할 것인가, 왜 수정하는가, 무엇을 유지하는가"에 답할 수 있는가?</li>
+</ol>
+</blockquote></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>
