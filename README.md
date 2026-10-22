@@ -8,6 +8,8 @@ Kyung Hee University 산업디자인 「AI × Industrial Design」 수업 자료
 | W01 | Online · Sketch to Concept | [`w01/online/slides/`](w01/online/slides/) (40장) | [`w01/online/handbook/`](w01/online/handbook/) | `w01/online/AI_x_ID_W01_Online.pdf` |
 | W02 | Offline · Develop | [`w02/offline/slides/`](w02/offline/slides/) (45장) | [`w02/offline/handbook/`](w02/offline/handbook/) | `w02/offline/AI_x_ID_W02_Offline.pdf` |
 | W02 | Online · AI Design Refinement | [`w02/online/slides/`](w02/online/slides/) (30장) | [`w02/online/handbook/`](w02/online/handbook/) | `w02/online/AI_x_ID_W02_Online.pdf` |
+| W03 | Offline · Product Detail & CMF | [`w03/offline/slides/`](w03/offline/slides/) (40장) | [`w03/offline/handbook/`](w03/offline/handbook/) | `w03/offline/AI_x_ID_W03_Offline.pdf` |
+| W03 | Online · AI Product Visualization | [`w03/online/slides/`](w03/online/slides/) (32장) | [`w03/online/handbook/`](w03/online/handbook/) | `w03/online/AI_x_ID_W03_Online.pdf` |
 
 ## 구조
 

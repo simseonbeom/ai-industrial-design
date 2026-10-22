@@ -1,0 +1,880 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W03 Offline · Product Detail &amp; CMF · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 03 · Offline</a><a class="swap" href="../../online/handbook/">→ Online 교안 보기</a><div><div class="toc">
+<ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#_3">오늘 가져올 자료</a></li>
+<li><a href="#_4">핵심 질문</a></li>
+<li><a href="#_5">학습 목표</a></li>
+<li><a href="#master-product-reference">기준 제품 (Master Product Reference)</a></li>
+<li><a href="#_6">수업 흐름</a></li>
+</ul>
+</li>
+<li><a href="#part-01-refined-concept-review">PART 01 · Refined Concept Review</a><ul>
+<li><a href="#01-product-detail-cmf">01 · PRODUCT DETAIL &amp; CMF</a></li>
+<li><a href="#02-from-concept-to-definition">02 · FROM CONCEPT TO DEFINITION</a></li>
+<li><a href="#03-refined-does-not-mean-defined">03 · REFINED DOES NOT MEAN DEFINED</a></li>
+<li><a href="#04-what-is-still-undefined">04 · WHAT IS STILL UNDEFINED?</a></li>
+<li><a href="#05-lock-the-form">05 · LOCK THE FORM</a></li>
+<li><a href="#06-practice-01-final-form-review">06 · Practice 01 · Final Form Review</a></li>
+</ul>
+</li>
+<li><a href="#part-02-cmf-design-color-material-finish">PART 02 · CMF Design — Color · Material · Finish</a><ul>
+<li><a href="#07-color-material-finish">07 · COLOR · MATERIAL · FINISH</a></li>
+<li><a href="#08-color-defines-perception">08 · COLOR DEFINES PERCEPTION</a></li>
+<li><a href="#09-material-is-a-design-decision">09 · MATERIAL IS A DESIGN DECISION</a></li>
+<li><a href="#10-material-application">10 · MATERIAL APPLICATION</a></li>
+<li><a href="#11-finish-changes-the-experience">11 · FINISH CHANGES THE EXPERIENCE</a></li>
+<li><a href="#12-cmf-user-experience">12 · CMF &amp; USER EXPERIENCE</a></li>
+<li><a href="#13-cmf-direction-a-b">13 · CMF DIRECTION A / B</a></li>
+<li><a href="#14-cmf-decision-criteria">14 · CMF DECISION CRITERIA</a></li>
+<li><a href="#15-practice-02-cmf-direction">15 · Practice 02 · CMF Direction</a></li>
+</ul>
+</li>
+<li><a href="#part-03-product-detail-design">PART 03 · Product Detail Design</a><ul>
+<li><a href="#16-design-is-in-the-details">16 · DESIGN IS IN THE DETAILS</a></li>
+<li><a href="#17-parting-line">17 · PARTING LINE</a></li>
+<li><a href="#18-joint-connection">18 · JOINT &amp; CONNECTION</a></li>
+<li><a href="#19-interface-controls">19 · INTERFACE &amp; CONTROLS</a></li>
+<li><a href="#20-edge-radius">20 · EDGE &amp; RADIUS</a></li>
+<li><a href="#21-material-transition">21 · MATERIAL TRANSITION</a></li>
+<li><a href="#22-detail-consistency">22 · DETAIL CONSISTENCY</a></li>
+<li><a href="#23-detail-definition-sheet">23 · DETAIL DEFINITION SHEET</a></li>
+<li><a href="#24-detail-sketching">24 · DETAIL SKETCHING</a></li>
+<li><a href="#25-practice-03-detail-definition">25 · Practice 03 · Detail Definition</a></li>
+</ul>
+</li>
+<li><a href="#part-04-multi-view-design">PART 04 · Multi-view Design</a><ul>
+<li><a href="#26-one-product-multiple-views">26 · ONE PRODUCT, MULTIPLE VIEWS</a></li>
+<li><a href="#27-why-multi-view-matters">27 · WHY MULTI-VIEW MATTERS</a></li>
+<li><a href="#28-front-side-rear-top">28 · FRONT / SIDE / REAR / TOP</a></li>
+<li><a href="#29-visual-consistency">29 · VISUAL CONSISTENCY</a></li>
+<li><a href="#30-define-the-hidden-side">30 · DEFINE THE HIDDEN SIDE</a></li>
+<li><a href="#31-multi-view-reference-sketch">31 · MULTI-VIEW REFERENCE SKETCH</a></li>
+<li><a href="#32-practice-04-multi-view-definition">32 · Practice 04 · Multi-view Definition</a></li>
+</ul>
+</li>
+<li><a href="#part-05-visualization-direction">PART 05 · Visualization Direction</a><ul>
+<li><a href="#33-product-design-vs-visual-presentation">33 · PRODUCT DESIGN vs VISUAL PRESENTATION</a></li>
+<li><a href="#34-types-of-product-images">34 · TYPES OF PRODUCT IMAGES</a></li>
+<li><a href="#35-hero-image-direction">35 · HERO IMAGE DIRECTION</a></li>
+<li><a href="#36-visualization-direction-sheet">36 · VISUALIZATION DIRECTION SHEET</a></li>
+<li><a href="#37-practice-05-visualization-planning">37 · Practice 05 · Visualization Planning</a></li>
+</ul>
+</li>
+<li><a href="#part-06-review-assignment">PART 06 · Review &amp; Assignment</a><ul>
+<li><a href="#38-product-detail-cmf-board">38 · PRODUCT DETAIL &amp; CMF BOARD</a></li>
+<li><a href="#39-final-design-review">39 · FINAL DESIGN REVIEW</a></li>
+<li><a href="#40-next-visualize-the-design">40 · NEXT — VISUALIZE THE DESIGN (다음 온라인 수업 예고)</a></li>
+</ul>
+</li>
+<li><a href="#_7">부록</a><ul>
+<li><a href="#a">A. 핵심 용어</a></li>
+<li><a href="#b-3">B. 3주차 오프라인 제출 체크리스트</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></nav><main><h1 id="ai-industrial-design-3-product-detail-cmf">AI × Industrial Design · 3주차 오프라인 — Product Detail &amp; CMF</h1>
+<blockquote>
+<p>From Refined Concept to Product Definition</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>1~2주차에는 제품의 형태를 발전시켰다. 2주차 온라인에서 완성한 Refined Concept는 완성되어 보이지만, <strong>소재·마감·버튼·연결부·후면은 아직 아무도 결정하지 않았다.</strong></p>
+<p>이번 주에는 형태를 바꾸지 않고, 같은 제품의 <strong>CMF(Color · Material · Finish), 핵심 디테일, 시점별 형태, 시각화 기준</strong>을 정의한다. 결과물은 새로운 제품 이미지가 아니라, 기존 제품을 구체화한 <strong>Product Detail &amp; CMF Board</strong>다.</p>
+<h3 id="_3">오늘 가져올 자료</h3>
+<ul>
+<li>2주차 Refined Concept 이미지(기준 이미지로 쓸 한 장)</li>
+<li>2주차 Design Revision Board · KEEP / CHANGE / CONSTRAINT</li>
+<li>펜 · 트레이싱지 또는 이미지 위에 그릴 수 있는 도구</li>
+</ul>
+<h3 id="_4">핵심 질문</h3>
+<blockquote>
+<ul>
+<li>이 제품에서 실제로 설계된 부분과 AI가 임의로 표현한 부분은 무엇인가?</li>
+<li>이 제품에 맞는 색상·소재·마감은 무엇이고, 그 근거는 무엇인가?</li>
+<li>보이지 않는 부분(후면, 연결부, 조작부)은 어떻게 생겼는가?</li>
+</ul>
+</blockquote>
+<h3 id="_5">학습 목표</h3>
+<ol>
+<li>기준 제품의 형태를 확정하고, 아직 정의되지 않은 요소를 구분한다.</li>
+<li>사용 환경과 디자인 목표를 근거로 CMF를 결정한다.</li>
+<li>연결부·분할선·조작부·모서리·소재 경계 같은 핵심 디테일을 정의한다.</li>
+<li>시점이 바뀌어도 유지될 형태를 Multi-view 스케치로 정한다.</li>
+<li>다음 온라인 수업에서 만들 이미지와 AI가 바꾸면 안 되는 조건을 정리한다.</li>
+</ol>
+<h3 id="master-product-reference">기준 제품 (Master Product Reference)</h3>
+<p>슬라이드의 예시는 2주차 온라인에서 완성한 <strong>테이블 램프 Refined Concept</strong> 한 장을 기준으로 한다.</p>
+<ul>
+<li>낮고 넓은 원통형 베이스</li>
+<li>베이스 왼쪽에서 시작해 위로 휘어지는 하나의 C자형 지지대</li>
+<li>지지대 끝에서 오른쪽으로 수평 배치된 얇은 원형 헤드, 아래쪽의 따뜻한 확산광</li>
+<li>밝은 실버 · 웜그레이 계열의 금속성 표면, 장식 없는 미니멀한 형태</li>
+</ul>
+<p>원본에서 <strong>확인되지 않는 것</strong>: 전원 버튼, 충전 포트, 부품 분할선, 내부 결합 구조, 후면 구조, 실제 치수와 제조 방식. 이 요소들은 이번 수업에서 여러분이 결정한다. 원본에 없는 디테일을 그린 이미지는 슬라이드에 <strong>DESIGN PROPOSAL · 설계 제안</strong>으로 표시되어 있다.</p>
+<p>슬라이드의 비교 이미지는 모두 같은 기준 이미지를 Higgsfield에서 편집해 만들었다. 색상 비교는 색상만, 소재 비교는 소재만, 마감 비교는 마감만 바꿨다.</p>
+<h3 id="_6">수업 흐름</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PART</th>
+<th>단계</th>
+<th>슬라이드</th>
+<th>핵심 질문</th>
+<th>실습 · 결과물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Refined Concept Review</td>
+<td>1–6</td>
+<td>무엇이 정해졌고 무엇이 남았는가?</td>
+<td>Practice 01 · Final Form Reference</td>
+</tr>
+<tr>
+<td>02</td>
+<td>CMF Design</td>
+<td>7–15</td>
+<td>이 제품에 맞는 색·소재·마감은?</td>
+<td>Practice 02 · CMF Direction Sheet</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Product Detail Design</td>
+<td>16–25</td>
+<td>핵심 디테일은 어떻게 생겼는가?</td>
+<td>Practice 03 · Detail Definition Sheet</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Multi-view Design</td>
+<td>26–32</td>
+<td>시점이 바뀌어도 같은 제품인가?</td>
+<td>Practice 04 · Multi-view Reference Sketch</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Visualization Direction</td>
+<td>33–37</td>
+<td>어떤 이미지로 무엇을 보여줄 것인가?</td>
+<td>Practice 05 · Visualization Direction Sheet</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Review &amp; Assignment</td>
+<td>38–40</td>
+<td>시각화할 준비가 되었는가?</td>
+<td>Product Detail &amp; CMF Board</td>
+</tr>
+</tbody>
+</table></div>
+<p>모든 실습 결과는 마지막에 <strong>Product Detail &amp; CMF Board</strong> 한 장으로 모인다.</p>
+<hr />
+<h2 id="part-01-refined-concept-review">PART 01 · Refined Concept Review</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 기준 제품의 형태를 고정하고, 아직 정의되지 않은 요소를 찾아낸다.</p>
+</blockquote>
+<h3 id="01-product-detail-cmf">01 · PRODUCT DETAIL &amp; CMF</h3>
+<p>제품의 형태를 결정했다면, 이제 소재와 디테일을 구체적으로 정의할 차례다. 표지의 이미지는 새로 만든 Hero가 아니라 이번 주 모든 작업의 기준이 되는 2주차 Refined Concept다.</p>
+<h3 id="02-from-concept-to-definition">02 · FROM CONCEPT TO DEFINITION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>주차</th>
+<th>흐름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WEEK 01</td>
+<td>IDEA → SKETCH → CONCEPT</td>
+</tr>
+<tr>
+<td>WEEK 02</td>
+<td>REVIEW → REVISE → REFINE</td>
+</tr>
+<tr>
+<td><strong>WEEK 03</strong></td>
+<td><strong>CMF → DETAIL → CONSISTENCY</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>1~2주차에는 형태를 발전시켰고, 3주차에는 같은 제품의 소재와 디테일을 구체화한다.</p>
+<h3 id="03-refined-does-not-mean-defined">03 · REFINED DOES NOT MEAN DEFINED</h3>
+<p>AI로 만든 제품 이미지가 완성되어 보여도 실제 디자인 결정이 끝난 것은 아니다.</p>
+<ol>
+<li>본체의 정확한 소재는 무엇인가?</li>
+<li>무광과 새틴 중 어떤 마감을 사용할 것인가?</li>
+<li>전원 버튼은 어디에 위치하는가?</li>
+<li>충전 방식은 무엇인가?</li>
+<li>지지대와 베이스는 어떻게 연결되는가?</li>
+<li>후면 구조는 어떻게 구성되는가?</li>
+</ol>
+<h3 id="04-what-is-still-undefined">04 · WHAT IS STILL UNDEFINED?</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>영역</th>
+<th>정의할 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FORM</strong></td>
+<td>형태와 비율</td>
+</tr>
+<tr>
+<td><strong>CMF</strong></td>
+<td>색상, 소재, 표면 마감</td>
+</tr>
+<tr>
+<td><strong>DETAIL</strong></td>
+<td>버튼, 연결부, 부품 경계</td>
+</tr>
+<tr>
+<td><strong>MULTI-VIEW</strong></td>
+<td>앞 · 옆 · 뒤의 형태</td>
+</tr>
+<tr>
+<td><strong>VISUALIZATION</strong></td>
+<td>제품을 어떤 이미지로 보여줄 것인가</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>질문</strong> — 이 제품에서 실제로 설계된 부분과 AI가 임의로 표현한 부분은 무엇일까요?</p>
+</blockquote>
+<p>기준 이미지를 확대해 보면 헤드 연결부와 베이스에 경계선이나 조작부가 없다. AI가 매끈하게 처리한 곳이 곧 아직 설계되지 않은 곳이다.</p>
+<h3 id="05-lock-the-form">05 · LOCK THE FORM</h3>
+<p>CMF와 디테일 작업 전에 기준 제품의 형태를 확정한다. 유지할 특징:</p>
+<ul>
+<li>C자형 지지대</li>
+<li>낮고 넓은 원통형 베이스</li>
+<li>얇은 원형 조명 헤드</li>
+<li>지지대와 헤드의 상대적 위치</li>
+<li>전체적인 실루엣과 비율</li>
+</ul>
+<blockquote>
+<p>형태가 계속 바뀌면 소재와 디테일을 정확하게 비교할 수 없다.</p>
+</blockquote>
+<p>명시적으로 형태 변경을 결정한 경우에만, 그 부분만 이유와 함께 바꾼다.</p>
+<h3 id="06-practice-01-final-form-review">06 · Practice 01 · Final Form Review</h3>
+<blockquote>
+<p>✏️ <strong>Practice 01 · Final Form Review</strong> — 이후 작업의 기준이 될 제품 형태를 확정합니다.</p>
+<p><strong>수행 단계</strong></p>
+<ol>
+<li>2주차 Refined Concept 확인</li>
+<li>기준 제품 이미지 선정</li>
+<li>반드시 유지할 형태 3개 작성</li>
+<li>아직 정의되지 않은 디테일 표시</li>
+<li>이번 주에 결정할 디자인 항목 선정</li>
+</ol>
+<p><strong>결과물</strong> — Final Form Reference</p>
+<p><strong>완료 기준</strong></p>
+<ul>
+<li>☐ 이후 CMF와 디테일 설계에 사용할 기준 이미지가 확정되어 있음</li>
+</ul>
+</blockquote>
+<p>이 기준 이미지는 다음 온라인 수업에서 Higgsfield에 올리는 입력 이미지가 된다.</p>
+<hr />
+<h2 id="part-02-cmf-design-color-material-finish">PART 02 · CMF Design — Color · Material · Finish</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 같은 형태에 색상·소재·마감을 바꿔 비교하고, 근거를 갖고 CMF를 결정한다.</p>
+</blockquote>
+<h3 id="07-color-material-finish">07 · COLOR · MATERIAL · FINISH</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>요소</th>
+<th>영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>COLOR</strong></td>
+<td>제품의 시각적 인상과 인지</td>
+</tr>
+<tr>
+<td><strong>MATERIAL</strong></td>
+<td>제품의 물리적 특성과 사용 경험</td>
+</tr>
+<tr>
+<td><strong>FINISH</strong></td>
+<td>표면의 질감과 반사 특성</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>CMF는 제품의 외관뿐 아니라 사용 경험과 관리 방식에도 영향을 준다.</p>
+</blockquote>
+<h3 id="08-color-defines-perception">08 · COLOR DEFINES PERCEPTION</h3>
+<p>같은 램프의 세 가지 색상: <strong>A · Warm Silver / B · Charcoal Gray / C · Muted Sage Green</strong>. 형태와 조명은 그대로 두고 색상만 바꿨다.</p>
+<p>색상이 영향을 주는 것: 제품의 분위기 · 사용 환경과의 조화 · 브랜드 정체성 · 조작부의 시인성 · 사용자가 인식하는 무게감.</p>
+<blockquote>
+<p><strong>질문</strong> — 세 가지 중 침실 협탁에 가장 잘 어울리는 것은? 그 이유는?</p>
+</blockquote>
+<h3 id="09-material-is-a-design-decision">09 · MATERIAL IS A DESIGN DECISION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>소재</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ALUMINUM</strong></td>
+<td>금속성 표면과 가공 특성</td>
+</tr>
+<tr>
+<td><strong>ABS PLASTIC</strong></td>
+<td>성형 자유도와 다양한 표면 표현</td>
+</tr>
+<tr>
+<td><strong>WOOD</strong></td>
+<td>자연스러운 질감과 촉감</td>
+</tr>
+</tbody>
+</table></div>
+<p>고려할 요소: 무게 · 강도와 내구성 · 가공 방식 · 촉감 · 유지관리 · 사용 환경 · 생산 비용.</p>
+<h3 id="10-material-application">10 · MATERIAL APPLICATION</h3>
+<p>소재는 제품 전체가 아니라 <strong>부품의 역할에 맞게</strong> 결정한다.</p>
+<ul>
+<li><strong>기존 램프에서 검토할 영역</strong> — 원통형 베이스 · C자형 지지대 · 원형 조명 헤드의 외장 · 조명 확산판</li>
+<li><strong>추가로 설계할 수 있는 영역</strong> — 전원 버튼 · 충전 포트 주변부 · 미끄럼 방지 패드</li>
+</ul>
+<p>슬라이드의 분리 이미지는 부품 관계를 설명하기 위한 개념 이미지이며, 실제 조립 구조를 검증한 것이 아니다.</p>
+<h3 id="11-finish-changes-the-experience">11 · FINISH CHANGES THE EXPERIENCE</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>마감</th>
+<th>인상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MATTE</strong></td>
+<td>반사가 적고 차분한 표면</td>
+</tr>
+<tr>
+<td><strong>SATIN</strong></td>
+<td>은은한 반사와 부드러운 광택</td>
+</tr>
+<tr>
+<td><strong>GLOSSY</strong></td>
+<td>강한 반사와 선명한 하이라이트</td>
+</tr>
+<tr>
+<td><strong>BRUSHED</strong></td>
+<td>방향성이 있는 표면 결</td>
+</tr>
+</tbody>
+</table></div>
+<p>같은 소재라도 마감에 따라 지문·흠집이 드러나는 정도와 빛의 반사가 달라진다.</p>
+<h3 id="12-cmf-user-experience">12 · CMF &amp; USER EXPERIENCE</h3>
+<ul>
+<li>손으로 자주 만지는 제품인가?</li>
+<li>지문과 오염이 쉽게 드러나는가?</li>
+<li>표면이 미끄럽지는 않은가?</li>
+<li>빛이 표면에 어떻게 반사되는가?</li>
+<li>사용 공간과 어울리는가?</li>
+<li>관리하기 쉬운 소재인가?</li>
+</ul>
+<blockquote>
+<p><strong>질문</strong> — 이 램프가 침실에서 사용된다면 어떤 CMF가 적합할까요?</p>
+</blockquote>
+<h3 id="13-cmf-direction-a-b">13 · CMF DIRECTION A / B</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>방향</th>
+<th>Color / Material / Finish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A — SOFT &amp; WARM</strong></td>
+<td>Warm Silver / Satin Aluminum / Frosted Diffuser</td>
+</tr>
+<tr>
+<td><strong>B — CALM &amp; TECHNICAL</strong></td>
+<td>Charcoal / Matte Aluminum / Frosted Diffuser</td>
+</tr>
+</tbody>
+</table></div>
+<p>형태·시점·배경은 그대로이고 CMF만 다르다.</p>
+<h3 id="14-cmf-decision-criteria">14 · CMF DECISION CRITERIA</h3>
+<ol>
+<li>제품의 목적과 일치하는가?</li>
+<li>타깃 사용자에게 적합한가?</li>
+<li>사용 환경에 어울리는가?</li>
+<li>소재와 마감의 조합이 자연스러운가?</li>
+<li>관리와 사용성을 고려했는가?</li>
+<li>제품의 디자인 정체성을 유지하는가?</li>
+</ol>
+<blockquote>
+<p>CMF 선택에는 명확한 근거가 필요하다. "예뻐서"는 근거가 아니다.</p>
+</blockquote>
+<h3 id="15-practice-02-cmf-direction">15 · Practice 02 · CMF Direction</h3>
+<blockquote>
+<p>✏️ <strong>Practice 02 · CMF Direction</strong> — 자신의 제품에 맞는 CMF를 근거와 함께 결정합니다.</p>
+<p><strong>수행 단계</strong></p>
+<ol>
+<li>CMF 방향 2개 구성</li>
+<li>각 방향의 Color / Material / Finish 정의</li>
+<li>부품별 소재와 마감 지정</li>
+<li>사용 환경과 디자인 목표로 비교</li>
+<li>최종 CMF 선택 및 이유 작성</li>
+</ol>
+<p><strong>결과물</strong> — CMF Direction Sheet</p>
+<p><strong>완료 기준</strong></p>
+<ul>
+<li>☐ 제품의 각 부품에 적용할 색상 · 소재 · 마감을 구체적으로 설명할 수 있음</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="part-03-product-detail-design">PART 03 · Product Detail Design</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 전체 이미지에서는 보이지 않는 핵심 디테일을 정의하고 스케치로 전달한다.</p>
+</blockquote>
+<h3 id="16-design-is-in-the-details">16 · DESIGN IS IN THE DETAILS</h3>
+<p>전체 형태가 같더라도 디테일에 따라 완성도가 달라진다. 디테일 요소: 부품의 연결 방식 · 조작부의 위치 · 모서리의 곡률 · 소재가 만나는 경계 · 부품 분할선 · 부품 간 간격.</p>
+<h3 id="17-parting-line">17 · PARTING LINE</h3>
+<p>분할선은 하우징이 나뉘는 경계다. 검토할 것: 부품이 나뉘는 이유 · 경계선의 위치 · 외관에 미치는 영향 · 소재 변경과의 관계 · 제조 · 조립 방식에 따른 고려사항.</p>
+<blockquote>
+<p>⚠️ 기준 이미지에서 실제 분할선은 확인되지 않는다. 슬라이드의 A(정확하고 좁은 분할선) · B(어긋나고 고르지 않은 분할선)는 설계 제안이다.</p>
+</blockquote>
+<h3 id="18-joint-connection">18 · JOINT &amp; CONNECTION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>위치</th>
+<th>연결</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>01 · BASE CONNECTION</strong></td>
+<td>C자형 지지대와 원통형 베이스</td>
+</tr>
+<tr>
+<td><strong>02 · HEAD CONNECTION</strong></td>
+<td>C자형 지지대와 원형 조명 헤드</td>
+</tr>
+</tbody>
+</table></div>
+<p>검토할 사항: 형태적 연속성 · 하중이 전달되는 방향 · 고정 또는 회전 구조의 필요성 · 시각적 완성도.</p>
+<blockquote>
+<p>AI 이미지에서 자연스럽게 보이는 연결부가 실제로 구현 가능한 구조라는 의미는 아니다.</p>
+</blockquote>
+<h3 id="19-interface-controls">19 · INTERFACE &amp; CONTROLS</h3>
+<p>정의할 요소: 전원 버튼 · 밝기 조절 방식 · 충전 방식 · 충전 포트 · 상태 표시등 · 터치 조작부.</p>
+<p>기준 이미지에는 이 요소들이 없다. 위치와 형태는 여러분이 설계한다. 슬라이드의 버튼 이미지는 위치 후보 중 하나를 넣어 본 설계 제안이다.</p>
+<blockquote>
+<p><strong>질문</strong> — 이 램프를 켜고 끌 때 사용자는 어디를 만져야 할까요?</p>
+</blockquote>
+<h3 id="20-edge-radius">20 · EDGE &amp; RADIUS</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>곡률</th>
+<th>인상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SHARP EDGE</strong></td>
+<td>정제되고 날카로운 인상</td>
+</tr>
+<tr>
+<td><strong>SMALL RADIUS</strong></td>
+<td>단정하고 부드러운 인상</td>
+</tr>
+<tr>
+<td><strong>LARGE RADIUS</strong></td>
+<td>친근하고 유기적인 인상</td>
+</tr>
+</tbody>
+</table></div>
+<p>베이스 윗모서리의 곡률만 바꾼 설계 제안이다. 곡률은 인상뿐 아니라 촉감과 빛의 하이라이트에도 영향을 준다.</p>
+<h3 id="21-material-transition">21 · MATERIAL TRANSITION</h3>
+<p>기존 램프의 대표 영역: 조명 헤드의 금속성 외장과 헤드 하단의 확산판.</p>
+<ol>
+<li>소재 경계가 자연스러운가?</li>
+<li>부품 간 간격이 일관적인가?</li>
+<li>소재의 특성이 잘 드러나는가?</li>
+<li>제품의 디자인 언어와 일치하는가?</li>
+</ol>
+<h3 id="22-detail-consistency">22 · DETAIL CONSISTENCY</h3>
+<p>기존 램프의 디자인 특징: 부드러운 곡선 · 단순한 기하학적 형태 · 장식 없는 표면 · 얇은 헤드 · 자연스럽게 이어지는 지지대.</p>
+<ul>
+<li>버튼도 같은 디자인 언어를 사용하는가?</li>
+<li>모서리 곡률이 제품 전체와 어울리는가?</li>
+<li>부품 경계가 지나치게 복잡하지 않은가?</li>
+<li>추가된 디테일이 미니멀한 인상을 해치지 않는가?</li>
+</ul>
+<h3 id="23-detail-definition-sheet">23 · DETAIL DEFINITION SHEET</h3>
+<p>예시: DETAIL 01 지지대와 헤드 연결부 · DETAIL 02 전원 버튼 위치 및 형태 · DETAIL 03 베이스의 부품 경계.</p>
+<p>각 디테일에 기록할 내용: <strong>위치 · 역할 · 형태 · 소재 · 사용 방식 · 유지해야 할 특징</strong>.</p>
+<h3 id="24-detail-sketching">24 · DETAIL SKETCHING</h3>
+<p>스케치에 포함할 내용: 기존 형태 · 수정 또는 추가할 디테일 · 부품 간 관계 · 사용 방식 · 소재 적용 위치.</p>
+<blockquote>
+<p>완성도 높은 그림보다 디자인 의도가 명확한 스케치가 중요하다.</p>
+</blockquote>
+<h3 id="25-practice-03-detail-definition">25 · Practice 03 · Detail Definition</h3>
+<blockquote>
+<p>✏️ <strong>Practice 03 · Detail Definition</strong> — 전체 이미지에서는 보이지 않는 핵심 디테일을 정의합니다.</p>
+<p><strong>수행 단계</strong></p>
+<ol>
+<li>중요한 디테일 3개 선정</li>
+<li>각 디테일의 역할과 위치 작성</li>
+<li>확대 스케치 제작</li>
+<li>적용 소재와 마감 지정</li>
+<li>AI 시각화에서 유지할 특징 정리</li>
+</ol>
+<p><strong>결과물</strong> — Detail Definition Sheet</p>
+<p><strong>완료 기준</strong></p>
+<ul>
+<li>☐ 제품 전체 이미지에서 확인하기 어려운 핵심 디테일이 구체적으로 정의되어 있음</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="part-04-multi-view-design">PART 04 · Multi-view Design</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 시점이 바뀌어도 같은 제품이 되도록, 보이지 않는 부분까지 스케치로 정의한다.</p>
+</blockquote>
+<h3 id="26-one-product-multiple-views">26 · ONE PRODUCT, MULTIPLE VIEWS</h3>
+<p>Front · Side · Rear · Top · Three-quarter. 시점이 달라져도 제품 자체가 달라져서는 안 된다.</p>
+<h3 id="27-why-multi-view-matters">27 · WHY MULTI-VIEW MATTERS</h3>
+<p>대표 이미지에서 확인하기 어려운 것: 후면 형태 · 지지대의 깊이 · 헤드의 상단 구조 · 베이스 후면의 구성 · 부품 경계 · 충전 방식.</p>
+<blockquote>
+<p>대표 이미지 한 장만으로 제품 전체의 형태를 정의할 수 없다.</p>
+</blockquote>
+<h3 id="28-front-side-rear-top">28 · FRONT / SIDE / REAR / TOP</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>시점</th>
+<th>보는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FRONT</strong></td>
+<td>전체 실루엣과 좌우 균형</td>
+</tr>
+<tr>
+<td><strong>SIDE</strong></td>
+<td>제품의 깊이와 지지대 곡률</td>
+</tr>
+<tr>
+<td><strong>REAR</strong></td>
+<td>후면 구조와 부품 배치</td>
+</tr>
+<tr>
+<td><strong>TOP</strong></td>
+<td>평면 형태와 부품 위치</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>⚠️ 슬라이드의 Multi-view 이미지는 개념 설명용이다. 원본에서 확인할 수 없는 후면·상단 구조는 스케치로 정의하고, 생성된 뷰를 확정 설계로 쓰지 않는다.</p>
+</blockquote>
+<h3 id="29-visual-consistency">29 · VISUAL CONSISTENCY</h3>
+<p>AI 이미지에서 생길 수 있는 불일치: 지지대 곡률 변화 · 헤드 두께 변화 · 베이스 비율 변화 · 연결 위치 변경 · 소재 변화 · 원본에 없는 부품 추가. 슬라이드의 세 이미지는 일부러 불일치를 넣은 교육용 오류 사례다.</p>
+<h3 id="30-define-the-hidden-side">30 · DEFINE THE HIDDEN SIDE</h3>
+<p>직접 정의할 내용: 후면의 전체 형태 · 지지대 연결 위치 · 충전 포트가 필요한지 · 부품 분할선 · 제품의 깊이와 두께.</p>
+<blockquote>
+<p>원본에서 보이지 않는 부분을 AI가 임의로 결정하도록 두지 않는다. 보이지 않는 부분도 디자인해야 한다.</p>
+</blockquote>
+<h3 id="31-multi-view-reference-sketch">31 · MULTI-VIEW REFERENCE SKETCH</h3>
+<p>AI 이미지를 생성하기 전에 시점별 형태를 스케치로 정의한다: FRONT 전체 실루엣 · SIDE 깊이와 곡률 · REAR 후면 구조 · TOP 필요한 경우 평면 형태.</p>
+<h3 id="32-practice-04-multi-view-definition">32 · Practice 04 · Multi-view Definition</h3>
+<blockquote>
+<p>✏️ <strong>Practice 04 · Multi-view Definition</strong> — 시점이 바뀌어도 유지될 형태와 부품 구성을 정합니다.</p>
+<p><strong>수행 단계</strong></p>
+<ol>
+<li>Refined Concept 확인</li>
+<li>Front View 스케치</li>
+<li>Side View 스케치</li>
+<li>Rear View 스케치</li>
+<li>시점별 유지할 형태 · 부품 표시</li>
+<li>보이지 않는 부분의 구조 결정</li>
+</ol>
+<p><strong>결과물</strong> — Multi-view Reference Sketch</p>
+<p><strong>완료 기준</strong></p>
+<ul>
+<li>☐ 시점이 달라져도 유지되어야 할 제품 형태와 부품 구성이 명확함</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="part-05-visualization-direction">PART 05 · Visualization Direction</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 제품 디자인과 이미지 연출을 구분하고, 다음 수업에서 만들 이미지를 계획한다.</p>
+</blockquote>
+<h3 id="33-product-design-vs-visual-presentation">33 · PRODUCT DESIGN vs VISUAL PRESENTATION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PRODUCT DESIGN — 제품 자체</th>
+<th>VISUAL PRESENTATION — 보여주는 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>형태 · 비율 · 소재</td>
+<td>카메라 시점 · 조명 · 배경</td>
+</tr>
+<tr>
+<td>버튼 · 연결부 · 표면 마감</td>
+<td>그림자 · 구도 · 이미지 분위기</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>좋은 이미지 연출이 제품의 디자인 문제를 해결해 주지는 않는다.</p>
+</blockquote>
+<h3 id="34-types-of-product-images">34 · TYPES OF PRODUCT IMAGES</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>유형</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HERO VIEW</strong></td>
+<td>제품 전체를 소개하는 대표 이미지</td>
+</tr>
+<tr>
+<td><strong>DETAIL VIEW</strong></td>
+<td>핵심 디테일을 확대하는 이미지</td>
+</tr>
+<tr>
+<td><strong>MULTI-VIEW</strong></td>
+<td>시점별 형태를 확인하는 이미지</td>
+</tr>
+<tr>
+<td><strong>CMF VIEW</strong></td>
+<td>색상 · 소재 · 마감을 비교하는 이미지</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="35-hero-image-direction">35 · HERO IMAGE DIRECTION</h3>
+<p>Hero Image에서 확인할 요소: 전체 실루엣 · 핵심 형태 · 소재와 마감 · 제품 비율 · 디테일의 완성도 · 이미지의 명확성. 슬라이드 예시는 CMF A(Warm Silver · Satin)만 적용했다.</p>
+<h3 id="36-visualization-direction-sheet">36 · VISUALIZATION DIRECTION SHEET</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>이미지 유형</th>
+<th>목적</th>
+<th>반드시 보여줄 요소</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hero View</td>
+<td>제품 전체 소개</td>
+<td>형태 · 비율 · CMF</td>
+</tr>
+<tr>
+<td>Detail View 01</td>
+<td>연결부 설명</td>
+<td>Joint</td>
+</tr>
+<tr>
+<td>Detail View 02</td>
+<td>조작부 설명</td>
+<td>Interface</td>
+</tr>
+<tr>
+<td>Detail View 03</td>
+<td>소재 경계 설명</td>
+<td>Material Transition</td>
+</tr>
+<tr>
+<td>Multi-view</td>
+<td>시점별 형태 확인</td>
+<td>Front / Side / Rear</td>
+</tr>
+<tr>
+<td>CMF View</td>
+<td>소재와 마감 비교</td>
+<td>부품별 CMF</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>이미지를 생성하기 전에 어떤 정보를 보여줄 것인지 결정한다.</p>
+</blockquote>
+<h3 id="37-practice-05-visualization-planning">37 · Practice 05 · Visualization Planning</h3>
+<blockquote>
+<p>✏️ <strong>Practice 05 · Visualization Planning</strong> — 다음 온라인 수업에서 만들 이미지와 조건을 정합니다.</p>
+<p><strong>수행 단계</strong></p>
+<ol>
+<li>Hero View의 목적과 구도 작성</li>
+<li>핵심 Detail View 3개 선정</li>
+<li>Multi-view에 필요한 시점 결정</li>
+<li>CMF 표현 기준 작성</li>
+<li>AI가 변경하면 안 되는 조건 정리</li>
+</ol>
+<p><strong>결과물</strong> — Visualization Direction Sheet</p>
+<p><strong>완료 기준</strong></p>
+<ul>
+<li>☐ 다음 온라인 수업에서 제작할 이미지 목록과 표현 조건이 명확함</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="part-06-review-assignment">PART 06 · Review &amp; Assignment</h2>
+<h3 id="38-product-detail-cmf-board">38 · PRODUCT DETAIL &amp; CMF BOARD</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><strong>FINAL FORM REFERENCE</strong></td>
+<td>2주차 Refined Concept 이미지</td>
+</tr>
+<tr>
+<td>02</td>
+<td><strong>CMF DIRECTION</strong></td>
+<td>최종 색상 · 소재 · 마감 및 선택 이유</td>
+</tr>
+<tr>
+<td>03</td>
+<td><strong>DETAIL DEFINITION</strong></td>
+<td>핵심 디테일 3개와 확대 스케치</td>
+</tr>
+<tr>
+<td>04</td>
+<td><strong>MULTI-VIEW REFERENCE</strong></td>
+<td>Front / Side / Rear 스케치</td>
+</tr>
+<tr>
+<td>05</td>
+<td><strong>VISUALIZATION DIRECTION</strong></td>
+<td>Hero / Detail / Multi-view 제작 계획</td>
+</tr>
+<tr>
+<td>06</td>
+<td><strong>DESIGN CONSTRAINTS</strong></td>
+<td>AI가 변경하면 안 되는 요소</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>최종 결과물은 새로운 제품 이미지가 아니라, 기존 제품을 구체화한 보드다.</p>
+</blockquote>
+<h3 id="39-final-design-review">39 · FINAL DESIGN REVIEW</h3>
+<ul>
+<li>☐ 기준 제품의 형태가 확정되었는가?</li>
+<li>☐ CMF를 선택한 이유가 명확한가?</li>
+<li>☐ 주요 부품의 소재가 정의되었는가?</li>
+<li>☐ 중요한 디테일 3개가 결정되었는가?</li>
+<li>☐ 후면과 측면의 형태를 설명할 수 있는가?</li>
+<li>☐ AI가 변경하면 안 되는 요소를 알고 있는가?</li>
+</ul>
+<p>Product Detail &amp; CMF Board를 최종 검토하고 부족한 부분을 보완한다.</p>
+<h3 id="40-next-visualize-the-design">40 · NEXT — VISUALIZE THE DESIGN (다음 온라인 수업 예고)</h3>
+<p>다음 온라인 수업(선범쌤 · Higgsfield)에서는 오늘 만든 보드를 그대로 입력으로 쓴다.</p>
+<ol>
+<li><strong>CMF APPLICATION</strong> — 확정된 CMF를 기존 제품에 적용</li>
+<li><strong>DETAIL VISUALIZATION</strong> — 설계한 핵심 디테일 확대 이미지</li>
+<li><strong>MULTI-VIEW GENERATION</strong> — 동일 제품의 시점별 이미지</li>
+<li><strong>CONSISTENCY CHECK</strong> — 형태 · 부품 · 소재의 일관성 검토</li>
+<li><strong>HERO RENDERING</strong> — 최종 제품 대표 이미지</li>
+</ol>
+<blockquote>
+<p><strong><em>Design the details. Then visualize the decisions.</em></strong></p>
+<p>📁 <strong>다음 수업 준비</strong> — 기준 이미지와 Product Detail &amp; CMF Board를 저장해 오세요.</p>
+</blockquote>
+<hr />
+<h2 id="_7">부록</h2>
+<h3 id="a">A. 핵심 용어</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>용어</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CMF</strong></td>
+<td>Color · Material · Finish. 제품의 색, 소재, 표면 마감</td>
+</tr>
+<tr>
+<td><strong>Master Product Reference</strong></td>
+<td>모든 작업의 기준이 되는 기존 제품 이미지. 형태를 바꾸지 않는다</td>
+</tr>
+<tr>
+<td><strong>Parting Line</strong></td>
+<td>하우징이 두 부품 이상으로 나뉘는 경계선</td>
+</tr>
+<tr>
+<td><strong>Edge Radius</strong></td>
+<td>모서리의 곡률. 인상과 촉감, 빛의 하이라이트를 바꾼다</td>
+</tr>
+<tr>
+<td><strong>Material Transition</strong></td>
+<td>서로 다른 소재가 만나는 경계</td>
+</tr>
+<tr>
+<td><strong>Multi-view</strong></td>
+<td>Front · Side · Rear · Top 등 시점별 형태</td>
+</tr>
+<tr>
+<td><strong>Design Proposal</strong></td>
+<td>원본에 없는 요소를 새로 제안한 것. 확정 설계나 기존 사실이 아니다</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="b-3">B. 3주차 오프라인 제출 체크리스트</h3>
+<ul>
+<li>☐ Final Form Reference — 기준 이미지 + 유지할 형태 3개 + 미정의 디테일 표시</li>
+<li>☐ CMF Direction Sheet — 방향 2개, 부품별 C · M · F, 최종 선택과 이유</li>
+<li>☐ Detail Definition Sheet — 디테일 3개(위치 · 역할 · 형태 · 소재 · 사용 방식 · 유지할 특징) + 확대 스케치</li>
+<li>☐ Multi-view Reference Sketch — Front · Side · Rear(+ 필요 시 Top)</li>
+<li>☐ Visualization Direction Sheet — 이미지 목록 · 목적 · 반드시 보여줄 요소 · AI가 바꾸면 안 되는 조건</li>
+<li>☐ Product Detail &amp; CMF Board (6개 항목)</li>
+</ul></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>

@@ -1,0 +1,50 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI × Industrial Design · W03 Online</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+body{min-height:100vh;display:flex;flex-direction:column}
+.top{display:flex;gap:10px;align-items:center;padding:18px 8vw;font:14px 'Instrument Sans';color:var(--dim);border-bottom:1px solid var(--line)}
+.top a{color:var(--gray);text-decoration:none}.top a:hover{color:var(--text)}.top b{color:var(--text);font-weight:500}
+.hero{position:relative;min-height:46vh;display:flex;align-items:flex-end;padding:56px 8vw;background:#0B0B0D center/cover no-repeat}
+.hero.big{min-height:58vh}
+.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,13,.94) 30%,rgba(11,11,13,.25))}
+.hero>div{position:relative;max-width:760px}
+.k{font:500 13px 'Instrument Sans';letter-spacing:4px;text-transform:uppercase;color:var(--gray);margin:0}
+.hero h1{font:500 clamp(40px,6.5vw,84px)/1.05 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-2px;margin:12px 0}
+.s{font:italic 400 clamp(20px,2.6vw,30px)/1.3 'Instrument Serif','IBM Plex Sans KR';color:var(--gray);margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card{background:var(--bg);padding:40px 40px 48px;text-decoration:none;color:var(--text);transition:background .15s}
+.card:first-child{padding-left:8vw}.card:hover{background:var(--panel)}
+.card b{display:block;font:500 13px 'Instrument Sans';letter-spacing:3px;color:var(--gold);margin-bottom:12px}
+.card span{display:block;font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR'}.card small{display:block;color:var(--gray);margin-top:8px;font-size:14px}
+.next{display:block;padding:28px 8vw;color:var(--gray);text-decoration:none;font:15px 'Instrument Sans','IBM Plex Sans KR'}.next:hover{color:var(--text)}
+.weeks,.week{width:100%;max-width:1200px;margin:0 auto;padding:24px 8vw 64px}
+.wk{display:grid;grid-template-columns:140px 1fr;gap:32px;padding:40px 0;border-bottom:1px solid var(--line)}
+.wn{font:500 64px/1 'Instrument Sans';letter-spacing:-2px;color:var(--text);text-decoration:none}.wn span{display:block;font:500 12px 'Instrument Sans';letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.wb h2{font:500 28px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:0 0 8px}.wb h2 a{color:var(--text);text-decoration:none}
+.wb p{color:var(--gray);margin:0 0 20px;max-width:720px}
+.wss{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.ws{display:flex;flex-direction:column;gap:16px;padding:20px;border:1px solid var(--line);transition:border-color .15s}.ws:hover{border-color:#3a3a3e}
+.wt{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--text)}.wt:hover .tt{color:var(--gold)}
+.wl{display:flex;flex-wrap:wrap;gap:8px}.wl a{padding:6px 12px;border:1px solid var(--line);color:var(--text);text-decoration:none;font:13px 'Instrument Sans','IBM Plex Sans KR'}.wl a:hover{border-color:var(--gold);color:var(--gold)}
+.ws .lab{font:500 12px 'Instrument Sans';letter-spacing:3px;text-transform:uppercase;color:var(--gold)}.ws .tt{font:500 20px/1.3 'Instrument Sans'}.ws .nn{font-size:13px;color:var(--dim)}
+.soon{opacity:.5}.pend{opacity:.45}.pend .s{font:400 18px/1.5 'IBM Plex Sans KR',sans-serif}.ws.pend .tt{color:var(--gray)}.soon .wn{color:var(--dim)}
+.week h1{font:500 clamp(32px,4.5vw,52px)/1.15 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:12px 0 12px}
+.week .lead{color:var(--gray);max-width:760px;margin:0 0 40px}
+.sess{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:40px;padding:32px 0;border-top:1px solid var(--line);align-items:center}
+.thumb{display:block;aspect-ratio:16/10;background:#0B0B0D center/cover no-repeat;border:1px solid var(--line)}
+.sess h2{font:500 32px/1.2 'Instrument Sans','IBM Plex Sans KR';margin:8px 0}.sess h2 a{color:var(--text);text-decoration:none}
+.sess .s{font-size:22px;margin-bottom:20px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:0}.links a{padding:8px 14px;border:1px solid var(--line);color:var(--text);text-decoration:none;font:14px 'Instrument Sans','IBM Plex Sans KR'}.links a:hover{border-color:var(--gold)}
+footer{margin-top:auto;padding:24px 8vw;color:var(--dim);font:13px 'Instrument Sans'}
+@media(max-width:760px){.top,.hero,.next,footer{padding-left:16px;padding-right:16px}.card,.card:first-child{padding:32px 16px}
+.weeks,.week{padding:16px 16px 48px}.wk{grid-template-columns:1fr;gap:12px}.wn{font-size:44px}.sess{grid-template-columns:1fr;gap:16px}}
+</style></head><body>
+<header class="top"><a href="../../">AI × Industrial Design</a><span>/</span><a href="../">Week 03</a><span>/</span><b>Online</b></header>
+<section class="hero" style="background-image:url(../../assets/img/w3on2_hero.jpg)"><div><p class="k">Week 03 · Online</p><h1>AI Product Visualization</h1><p class="s">From Design Decisions to Consistent Product Images</p></div></section>
+<div class="cards"><a class="card" href="slides/"><b>01 — SLIDES</b><span>수업 슬라이드</span><small>32장 · ← → 키, 스와이프로 넘기기</small></a><a class="card" href="handbook/"><b>02 — HANDBOOK</b><span>교안</span><small>슬라이드별 설명 · 실습 안내 · 체크리스트</small></a><a class="card" href="AI_x_ID_W03_Online.pdf" download><b>03 — PDF</b><span>슬라이드 PDF</span><small>16:9 · 32쪽 · 다운로드</small></a></div>
+<a class="next" href="../offline/">이전 수업 — Offline · Product Detail &amp; CMF →</a>
+<footer>Kyung Hee University — Industrial Design</footer></body></html>

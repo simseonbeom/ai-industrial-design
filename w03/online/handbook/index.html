@@ -1,0 +1,906 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W03 Online · AI Product Visualization · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 03 · Online</a><a class="swap" href="../../offline/handbook/">→ Offline 교안 보기</a><div><div class="toc">
+<ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#product-detail-cmf-board">오늘 가져올 자료 — Product Detail &amp; CMF Board</a></li>
+<li><a href="#_3">학습 목표</a></li>
+<li><a href="#master-product-reference">기준 제품 (Master Product Reference)</a></li>
+<li><a href="#_4">이미지 작업 원칙</a></li>
+<li><a href="#_5">수업 흐름</a></li>
+</ul>
+</li>
+<li><a href="#part-01-reference-design-constraints">PART 01 · Reference &amp; Design Constraints</a><ul>
+<li><a href="#01-ai-product-visualization">01 · AI PRODUCT VISUALIZATION</a></li>
+<li><a href="#02-from-design-to-visualization">02 · FROM DESIGN TO VISUALIZATION</a></li>
+<li><a href="#03-start-with-design-decisions">03 · START WITH DESIGN DECISIONS</a></li>
+<li><a href="#04-control-what-changes">04 · CONTROL WHAT CHANGES</a></li>
+<li><a href="#05-practice-01-reference-setup">05 · Practice 01 · Reference Setup</a></li>
+</ul>
+</li>
+<li><a href="#part-02-cmf-application">PART 02 · CMF Application</a><ul>
+<li><a href="#06-change-the-surface-not-the-form">06 · CHANGE THE SURFACE, NOT THE FORM</a></li>
+<li><a href="#07-change-only-the-color">07 · CHANGE ONLY THE COLOR</a></li>
+<li><a href="#08-make-materials-believable">08 · MAKE MATERIALS BELIEVABLE</a></li>
+<li><a href="#09-matte-vs-satin-vs-brushed">09 · MATTE vs SATIN vs BRUSHED</a></li>
+<li><a href="#10-did-only-the-cmf-change">10 · DID ONLY THE CMF CHANGE?</a></li>
+<li><a href="#11-practice-02-cmf-application">11 · Practice 02 · CMF Application</a></li>
+</ul>
+</li>
+<li><a href="#part-03-detail-visualization">PART 03 · Detail Visualization</a><ul>
+<li><a href="#12-visualize-the-decision">12 · VISUALIZE THE DECISION</a></li>
+<li><a href="#13-zoom-into-the-design">13 · ZOOM INTO THE DESIGN</a></li>
+<li><a href="#14-use-the-sketch-as-a-constraint">14 · USE THE SKETCH AS A CONSTRAINT</a></li>
+<li><a href="#15-change-one-detail-at-a-time">15 · CHANGE ONE DETAIL AT A TIME</a></li>
+<li><a href="#16-show-the-material-boundary">16 · SHOW THE MATERIAL BOUNDARY</a></li>
+<li><a href="#17-does-the-detail-match-the-design">17 · DOES THE DETAIL MATCH THE DESIGN?</a></li>
+<li><a href="#18-practice-03-detail-visualization">18 · Practice 03 · Detail Visualization</a></li>
+</ul>
+</li>
+<li><a href="#part-04-multi-view-consistency">PART 04 · Multi-view &amp; Consistency</a><ul>
+<li><a href="#19-same-product-different-views">19 · SAME PRODUCT. DIFFERENT VIEWS.</a></li>
+<li><a href="#20-the-consistency-problem">20 · THE CONSISTENCY PROBLEM</a></li>
+<li><a href="#21-control-the-camera-keep-the-product">21 · CONTROL THE CAMERA, KEEP THE PRODUCT</a></li>
+<li><a href="#22-generate-the-front-view">22 · GENERATE THE FRONT VIEW</a></li>
+<li><a href="#23-generate-the-side-view">23 · GENERATE THE SIDE VIEW</a></li>
+<li><a href="#24-generate-the-rear-view">24 · GENERATE THE REAR VIEW</a></li>
+<li><a href="#25-check-the-same-product">25 · CHECK THE SAME PRODUCT</a></li>
+<li><a href="#26-practice-04-multi-view">26 · Practice 04 · Multi-view</a></li>
+</ul>
+</li>
+<li><a href="#part-05-hero-rendering">PART 05 · Hero Rendering</a><ul>
+<li><a href="#27-design-is-fixed-presentation-can-change">27 · DESIGN IS FIXED. PRESENTATION CAN CHANGE.</a></li>
+<li><a href="#28-make-the-design-clear">28 · MAKE THE DESIGN CLEAR</a></li>
+<li><a href="#29-practice-05-hero-rendering">29 · Practice 05 · Hero Rendering</a></li>
+</ul>
+</li>
+<li><a href="#part-06-final-review-submission">PART 06 · Final Review &amp; Submission</a><ul>
+<li><a href="#30-product-visualization-board">30 · PRODUCT VISUALIZATION BOARD (최종 제출물)</a></li>
+<li><a href="#31-is-it-still-the-same-product">31 · IS IT STILL THE SAME PRODUCT?</a></li>
+<li><a href="#32-next-from-product-to-experience-4">32 · NEXT — FROM PRODUCT TO EXPERIENCE (4주차 예고)</a></li>
+</ul>
+</li>
+<li><a href="#_6">부록</a><ul>
+<li><a href="#a">A. 제출 체크리스트</a></li>
+<li><a href="#b">B. 이미지 생성 시 주의사항</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></nav><main><h1 id="ai-industrial-design-3-ai-product-visualization">AI × Industrial Design · 3주차 온라인 — AI Product Visualization</h1>
+<blockquote>
+<p>From Design Decisions to Consistent Product Images · 강사 심선범 · Higgsfield 실습 · 180분</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>이번 수업은 새로운 제품을 생성하는 수업이 아니다. 1주차(Selected Concept), 2주차(Refined Concept), 3주차 오프라인(CMF · 디테일 · Multi-view 스케치 · 시각화 계획)에서 <strong>이미 결정한 디자인을 Higgsfield로 정확하게 구현</strong>한다.</p>
+<blockquote>
+<p>The goal is not to generate more images. The goal is to visualize one consistent product.</p>
+</blockquote>
+<h3 id="product-detail-cmf-board">오늘 가져올 자료 — Product Detail &amp; CMF Board</h3>
+<ol>
+<li><strong>Final Form Reference</strong> — 기준 제품 이미지</li>
+<li><strong>CMF Direction</strong> — 색상·소재·마감 사양</li>
+<li><strong>Detail Definition</strong> — 디테일 확대 스케치</li>
+<li><strong>Multi-view Reference</strong> — 시점별 형태 스케치</li>
+<li><strong>Visualization Direction</strong> — 필요한 이미지와 표현 목적</li>
+<li><strong>Design Constraints</strong> — 변경하면 안 되는 요소</li>
+</ol>
+<h3 id="_3">학습 목표</h3>
+<ol>
+<li>기존 제품의 형태를 유지하면서 CMF를 변경할 수 있다.</li>
+<li>오프라인에서 작성한 디테일 스케치를 AI 이미지로 구현할 수 있다.</li>
+<li>동일 제품을 여러 시점에서 표현할 수 있다.</li>
+<li>시점별 이미지의 형태·부품·소재 불일치를 발견하고 수정할 수 있다.</li>
+<li>최종 제품의 Hero Image와 Product Visualization Board를 완성할 수 있다.</li>
+</ol>
+<h3 id="master-product-reference">기준 제품 (Master Product Reference)</h3>
+<p>슬라이드의 모든 예시는 2주차 온라인에서 완성한 테이블 램프 한 장을 기준으로 한다. 새로운 램프를 생성하지 않는다.</p>
+<ul>
+<li>낮고 넓은 원통형 베이스</li>
+<li>베이스 왼쪽에서 시작해 위로 부드럽게 휘어지는 하나의 C자형 지지대</li>
+<li>오른쪽으로 수평 돌출된 얇은 원형 조명 헤드와 하단의 따뜻한 확산광</li>
+<li>밝은 실버·웜그레이 계열의 금속성 표면, 장식 없는 미니멀한 형태</li>
+</ul>
+<p><strong>원본에서 확인되지 않는 요소</strong> — 전원 버튼, 충전 포트, 내부 구조, 후면 형태, 부품 분할선, 실제 제조·결합 방식. 이 요소들은 원본에 있다고 가정하지 않고, 오프라인 스케치로 정의하거나 미결정으로 남긴다.</p>
+<h3 id="_4">이미지 작업 원칙</h3>
+<ul>
+<li>모든 생성은 기준 이미지를 업로드해 시작한다. 비교 이미지는 같은 원본에서 각각 편집한다.</li>
+<li>CMF가 확정되면 그 결과가, 디테일이 확정되면 그 결과가 다음 작업의 기준 이미지가 된다.</li>
+<li>단계마다 형태가 달라지지 않았는지 원본과 비교한다.</li>
+<li>텍스트·화살표·분석선·체크 표시·부품명은 이미지 생성이 아니라 <strong>슬라이드(보드) 편집 단계</strong>에서 추가한다.</li>
+<li>AI 결과물은 구조적 정확성이나 제조 가능성을 보장하지 않는다.</li>
+</ul>
+<h3 id="_5">수업 흐름</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PART</th>
+<th>주제</th>
+<th>시간</th>
+<th>슬라이드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Reference &amp; Design Constraints</td>
+<td>20분</td>
+<td>01–05</td>
+</tr>
+<tr>
+<td>02</td>
+<td>CMF Application</td>
+<td>35분</td>
+<td>06–11</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Detail Visualization</td>
+<td>40분</td>
+<td>12–18</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Multi-view &amp; Consistency</td>
+<td>45분</td>
+<td>19–26</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Hero Rendering</td>
+<td>25분</td>
+<td>27–29</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Final Review &amp; Submission</td>
+<td>15분</td>
+<td>30–32</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="part-01-reference-design-constraints">PART 01 · Reference &amp; Design Constraints</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 기준 이미지와 바꾸면 안 되는 조건을 먼저 고정한다.</p>
+</blockquote>
+<h3 id="01-ai-product-visualization">01 · AI PRODUCT VISUALIZATION</h3>
+<p>하나의 제품을 다양한 이미지로 표현하되, 제품의 디자인은 일관되게 유지한다. 표지 이미지는 새로 생성하지 않은 기준 램프 원본이다.</p>
+<h3 id="02-from-design-to-visualization">02 · FROM DESIGN TO VISUALIZATION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>흐름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WEEK 01</td>
+<td>Explore the concept.</td>
+</tr>
+<tr>
+<td>WEEK 02</td>
+<td>Refine the form.</td>
+</tr>
+<tr>
+<td>WEEK 03 OFFLINE</td>
+<td>Define the details.</td>
+</tr>
+<tr>
+<td><strong>WEEK 03 ONLINE</strong></td>
+<td><strong>Visualize the decisions.</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>이전 수업에서는 제품을 어떻게 디자인할지 결정했고, 이번 수업에서는 그 결정을 AI로 정확하게 표현하는 방법을 연습한다.</p>
+<h3 id="03-start-with-design-decisions">03 · START WITH DESIGN DECISIONS</h3>
+<p>AI에 무엇을 만들지 맡기지 말고, 이미 결정한 디자인을 전달한다. 오프라인 보드의 여섯 항목(위 "오늘 가져올 자료")이 모두 있는지 확인하고, 빠진 자료는 실습 1에서 채운다.</p>
+<h3 id="04-control-what-changes">04 · CONTROL WHAT CHANGES</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>의미</th>
+<th>램프 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>유지할 디자인 요소</td>
+<td>C-shaped support, cylindrical base, circular lamp head</td>
+</tr>
+<tr>
+<td><strong>CHANGE</strong></td>
+<td>이번 작업에서 변경할 요소</td>
+<td>Body color → Charcoal</td>
+</tr>
+<tr>
+<td><strong>CONSTRAINT</strong></td>
+<td>변경해서는 안 되는 조건</td>
+<td>No geometry changes, no new components</td>
+</tr>
+</tbody>
+</table></div>
+<p>프롬프트에서 가장 중요한 것은 변경할 내용뿐 아니라 유지할 내용을 명확하게 지정하는 것이다.</p>
+<h3 id="05-practice-01-reference-setup">05 · Practice 01 · Reference Setup</h3>
+<ol>
+<li>기존 제품 이미지를 Higgsfield에 업로드</li>
+<li>CMF Direction 확인</li>
+<li>Detail Sketch 준비</li>
+<li>Multi-view Sketch 준비</li>
+<li>KEEP / CHANGE / CONSTRAINT 작성</li>
+</ol>
+<p><strong>강사 시연 프롬프트 — 공통 고정 조건</strong></p>
+<p>입력: 기존 램프</p>
+<pre><code class="language-text">Use the uploaded lamp image
+as the primary and authoritative design reference.
+
+Preserve the original product identity:
+
+- Low cylindrical base
+- One continuous C-shaped support
+- Thin horizontal circular lamp head
+- Warm light diffuser
+- Original proportions and silhouette
+
+Do not create a new lamp design.
+
+Only change elements explicitly requested.
+Preserve all unrelated features.
+
+Do not add components unless specified.
+</code></pre>
+<p>이 블록은 이후 모든 편집 요청 앞에 붙여 쓰는 공통 조건이다. 자기 제품에 맞게 Preserve 목록을 바꿔 쓴다.</p>
+<p><strong>결과물</strong> Master Reference + Design Constraints</p>
+<hr />
+<h2 id="part-02-cmf-application">PART 02 · CMF Application</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 형태는 그대로 두고 표면(색상·소재·마감)만 바꾼다.</p>
+</blockquote>
+<h3 id="06-change-the-surface-not-the-form">06 · CHANGE THE SURFACE, NOT THE FORM</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>CMF 변경</th>
+<th>제품 재설계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>색상 · 소재 표현 · 표면 마감 · 반사 특성</td>
+<td>실루엣 · 지지대 곡률 · 헤드 두께 · 베이스 비율 변경, 부품 추가</td>
+</tr>
+</tbody>
+</table></div>
+<p>CMF를 수정하면서 제품의 형태까지 바뀌었다면 의도한 작업이 아니다.</p>
+<h3 id="07-change-only-the-color">07 · CHANGE ONLY THE COLOR</h3>
+<p>기존 램프의 실버 본체를 Charcoal Gray로 바꾸는 시연.</p>
+<p>입력: 기존 램프</p>
+<pre><code class="language-text">Use the uploaded original lamp image.
+
+Change only the visible metal body color
+to deep charcoal gray.
+
+Preserve the original material appearance
+and surface finish.
+
+Keep the exact C-shaped support curvature,
+cylindrical base,
+thin horizontal circular lamp head,
+warm light diffuser,
+and original proportions.
+
+Keep the same camera angle,
+lighting, and background.
+
+Do not redesign the lamp.
+Do not add any components.
+</code></pre>
+<p><strong>시연 후 확인</strong> — 색상만 바뀌었는가? · 지지대 곡률이 유지되었는가? · 헤드 두께가 달라지지 않았는가? · 조명 확산판이 그대로 유지되었는가?</p>
+<h3 id="08-make-materials-believable">08 · MAKE MATERIALS BELIEVABLE</h3>
+<p>Charcoal Gray는 색상이고, Matte Aluminum은 소재와 마감에 대한 정보다. 소재는 색으로만 표현하지 않고 표면의 반사와 질감까지 지정한다.</p>
+<p>입력: 기존 램프</p>
+<pre><code class="language-text">Use the uploaded lamp as the design reference.
+
+Apply a realistic matte anodized aluminum
+material appearance to the visible metal body.
+
+Preserve the existing product color family,
+geometry, proportions, and components.
+
+Show subtle metallic surface response
+with soft controlled reflections.
+
+Keep the original warm light diffuser.
+
+Do not change the product design.
+</code></pre>
+<p>시연: 색상 변경 결과와 소재 변경 결과를 비교한다.</p>
+<h3 id="09-matte-vs-satin-vs-brushed">09 · MATTE vs SATIN vs BRUSHED</h3>
+<p>같은 기준 이미지에서 각각 편집해 비교한다(이전 결과를 이어서 편집하지 않는다).</p>
+<p><strong>A. MATTE</strong></p>
+<pre><code class="language-text">Apply a uniform matte aluminum finish
+to the existing lamp body.
+
+Preserve the original geometry,
+color, components, and proportions.
+
+Reduce strong specular reflections.
+Keep realistic soft surface highlights.
+
+Change only the surface finish.
+</code></pre>
+<p><strong>B. SATIN</strong></p>
+<pre><code class="language-text">Apply a refined satin aluminum finish
+to the existing lamp body.
+
+Preserve the original geometry,
+color, components, and proportions.
+
+Show soft controlled metallic reflections.
+
+Change only the surface finish.
+</code></pre>
+<p><strong>C. BRUSHED</strong></p>
+<pre><code class="language-text">Apply a subtle fine-brushed aluminum finish
+to the existing lamp body.
+
+Preserve the original geometry,
+color, components, and proportions.
+
+Show realistic fine directional surface texture.
+
+Change only the surface finish.
+</code></pre>
+<p>동일한 형태라도 표면 마감에 따라 제품의 인상이 달라질 수 있다. 수업 예시에서는 B. Satin을 최종 CMF로 확정했다.</p>
+<h3 id="10-did-only-the-cmf-change">10 · DID ONLY THE CMF CHANGE?</h3>
+<p><strong>검토 기준</strong> — 실루엣 유지 · 비율 유지 · 부품 구성 유지 · 색상 정확성 · 소재 표현 · 마감 표현 · 조명 확산판 유지</p>
+<p><strong>실패 사례</strong> — 색상만 바꾸라고 했는데 지지대가 두꺼워지고 헤드가 둥글게 부풀고 베이스가 높아진 경우.</p>
+<p><strong>수정 방향</strong> — 변경할 부분을 좁히고 유지 조건을 다시 명시한다.</p>
+<p><strong>1차 수정 프롬프트</strong></p>
+<p>입력: 실패 결과 + 기존 램프 원본</p>
+<pre><code class="language-text">Correct the previous result
+using the original lamp image as reference.
+
+Restore the exact original C-shaped support,
+cylindrical base proportions,
+and thin circular lamp head.
+
+Keep only the approved CMF change.
+
+Remove any unintended geometry changes
+or additional components.
+</code></pre>
+<p>수업 예시에서 1차 수정은 형태를 일부만 되돌렸고, 승인된 Charcoal CMF까지 사라졌다. AI는 "approved CMF"가 무엇인지 알 수 없기 때문이다.</p>
+<p><strong>2차 수정 프롬프트</strong> — 이미지 역할과 고칠 부분을 구체적으로 지정</p>
+<p>입력: 실패 결과 + 기존 램프 원본</p>
+<pre><code class="language-text">Image 1 is the current result.
+Image 2 is the approved master.
+
+Correct only the drifted geometry back to image 2:
+- Restore the thin, flat lamp head
+- Restore the slim C-shaped support thickness
+- Restore the low base height
+
+Keep the charcoal matte finish from image 1.
+Do not change camera angle, lighting, or background.
+</code></pre>
+<p>→ 형태 복원 + Charcoal CMF 유지. 수정할수록 요청을 더 좁고 구체적으로 만든다.</p>
+<h3 id="11-practice-02-cmf-application">11 · Practice 02 · CMF Application</h3>
+<ol>
+<li>오프라인에서 설계한 CMF A 적용</li>
+<li>CMF B 적용</li>
+<li>원본과 두 결과 비교</li>
+<li>형태가 달라진 부분 확인</li>
+<li>필요한 부분 수정</li>
+<li>최종 CMF 선정</li>
+</ol>
+<p><strong>결과물</strong> CMF Render A/B + Final CMF Render
+<strong>완료 기준</strong> CMF를 변경하더라도 기존 제품의 형태와 부품 구성이 유지되어야 한다.</p>
+<hr />
+<h2 id="part-03-detail-visualization">PART 03 · Detail Visualization</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 오프라인에서 정의한 디테일만, 하나씩 구현한다.</p>
+</blockquote>
+<h3 id="12-visualize-the-decision">12 · VISUALIZE THE DECISION</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EXISTING DETAIL</strong></td>
+<td>기존 이미지에 보이는 디테일 확대</td>
+</tr>
+<tr>
+<td><strong>PROPOSED DETAIL</strong></td>
+<td>학생이 새롭게 설계한 디테일 구현</td>
+</tr>
+</tbody>
+</table></div>
+<p>원본에 없는 디테일을 AI가 임의로 만들도록 하지 않는다.</p>
+<h3 id="13-zoom-into-the-design">13 · ZOOM INTO THE DESIGN</h3>
+<p>확대할 수 있는 기존 연결부: C자형 지지대와 베이스 · 지지대와 조명 헤드 · 헤드의 금속 외장과 확산판</p>
+<p>입력: 기존 램프</p>
+<pre><code class="language-text">Create a realistic close-up view
+of the existing connection
+between the C-shaped support
+and the horizontal circular lamp head.
+
+Use the uploaded image
+as the authoritative geometry reference.
+
+Preserve the original connection shape,
+surface finish, and proportions.
+
+Do not invent hinges, screws,
+or new mechanical components.
+
+Neutral studio lighting.
+No text or labels.
+</code></pre>
+<p><strong>검토 기준</strong> — 확대 이미지에서 원본의 연결 형태가 바뀌지 않았는지 확인한다.</p>
+<h3 id="14-use-the-sketch-as-a-constraint">14 · USE THE SKETCH AS A CONSTRAINT</h3>
+<p>원본에는 전원 버튼이 보이지 않는다. 오프라인에서 버튼의 위치와 형태를 설계했다면 그 스케치를 추가 레퍼런스로 반영한다.</p>
+<ol>
+<li>기존 램프 이미지 업로드</li>
+<li>버튼 위치 스케치 업로드</li>
+<li>추가할 디테일 명시</li>
+<li>변경하지 않을 요소 지정</li>
+<li>생성 결과 비교</li>
+</ol>
+<p>입력: 기존 램프 + 디테일 스케치</p>
+<pre><code class="language-text">Use the original lamp image
+as the primary product reference.
+
+Use the additional detail sketch
+to define the proposed power button.
+
+Add only the button shown in the sketch
+at the specified position
+on the cylindrical base.
+
+Preserve the original base geometry,
+C-shaped support,
+circular lamp head,
+and overall product identity.
+
+Do not add charging ports,
+extra controls, or decorative details.
+
+This is a proposed design refinement.
+</code></pre>
+<p>결과 이미지는 검증된 기능이 아니라 설계 제안(Design Proposal)이다.</p>
+<h3 id="15-change-one-detail-at-a-time">15 · CHANGE ONE DETAIL AT A TIME</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>한 번에 요청</th>
+<th>단계별 요청</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>버튼 추가 + 충전 포트 추가 + 연결부 수정 + 소재 변경</td>
+<td>① 버튼 위치 적용 ② 버튼 형태 수정 ③ 충전 포트 적용 ④ 소재 경계 확인</td>
+</tr>
+</tbody>
+</table></div>
+<p>수업 예시: 기존 램프 → 버튼 위치 적용(아이콘이 함께 생김) → 버튼 형태 수정. 3단계는 2단계 결과를 입력으로 썼다.</p>
+<p>입력: 버튼 위치 적용 결과</p>
+<pre><code class="language-text">Revise only the power button on the base.
+
+Make it slightly smaller
+and fully flush with the base surface.
+
+Remove any icon or symbol on the button.
+
+Keep everything else identical.
+</code></pre>
+<p>변경 범위를 작게 나누면 어떤 수정이 결과에 영향을 주었는지 판단하기 쉽다.</p>
+<h3 id="16-show-the-material-boundary">16 · SHOW THE MATERIAL BOUNDARY</h3>
+<p>헤드의 금속 외장과 발광부의 경계를 확대해 소재와 마감을 표현한다.</p>
+<p>입력: 기존 램프</p>
+<pre><code class="language-text">Create a macro close-up rendering
+of the existing circular lamp head.
+
+Focus on the visible transition
+between the metal-like outer housing
+and the softly illuminated diffuser beneath it.
+
+Preserve the original head geometry,
+thickness, and proportions.
+
+Show realistic surface response
+and a clean material boundary.
+
+Do not invent new mechanical details.
+
+No text or labels.
+</code></pre>
+<h3 id="17-does-the-detail-match-the-design">17 · DOES THE DETAIL MATCH THE DESIGN?</h3>
+<ul>
+<li>스케치의 위치와 일치하는가?</li>
+<li>크기와 형태가 적절한가?</li>
+<li>원본 제품의 디자인 언어를 유지하는가?</li>
+<li>다른 부품이 변경되지 않았는가?</li>
+<li>사용 방식이 자연스러운가?</li>
+<li>구조적으로 추가 검토가 필요한 부분은 없는가?</li>
+</ul>
+<blockquote>
+<p><strong>중요</strong> — AI 이미지가 실제 구조나 제조 가능성을 검증하는 것은 아니다.</p>
+</blockquote>
+<h3 id="18-practice-03-detail-visualization">18 · Practice 03 · Detail Visualization</h3>
+<ol>
+<li>기존 제품의 핵심 연결부 확대</li>
+<li>오프라인 디테일 스케치 선택</li>
+<li>스케치 기반 디테일 구현</li>
+<li>추가 디테일 1개 구현</li>
+<li>원본과 비교하여 불필요한 변경 수정</li>
+</ol>
+<p><strong>결과물</strong> Detail Close-up 3종
+<strong>완료 기준</strong> 학생이 설계한 디테일이 반영되어 있고, 제품의 기본 형태가 유지되어야 한다.</p>
+<hr />
+<h2 id="part-04-multi-view-consistency">PART 04 · Multi-view &amp; Consistency</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 카메라만 바꾸고 제품은 그대로 둔다. 불일치는 그 이미지만 고친다.</p>
+</blockquote>
+<h3 id="19-same-product-different-views">19 · SAME PRODUCT. DIFFERENT VIEWS.</h3>
+<p>필요한 시점: Front · Side · Rear · Three-quarter. 카메라 시점은 바뀌어도 제품의 디자인은 바뀌면 안 된다.</p>
+<h3 id="20-the-consistency-problem">20 · THE CONSISTENCY PROBLEM</h3>
+<p>새 시점을 요청하면 생길 수 있는 문제: 지지대 곡률 변경 · 베이스 비율 변경 · 헤드 두께 변경 · 연결부 위치 변경 · 버튼 위치 불일치 · 소재와 마감 변경</p>
+<blockquote>
+<p><strong>강사 질문</strong> — "이 이미지들은 정말 같은 제품일까요?"</p>
+</blockquote>
+<h3 id="21-control-the-camera-keep-the-product">21 · CONTROL THE CAMERA, KEEP THE PRODUCT</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CHANGE</strong></td>
+<td>Camera viewpoint</td>
+</tr>
+<tr>
+<td><strong>KEEP</strong></td>
+<td>Product geometry, proportions, materials, components</td>
+</tr>
+<tr>
+<td><strong>REFERENCE</strong></td>
+<td>Original product + view sketch</td>
+</tr>
+</tbody>
+</table></div>
+<p>시점 변경은 새로운 제품 생성이 아니다. 입력은 최종 CMF와 디테일이 반영된 이미지 + 해당 시점 스케치.</p>
+<h3 id="22-generate-the-front-view">22 · GENERATE THE FRONT VIEW</h3>
+<p>입력: 승인된 제품 이미지 + 정면 스케치</p>
+<pre><code class="language-text">Create a front-view product visualization
+of the exact lamp shown
+in the uploaded reference image.
+
+Use the additional front-view sketch
+to define the intended silhouette
+and component arrangement.
+
+Preserve the original product identity,
+C-shaped support,
+cylindrical base,
+thin circular lamp head,
+and approved CMF.
+
+Do not invent new components.
+
+Neutral studio background,
+clear product presentation.
+</code></pre>
+<p><strong>검토 기준</strong> — 정면 실루엣 · 헤드와 베이스의 정렬 · 지지대의 위치 · 부품별 CMF</p>
+<h3 id="23-generate-the-side-view">23 · GENERATE THE SIDE VIEW</h3>
+<p>입력: 승인된 제품 이미지 + 측면 스케치</p>
+<pre><code class="language-text">Create a side-view visualization
+of the exact lamp shown
+in the uploaded reference image.
+
+Use the additional side-view sketch
+to define the geometry not visible
+in the original image.
+
+Preserve the cylindrical base,
+C-shaped curved support,
+thin circular lamp head,
+and approved CMF.
+
+Maintain consistent proportions
+and component relationships.
+
+Do not invent additional components.
+
+Neutral studio background.
+</code></pre>
+<p><strong>검토 기준</strong> — 지지대의 깊이 · 헤드 두께 · 베이스 비율 · 전체적인 형태</p>
+<h3 id="24-generate-the-rear-view">24 · GENERATE THE REAR VIEW</h3>
+<p>원본에서 보이지 않는 후면은 오프라인 스케치를 기준으로 한다.</p>
+<p>입력: 승인된 제품 이미지 + 후면 스케치</p>
+<pre><code class="language-text">Create a rear-view product visualization
+of the exact lamp shown
+in the uploaded reference image.
+
+Use the additional rear-view sketch
+as the primary reference
+for hidden geometry and rear details.
+
+Preserve the original product identity,
+approved CMF,
+component proportions,
+and overall design language.
+
+Do not invent charging ports,
+buttons, seams, or other details
+not specified in the sketch.
+
+Neutral studio background.
+</code></pre>
+<p><strong>검토 기준</strong> — 후면 스케치와 일치하는가? · 부품 구성과 비율이 유지되는가? · 원본에 없던 요소가 임의로 추가되지 않았는가?</p>
+<h3 id="25-check-the-same-product">25 · CHECK THE SAME PRODUCT</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>확인할 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 FORM</td>
+<td>실루엣과 비율</td>
+</tr>
+<tr>
+<td>02 COMPONENTS</td>
+<td>부품의 개수와 위치</td>
+</tr>
+<tr>
+<td>03 DETAILS</td>
+<td>버튼과 연결부</td>
+</tr>
+<tr>
+<td>04 CMF</td>
+<td>색상·소재·마감</td>
+</tr>
+<tr>
+<td>05 DESIGN LANGUAGE</td>
+<td>곡률과 형태의 일관성</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>수정 전략</strong> — 불일치한 이미지만 기준 이미지와 스케치를 참조하여 수정한다.</p>
+<p>입력: 수정할 시점 이미지 + 기존 램프 + 해당 시점 스케치</p>
+<pre><code class="language-text">Correct the uploaded product view
+using the original lamp image
+and the approved view sketch.
+
+Restore the original product identity,
+component proportions,
+C-shaped support geometry,
+and circular lamp head design.
+
+Keep the approved camera viewpoint.
+
+Preserve the final CMF and approved details.
+
+Remove any unintended changes
+or invented components.
+</code></pre>
+<p>수업 예시에서는 후면 지지대가 아래로 갈수록 두꺼워지는 불일치가 생겼고, 위 공통 프롬프트로는 거의 바뀌지 않았다. 2차에서 무엇이 어떻게 틀렸는지 직접 적어 해결했다.</p>
+<p>입력: 후면 결과 + 승인된 제품 이미지 + 정면 결과</p>
+<pre><code class="language-text">Correct the uploaded product view
+using the original lamp image
+and the approved view sketch.
+
+Image 1 is the current rear view.
+Image 2 is the approved design.
+Image 3 is the approved front view.
+
+The support in image 1 tapers
+and becomes too thick near the base.
+Correct only the support so it keeps
+the same slim, uniform thickness
+as in images 2 and 3, from base to head.
+
+Keep the approved camera viewpoint.
+Preserve the final CMF and approved details.
+</code></pre>
+<h3 id="26-practice-04-multi-view">26 · Practice 04 · Multi-view</h3>
+<ol>
+<li>Front View 생성</li>
+<li>Side View 생성</li>
+<li>Rear View 생성</li>
+<li>세 이미지 비교</li>
+<li>형태·부품·CMF 불일치 표시</li>
+<li>가장 큰 불일치 1~2개 수정</li>
+<li>최종 Multi-view Set 정리</li>
+</ol>
+<p><strong>결과물</strong> Front / Side / Rear + Consistency Review
+<strong>완료 기준</strong> 세 이미지가 동일한 제품을 표현하고 있어야 한다. AI 생성 Multi-view는 시각적 검토 자료이며, 정확한 제조용 도면으로 사용하지 않는다.</p>
+<hr />
+<h2 id="part-05-hero-rendering">PART 05 · Hero Rendering</h2>
+<blockquote>
+<p><strong>이 파트에서 배울 것</strong> — 디자인은 고정하고 표현(카메라·조명·배경·구도)만 조절한다.</p>
+</blockquote>
+<h3 id="27-design-is-fixed-presentation-can-change">27 · DESIGN IS FIXED. PRESENTATION CAN CHANGE.</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>PRODUCT DESIGN (고정)</th>
+<th>VISUAL PRESENTATION (조절)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form · Proportion · CMF · Detail</td>
+<td>Camera · Lighting · Background · Composition</td>
+</tr>
+</tbody>
+</table></div>
+<p>제품의 디자인을 유지하면서 이미지의 전달력을 높인다.</p>
+<h3 id="28-make-the-design-clear">28 · MAKE THE DESIGN CLEAR</h3>
+<p>좋은 Hero Image의 조건: 전체 실루엣이 잘 보임 · 핵심 디자인 특징이 드러남 · 소재와 마감이 자연스러움 · 비율이 왜곡되지 않음 · 배경과 조명이 제품을 방해하지 않음</p>
+<p>입력: 최종 CMF와 디테일이 반영된 제품 이미지</p>
+<pre><code class="language-text">Create a premium industrial design
+hero rendering of the exact lamp
+shown in the uploaded reference.
+
+Preserve the approved product geometry,
+C-shaped support,
+cylindrical base,
+thin horizontal circular lamp head,
+final CMF,
+and approved details.
+
+Use a refined three-quarter product view.
+
+Soft diffused studio lighting,
+subtle rim lighting,
+neutral warm gray background,
+realistic contact shadow.
+
+Show the full product silhouette clearly.
+
+Do not redesign the product.
+Do not add props, extra components,
+branding, or text.
+</code></pre>
+<h3 id="29-practice-05-hero-rendering">29 · Practice 05 · Hero Rendering</h3>
+<ol>
+<li>최종 CMF 이미지 선택</li>
+<li>승인된 디테일이 반영되었는지 확인</li>
+<li>Hero Image 생성</li>
+<li>소재·조명·구도 검토</li>
+<li>제품 형태가 바뀐 부분 수정</li>
+<li>최종 대표 이미지 선정</li>
+</ol>
+<p><strong>결과물</strong> Final Hero Image
+<strong>완료 기준</strong> 제품의 디자인 정체성을 유지하면서 형태와 CMF를 명확하게 전달해야 한다.</p>
+<hr />
+<h2 id="part-06-final-review-submission">PART 06 · Final Review &amp; Submission</h2>
+<h3 id="30-product-visualization-board">30 · PRODUCT VISUALIZATION BOARD (최종 제출물)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>MASTER REFERENCE</td>
+<td>2주차 Refined Concept</td>
+</tr>
+<tr>
+<td>02</td>
+<td>FINAL CMF</td>
+<td>최종 CMF 이미지</td>
+</tr>
+<tr>
+<td>03</td>
+<td>DETAIL CLOSE-UP</td>
+<td>핵심 디테일 3종</td>
+</tr>
+<tr>
+<td>04</td>
+<td>MULTI-VIEW</td>
+<td>Front / Side / Rear</td>
+</tr>
+<tr>
+<td>05</td>
+<td>CONSISTENCY REVIEW</td>
+<td>불일치 항목과 수정 결과</td>
+</tr>
+<tr>
+<td>06</td>
+<td>HERO IMAGE</td>
+<td>최종 대표 이미지</td>
+</tr>
+<tr>
+<td>07</td>
+<td>REMAINING ISSUES</td>
+<td>추가 검토가 필요한 부분</td>
+</tr>
+</tbody>
+</table></div>
+<p>전체 이미지가 하나의 제품으로 일관되게 보이도록 구성한다. 라벨과 표시는 보드 편집 단계에서 추가한다.</p>
+<h3 id="31-is-it-still-the-same-product">31 · IS IT STILL THE SAME PRODUCT?</h3>
+<ul>
+<li>원본의 핵심 실루엣이 유지되었는가?</li>
+<li>CMF가 설계 의도대로 적용되었는가?</li>
+<li>디테일 스케치가 정확하게 반영되었는가?</li>
+<li>시점별 형태와 부품 구성이 일관적인가?</li>
+<li>AI가 임의로 추가한 요소는 없는가?</li>
+<li>Hero Image가 제품의 특징을 명확하게 보여주는가?</li>
+<li>아직 검토가 필요한 부분은 무엇인가?</li>
+</ul>
+<h3 id="32-next-from-product-to-experience-4">32 · NEXT — FROM PRODUCT TO EXPERIENCE (4주차 예고)</h3>
+<p>이번 주에는 제품 자체를 시각화했다. 다음 주에는 이 제품이 실제로 어떻게 사용되는지 보여준다: User Scenario · Product Interaction · Storyboard · Image-to-Video · Product Motion.</p>
+<p>예시: 사용자가 램프를 책상 위에 놓고 조명을 켜는 장면을 스토리보드로 구성하고, Higgsfield로 사용 장면과 영상으로 확장한다.</p>
+<blockquote>
+<p>One product. Consistent design. Multiple perspectives.</p>
+</blockquote>
+<hr />
+<h2 id="_6">부록</h2>
+<h3 id="a">A. 제출 체크리스트</h3>
+<ul>
+<li>☐ Product Visualization Board 7칸이 모두 채워져 있다</li>
+<li>☐ 모든 이미지가 같은 기준 이미지에서 출발했다</li>
+<li>☐ CMF·디테일·시점 이미지 모두 원본의 실루엣과 비율을 유지한다</li>
+<li>☐ 수정 전후 이미지를 Consistency Review에 남겼다</li>
+<li>☐ AI로 확인할 수 없는 항목을 Remaining Issues에 적었다</li>
+<li>☐ 보드의 라벨·표시는 편집 단계에서 추가했다</li>
+</ul>
+<h3 id="b">B. 이미지 생성 시 주의사항</h3>
+<ul>
+<li>기존 제품의 기준 이미지를 반드시 업로드한다. 텍스트만으로 새 램프를 만들지 않는다.</li>
+<li>오프라인에서 결정되지 않은 디테일은 임의로 확정하지 않는다.</li>
+<li>결과가 원본과 다르면 수정 과정을 보여준다.</li>
+<li>CMF → 디테일 → Multi-view → Hero 순서로, 확정된 이미지를 이어서 사용한다.</li>
+<li>정확한 형상 일관성이 필요하면 원본과 함께 시점별 스케치를 활용한다.</li>
+<li>실제 치수·구조·제조 가능성은 별도로 검토한다.</li>
+</ul></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>
