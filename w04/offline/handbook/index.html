@@ -1,0 +1,771 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W04 Offline · Product Experience · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 04 · Offline</a><div><div class="toc">
+<ul>
+<li><a href="#ai-industrial-design-4-product-experience">AI × Industrial Design · 4주차 오프라인 — Product Experience</a><ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#_3">전체 과정과의 연결</a></li>
+<li><a href="#master-product-reference">기준 제품 (Master Product Reference)</a></li>
+<li><a href="#_4">수업 흐름</a></li>
+</ul>
+</li>
+<li><a href="#part-01-product-review">PART 01 · Product Review</a><ul>
+<li><a href="#01-product-experience">01 · PRODUCT EXPERIENCE</a></li>
+<li><a href="#02-from-product-to-experience">02 · FROM PRODUCT TO EXPERIENCE</a></li>
+<li><a href="#03-a-product-is-not-an-experience">03 · A PRODUCT IS NOT AN EXPERIENCE</a></li>
+<li><a href="#04-product-value">04 · PRODUCT VALUE</a></li>
+<li><a href="#05-what-should-the-user-experience">05 · WHAT SHOULD THE USER EXPERIENCE?</a></li>
+<li><a href="#06-practice-01-product-experience-review">06 · Practice 01 · Product Experience Review</a></li>
+</ul>
+</li>
+<li><a href="#part-02-user-scenario">PART 02 · User Scenario</a><ul>
+<li><a href="#07-design-the-context">07 · DESIGN THE CONTEXT</a></li>
+<li><a href="#08-who-where-when-why-what">08 · WHO · WHERE · WHEN · WHY · WHAT</a></li>
+<li><a href="#09-experience-has-a-sequence">09 · EXPERIENCE HAS A SEQUENCE</a></li>
+<li><a href="#10-why-does-the-user-need-it">10 · WHY DOES THE USER NEED IT?</a></li>
+<li><a href="#11-what-changes-after-use">11 · WHAT CHANGES AFTER USE?</a></li>
+<li><a href="#12-from-context-to-story">12 · FROM CONTEXT TO STORY</a></li>
+<li><a href="#13-practice-02-user-scenario">13 · Practice 02 · User Scenario</a></li>
+</ul>
+</li>
+<li><a href="#part-03-interaction-design">PART 03 · Interaction Design</a><ul>
+<li><a href="#14-experience-is-action">14 · EXPERIENCE IS ACTION</a></li>
+<li><a href="#15-map-the-actions">15 · MAP THE ACTIONS</a></li>
+<li><a href="#16-design-the-interaction">16 · DESIGN THE INTERACTION</a></li>
+<li><a href="#17-show-the-important-action">17 · SHOW THE IMPORTANT ACTION</a></li>
+<li><a href="#18-can-the-viewer-understand-the-action">18 · CAN THE VIEWER UNDERSTAND THE ACTION?</a></li>
+<li><a href="#19-find-the-key-interaction">19 · FIND THE KEY INTERACTION</a></li>
+<li><a href="#20-practice-03-interaction-mapping">20 · Practice 03 · Interaction Mapping</a></li>
+</ul>
+</li>
+<li><a href="#part-04-storyboard-design">PART 04 · Storyboard Design</a><ul>
+<li><a href="#21-turn-the-experience-into-scenes">21 · TURN THE EXPERIENCE INTO SCENES</a></li>
+<li><a href="#22-storyboard">22 · STORYBOARD</a></li>
+<li><a href="#23-six-shots-one-experience">23 · SIX SHOTS, ONE EXPERIENCE</a></li>
+<li><a href="#24-shot-01-establish-the-context">24 · SHOT 01 — ESTABLISH THE CONTEXT</a></li>
+<li><a href="#25-shot-02-introduce-the-product">25 · SHOT 02 — INTRODUCE THE PRODUCT</a></li>
+<li><a href="#26-shot-03-show-the-action">26 · SHOT 03 — SHOW THE ACTION</a></li>
+<li><a href="#27-shot-04-show-the-response">27 · SHOT 04 — SHOW THE RESPONSE</a></li>
+<li><a href="#28-shot-05-show-the-benefit">28 · SHOT 05 — SHOW THE BENEFIT</a></li>
+<li><a href="#29-shot-06-end-with-the-design">29 · SHOT 06 — END WITH THE DESIGN</a></li>
+<li><a href="#30-practice-04-storyboard">30 · Practice 04 · Storyboard</a></li>
+</ul>
+</li>
+<li><a href="#part-05-motion-direction">PART 05 · Motion Direction</a><ul>
+<li><a href="#31-from-image-to-motion">31 · FROM IMAGE TO MOTION</a></li>
+<li><a href="#32-camera-movement">32 · CAMERA MOVEMENT</a></li>
+<li><a href="#33-what-actually-moves">33 · WHAT ACTUALLY MOVES?</a></li>
+<li><a href="#34-motion-direction-sheet">34 · MOTION DIRECTION SHEET</a></li>
+<li><a href="#35-keep-the-product-consistent">35 · KEEP THE PRODUCT CONSISTENT</a></li>
+<li><a href="#36-practice-05-motion-planning">36 · Practice 05 · Motion Planning</a></li>
+</ul>
+</li>
+<li><a href="#part-06-final-review-assignment">PART 06 · Final Review &amp; Assignment</a><ul>
+<li><a href="#37-product-experience-board">37 · PRODUCT EXPERIENCE BOARD (최종 제출물)</a></li>
+<li><a href="#38-does-the-story-communicate-the-design">38 · DOES THE STORY COMMUNICATE THE DESIGN?</a></li>
+<li><a href="#39-ready-for-video-generation">39 · READY FOR VIDEO GENERATION</a></li>
+<li><a href="#40-next-visualize-the-experience">40 · NEXT — VISUALIZE THE EXPERIENCE (다음 온라인 수업)</a></li>
+</ul>
+</li>
+<li><a href="#higgsfield">부록 · Higgsfield 공통 지침</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div></nav><main><h1 id="ai-industrial-design-4-product-experience">AI × Industrial Design · 4주차 오프라인 — Product Experience</h1>
+<blockquote>
+<p>From Product Design to User Experience · 인환 강사 · 40장</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>4주 과정의 마지막 산업디자인 설계 수업이다. 1~3주차에 완성한 <strong>같은 제품</strong>을 바탕으로 사용 경험을 설계하고, 제품의 특징을 전달할 <strong>사용자 시나리오 · 행동 흐름 · 스토리보드 · 영상 연출 계획</strong>을 만든다. 결과물은 <strong>Product Experience Board</strong>이며, 다음 온라인 수업(심선범 강사)에서 이 보드로 Higgsfield 이미지·영상과 최종 포트폴리오를 만든다.</p>
+<h3 id="_3">전체 과정과의 연결</h3>
+<table>
+<thead>
+<tr>
+<th>주차</th>
+<th>단계</th>
+<th>결과물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WEEK 01</td>
+<td>EXPLORE — 기획 · 사용자 분석 · 러프 스케치 · AI 콘셉트</td>
+<td>Concept Visualization Board</td>
+</tr>
+<tr>
+<td>WEEK 02</td>
+<td>DEVELOP — 형태 · 비율 · 사용성 · 구조 검토, AI 부분 수정</td>
+<td>Design Refinement Board</td>
+</tr>
+<tr>
+<td>WEEK 03</td>
+<td>REFINE — CMF · 디테일 · Multi-view · Hero Image</td>
+<td>Product Visualization Board</td>
+</tr>
+<tr>
+<td><strong>WEEK 04</strong></td>
+<td><strong>EXPERIENCE — 시나리오 · 행동 분석 · 스토리보드 · 영상 연출 계획</strong></td>
+<td><strong>Product Experience Board</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="master-product-reference">기준 제품 (Master Product Reference)</h3>
+<p>예시는 1~3주차의 테이블 램프 한 가지다. 새 제품이나 새 기능을 만들지 않는다.</p>
+<ul>
+<li>낮고 넓은 원통형 베이스, 왼쪽에서 휘어 오르는 하나의 C자형 지지대</li>
+<li>오른쪽으로 수평 돌출된 얇은 원형 헤드와 하단의 따뜻한 확산광</li>
+<li>밝은 실버 · 웜그레이 금속성 표면(3주차 확정 CMF)</li>
+<li>조작부: 3주차에서 설계한 <strong>베이스 정면의 평평한 원형 버튼</strong>(강의 예시 기준)</li>
+</ul>
+<p>원본에서 확인되지 않는 정보(충전 방식, 후면, 내부 부품, 구체적 조작 방식)는 학생의 3주차 설계를 따르고, 없으면 <strong>"미정"으로 남긴다.</strong> AI 이미지가 구조적 정확성을 검증하지 않는다.</p>
+<h3 id="_4">수업 흐름</h3>
+<table>
+<thead>
+<tr>
+<th>PART</th>
+<th>주제</th>
+<th>슬라이드</th>
+<th>실습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Product Review — 완성된 제품에서 사용 경험으로</td>
+<td>01–06</td>
+<td>Practice 01 · Product Experience Statement</td>
+</tr>
+<tr>
+<td>02</td>
+<td>User Scenario — 사용자의 상황을 구체화하기</td>
+<td>07–13</td>
+<td>Practice 02 · User Scenario Sheet</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Interaction Design — 사용자 행동과 제품 반응</td>
+<td>14–20</td>
+<td>Practice 03 · User Action Sequence</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Storyboard Design — 제품 경험을 장면으로 구성</td>
+<td>21–30</td>
+<td>Practice 04 · Product Storyboard</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Motion Direction — 움직임과 영상 연출 계획</td>
+<td>31–36</td>
+<td>Practice 05 · Motion Direction Sheet</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Final Review &amp; Assignment</td>
+<td>37–40</td>
+<td>Product Experience Board</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-01-product-review">PART 01 · Product Review</h2>
+<h3 id="01-product-experience">01 · PRODUCT EXPERIENCE</h3>
+<p>좋은 제품 디자인은 형태에서 끝나지 않는다. 사용자가 제품을 어떻게 경험하는지까지 설계해야 한다. 표지 이미지는 3주차 최종 Hero Image다.</p>
+<h3 id="02-from-product-to-experience">02 · FROM PRODUCT TO EXPERIENCE</h3>
+<p>WEEK 01 IDEA → CONCEPT · WEEK 02 REVIEW → REFINE · WEEK 03 CMF → DETAIL → VISUALIZATION · <strong>WEEK 04 USER → ACTION → EXPERIENCE</strong></p>
+<p>우리는 제품을 디자인했다. 이제 그 제품이 사용자의 일상에서 어떻게 작동하는지 보여줄 차례다.</p>
+<h3 id="03-a-product-is-not-an-experience">03 · A PRODUCT IS NOT AN EXPERIENCE</h3>
+<p>제품의 외형만으로는 답하기 어렵다: 누가 · 언제 · 어디에서 사용하는가? 어떤 문제를 해결하는가? 어떻게 조작하는가? 사용 후 어떤 변화를 경험하는가?</p>
+<blockquote>
+<p><strong>강사 질문</strong> — "이 램프가 아름답다는 것 외에, 사용자에게 어떤 가치를 제공할까요?"</p>
+</blockquote>
+<p>입력: 3주차 최종 램프 이미지</p>
+<pre><code class="language-text">Place the exact lamp from the uploaded
+reference image on a minimal wooden desk
+in a quiet bedroom at night.
+
+Preserve the original lamp geometry,
+C-shaped support,
+cylindrical base,
+thin circular lamp head,
+approved CMF and details.
+
+Soft warm ambient lighting,
+realistic interior photography.
+
+Do not redesign the lamp.
+No additional product components.
+</code></pre>
+<h3 id="04-product-value">04 · PRODUCT VALUE</h3>
+<table>
+<thead>
+<tr>
+<th>가치</th>
+<th>의미</th>
+<th>램프 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FUNCTIONAL</td>
+<td>제품이 수행하는 기능</td>
+<td>책을 읽을 수 있도록 빛을 제공</td>
+</tr>
+<tr>
+<td>USABILITY</td>
+<td>쉽게 사용할 수 있는가</td>
+<td>쉽게 조명을 켜고 끌 수 있음</td>
+</tr>
+<tr>
+<td>EMOTIONAL</td>
+<td>사용 중 느끼는 분위기와 감정</td>
+<td>편안하고 차분한 분위기</td>
+</tr>
+<tr>
+<td>CONTEXTUAL</td>
+<td>사용 환경에 얼마나 적합한가</td>
+<td>개인 책상과 침실에 어울림</td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-what-should-the-user-experience">05 · WHAT SHOULD THE USER EXPERIENCE?</h3>
+<p>제품의 핵심 경험을 한 문장으로 정의한다. 예: <em>"A calm personal lighting experience for evening reading."</em></p>
+<p>정리 항목: Target User · Use Context · Main Action · Desired Experience. 좋은 사용 경험은 우연히 만들어지지 않는다 — 무엇을 경험하게 할지 먼저 결정한다.</p>
+<h3 id="06-practice-01-product-experience-review">06 · Practice 01 · Product Experience Review</h3>
+<ol>
+<li>3주차 최종 제품 이미지 확인</li>
+<li>제품의 핵심 기능 정리</li>
+<li>주요 사용자 정의</li>
+<li>대표 사용 환경 선정</li>
+<li>사용자에게 제공할 핵심 경험 한 문장 작성</li>
+</ol>
+<p><strong>제출물</strong> Product Experience Statement · <strong>완료 기준</strong> 제품이 누구에게 어떤 상황에서 어떤 경험을 제공하는지 설명할 수 있어야 한다.</p>
+<hr />
+<h2 id="part-02-user-scenario">PART 02 · User Scenario</h2>
+<h3 id="07-design-the-context">07 · DESIGN THE CONTEXT</h3>
+<p>사용 경험은 특정한 상황에서 발생한다. WHO(누가) · WHERE(어디서) · WHEN(언제) · WHY(왜) · WHAT(무엇을).</p>
+<h3 id="08-who-where-when-why-what">08 · WHO · WHERE · WHEN · WHY · WHAT</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>램프 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WHO</td>
+<td>저녁에 독서하는 사용자</td>
+</tr>
+<tr>
+<td>WHERE</td>
+<td>개인 침실의 책상</td>
+</tr>
+<tr>
+<td>WHEN</td>
+<td>늦은 저녁</td>
+</tr>
+<tr>
+<td>WHY</td>
+<td>주변을 방해하지 않고 책을 읽기 위해</td>
+</tr>
+<tr>
+<td>WHAT</td>
+<td>램프를 켜고 책을 읽는다</td>
+</tr>
+</tbody>
+</table>
+<p>사용 시나리오는 분위기 설명이 아니라 실제 행동을 설명해야 한다.</p>
+<h3 id="09-experience-has-a-sequence">09 · EXPERIENCE HAS A SEQUENCE</h3>
+<p>BEFORE(책상에 앉아 책을 읽으려는 사용자) → DURING(램프를 켜고 책을 읽음) → AFTER(편안한 조명 아래에서 독서에 집중). 세 장면은 같은 책상과 같은 램프로 만든다.</p>
+<p><strong>BEFORE</strong></p>
+<pre><code class="language-text">Use the uploaded lamp as the exact
+product reference.
+
+Show the lamp on a quiet wooden desk
+before the user begins reading.
+
+The lamp is switched off.
+
+Preserve the original product geometry,
+CMF, and details.
+
+Soft low ambient lighting,
+cinematic interior photography.
+</code></pre>
+<p><strong>DURING</strong></p>
+<pre><code class="language-text">Use the uploaded lamp as the exact
+product reference.
+
+Show the same lamp on the same desk
+while the user is reading an open book.
+
+The lamp is switched on,
+casting a soft warm light onto the book.
+
+Preserve the original geometry,
+CMF, details, and desk arrangement.
+
+Consistent cinematic composition.
+</code></pre>
+<p><strong>AFTER</strong></p>
+<pre><code class="language-text">Use the uploaded lamp as the exact
+product reference.
+
+Show the same lamp on the same desk
+after the reading session.
+
+The book is closed
+and the lamp is switched off.
+
+Preserve the original geometry,
+CMF, details, and environment.
+
+Consistent cinematic composition.
+</code></pre>
+<h3 id="10-why-does-the-user-need-it">10 · WHY DOES THE USER NEED IT?</h3>
+<ul>
+<li>좋지 않은 예: "사용자가 멋진 램프를 사용한다."</li>
+<li>개선된 예: "늦은 저녁 책을 읽고 싶지만 주변 공간 전체를 밝히고 싶지는 않다."</li>
+</ul>
+<p>사용 상황과 문제를 이해해야 제품의 역할이 명확해진다.</p>
+<h3 id="11-what-changes-after-use">11 · WHAT CHANGES AFTER USE?</h3>
+<p>BEFORE 독서하기에 불편한 조명 환경 → AFTER 책을 읽기에 적합한 개인 조명 환경.</p>
+<blockquote>
+<p><strong>강사 질문</strong> — "이 제품을 사용한 후 사용자의 상황은 어떻게 달라지나요?"</p>
+</blockquote>
+<pre><code class="language-text">Create a realistic before-and-after
+lighting comparison of the same desk
+with the exact lamp from the reference.
+
+Before:
+The lamp is off and the reading area
+is dimly illuminated.
+
+After:
+The lamp is on and softly illuminates
+the open book.
+
+Preserve the exact product geometry,
+CMF, position, and room composition.
+
+Only the lighting state changes.
+</code></pre>
+<h3 id="12-from-context-to-story">12 · FROM CONTEXT TO STORY</h3>
+<p>구조: ① 사용자 소개 ② 사용 상황 ③ 문제 또는 목적 ④ 제품과의 상호작용 ⑤ 사용 후 경험</p>
+<blockquote>
+<p>"늦은 저녁, 사용자는 침실 책상에서 책을 읽으려 한다. 주변을 밝히지 않으면서 독서에 집중하기 위해 책상 위 램프를 켠다. 부드러운 조명이 책을 비추고, 사용자는 편안하게 독서를 이어간다."</p>
+</blockquote>
+<p>영상은 시나리오를 시각적으로 전달하는 수단이다.</p>
+<h3 id="13-practice-02-user-scenario">13 · Practice 02 · User Scenario</h3>
+<ol>
+<li>사용자 정의</li>
+<li>사용 환경 정의</li>
+<li>사용 목적 작성</li>
+<li>Before / During / After 구성</li>
+<li>3~5문장으로 사용 시나리오 작성</li>
+</ol>
+<p><strong>제출물</strong> User Scenario Sheet · <strong>완료 기준</strong> 사용자가 어떤 상황에서 제품을 사용하고 어떤 경험을 얻는지 명확해야 한다.</p>
+<hr />
+<h2 id="part-03-interaction-design">PART 03 · Interaction Design</h2>
+<h3 id="14-experience-is-action">14 · EXPERIENCE IS ACTION</h3>
+<p>USER ACTION(사용자가 전원을 조작한다) → PRODUCT RESPONSE(조명이 켜진다) → USER FEEDBACK(사용자가 빛을 확인한다).</p>
+<h3 id="15-map-the-actions">15 · MAP THE ACTIONS</h3>
+<p>01 APPROACH 제품에 접근 · 02 INTERACT 제품 조작 · 03 ACTIVATE 제품 작동 · 04 USE 제품 사용 · 05 FINISH 사용 종료</p>
+<h3 id="16-design-the-interaction">16 · DESIGN THE INTERACTION</h3>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>사용자 행동</th>
+<th>제품 반응</th>
+<th>사용자 피드백</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>램프에 접근</td>
+<td>변화 없음</td>
+<td>제품 위치 인지</td>
+</tr>
+<tr>
+<td>02</td>
+<td>전원 조작</td>
+<td>점등 시작</td>
+<td>빛 변화 확인</td>
+</tr>
+<tr>
+<td>03</td>
+<td>책을 펼침</td>
+<td>조명 유지</td>
+<td>독서 환경 확보</td>
+</tr>
+<tr>
+<td>04</td>
+<td>독서 진행</td>
+<td>조명 유지</td>
+<td>편안한 사용 경험</td>
+</tr>
+<tr>
+<td>05</td>
+<td>전원 종료</td>
+<td>소등</td>
+<td>사용 종료 인지</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>주의</strong> — 전원 조작 방식은 3주차에서 실제 설계한 내용을 기준으로 한다.</p>
+</blockquote>
+<h3 id="17-show-the-important-action">17 · SHOW THE IMPORTANT ACTION</h3>
+<p>핵심 기능을 전달하는 행동만 고른다: 손이 제품에 접근 · 전원 조작 · 조명 점등 · 독서 환경 변화.</p>
+<p>입력: 최종 램프 이미지 + 3주차 조작부 스케치</p>
+<pre><code class="language-text">Create a cinematic close-up
+of a human hand approaching
+the approved power control
+on the existing lamp.
+
+Use the uploaded lamp image
+as the primary product reference.
+
+Use the additional interface sketch
+to define the exact control position.
+
+Preserve the original product geometry,
+CMF, and details.
+
+Show a natural hand position
+and realistic product interaction.
+
+Do not invent new controls.
+</code></pre>
+<h3 id="18-can-the-viewer-understand-the-action">18 · CAN THE VIEWER UNDERSTAND THE ACTION?</h3>
+<p>손의 위치 · 조작부가 보이는 시점 · 제품과 사용자의 거리 · 행동 전후의 변화 · 불필요한 요소의 제거</p>
+<blockquote>
+<p><strong>강사 질문</strong> — "이 장면을 처음 보는 사람도 제품을 어떻게 사용하는지 이해할 수 있을까요?"</p>
+</blockquote>
+<h3 id="19-find-the-key-interaction">19 · FIND THE KEY INTERACTION</h3>
+<p>KEY MOMENT — 사용자가 전원을 조작하고 조명이 켜지는 순간. 선정 기준: 핵심 기능을 보여주는가? 행동이 명확한가? 반응이 시각적으로 드러나는가? 짧은 영상에서도 이해되는가?</p>
+<h3 id="20-practice-03-interaction-mapping">20 · Practice 03 · Interaction Mapping</h3>
+<ol>
+<li>사용자 행동 3~5단계 작성</li>
+<li>각 단계의 제품 반응 정리</li>
+<li>사용자 피드백 작성</li>
+<li>핵심 행동 1개 선정</li>
+<li>핵심 행동을 보여줄 카메라 시점 결정</li>
+</ol>
+<p><strong>제출물</strong> User Action Sequence · <strong>완료 기준</strong> 사용자 행동과 제품 반응이 명확하게 연결되어야 한다.</p>
+<hr />
+<h2 id="part-04-storyboard-design">PART 04 · Storyboard Design</h2>
+<h3 id="21-turn-the-experience-into-scenes">21 · TURN THE EXPERIENCE INTO SCENES</h3>
+<p>시나리오는 경험을 글로, 스토리보드는 장면으로 구성한다. 영상 제작 전에 필요한 장면을 결정한다.</p>
+<h3 id="22-storyboard">22 · STORYBOARD</h3>
+<p>각 컷에 포함할 정보: 장면의 목적 · 제품과 사용자의 위치 · 카메라 시점 · 주요 행동 · 제품의 상태 · 다음 컷과의 연결</p>
+<h3 id="23-six-shots-one-experience">23 · SIX SHOTS, ONE EXPERIENCE</h3>
+<p>01 CONTEXT · 02 PRODUCT · 03 INTERACTION · 04 RESPONSE · 05 EXPERIENCE · 06 HERO — 각 컷은 서로 다른 목적을 가져야 한다.</p>
+<h3 id="24-shot-01-establish-the-context">24 · SHOT 01 — ESTABLISH THE CONTEXT</h3>
+<p>공간 · 시간 · 사용자 상황 · 제품이 필요한 이유. 예: 늦은 저녁, 조용한 침실의 책상.</p>
+<pre><code class="language-text">Create a cinematic wide shot
+of a quiet modern bedroom at night.
+
+A minimal wooden desk,
+an open book,
+soft low ambient lighting.
+
+Include the exact lamp
+from the uploaded product reference.
+
+Preserve its original geometry,
+CMF, and approved details.
+
+The lamp is switched off.
+
+Realistic interior photography.
+No text or labels.
+</code></pre>
+<h3 id="25-shot-02-introduce-the-product">25 · SHOT 02 — INTRODUCE THE PRODUCT</h3>
+<p>제품 전체 실루엣 · 주요 디자인 특징 · 사용 환경과의 관계.</p>
+<pre><code class="language-text">Create a cinematic medium shot
+of the exact lamp from the uploaded reference
+on the same wooden desk.
+
+Preserve the C-shaped support,
+cylindrical base,
+thin circular lamp head,
+approved CMF and details.
+
+Show the complete product silhouette.
+
+Soft evening interior lighting.
+
+Do not redesign the lamp.
+</code></pre>
+<h3 id="26-shot-03-show-the-action">26 · SHOT 03 — SHOW THE ACTION</h3>
+<p>손의 접근 · 조작부의 위치 · 제품과 손의 관계.</p>
+<p>입력: 기존 램프 이미지 + 조작부 스케치</p>
+<pre><code class="language-text">Create a realistic cinematic close-up
+of a human hand interacting
+with the approved control
+on the existing lamp.
+
+Use the uploaded product image
+and interface sketch as references.
+
+Preserve the exact lamp geometry,
+CMF, and details.
+
+Show a natural hand position.
+
+Do not invent additional controls.
+
+No text or labels.
+</code></pre>
+<h3 id="27-shot-04-show-the-response">27 · SHOT 04 — SHOW THE RESPONSE</h3>
+<p>전원 조작 후 조명이 켜짐. 행동과 반응이 명확하게 연결되어야 한다.</p>
+<pre><code class="language-text">Create a cinematic close-up
+of the exact lamp from the uploaded reference.
+
+The lamp is switched on,
+emitting a soft warm light
+onto the desk surface.
+
+Preserve the original geometry,
+CMF, proportions, and details.
+
+Show realistic light diffusion
+and a natural lighting transition.
+
+Do not redesign the product.
+</code></pre>
+<h3 id="28-shot-05-show-the-benefit">28 · SHOT 05 — SHOW THE BENEFIT</h3>
+<p>사용자가 따뜻한 조명 아래에서 독서하는 장면.</p>
+<pre><code class="language-text">Create a cinematic medium shot
+of a person reading a book
+at a minimal wooden desk at night.
+
+The exact lamp from the uploaded reference
+is placed beside the book.
+
+The lamp emits soft warm light
+onto the reading area.
+
+Preserve the original lamp geometry,
+CMF, and approved details.
+
+Calm atmosphere,
+realistic interior photography.
+
+Do not redesign the lamp.
+</code></pre>
+<h3 id="29-shot-06-end-with-the-design">29 · SHOT 06 — END WITH THE DESIGN</h3>
+<p>제품 전체 실루엣 · 핵심 형태 · CMF · 조명 · 최종 이미지 완성도.</p>
+<pre><code class="language-text">Create a premium cinematic hero shot
+of the exact lamp
+from the uploaded product reference.
+
+Preserve the original C-shaped support,
+cylindrical base,
+thin horizontal circular lamp head,
+approved CMF and details.
+
+Refined three-quarter camera angle,
+soft studio lighting,
+subtle rim light,
+neutral warm gray background.
+
+Show the full product silhouette.
+
+Do not redesign the lamp.
+No text or branding.
+</code></pre>
+<h3 id="30-practice-04-storyboard">30 · Practice 04 · Storyboard</h3>
+<ol>
+<li>User Scenario 확인</li>
+<li>핵심 행동 선정</li>
+<li>5~6컷 장면 구성</li>
+<li>각 컷의 목적 작성</li>
+<li>카메라 시점 지정</li>
+<li>제품 상태와 사용자 행동 표시</li>
+<li>컷별 스케치 제작</li>
+</ol>
+<p><strong>제출물</strong> 5~6컷 Product Storyboard · <strong>완료 기준</strong> 스토리보드만 보아도 사용 상황과 핵심 기능을 이해할 수 있어야 한다.</p>
+<hr />
+<h2 id="part-05-motion-direction">PART 05 · Motion Direction</h2>
+<h3 id="31-from-image-to-motion">31 · FROM IMAGE TO MOTION</h3>
+<p>정지 이미지는 한 순간을, 영상은 시간에 따른 변화를 보여준다. 움직일 수 있는 요소: 카메라 · 사용자 · 제품 · 조명 · 주변 환경. 움직임은 장면의 목적을 전달하기 위해 쓴다.</p>
+<h3 id="32-camera-movement">32 · CAMERA MOVEMENT</h3>
+<table>
+<thead>
+<tr>
+<th>움직임</th>
+<th>의미</th>
+<th>램프 적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PUSH-IN</td>
+<td>가까워지며 디테일 강조</td>
+<td>조명 헤드 디테일</td>
+</tr>
+<tr>
+<td>PAN</td>
+<td>좌우 이동</td>
+<td>책상 환경에서 제품 소개</td>
+</tr>
+<tr>
+<td>ORBIT</td>
+<td>주위를 돌며 형태 표현</td>
+<td>C자형 지지대의 곡률 강조</td>
+</tr>
+<tr>
+<td>STATIC</td>
+<td>고정해 행동과 변화 강조</td>
+<td>조명 점등 장면</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-what-actually-moves">33 · WHAT ACTUALLY MOVES?</h3>
+<p>CAMERA MOVEMENT(카메라가 움직이고 제품은 정지) · PRODUCT MOVEMENT(제품 자체의 위치나 형태 변화) · USER MOVEMENT(사용자가 조작) · STATE CHANGE(제품의 상태 변화). 램프 예시: 제품은 정지, 카메라 접근 → 사용자가 전원 조작 → 램프가 켜짐. <strong>제품의 실제 기능에 없는 움직임을 임의로 추가하지 않는다.</strong></p>
+<h3 id="34-motion-direction-sheet">34 · MOTION DIRECTION SHEET</h3>
+<p>기록 항목: Shot Number · Shot Purpose · Camera Angle · Camera Movement · User Action · Product Response · Duration · Design Constraints</p>
+<p>예: SHOT 04 — Purpose 조명 점등 표현 · Camera Static Close-up · Action 전원 조작 후 점등 · Duration 약 3초 · Constraint 제품 형태 유지</p>
+<h3 id="35-keep-the-product-consistent">35 · KEEP THE PRODUCT CONSISTENT</h3>
+<p>AI 영상 문제: 지지대 곡률 변형 · 헤드 두께 변화 · 베이스 비율 변화 · 버튼 위치 변경 · 없는 부품 생성 · 손과 제품의 부자연스러운 상호작용.</p>
+<p>설계 단계 대응: 복잡한 움직임을 피한다 · 중요한 행동은 명확하게 · 필요하면 컷을 나눈다 · 형태가 잘 보이는 시점 · 기존 Multi-view 참고. 영상의 화려함보다 디자인의 정확성과 전달력이 중요하다.</p>
+<h3 id="36-practice-05-motion-planning">36 · Practice 05 · Motion Planning</h3>
+<ol>
+<li>스토리보드 5~6컷 확인</li>
+<li>각 컷의 카메라 움직임 지정</li>
+<li>사용자 행동과 제품 반응 정리</li>
+<li>컷별 예상 길이 설정</li>
+<li>제품 유지 조건 작성</li>
+<li>복잡한 움직임이 있는 컷 수정</li>
+</ol>
+<p><strong>제출물</strong> Motion Direction Sheet · <strong>완료 기준</strong> 다음 온라인 수업에서 각 컷을 어떤 이미지와 영상으로 제작할지 명확해야 한다.</p>
+<hr />
+<h2 id="part-06-final-review-assignment">PART 06 · Final Review &amp; Assignment</h2>
+<h3 id="37-product-experience-board">37 · PRODUCT EXPERIENCE BOARD (최종 제출물)</h3>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>FINAL PRODUCT</td>
+<td>3주차 최종 제품 이미지</td>
+</tr>
+<tr>
+<td>02</td>
+<td>EXPERIENCE STATEMENT</td>
+<td>사용자에게 제공할 핵심 경험</td>
+</tr>
+<tr>
+<td>03</td>
+<td>USER SCENARIO</td>
+<td>사용자 · 환경 · 사용 목적</td>
+</tr>
+<tr>
+<td>04</td>
+<td>USER ACTION SEQUENCE</td>
+<td>사용자 행동과 제품 반응</td>
+</tr>
+<tr>
+<td>05</td>
+<td>STORYBOARD</td>
+<td>5~6컷 장면 설계</td>
+</tr>
+<tr>
+<td>06</td>
+<td>MOTION DIRECTION</td>
+<td>컷별 카메라 · 사용자 · 제품 움직임</td>
+</tr>
+<tr>
+<td>07</td>
+<td>DESIGN CONSTRAINTS</td>
+<td>영상에서도 유지해야 할 제품 특징</td>
+</tr>
+</tbody>
+</table>
+<h3 id="38-does-the-story-communicate-the-design">38 · DOES THE STORY COMMUNICATE THE DESIGN?</h3>
+<p>사용 목적이 명확한가? · 시나리오가 현실적인가? · 핵심 기능이 드러나는가? · 행동과 반응이 연결되는가? · 스토리보드 흐름이 자연스러운가? · 모든 컷에서 같은 제품인가? · 영상으로 구현 가능한 움직임인가?</p>
+<p>학생 활동: 자신의 Product Experience Board를 발표하고 피드백을 받는다.</p>
+<h3 id="39-ready-for-video-generation">39 · READY FOR VIDEO GENERATION</h3>
+<p>준비물: Final Product Hero Image · Final CMF &amp; Detail Images · Multi-view Images · User Scenario · Storyboard · Motion Direction Sheet · Design Constraints. 이미지와 영상을 생성하기 전에 무엇을 보여줄지 결정한다.</p>
+<h3 id="40-next-visualize-the-experience">40 · NEXT — VISUALIZE THE EXPERIENCE (다음 온라인 수업)</h3>
+<p>심선범 강사 · Higgsfield: 01 Scene Visualization · 02 Image-to-Video · 03 Motion Control · 04 Video Consistency · 05 Product Film(15~30초) · 06 Final Portfolio(1~4주차 정리)</p>
+<blockquote>
+<p>Design the experience. Tell the product story.</p>
+</blockquote>
+<hr />
+<h2 id="higgsfield">부록 · Higgsfield 공통 지침</h2>
+<p>제품이 포함된 모든 이미지는 아래 공통 지침 뒤에 슬라이드별 지침을 붙여 사용한다. 기준 이미지는 3주차 최종 Hero Image이며, 같은 책상 장면이 필요한 컷은 SHOT 01(Context) 이미지를 함께 참조했다.</p>
+<pre><code class="language-text">Use the uploaded product image as the
+primary and authoritative design reference.
+
+This is an existing industrial design concept
+developed during previous design sessions.
+
+Do not create a new lamp design.
+
+Preserve the original product identity:
+
+- Low, wide cylindrical base
+- One continuous C-shaped curved support
+- Thin horizontal circular disc-shaped lamp head
+- Warm diffused light beneath the head
+- Original product proportions and silhouette
+- Approved CMF and product details
+
+Only change the environment,
+camera composition, user interaction,
+or presentation elements
+explicitly requested in the task.
+
+Do not redesign the product.
+
+Do not add new buttons, charging ports,
+mechanical joints, or decorative components.
+
+Maintain the same product identity
+across all generated images.
+
+No text, no labels, no logos.
+</code></pre></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>

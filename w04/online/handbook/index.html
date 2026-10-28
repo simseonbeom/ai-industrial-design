@@ -1,0 +1,892 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W04 Online · AI Product Film · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+:root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+
+.wrap{display:grid;grid-template-columns:260px minmax(0,760px);gap:64px;max-width:1120px;margin:0 auto;padding:48px 24px 120px}
+nav{position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:auto;font-size:13px;line-height:1.6}
+nav .home{display:block;margin-bottom:6px;color:var(--gray);text-decoration:none;font-family:'Instrument Sans'}
+nav .swap{display:block;margin-bottom:24px;color:var(--gold);text-decoration:none;font-family:'Instrument Sans','IBM Plex Sans KR'}
+nav ul{list-style:none;padding:0;margin:0} nav ul ul{padding-left:12px;margin-bottom:8px}
+nav a{color:var(--dim);text-decoration:none} nav a:hover{color:var(--text)} nav>div>ul>li>a{color:var(--gray);font-weight:500}
+main{min-width:0} main h1{font:500 40px/1.2 'Instrument Sans','IBM Plex Sans KR';letter-spacing:-1px;margin:0 0 24px}
+main h2{font:500 26px/1.3 'Instrument Sans','IBM Plex Sans KR';margin:72px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+main h3{font-size:19px;font-weight:600;margin:48px 0 8px}
+main hr{border:0;margin:0}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--panel);border-left:2px solid var(--gold);color:var(--text)}
+blockquote p{margin:6px 0} blockquote ul,blockquote ol{margin:6px 0;padding-left:20px}
+strong{color:#fff;font-weight:600} del{color:var(--dim)}
+.tw{overflow-x:auto;margin:20px 0} table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top} th{background:var(--panel);color:var(--gray);font-weight:500}
+pre{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;overflow-x:auto;font-size:13px;line-height:1.7}
+code{font-family:ui-monospace,Menlo,monospace}
+pre .cp{position:absolute;top:8px;right:8px;font:12px 'Instrument Sans';color:var(--gray);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;cursor:pointer}
+pre .cp:hover{color:var(--text)}
+li{margin:4px 0}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0;padding:24px 16px 80px} nav{position:static;max-height:none;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line)} nav ul ul{display:none} main h1{font-size:30px}}
+@media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
+</style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 04 · Online</a><div><div class="toc">
+<ul>
+<li><a href="#ai-industrial-design-4-ai-product-film-final-portfolio">AI × Industrial Design · 4주차 온라인 — AI Product Film &amp; Final Portfolio</a><ul>
+<li><a href="#_1">시작하기 전에</a><ul>
+<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
+<li><a href="#_3">학습 목표</a></li>
+<li><a href="#master-product-reference">기준 제품 (Master Product Reference)</a></li>
+<li><a href="#_4">수업 흐름</a></li>
+<li><a href="#_5">강의 예시 이미지·영상에 대하여</a></li>
+</ul>
+</li>
+<li><a href="#part-01-storyboard-reference-setup-20">PART 01 · Storyboard &amp; Reference Setup (20분)</a><ul>
+<li><a href="#01-ai-product-film">01 · AI PRODUCT FILM</a></li>
+<li><a href="#02-from-concept-to-experience">02 · FROM CONCEPT TO EXPERIENCE</a></li>
+<li><a href="#03-start-with-the-storyboard">03 · START WITH THE STORYBOARD</a></li>
+<li><a href="#04-storyboard-image-video">04 · STORYBOARD → IMAGE → VIDEO</a></li>
+<li><a href="#05-keep-the-product-consistent">05 · KEEP THE PRODUCT CONSISTENT</a></li>
+<li><a href="#06-practice-01-video-reference-setup">06 · Practice 01 · Video Reference Setup</a></li>
+</ul>
+</li>
+<li><a href="#part-02-scene-visualization-35">PART 02 · Scene Visualization (35분)</a><ul>
+<li><a href="#07-a-good-video-starts-with-a-good-image">07 · A GOOD VIDEO STARTS WITH A GOOD IMAGE</a></li>
+<li><a href="#08-establish-the-context">08 · ESTABLISH THE CONTEXT</a></li>
+<li><a href="#09-introduce-the-product">09 · INTRODUCE THE PRODUCT</a></li>
+<li><a href="#10-show-the-user-action">10 · SHOW THE USER ACTION</a></li>
+<li><a href="#11-show-the-product-response">11 · SHOW THE PRODUCT RESPONSE</a></li>
+<li><a href="#12-show-the-benefit">12 · SHOW THE BENEFIT</a></li>
+<li><a href="#13-end-with-the-product">13 · END WITH THE PRODUCT</a></li>
+<li><a href="#14-practice-02-scene-images">14 · Practice 02 · Scene Images</a></li>
+</ul>
+</li>
+<li><a href="#part-03-image-to-video-45">PART 03 · Image-to-Video (45분)</a><ul>
+<li><a href="#15-image-motion">15 · IMAGE → MOTION</a></li>
+<li><a href="#16-what-should-move">16 · WHAT SHOULD MOVE?</a></li>
+<li><a href="#17-start-with-simple-motion">17 · START WITH SIMPLE MOTION</a></li>
+<li><a href="#18-move-closer-to-the-design">18 · MOVE CLOSER TO THE DESIGN</a></li>
+<li><a href="#19-reveal-the-product">19 · REVEAL THE PRODUCT</a></li>
+<li><a href="#20-show-the-form-from-different-angles">20 · SHOW THE FORM FROM DIFFERENT ANGLES</a></li>
+<li><a href="#21-animate-the-user-action">21 · ANIMATE THE USER ACTION</a></li>
+<li><a href="#22-simplify-the-motion">22 · SIMPLIFY THE MOTION</a></li>
+<li><a href="#23-practice-03-image-to-video">23 · Practice 03 · Image-to-Video</a></li>
+</ul>
+</li>
+<li><a href="#part-04-video-consistency-refinement-30">PART 04 · Video Consistency &amp; Refinement (30분)</a><ul>
+<li><a href="#24-when-ai-changes-the-product">24 · WHEN AI CHANGES THE PRODUCT</a></li>
+<li><a href="#25-check-the-form">25 · CHECK THE FORM</a></li>
+<li><a href="#26-check-the-cmf">26 · CHECK THE CMF</a></li>
+<li><a href="#27-check-the-interaction">27 · CHECK THE INTERACTION</a></li>
+<li><a href="#28-refine-the-motion">28 · REFINE THE MOTION</a></li>
+<li><a href="#29-practice-04-video-refinement">29 · Practice 04 · Video Refinement</a></li>
+</ul>
+</li>
+<li><a href="#part-05-product-film-assembly-25">PART 05 · Product Film Assembly (25분)</a><ul>
+<li><a href="#30-build-the-product-film">30 · BUILD THE PRODUCT FILM</a></li>
+<li><a href="#31-sequence-matters">31 · SEQUENCE MATTERS</a></li>
+<li><a href="#32-control-the-rhythm">32 · CONTROL THE RHYTHM</a></li>
+<li><a href="#33-is-the-story-clear">33 · IS THE STORY CLEAR?</a></li>
+<li><a href="#34-practice-05-product-film">34 · Practice 05 · Product Film</a></li>
+</ul>
+</li>
+<li><a href="#part-06-final-portfolio-presentation-25">PART 06 · Final Portfolio &amp; Presentation (25분)</a><ul>
+<li><a href="#35-show-the-design-process">35 · SHOW THE DESIGN PROCESS</a></li>
+<li><a href="#36-from-idea-to-experience">36 · FROM IDEA TO EXPERIENCE</a></li>
+<li><a href="#37-show-the-reasoning">37 · SHOW THE REASONING</a></li>
+<li><a href="#38-present-the-project">38 · PRESENT THE PROJECT</a></li>
+<li><a href="#39-is-the-project-complete">39 · IS THE PROJECT COMPLETE?</a></li>
+<li><a href="#40-from-idea-to-experience">40 · FROM IDEA TO EXPERIENCE — 마무리</a></li>
+</ul>
+</li>
+<li><a href="#a">부록 A · 제출물</a></li>
+<li><a href="#b">부록 B · 오류 분류와 수정 순서</a></li>
+<li><a href="#c-22">부록 C · 22초 예시 영상의 구성</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div></nav><main><h1 id="ai-industrial-design-4-ai-product-film-final-portfolio">AI × Industrial Design · 4주차 온라인 — AI Product Film &amp; Final Portfolio</h1>
+<blockquote>
+<p>From Product Experience to Visual Storytelling · 심선범 · Higgsfield Live Session · 180분 · 40장</p>
+</blockquote>
+<hr />
+<h2 id="_1">시작하기 전에</h2>
+<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
+<p>4주 과정의 마지막 수업이다. 새 제품을 만들지 않는다. 4주차 오프라인에서 만든 <strong>Product Experience Board</strong>(사용자 시나리오 · 행동 흐름 · 스토리보드 · 영상 연출 계획)를 바탕으로, 스토리보드의 각 컷을 <strong>장면 이미지 → 영상 클립 → 15~30초 Product Film</strong>으로 만들고, 1~4주차 결과물을 <strong>최종 포트폴리오</strong>로 정리한다.</p>
+<blockquote>
+<p>핵심 메시지 — Don't redesign the product. Tell the story of the product.</p>
+</blockquote>
+<h3 id="_3">학습 목표</h3>
+<ol>
+<li>오프라인 스토리보드를 컷별 시작 이미지 · 움직임 · 유지 조건으로 정리한다.</li>
+<li>같은 제품을 유지하면서 컷별 장면 이미지를 만든다.</li>
+<li>장면 이미지를 Image-to-Video로 짧은 클립으로 만든다.</li>
+<li>영상 프레임을 승인된 제품과 비교해 형태 · CMF · 상호작용 오류를 찾고 고친다.</li>
+<li>클립을 스토리보드 순서와 시간 배분에 맞춰 15~30초 영상으로 연결한다.</li>
+<li>1~4주차 과정을 하나의 포트폴리오로 정리하고 디자인 결정의 이유를 설명한다.</li>
+<li>프로젝트를 발표하고 AI 활용 중 생긴 문제와 해결 방법을 공유한다.</li>
+</ol>
+<h3 id="master-product-reference">기준 제품 (Master Product Reference)</h3>
+<p>예시는 1~3주차의 테이블 램프 한 가지다.</p>
+<ul>
+<li>낮고 넓은 원통형 베이스, 왼쪽에서 휘어 오르는 하나의 C자형 지지대</li>
+<li>오른쪽으로 수평 돌출된 얇은 원형 헤드와 하단의 따뜻한 확산광</li>
+<li>밝은 실버 · 웜그레이 금속성 표면(3주차 확정 CMF)</li>
+<li>조작부: 3주차에서 설계한 베이스 정면의 원형 버튼(강의 예시 기준)</li>
+</ul>
+<p>이 램프에는 헤드나 지지대가 움직이는 기능이 없다. 영상에서 바꾸는 것은 <strong>카메라 · 사용자 · 조명 상태</strong>뿐이다.</p>
+<h3 id="_4">수업 흐름</h3>
+<table>
+<thead>
+<tr>
+<th>PART</th>
+<th>주제</th>
+<th>슬라이드</th>
+<th>시간</th>
+<th>실습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Storyboard &amp; Reference Setup</td>
+<td>01–06</td>
+<td>20분</td>
+<td>Practice 01 · Video Reference Set</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Scene Visualization</td>
+<td>07–14</td>
+<td>35분</td>
+<td>Practice 02 · Scene Image Set</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Image-to-Video</td>
+<td>15–23</td>
+<td>45분</td>
+<td>Practice 03 · Video Clip Set</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Video Consistency &amp; Refinement</td>
+<td>24–29</td>
+<td>30분</td>
+<td>Practice 04 · Refined Video Clips + Error Review</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Product Film Assembly</td>
+<td>30–34</td>
+<td>25분</td>
+<td>Practice 05 · 15~30초 Product Film</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Final Portfolio &amp; Presentation</td>
+<td>35–40</td>
+<td>25분</td>
+<td>최종 포트폴리오 · 발표</td>
+</tr>
+</tbody>
+</table>
+<p>실습 시간은 슬라이드에 적지 않았다. 수업 진행에 맞춰 구두로 정한다.</p>
+<h3 id="_5">강의 예시 이미지·영상에 대하여</h3>
+<ul>
+<li>장면 이미지는 3주차 최종 Hero를 기준 이미지로 Higgsfield에서 만든 4주차 오프라인 스토리보드 이미지다.</li>
+<li>영상은 그 이미지를 시작 프레임으로 넣어 Higgsfield Image-to-Video(Seedance 2.5, 5초, 720p, 소리 없음)로 만든 강의 예시다. 모델과 메뉴는 수업 시점에 제공되는 기능으로 고른다.</li>
+<li>라벨 · 번호 · 화살표는 슬라이드 편집 단계에서 추가했다.</li>
+<li>영상은 제품의 실제 작동이나 구조를 검증하지 않는다.</li>
+<li>슬라이드의 영상은 발표 모드와 웹 슬라이드에서 재생되고, PDF에는 대표 프레임이 들어간다.</li>
+<li>24 · 28쪽의 오류 예시는 연출이 아니라 실제 생성 결과다. Orbit 클립에서는 프롬프트에 제약을 넣었는데도 3초 무렵 C자 지지대가 곧게 펴졌다.</li>
+</ul>
+<hr />
+<h2 id="part-01-storyboard-reference-setup-20">PART 01 · Storyboard &amp; Reference Setup (20분)</h2>
+<h3 id="01-ai-product-film">01 · AI PRODUCT FILM</h3>
+<p>4주차 온라인, 전체 과정의 마지막 수업입니다. 오른쪽은 3주차 최종 Hero Image 그대로입니다. 오늘은 새 제품을 만들지 않고, 4주차 오프라인에서 만든 스토리보드를 장면 이미지 → 영상 클립 → 15~30초 제품 영상으로 만들고, 1~4주차를 최종 포트폴리오로 정리합니다. 핵심 메시지: Don't redesign the product. Tell the story of the product. 학습 목표 일곱 가지는 교안에 있습니다.</p>
+<h3 id="02-from-concept-to-experience">02 · FROM CONCEPT TO EXPERIENCE</h3>
+<blockquote>
+<p>WEEK 01 · IDEA → CONCEPT · WEEK 02 · REVIEW → REFINE · WEEK 03 · CMF → DETAIL → VISUALIZATION · WEEK 04 · SCENARIO → STORYBOARD → FILM · 지금까지 제품을 디자인했습니다. 이제 제품의 사용 경험을 시각적으로 전달합니다.</p>
+</blockquote>
+<p>네 주의 흐름입니다. 1주차 스케치, 2주차 Refined Concept, 3주차 Hero, 4주차 오프라인 스토리보드의 사용 장면이 모두 같은 램프에서 나왔습니다. 오늘은 마지막 칸을 영상으로 완성합니다.</p>
+<h3 id="03-start-with-the-storyboard">03 · START WITH THE STORYBOARD</h3>
+<blockquote>
+<p>01 FINAL PRODUCT · 3주차 최종 제품 이미지 · 02 USER SCENARIO · 사용자와 사용 환경 · 03 ACTION SEQUENCE · 사용자 행동과 제품 반응 · 04 STORYBOARD · 5~6컷 장면 구성 · 05 MOTION DIRECTION · 카메라·사용자·제품 움직임 · 06 DESIGN CONSTRAINTS · 변경하면 안 되는 제품 특징 · 영상을 생성하기 전에 어떤 이야기를 전달할지 이미 결정되어 있어야 합니다.</p>
+</blockquote>
+<p>오늘의 입력 자료는 4주차 오프라인 Product Experience Board입니다(왼쪽은 오프라인 수업의 보드 예시). 여섯 항목이 모두 있는지 먼저 확인합니다. 스토리보드나 Design Constraints가 없으면 영상 생성을 시작하지 않습니다.</p>
+<h3 id="04-storyboard-image-video">04 · STORYBOARD → IMAGE → VIDEO</h3>
+<blockquote>
+<p>STEP 01 · 스토리보드 확인 · STEP 02 · 장면별 이미지 생성 · STEP 03 · 이미지 기반 영상 생성 · STEP 04 · 결과 검토 및 수정 · STEP 05 · 클립 연결 · STEP 06 · 최종 영상 완성 · 한 번에 전체 영상을 생성하기보다 장면별로 제작하고 연결 합니다.</p>
+</blockquote>
+<p>오늘 수업 전체의 제작 순서입니다. 아래 여섯 장은 오프라인에서 만든 6컷 장면이며, 오늘은 이 장면을 하나씩 영상 클립으로 만든 뒤 마지막에 연결합니다. 전체를 한 번에 생성하면 어디서 문제가 생겼는지 알 수 없습니다.</p>
+<h3 id="05-keep-the-product-consistent">05 · KEEP THE PRODUCT CONSISTENT</h3>
+<blockquote>
+<p>제품 실루엣 · 지지대 곡률 · 베이스 비율 · 조명 헤드 두께 · CMF · 조작부 위치 · 사용 방식 · 램프 예시 · KEEP · Original C-shaped support, cylindrical base, circular head · CHANGE · Camera movement or lighting state · CONSTRAINT · No geometry changes, no invented components · 강사 질문 · "카메라가 움직이는 동안 제품의 형태까지 달라지면 같은 제품이라고 할 수 있을까요?"</p>
+</blockquote>
+<p>영상에서 유지할 조건을 KEEP / CHANGE / CONSTRAINT로 다시 정리합니다. 3주차 온라인에서 쓴 구조와 같습니다. 영상에서 바꾸는 것은 카메라와 조명 상태뿐이고, 형태와 부품은 그대로입니다.</p>
+<h3 id="06-practice-01-video-reference-setup">06 · Practice 01 · Video Reference Setup</h3>
+<p>컷마다 쓸 이미지와 움직임을 정리합니다.</p>
+<p><strong>작성 절차</strong></p>
+<ol>
+<li>최종 Hero Image 준비</li>
+<li>4주차 오프라인 Storyboard 준비</li>
+<li>컷별 필요한 이미지 확인</li>
+<li>컷별 움직임 확인</li>
+<li>Design Constraints 작성</li>
+<li>영상 제작 순서 결정</li>
+</ol>
+<p><strong>제출물</strong> — Video Reference Set</p>
+<p><strong>완료 기준</strong> — 각 컷에 어떤 이미지를 사용하고 어떤 움직임을 구현할지 정리되어 있어야 합니다.</p>
+<p>실습 1. 오프라인 Motion Direction Sheet를 옆에 두고 컷마다 "시작 이미지 / 움직임 / 유지 조건"을 한 줄로 정리합니다. 시간은 수업 중 구두로 정합니다.</p>
+<hr />
+<h2 id="part-02-scene-visualization-35">PART 02 · Scene Visualization (35분)</h2>
+<h3 id="07-a-good-video-starts-with-a-good-image">07 · A GOOD VIDEO STARTS WITH A GOOD IMAGE</h3>
+<blockquote>
+<p>제품의 형태 · 사용자와 제품의 위치 · 배경과 공간 · 카메라 시점 · 조명 상태 · 장면의 목적 · 시작 이미지에 문제가 있으면 영상에서도 그 문제가 이어질 수 있습니다.</p>
+</blockquote>
+<p>Image-to-Video는 시작 이미지를 바탕으로 움직임을 만듭니다. 시작 이미지의 형태가 틀리면 영상 전체가 틀립니다. 오른쪽은 모든 제품 이미지 생성에 앞에 붙이는 공통 지침이며, 이어지는 장면별 프롬프트는 이 뒤에 붙입니다.</p>
+<p><strong>공통 이미지 지침 (모든 이미지 프롬프트 앞에 붙임)</strong></p>
+<pre><code>Use the uploaded product image as the
+primary and authoritative design reference.
+
+This is an existing industrial design concept
+developed during previous design sessions.
+
+Do not create a new lamp design.
+
+Preserve the original product identity:
+
+- Low, wide cylindrical base
+- One continuous C-shaped curved support
+- Thin horizontal circular disc-shaped lamp head
+- Warm diffused light beneath the head
+- Original product proportions and silhouette
+- Approved CMF and product details
+
+Only change the environment,
+camera composition, user interaction,
+or presentation elements
+explicitly requested in the task.
+
+Do not redesign the product.
+
+Do not add new buttons, charging ports,
+mechanical joints, or decorative components.
+
+Maintain the same product identity
+across all generated images.
+
+No text, no labels, no logos.
+</code></pre>
+<h3 id="08-establish-the-context">08 · ESTABLISH THE CONTEXT</h3>
+<blockquote>
+<p>입력: 3주차 최종 램프 이미지 · 첫 번째 장면은 사용 환경과 분위기를 보여줍니다. 램프 예시: 늦은 저녁, 조용한 침실의 책상.</p>
+</blockquote>
+<p>SHOT 01 · 사용 환경 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — CONTEXT</strong></p>
+<pre><code>Create a cinematic wide shot
+of a quiet modern bedroom at night.
+
+A minimal wooden desk,
+an open book,
+soft low ambient lighting.
+
+Include the exact lamp
+from the uploaded product reference.
+
+Preserve its original geometry,
+CMF, and approved details.
+
+The lamp is switched off.
+
+Realistic interior photography.
+No text or labels.
+</code></pre>
+<h3 id="09-introduce-the-product">09 · INTRODUCE THE PRODUCT</h3>
+<blockquote>
+<p>실루엣 · 소재와 마감 · 제품의 위치 · 사용 환경과의 관계</p>
+</blockquote>
+<p>SHOT 02 · 제품 등장 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — PRODUCT</strong></p>
+<pre><code>Create a cinematic medium shot
+of the exact lamp from the uploaded reference
+on the same wooden desk.
+
+Preserve the C-shaped support,
+cylindrical base,
+thin circular lamp head,
+approved CMF and details.
+
+Show the complete product silhouette.
+
+Soft evening interior lighting.
+
+Do not redesign the lamp.
+</code></pre>
+<h3 id="10-show-the-user-action">10 · SHOW THE USER ACTION</h3>
+<blockquote>
+<p>입력: 최종 램프 이미지 + 조작부 스케치 · 사용자의 손이 전원 조작부에 접근하는 장면. 조작부의 위치와 형태는 3주차 확정 설계를 사용합니다.</p>
+</blockquote>
+<p>SHOT 03 · 사용자 조작 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — INTERACTION</strong></p>
+<pre><code>Create a realistic cinematic close-up
+of a human hand interacting
+with the approved control
+on the existing lamp.
+
+Use the uploaded product image
+and interface sketch as references.
+
+Preserve the exact lamp geometry,
+CMF, and details.
+
+Show a natural hand position.
+
+Do not invent additional controls.
+
+No text or labels.
+</code></pre>
+<h3 id="11-show-the-product-response">11 · SHOW THE PRODUCT RESPONSE</h3>
+<blockquote>
+<p>전원 조작 후 조명이 켜지는 장면.</p>
+</blockquote>
+<p>SHOT 04 · 제품 반응 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — RESPONSE</strong></p>
+<pre><code>Create a cinematic close-up
+of the exact lamp from the uploaded reference.
+
+The lamp is switched on,
+emitting a soft warm light
+onto the desk surface.
+
+Preserve the original geometry,
+CMF, proportions, and details.
+
+Show realistic light diffusion
+and a natural lighting transition.
+
+Do not redesign the product.
+</code></pre>
+<h3 id="12-show-the-benefit">12 · SHOW THE BENEFIT</h3>
+<blockquote>
+<p>따뜻한 조명 아래에서 책을 읽는 사용자.</p>
+</blockquote>
+<p>SHOT 05 · 사용 경험 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — EXPERIENCE</strong></p>
+<pre><code>Create a cinematic medium shot
+of a person reading a book
+at a minimal wooden desk at night.
+
+The exact lamp from the uploaded reference
+is placed beside the book.
+
+The lamp emits soft warm light
+onto the reading area.
+
+Preserve the original lamp geometry,
+CMF, and approved details.
+
+Calm atmosphere,
+realistic interior photography.
+
+Do not redesign the lamp.
+</code></pre>
+<h3 id="13-end-with-the-product">13 · END WITH THE PRODUCT</h3>
+<blockquote>
+<p>전체 실루엣 · 주요 디자인 특징 · 소재와 마감 · 제품의 완성도</p>
+</blockquote>
+<p>SHOT 06 · 대표 장면 장면 이미지입니다. 4주차 오프라인에서 같은 스토리보드로 만든 이미지를 그대로 쓰며, 오른쪽 프롬프트는 공통 이미지 지침 뒤에 붙여 씁니다. 같은 책상이 필요한 컷은 SHOT 01 이미지를 함께 참조했습니다.</p>
+<p><strong>IMAGE PROMPT — HERO</strong></p>
+<pre><code>Create a premium cinematic hero shot
+of the exact lamp
+from the uploaded product reference.
+
+Preserve the original C-shaped support,
+cylindrical base,
+thin horizontal circular lamp head,
+approved CMF and details.
+
+Refined three-quarter camera angle,
+soft studio lighting,
+subtle rim light,
+neutral warm gray background.
+
+Show the full product silhouette.
+
+Do not redesign the lamp.
+No text or branding.
+</code></pre>
+<h3 id="14-practice-02-scene-images">14 · Practice 02 · Scene Images</h3>
+<p>스토리보드의 각 컷을 시작 이미지로 만듭니다.</p>
+<p><strong>작성 절차</strong></p>
+<ol>
+<li>스토리보드 5~6컷 확인</li>
+<li>컷별 기준 이미지 선정</li>
+<li>필요한 장면 이미지 생성</li>
+<li>제품 형태와 CMF 검토</li>
+<li>사용자와 제품의 위치 확인</li>
+<li>불일치한 장면 수정</li>
+</ol>
+<p><strong>제출물</strong> — Scene Image Set</p>
+<p><strong>완료 기준</strong> — 장면이 달라져도 동일한 제품이 사용되고 있어야 합니다.</p>
+<p>실습 2. 모든 장면은 3주차 Hero(또는 승인된 제품 이미지)를 기준으로 만들고, 같은 공간이 필요한 컷은 첫 장면 이미지를 함께 참조합니다. 불일치한 장면은 이 단계에서 고칩니다 — 영상 단계에서 고치기는 훨씬 어렵습니다. 시간은 수업 중 구두로 정합니다.</p>
+<hr />
+<h2 id="part-03-image-to-video-45">PART 03 · Image-to-Video (45분)</h2>
+<h3 id="15-image-motion">15 · IMAGE → MOTION</h3>
+<blockquote>
+<p>START IMAGE · 정지 이미지 · VIDEO CLIP · 시간에 따른 변화 · 움직일 수 있는 요소 · 카메라 · 사용자 · 제품 · 조명 · 배경 · 움직임을 추가하더라도 제품의 디자인은 유지해야 합니다.</p>
+</blockquote>
+<p>시작 이미지 한 장을 넣으면 AI가 그 뒤의 몇 초를 만듭니다. 가운데 영상은 발표 모드에서 재생됩니다(PDF에서는 첫 프레임). 오른쪽은 모든 영상 생성 프롬프트 앞에 붙이는 공통 지침입니다. Higgsfield의 구체적인 모델과 메뉴는 수업 시점에 제공되는 기능으로 고릅니다(예시는 Seedance 2.5, 5초, 720p).</p>
+<p><strong>공통 영상 지침 (모든 영상 프롬프트 앞에 붙임)</strong></p>
+<pre><code>Animate the uploaded reference image
+while preserving the exact product design.
+
+Maintain the original product geometry,
+proportions, materials,
+and approved details.
+
+Do not morph, deform,
+or redesign the product.
+
+Do not add or remove components.
+
+Only animate the camera movement,
+user interaction,
+or product state change
+specified in the current task.
+
+Keep the motion smooth,
+realistic, and controlled.
+
+Preserve visual consistency
+throughout the entire clip.
+</code></pre>
+<h3 id="16-what-should-move">16 · WHAT SHOULD MOVE?</h3>
+<blockquote>
+<p>CAMERA MOTION · 카메라가 움직이고 제품은 정지 · Camera — 제품을 향해 천천히 접근 · PRODUCT MOTION · 제품 자체가 움직임 · — (이 램프에는 움직이는 기능이 없음) · USER MOTION · 사용자가 제품을 조작 · User — 전원 버튼을 조작 · STATE CHANGE · 제품의 상태가 변화 · State — 조명이 켜짐 · 제품에 실제로 없는 움직임 을 만들어서는 안 됩니다.</p>
+</blockquote>
+<p>오프라인 33쪽과 같은 구분입니다. 이 램프는 헤드나 지지대가 움직이도록 설계하지 않았으므로 PRODUCT MOTION은 쓰지 않습니다. 영상에서 헤드가 돌아가면 그건 연출이 아니라 제품 왜곡입니다.</p>
+<h3 id="17-start-with-simple-motion">17 · START WITH SIMPLE MOTION</h3>
+<blockquote>
+<p>VIDEO · LIGHT ON · 입력: 조명이 꺼진 램프 장면 이미지 · 확인 제품 형태가 유지되었는가? · 조명만 자연스럽게 변했는가? · 주변 환경이 갑자기 바뀌지 않았는가?</p>
+</blockquote>
+<p>첫 실습은 카메라를 고정하고 조명 상태만 바꾸는 것입니다. 가장 단순해서 결과 검토가 쉽습니다. 프롬프트는 공통 영상 지침 뒤에 붙여 씁니다.</p>
+<p><strong>VIDEO PROMPT — LIGHT ON</strong></p>
+<pre><code>Locked camera shot of the exact lamp
+shown in the reference image.
+
+The lamp remains completely stationary.
+
+The warm light diffuser gradually
+turns on and softly illuminates
+the desk surface.
+
+Preserve all product geometry,
+materials, and approved details.
+
+No shape changes.
+No camera movement.
+No additional components.
+</code></pre>
+<h3 id="18-move-closer-to-the-design">18 · MOVE CLOSER TO THE DESIGN</h3>
+<blockquote>
+<p>VIDEO · PUSH-IN · 입력: SHOT 02 제품 장면 · 확인 제품이 커지는 동안 형태가 변형되지 않았는가? · 디테일과 소재가 더 잘 보이는가?</p>
+</blockquote>
+<p>Push-in은 디테일과 소재를 강조할 때 씁니다. 화면에서 제품이 커지는 동안 헤드 두께와 지지대 곡률이 그대로인지 봅니다. 프롬프트는 공통 영상 지침 뒤에 붙여 씁니다.</p>
+<p><strong>VIDEO PROMPT — PUSH-IN</strong></p>
+<pre><code>Slow cinematic camera push-in
+toward the existing table lamp.
+
+Maintain the exact product geometry,
+C-shaped support curvature,
+cylindrical base,
+and thin circular lamp head.
+
+The lamp remains stationary.
+
+Smooth camera movement,
+soft realistic lighting.
+
+No morphing,
+no geometry changes,
+no additional components.
+</code></pre>
+<h3 id="19-reveal-the-product">19 · REVEAL THE PRODUCT</h3>
+<blockquote>
+<p>VIDEO · PAN · 입력: SHOT 01 사용 환경 · 확인 시선이 공간에서 제품으로 이동하는가? · 조명과 공간이 일관적인가?</p>
+</blockquote>
+<p>Pan은 공간에서 제품으로 시선을 옮기는 컷에 씁니다. 시작 이미지 밖의 공간이 새로 그려지므로 배경이 갑자기 바뀌지 않는지 봅니다. 프롬프트는 공통 영상 지침 뒤에 붙여 씁니다.</p>
+<p><strong>VIDEO PROMPT — PAN</strong></p>
+<pre><code>Slow cinematic camera pan
+across a quiet wooden desk,
+gradually revealing the existing lamp.
+
+Preserve the exact lamp geometry,
+CMF, proportions, and approved details.
+
+The lamp remains stationary.
+
+Smooth controlled camera motion,
+consistent evening lighting.
+
+Do not redesign the product.
+</code></pre>
+<h3 id="20-show-the-form-from-different-angles">20 · SHOW THE FORM FROM DIFFERENT ANGLES</h3>
+<blockquote>
+<p>VIDEO · ORBIT · 입력: SHOT 06 대표 이미지 · 확인 보이지 않던 면이 3주차 Multi-view와 같은가? · C자형 지지대 곡률이 유지되는가? · 3주차 Multi-view — Orbit 결과와 대조</p>
+</blockquote>
+<p>Orbit은 원본에서 보이지 않는 면이 등장하므로 형태가 달라지기 가장 쉽습니다. 결과를 오른쪽 아래 3주차 Multi-view와 대조하고, 다르면 그 영상은 쓰지 않습니다. 이 클립도 프롬프트에 제약을 넣었지만 3초 무렵 C자 지지대가 곧게 펴집니다. 24쪽과 28쪽에서 이 클립을 다시 다룹니다. 프롬프트는 공통 영상 지침 뒤에 붙여 씁니다.</p>
+<p><strong>VIDEO PROMPT — ORBIT</strong></p>
+<pre><code>A slow controlled camera orbit
+around the existing table lamp.
+
+Preserve the exact approved product
+geometry, proportions,
+materials, and details.
+
+Smooth cinematic camera movement,
+neutral studio lighting.
+
+Do not alter the C-shaped support,
+cylindrical base,
+or circular lamp head.
+
+Do not invent components.
+</code></pre>
+<h3 id="21-animate-the-user-action">21 · ANIMATE THE USER ACTION</h3>
+<blockquote>
+<p>VIDEO · INTERACTION · 입력: 조작부가 정확히 표현된 장면 이미지 · 확인 손가락이 자연스러운가? · 조작부 위치가 유지되는가? · 하나의 단순한 동작인가?</p>
+</blockquote>
+<p>복잡한 상호작용은 작은 동작으로 나눕니다. 이 클립은 "손이 버튼으로 다가가 한 번 누른다"만 지시했습니다. 손가락 수, 손과 제품의 겹침, 버튼 위치를 확인합니다. 프롬프트는 공통 영상 지침 뒤에 붙여 씁니다.</p>
+<p><strong>VIDEO PROMPT — INTERACTION</strong></p>
+<pre><code>A realistic human hand
+slowly approaches the approved
+power control on the existing lamp.
+
+The hand performs one simple,
+natural interaction.
+
+Preserve the exact lamp geometry,
+CMF, and approved control position.
+
+The lamp remains stationary.
+
+Smooth realistic hand movement.
+
+No extra fingers,
+no product deformation,
+no invented controls.
+</code></pre>
+<h3 id="22-simplify-the-motion">22 · SIMPLIFY THE MOTION</h3>
+<blockquote>
+<p>COMPLEX · 한 번에 요청 · "카메라가 회전하고 사용자가 램프를 만지고 조명이 켜지며 책상 전체가 밝아진다." · CLIP 01 · 카메라가 제품에 접근 · CLIP 02 · 손이 조작부에 접근 · CLIP 03 · 조명이 켜짐 · 한 클립에서 하나의 주요 움직임을 명확하게 지시하면 결과를 검토하고 수정하기 쉽습니다.</p>
+</blockquote>
+<p>왼쪽은 네 가지 움직임을 한 번에 요청한 결과이고(공통 지침도 붙이지 않음), 오른쪽은 같은 장면을 세 클립으로 나눈 결과입니다. 왼쪽 결과에서 무엇이 틀렸는지(형태, 손, 조명, 카메라) 학생과 함께 찾아보세요.</p>
+<p><strong>실패 예시 — 공통 지침 없이 한 번에 요청한 문장</strong></p>
+<pre><code>The camera rotates around the desk
+while the user touches the lamp,
+the light turns on,
+and the whole desk becomes bright.
+</code></pre>
+<h3 id="23-practice-03-image-to-video">23 · Practice 03 · Image-to-Video</h3>
+<p>장면 이미지를 짧은 영상 클립으로 만듭니다.</p>
+<p><strong>작성 절차</strong></p>
+<ol>
+<li>장면 이미지 3개 선정</li>
+<li>각 장면의 핵심 움직임 지정</li>
+<li>Image-to-Video 실행</li>
+<li>생성 결과 확인</li>
+<li>제품 형태 변형 여부 검토</li>
+<li>문제가 있는 클립 수정</li>
+</ol>
+<p><strong>제출물</strong> — Video Clip Set 필수 · Camera Motion 1 · State Change 1 · User Interaction 또는 Camera Motion 1</p>
+<p><strong>완료 기준</strong> — 제품 디자인을 유지하면서 의도한 움직임이 구현되어야 합니다.</p>
+<p>실습 3. 필수 세 종류(카메라 움직임, 제품 상태 변화, 사용자 상호작용 또는 추가 카메라 움직임)를 하나씩 만듭니다. 클립은 4~5초 정도로 짧게, 한 클립에 움직임 하나만 지시합니다. 시간은 수업 중 구두로 정합니다.</p>
+<hr />
+<h2 id="part-04-video-consistency-refinement-30">PART 04 · Video Consistency &amp; Refinement (30분)</h2>
+<h3 id="24-when-ai-changes-the-product">24 · WHEN AI CHANGES THE PRODUCT</h3>
+<blockquote>
+<p>ERROR EXAMPLE · Orbit 클립 3초 지점 — C자 지지대가 곧은 기둥으로 바뀜 · ERROR EXAMPLE · 복합 지시 클립 — 손이 조작을 끝내지 않고 사라지고, 조명 변화가 누락됨 · 지지대가 휘거나 변형됨 · 헤드 두께가 달라짐 · 베이스 비율이 바뀜 · 버튼이 사라짐 · 새로운 부품이 생성됨 · 소재와 색상이 바뀜 · 영상이 자연스럽게 움직인다고 해서 제품 디자인이 정확한 것은 아닙니다.</p>
+</blockquote>
+<p>왼쪽 두 장은 오늘 생성한 클립에서 뽑은 프레임입니다. 첫 번째는 Orbit 클립으로, 카메라가 돌아가는 동안 C자 지지대가 곧은 기둥처럼 펴졌습니다. 두 번째는 카메라 회전·터치·점등을 한 문장에 넣은 클립으로, 손이 터치를 끝내지 않은 채 사라지고 조명 변화도 일어나지 않았습니다. 움직임이 부드러울수록 이런 변화를 놓치기 쉬우므로, 클립은 반드시 프레임 단위로 멈춰서 확인합니다.</p>
+<h3 id="25-check-the-form">25 · CHECK THE FORM</h3>
+<blockquote>
+<p>APPROVED · 승인된 제품 · VIDEO FRAME · 영상 중간 프레임 · Silhouette · Proportion · Curvature · Component Position · Head Thickness · 램프 예시 · 원본에서는 하나의 C자형 지지대였지만, 영상 중간에 지지대가 두 개로 바뀌는 경우 · 수정 전략 · 움직임을 단순화하고 원본 이미지를 기준으로 다시 생성</p>
+</blockquote>
+<p>형태 일관성 검토 다섯 항목입니다. 승인된 제품 이미지와 영상 중간 프레임을 나란히 놓고 비교합니다. "지지대가 두 개로 바뀌는 경우"는 명세의 대표 사례이며, 오늘 예시 클립에서 실제로 나타난 변화는 노트 24쪽과 교안에 적었습니다.</p>
+<h3 id="26-check-the-cmf">26 · CHECK THE CMF</h3>
+<blockquote>
+<p>CLIP START · CLIP END · 색상이 유지되는가? · 금속 표면의 질감이 유지되는가? · 조명 확산판의 표현이 자연스러운가? · 조명 변화와 소재 변화가 구분되는가? · 조명이 달라지면서 표면이 다르게 보일 수는 있지만, 제품의 소재 자체가 바뀌어서는 안 됩니다.</p>
+</blockquote>
+<p>LIGHT ON 클립의 첫 프레임과 마지막 프레임입니다. 빛이 켜지면 금속 표면의 밝기와 반사가 달라지는 것은 자연스럽지만, 색이나 질감(예: 은색이 금색으로, 브러시드가 유광으로) 자체가 바뀌면 안 됩니다.</p>
+<h3 id="27-check-the-interaction">27 · CHECK THE INTERACTION</h3>
+<blockquote>
+<p>START · MIDDLE · END · 손가락 형태가 자연스러운가? · 손이 제품을 통과하지 않는가? · 조작부 위치가 유지되는가? · 실제 설계한 조작 방식과 일치하는가? · 사용자 행동과 제품 반응이 연결되는가? · 수정 전략 · 손과 제품이 겹치는 장면을 단순화하거나 별도 컷으로 분리</p>
+</blockquote>
+<p>INTERACTION 클립의 시작·중간·끝 프레임입니다. 손이 버튼에 닿는 순간이 가장 오류가 많은 구간입니다. 손이 베이스를 통과하거나 버튼이 다른 위치로 옮겨지면, 손이 다가가는 컷과 불이 켜지는 컷을 나눠서 만듭니다.</p>
+<h3 id="28-refine-the-motion">28 · REFINE THE MOTION</h3>
+<blockquote>
+<p>BEFORE · Orbit 중 C자 지지대가 곧게 펴짐 · AFTER · REGENERATED · 더 단순하고 느린 움직임으로 재생성 · 01 IDENTIFY · 문제 구간 확인 · 02 CLASSIFY · 형태 / 소재 / 상호작용 / 카메라 · 03 SIMPLIFY · 움직임 단순화 · 04 REGENERATE · 기준 이미지에서 재생성 · 05 COMPARE · 원본과 수정 결과 비교</p>
+</blockquote>
+<p>오류 수정 다섯 단계입니다. 왼쪽은 수정 전 클립, 오른쪽은 같은 기준 이미지에서 오른쪽 프롬프트로 다시 만든 클립입니다. 수정 전 Orbit 클립에서는 회전 중 C자 지지대가 곧게 펴졌습니다. 같은 Hero 이미지와 정밀화 프롬프트로 다시 생성한 결과, 카메라가 근접에서 천천히 빠지는 단순한 움직임이 되었고 지지대 곡률이 끝까지 유지되었습니다. 다만 첫 프레임이 기준 이미지보다 가까운 화면에서 시작하므로, 수정 후 클립도 처음부터 끝까지 다시 확인합니다. 수정 후에도 문제가 남으면 그 움직임을 포기하고 Static 컷으로 바꾸는 것도 좋은 결정입니다.</p>
+<p><strong>VIDEO PROMPT — REFINEMENT (공통 영상 지침 뒤에 붙임)</strong></p>
+<pre><code>Regenerate this shot
+using the original product reference.
+
+Preserve the exact lamp geometry,
+C-shaped support curvature,
+cylindrical base proportions,
+and thin circular lamp head.
+
+Keep the approved CMF and details.
+
+Use a simpler, slower camera movement.
+
+Do not morph or deform the product.
+
+Do not invent new components.
+
+Maintain consistent lighting
+and realistic motion.
+</code></pre>
+<h3 id="29-practice-04-video-refinement">29 · Practice 04 · Video Refinement</h3>
+<p>가장 큰 오류를 찾아 고칩니다.</p>
+<p><strong>작성 절차</strong></p>
+<ol>
+<li>생성된 클립 3개 검토</li>
+<li>가장 큰 오류 1~2개 선정</li>
+<li>오류 유형 분류</li>
+<li>움직임 또는 프롬프트 수정</li>
+<li>다시 생성</li>
+<li>Before / After 비교</li>
+</ol>
+<p><strong>제출물</strong> — Refined Video Clips + Error Review</p>
+<p><strong>완료 기준</strong> — 수정 전보다 제품 형태와 움직임의 일관성이 개선되어야 합니다.</p>
+<p>실습 4. 오류는 형태 / 소재 / 상호작용 / 카메라 네 가지로 분류합니다. 수정 전후 클립과 오류 메모는 포트폴리오에 그대로 남깁니다 — AI 결과를 검토하고 고친 과정 자체가 디자인 판단의 증거입니다. 시간은 수업 중 구두로 정합니다.</p>
+<hr />
+<h2 id="part-05-product-film-assembly-25">PART 05 · Product Film Assembly (25분)</h2>
+<h3 id="30-build-the-product-film">30 · BUILD THE PRODUCT FILM</h3>
+<blockquote>
+<p>CONTEXT · 사용 환경 · PRODUCT · 제품 등장 · INTERACTION · 핵심 조작 · RESPONSE · 제품 반응 · EXPERIENCE · 사용 경험 · HERO · 제품 마무리 · 예시 · 여섯 클립을 연결한 22초 제품 영상 · 영상의 목적은 제품의 사용 경험과 디자인 특징 을 전달하는 것입니다.</p>
+</blockquote>
+<p>오프라인 스토리보드의 6컷 순서 그대로 클립을 연결합니다. 왼쪽 아래는 오늘 만든 클립으로 실제 연결한 22초 예시 영상입니다(발표 모드에서 재생).</p>
+<h3 id="31-sequence-matters">31 · SEQUENCE MATTERS</h3>
+<blockquote>
+<p>상황 · 제품 · 행동 · 반응 · 경험 · 마무리 · 장면의 순서가 자연스러운가? · 같은 정보를 반복하지 않는가? · 핵심 기능이 명확하게 드러나는가? · 제품의 특징이 충분히 전달되는가?</p>
+</blockquote>
+<p>좋은 흐름은 상황 → 제품 → 행동 → 반응 → 경험 → 마무리입니다. 순서를 바꿔 보면(예: 반응을 행동 앞에 두면) 인과가 무너지는 것을 바로 느낄 수 있습니다. 같은 각도의 컷이 연속되면 반복처럼 보이므로 와이드 → 미디엄 → 클로즈업처럼 거리를 바꿔 줍니다.</p>
+<h3 id="32-control-the-rhythm">32 · CONTROL THE RHYTHM</h3>
+<p>15~30초 제품 영상의 예시 배분입니다. 위 막대는 같은 배분을 시간 길이로 그린 것이며, 핵심 조작(Interaction)과 사용 경험(Experience)에 가장 많은 시간을 줍니다. 30쪽 예시 영상도 이 배분으로 잘라 붙였습니다. 생성 클립이 5초여도 필요한 구간만 잘라 씁니다.</p>
+<table>
+<thead>
+<tr>
+<th>컷</th>
+<th>내용</th>
+<th>길이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Context — 사용 환경</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Product — 제품 등장</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Interaction — 핵심 조작</td>
+<td>4초</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Response — 제품 반응</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Experience — 사용 경험</td>
+<td>5초</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Hero — 제품 마무리</td>
+<td>4초</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>22초</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-is-the-story-clear">33 · IS THE STORY CLEAR?</h3>
+<blockquote>
+<p>제품 디자인 일관성 · 사용자 행동의 명확성 · 제품 반응의 자연스러움 · 장면 간 연결 · 영상의 길이 · 시각적 완성도 · 사용 경험의 전달력 · 강사 질문 · "이 영상을 처음 보는 사람도 제품이 무엇이고 어떻게 사용하는지 이해할 수 있을까요?"</p>
+</blockquote>
+<p>최종 영상 검토 기준 일곱 가지입니다. 영상을 소리 없이 한 번, 처음 보는 사람의 입장에서 한 번 보게 하세요. 설명 없이 이해되지 않는 컷이 있으면 그 컷의 목적부터 다시 확인합니다.</p>
+<h3 id="34-practice-05-product-film">34 · Practice 05 · Product Film</h3>
+<p>클립을 연결해 15~30초 제품 영상을 완성합니다.</p>
+<p><strong>작성 절차</strong></p>
+<ol>
+<li>최종 영상 클립 선정</li>
+<li>스토리보드 순서대로 배치</li>
+<li>불필요한 구간 제거</li>
+<li>장면 길이 조정</li>
+<li>컷 간 연결 검토</li>
+<li>최종 영상 완성</li>
+</ol>
+<p><strong>제출물</strong> — 15~30초 Product Film</p>
+<p><strong>완료 기준</strong> — 제품의 디자인 특징과 사용 경험을 짧은 영상으로 전달할 수 있어야 합니다.</p>
+<p>실습 5. Higgsfield 안에서 편집 기능이 부족하면 별도 영상 편집 도구(예: CapCut, Premiere 등)를 써도 됩니다. 자막·로고·텍스트는 생성이 아니라 편집 단계에서 넣습니다. 시간은 수업 중 구두로 정합니다.</p>
+<hr />
+<h2 id="part-06-final-portfolio-presentation-25">PART 06 · Final Portfolio &amp; Presentation (25분)</h2>
+<h3 id="35-show-the-design-process">35 · SHOW THE DESIGN PROCESS</h3>
+<blockquote>
+<p>WEEK 01 · EXPLORE · WEEK 02 · DEVELOP · WEEK 03 · REFINE · WEEK 04 · PRESENT · 최종 포트폴리오는 완성된 이미지와 영상뿐 아니라 디자인 과정 을 보여줘야 합니다. · 좋은 결과물은 무엇을 만들었는지 보여줍니다. · 좋은 포트폴리오는 왜 그렇게 디자인했는지 도 설명합니다.</p>
+</blockquote>
+<p>4주 동안 같은 램프가 스케치 → Refined Concept → Hero → 사용 장면으로 발전했습니다. 포트폴리오는 마지막 이미지 한 장이 아니라 이 과정 전체와 각 단계의 결정 이유를 보여 주는 문서입니다.</p>
+<h3 id="36-from-idea-to-experience">36 · FROM IDEA TO EXPERIENCE</h3>
+<blockquote>
+<p>WHO · PROBLEM · CONTEXT Design Goal · Design Brief · 01 PROJECT DEFINITION · 제품 기획 · 문제 정의 · 사용자 · 02 CONCEPT DEVELOPMENT · 러프 스케치 · 콘셉트 탐색 · 03 DESIGN REFINEMENT · 형태 · 비율 · 사용성 개선 · 04 CMF &amp; DETAIL · 색상 · 소재 · 마감 · 디테일 · 05 PRODUCT VISUALIZATION · Multi-view · Detail · Hero · 06 PRODUCT EXPERIENCE · 시나리오 · 스토리보드 · 07 PRODUCT FILM · 최종 영상</p>
+</blockquote>
+<p>최종 포트폴리오 일곱 섹션의 레이아웃 예시입니다. 각 칸은 1~4주차 램프 프로젝트의 실제 결과물로 채웠고, 01 Project Definition은 1주차 브리프 텍스트가 들어갈 자리입니다. 학생은 같은 순서로 자기 프로젝트를 정리합니다.</p>
+<h3 id="37-show-the-reasoning">37 · SHOW THE REASONING</h3>
+<blockquote>
+<p>어떤 문제를 해결하려 했는가? · 어떤 디자인 방향을 선택했는가? · 어떤 부분을 수정했는가? · 왜 그 CMF를 선택했는가? · 어떤 사용 경험을 의도했는가? · AI 결과를 어떻게 검토하고 수정했는가? · AI가 만든 이미지보다 학생이 내린 디자인 결정 이 중요합니다.</p>
+</blockquote>
+<p>포트폴리오의 각 단계에서 이 여섯 질문에 답하게 합니다. 특히 마지막 질문 — AI 결과를 어떻게 검토하고 고쳤는가 — 은 3주차와 4주차의 수정 전후 비교, 오늘의 Error Review로 바로 답할 수 있습니다.</p>
+<h3 id="38-present-the-project">38 · PRESENT THE PROJECT</h3>
+<blockquote>
+<p>Project Overview · Design Concept · Refinement Process · Final Product · User Experience · Product Film · Key Learnings · 발표 가이드 · 핵심 디자인 목표를 명확하게 설명 · 과정과 결과를 연결 · 수정한 이유를 구체적으로 제시 · 영상의 목적과 전달하려는 경험 설명 · AI 활용 중 생긴 문제와 해결 방법 공유</p>
+</blockquote>
+<p>발표 구성 예시 일곱 단계와 발표 가이드입니다. Product Film은 발표 중간(6번)에 틀고, 영상 전후로 "이 영상이 보여 주려는 경험"을 한 문장으로 말하게 하세요.</p>
+<h3 id="39-is-the-project-complete">39 · IS THE PROJECT COMPLETE?</h3>
+<blockquote>
+<p>제품의 문제 정의가 명확한가? · 1~4주차 결과물이 하나의 프로젝트로 연결되는가? · 제품 형태와 CMF가 일관적인가? · 디자인 수정 과정이 드러나는가? · 사용자 경험이 명확하게 전달되는가? · 영상이 제품의 핵심 특징을 보여주는가? · 포트폴리오가 디자인 의사결정을 설명하는가? · 학생 실습 · 최종 포트폴리오와 Product Film을 검토합니다.</p>
+</blockquote>
+<p>최종 점검 질문입니다. 시간이 부족한 학생은 최소 제출 기준(Hero Image, 장면 이미지 3종, 영상 클립 2~3종, 15초 내외 영상, 포트폴리오 요약 보드)으로 마무리하게 합니다. 제출물 목록과 영상 제출 기준은 교안에 있습니다.</p>
+<h3 id="40-from-idea-to-experience">40 · FROM IDEA TO EXPERIENCE — 마무리</h3>
+<blockquote>
+<p>FROM IDEA TO EXPERIENCE · WEEK 01 — EXPLORE · 아이디어를 시각화하다. · WEEK 02 — DEVELOP · 제품의 형태를 개선하다. · WEEK 03 — REFINE · 제품의 디테일을 완성하다. · WEEK 04 — PRESENT · 제품의 경험을 전달하다. · AI is a tool. · Design decisions are yours.</p>
+</blockquote>
+<p>4주 과정의 마지막 장입니다. 같은 램프가 아이디어 → 형태 → 디테일 → 경험으로 발전한 과정을 한 줄씩 짚으며 마무리합니다. AI는 결정을 대신하지 않고, 학생이 내린 결정을 시각화하고 검토하고 전달하는 도구였다는 점을 다시 강조하세요.</p>
+<hr />
+<h2 id="a">부록 A · 제출물</h2>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>제출물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Practice 01</td>
+<td>Video Reference Set — 컷별 시작 이미지 · 움직임 · 유지 조건</td>
+</tr>
+<tr>
+<td>Practice 02</td>
+<td>Scene Image Set — 스토리보드 5~6컷의 장면 이미지</td>
+</tr>
+<tr>
+<td>Practice 03</td>
+<td>Video Clip Set — Camera Motion 1 · State Change 1 · User Interaction 또는 Camera Motion 1</td>
+</tr>
+<tr>
+<td>Practice 04</td>
+<td>Refined Video Clips + Error Review — 수정 전후 클립과 오류 메모</td>
+</tr>
+<tr>
+<td>Practice 05</td>
+<td>15~30초 Product Film</td>
+</tr>
+<tr>
+<td>최종</td>
+<td>Final Product Experience Portfolio(일곱 섹션) + 발표</td>
+</tr>
+</tbody>
+</table>
+<p><strong>최소 제출 기준</strong>(시간이 부족한 경우): Hero Image, 장면 이미지 3종, 영상 클립 2~3종, 15초 내외 영상, 포트폴리오 요약 보드.</p>
+<p><strong>영상 파일 예시 기준</strong>(강의 예시 기준이며, 최종 형식은 수업에서 안내한다): MP4 · 16:9 · 15~30초 · 720p 이상. 자막 · 로고 · 텍스트는 생성 단계가 아니라 편집 단계에서 넣는다.</p>
+<h2 id="b">부록 B · 오류 분류와 수정 순서</h2>
+<table>
+<thead>
+<tr>
+<th>유형</th>
+<th>확인할 것</th>
+<th>수정 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>형태</td>
+<td>실루엣 · 비율 · 지지대 곡률 · 부품 위치 · 헤드 두께</td>
+<td>움직임을 단순화하고 원본 이미지에서 다시 생성</td>
+</tr>
+<tr>
+<td>소재</td>
+<td>색상 · 금속 질감 · 확산판 표현</td>
+<td>조명 변화와 소재 변화를 구분해 확인, 필요하면 재생성</td>
+</tr>
+<tr>
+<td>상호작용</td>
+<td>손가락 형태 · 손과 제품의 겹침 · 조작부 위치 · 행동과 반응의 연결</td>
+<td>손이 다가가는 컷과 반응 컷을 분리</td>
+</tr>
+<tr>
+<td>카메라</td>
+<td>공간이 갑자기 바뀌는가 · 보이지 않던 면이 Multi-view와 같은가</td>
+<td>더 느리고 단순한 움직임, 또는 Static 컷으로 교체</td>
+</tr>
+</tbody>
+</table>
+<p>수정 순서: IDENTIFY → CLASSIFY → SIMPLIFY → REGENERATE → COMPARE.</p>
+<h2 id="c-22">부록 C · 22초 예시 영상의 구성</h2>
+<p>30쪽 예시 영상은 오늘 만든 클립에서 필요한 구간만 잘라 32쪽 배분대로 연결했다.</p>
+<table>
+<thead>
+<tr>
+<th>컷</th>
+<th>사용한 클립</th>
+<th>길이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 Context</td>
+<td>PAN (2~5초 구간)</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>02 Product</td>
+<td>PUSH-IN (2~5초 구간)</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>03 Interaction</td>
+<td>INTERACTION (1~5초 구간)</td>
+<td>4초</td>
+</tr>
+<tr>
+<td>04 Response</td>
+<td>LIGHT ON (2~5초 구간)</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>05 Experience</td>
+<td>EXPERIENCE (전체)</td>
+<td>5초</td>
+</tr>
+<tr>
+<td>06 Hero</td>
+<td>REFINEMENT 재생성 클립 (1~5초 구간)</td>
+<td>4초</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>AI is a tool. Design decisions are yours.</p></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>
