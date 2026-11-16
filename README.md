@@ -10,6 +10,8 @@ Kyung Hee University 산업디자인 「AI × Industrial Design」 수업 자료
 | W02 | Online · AI Design Refinement | [`w02/online/slides/`](w02/online/slides/) (30장) | [`w02/online/handbook/`](w02/online/handbook/) | `w02/online/AI_x_ID_W02_Online.pdf` |
 | W03 | Offline · Product Detail & CMF | [`w03/offline/slides/`](w03/offline/slides/) (40장) | [`w03/offline/handbook/`](w03/offline/handbook/) | `w03/offline/AI_x_ID_W03_Offline.pdf` |
 | W03 | Online · AI Product Visualization | [`w03/online/slides/`](w03/online/slides/) (32장) | [`w03/online/handbook/`](w03/online/handbook/) | `w03/online/AI_x_ID_W03_Online.pdf` |
+| W04 | Offline · Understanding the Web & Portfolio Planning | [`w04/offline/slides/`](w04/offline/slides/) (40장) | [`w04/offline/handbook/`](w04/offline/handbook/) | `w04/offline/AI_x_ID_W04_Offline.pdf` |
+| W04 | Online · AI Website Creation & Publishing | [`w04/online/slides/`](w04/online/slides/) (40장) | [`w04/online/handbook/`](w04/online/handbook/) | `w04/online/AI_x_ID_W04_Online.pdf` |
 
 ## 구조
 

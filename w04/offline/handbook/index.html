@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W04 Offline · Product Experience · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W04 Offline · Understanding the Web &amp; Portfolio Planning · 교안</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap"><style>
 :root{--bg:#0D0D0F;--panel:#141417;--line:#26262A;--text:#EDEBE7;--gray:#8E8C88;--dim:#5E5D5A;--gold:#B9A488}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
@@ -28,744 +28,388 @@ li{margin:4px 0}
 @media print{nav,.cp{display:none}.wrap{display:block}body{background:#fff;color:#000}strong{color:#000}}
 </style></head><body><div class="wrap"><nav><a class="home" href="../">← Week 04 · Offline</a><div><div class="toc">
 <ul>
-<li><a href="#ai-industrial-design-4-product-experience">AI × Industrial Design · 4주차 오프라인 — Product Experience</a><ul>
-<li><a href="#_1">시작하기 전에</a><ul>
-<li><a href="#_2">이번 수업은 무엇을 하는 시간인가</a></li>
-<li><a href="#_3">전체 과정과의 연결</a></li>
-<li><a href="#master-product-reference">기준 제품 (Master Product Reference)</a></li>
-<li><a href="#_4">수업 흐름</a></li>
+<li><a href="#week-04-offline-understanding-the-web-portfolio-planning">WEEK 04 — OFFLINE · Understanding the Web &amp; Portfolio Planning</a><ul>
+<li><a href="#part-01-understanding-the-web">PART 01 — Understanding the Web: 제품 디자인에서 디지털 경험으로</a><ul>
+<li><a href="#01-understanding-the-web-portfolio-planning">01 · UNDERSTANDING THE WEB &amp; PORTFOLIO PLANNING</a></li>
+<li><a href="#02-from-product-to-web">02 · FROM PRODUCT TO WEB</a></li>
+<li><a href="#03-todays-goal">03 · TODAY'S GOAL</a></li>
+<li><a href="#04-what-is-the-web">04 · WHAT IS THE WEB?</a></li>
+<li><a href="#05-why-designers-need-a-website">05 · WHY DESIGNERS NEED A WEBSITE</a></li>
+<li><a href="#06-product-design-web-design">06 · PRODUCT DESIGN ≈ WEB DESIGN</a></li>
+<li><a href="#07-types-of-websites">07 · TYPES OF WEBSITES</a></li>
 </ul>
 </li>
-<li><a href="#part-01-product-review">PART 01 · Product Review</a><ul>
-<li><a href="#01-product-experience">01 · PRODUCT EXPERIENCE</a></li>
-<li><a href="#02-from-product-to-experience">02 · FROM PRODUCT TO EXPERIENCE</a></li>
-<li><a href="#03-a-product-is-not-an-experience">03 · A PRODUCT IS NOT AN EXPERIENCE</a></li>
-<li><a href="#04-product-value">04 · PRODUCT VALUE</a></li>
-<li><a href="#05-what-should-the-user-experience">05 · WHAT SHOULD THE USER EXPERIENCE?</a></li>
-<li><a href="#06-practice-01-product-experience-review">06 · Practice 01 · Product Experience Review</a></li>
+<li><a href="#part-02-how-websites-work-htmlcssjs">PART 02 — How Websites Work: 서버 · 도메인 · HTML/CSS/JS · 반응형</a><ul>
+<li><a href="#08-how-websites-work">08 · HOW WEBSITES WORK</a></li>
+<li><a href="#09-client-server">09 · CLIENT &amp; SERVER</a></li>
+<li><a href="#10-domain-hosting-files">10 · DOMAIN · HOSTING · FILES</a></li>
+<li><a href="#11-what-happens-when-you-open-a-page">11 · WHAT HAPPENS WHEN YOU OPEN A PAGE</a></li>
+<li><a href="#12-html-css-javascript">12 · HTML · CSS · JAVASCRIPT</a></li>
+<li><a href="#13-reading-the-code">13 · READING THE CODE</a></li>
+<li><a href="#14-responsive-web">14 · RESPONSIVE WEB</a></li>
 </ul>
 </li>
-<li><a href="#part-02-user-scenario">PART 02 · User Scenario</a><ul>
-<li><a href="#07-design-the-context">07 · DESIGN THE CONTEXT</a></li>
-<li><a href="#08-who-where-when-why-what">08 · WHO · WHERE · WHEN · WHY · WHAT</a></li>
-<li><a href="#09-experience-has-a-sequence">09 · EXPERIENCE HAS A SEQUENCE</a></li>
-<li><a href="#10-why-does-the-user-need-it">10 · WHY DOES THE USER NEED IT?</a></li>
-<li><a href="#11-what-changes-after-use">11 · WHAT CHANGES AFTER USE?</a></li>
-<li><a href="#12-from-context-to-story">12 · FROM CONTEXT TO STORY</a></li>
-<li><a href="#13-practice-02-user-scenario">13 · Practice 02 · User Scenario</a></li>
+<li><a href="#part-03-web-design-fundamentals">PART 03 — Web Design Fundamentals: 레이아웃 · 타이포 · 컬러 · 위계 · 내비게이션</a><ul>
+<li><a href="#15-web-design-fundamentals">15 · WEB DESIGN FUNDAMENTALS</a></li>
+<li><a href="#16-layout-grid">16 · LAYOUT &amp; GRID</a></li>
+<li><a href="#17-typography">17 · TYPOGRAPHY</a></li>
+<li><a href="#18-color-image">18 · COLOR &amp; IMAGE</a></li>
+<li><a href="#19-hierarchy-whitespace">19 · HIERARCHY &amp; WHITESPACE</a></li>
+<li><a href="#20-navigation-interaction">20 · NAVIGATION &amp; INTERACTION</a></li>
 </ul>
 </li>
-<li><a href="#part-03-interaction-design">PART 03 · Interaction Design</a><ul>
-<li><a href="#14-experience-is-action">14 · EXPERIENCE IS ACTION</a></li>
-<li><a href="#15-map-the-actions">15 · MAP THE ACTIONS</a></li>
-<li><a href="#16-design-the-interaction">16 · DESIGN THE INTERACTION</a></li>
-<li><a href="#17-show-the-important-action">17 · SHOW THE IMPORTANT ACTION</a></li>
-<li><a href="#18-can-the-viewer-understand-the-action">18 · CAN THE VIEWER UNDERSTAND THE ACTION?</a></li>
-<li><a href="#19-find-the-key-interaction">19 · FIND THE KEY INTERACTION</a></li>
-<li><a href="#20-practice-03-interaction-mapping">20 · Practice 03 · Interaction Mapping</a></li>
+<li><a href="#part-04-portfolio-reference-analysis">PART 04 — Portfolio Reference Analysis: 레퍼런스를 다섯 관점으로 읽기</a><ul>
+<li><a href="#21-portfolio-reference-analysis">21 · PORTFOLIO REFERENCE ANALYSIS</a></li>
+<li><a href="#22-why-references">22 · WHY REFERENCES</a></li>
+<li><a href="#23-three-portfolio-patterns">23 · THREE PORTFOLIO PATTERNS</a></li>
+<li><a href="#24-analysis-framework">24 · ANALYSIS FRAMEWORK</a></li>
+<li><a href="#25-example-analysis">25 · EXAMPLE ANALYSIS</a></li>
+<li><a href="#26-reference-analysis">26 · REFERENCE ANALYSIS</a></li>
+<li><a href="#27-from-reference-to-direction">27 · FROM REFERENCE TO DIRECTION</a></li>
 </ul>
 </li>
-<li><a href="#part-04-storyboard-design">PART 04 · Storyboard Design</a><ul>
-<li><a href="#21-turn-the-experience-into-scenes">21 · TURN THE EXPERIENCE INTO SCENES</a></li>
-<li><a href="#22-storyboard">22 · STORYBOARD</a></li>
-<li><a href="#23-six-shots-one-experience">23 · SIX SHOTS, ONE EXPERIENCE</a></li>
-<li><a href="#24-shot-01-establish-the-context">24 · SHOT 01 — ESTABLISH THE CONTEXT</a></li>
-<li><a href="#25-shot-02-introduce-the-product">25 · SHOT 02 — INTRODUCE THE PRODUCT</a></li>
-<li><a href="#26-shot-03-show-the-action">26 · SHOT 03 — SHOW THE ACTION</a></li>
-<li><a href="#27-shot-04-show-the-response">27 · SHOT 04 — SHOW THE RESPONSE</a></li>
-<li><a href="#28-shot-05-show-the-benefit">28 · SHOT 05 — SHOW THE BENEFIT</a></li>
-<li><a href="#29-shot-06-end-with-the-design">29 · SHOT 06 — END WITH THE DESIGN</a></li>
-<li><a href="#30-practice-04-storyboard">30 · Practice 04 · Storyboard</a></li>
+<li><a href="#part-05-ia-wireframe">PART 05 — IA &amp; Wireframe: 사이트맵과 와이어프레임 설계</a><ul>
+<li><a href="#28-ia-wireframe">28 · IA &amp; WIREFRAME</a></li>
+<li><a href="#29-information-architecture">29 · INFORMATION ARCHITECTURE</a></li>
+<li><a href="#30-content-inventory">30 · CONTENT INVENTORY</a></li>
+<li><a href="#31-page-story">31 · PAGE STORY</a></li>
+<li><a href="#32-what-is-a-wireframe">32 · WHAT IS A WIREFRAME</a></li>
+<li><a href="#33-desktop-wireframe">33 · DESKTOP WIREFRAME</a></li>
+<li><a href="#34-mobile-wireframe">34 · MOBILE WIREFRAME</a></li>
+<li><a href="#35-sitemap-wireframe">35 · SITEMAP &amp; WIREFRAME</a></li>
 </ul>
 </li>
-<li><a href="#part-05-motion-direction">PART 05 · Motion Direction</a><ul>
-<li><a href="#31-from-image-to-motion">31 · FROM IMAGE TO MOTION</a></li>
-<li><a href="#32-camera-movement">32 · CAMERA MOVEMENT</a></li>
-<li><a href="#33-what-actually-moves">33 · WHAT ACTUALLY MOVES?</a></li>
-<li><a href="#34-motion-direction-sheet">34 · MOTION DIRECTION SHEET</a></li>
-<li><a href="#35-keep-the-product-consistent">35 · KEEP THE PRODUCT CONSISTENT</a></li>
-<li><a href="#36-practice-05-motion-planning">36 · Practice 05 · Motion Planning</a></li>
+<li><a href="#part-06-website-planning-workshop">PART 06 — Website Planning Workshop: 기획 보드와 다음 온라인 수업 연결</a><ul>
+<li><a href="#36-website-planning-workshop">36 · WEBSITE PLANNING WORKSHOP</a></li>
+<li><a href="#37-website-planning-board">37 · WEBSITE PLANNING BOARD</a></li>
+<li><a href="#38-board-example">38 · BOARD EXAMPLE</a></li>
+<li><a href="#39-website-planning-board">39 · WEBSITE PLANNING BOARD</a></li>
+<li><a href="#40-build-publish-with-ai">40 · BUILD &amp; PUBLISH WITH AI</a></li>
 </ul>
 </li>
-<li><a href="#part-06-final-review-assignment">PART 06 · Final Review &amp; Assignment</a><ul>
-<li><a href="#37-product-experience-board">37 · PRODUCT EXPERIENCE BOARD (최종 제출물)</a></li>
-<li><a href="#38-does-the-story-communicate-the-design">38 · DOES THE STORY COMMUNICATE THE DESIGN?</a></li>
-<li><a href="#39-ready-for-video-generation">39 · READY FOR VIDEO GENERATION</a></li>
-<li><a href="#40-next-visualize-the-experience">40 · NEXT — VISUALIZE THE EXPERIENCE (다음 온라인 수업)</a></li>
-</ul>
-</li>
-<li><a href="#higgsfield">부록 · Higgsfield 공통 지침</a></li>
+<li><a href="#_1">다음 수업 준비물</a></li>
 </ul>
 </li>
 </ul>
 </div>
-</div></nav><main><h1 id="ai-industrial-design-4-product-experience">AI × Industrial Design · 4주차 오프라인 — Product Experience</h1>
-<blockquote>
-<p>From Product Design to User Experience · 인환 강사 · 40장</p>
-</blockquote>
-<hr />
-<h2 id="_1">시작하기 전에</h2>
-<h3 id="_2">이번 수업은 무엇을 하는 시간인가</h3>
-<p>4주 과정의 마지막 산업디자인 설계 수업이다. 1~3주차에 완성한 <strong>같은 제품</strong>을 바탕으로 사용 경험을 설계하고, 제품의 특징을 전달할 <strong>사용자 시나리오 · 행동 흐름 · 스토리보드 · 영상 연출 계획</strong>을 만든다. 결과물은 <strong>Product Experience Board</strong>이며, 다음 온라인 수업(심선범 강사)에서 이 보드로 Higgsfield 이미지·영상과 최종 포트폴리오를 만든다.</p>
-<h3 id="_3">전체 과정과의 연결</h3>
-<table>
-<thead>
-<tr>
-<th>주차</th>
-<th>단계</th>
-<th>결과물</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>WEEK 01</td>
-<td>EXPLORE — 기획 · 사용자 분석 · 러프 스케치 · AI 콘셉트</td>
-<td>Concept Visualization Board</td>
-</tr>
-<tr>
-<td>WEEK 02</td>
-<td>DEVELOP — 형태 · 비율 · 사용성 · 구조 검토, AI 부분 수정</td>
-<td>Design Refinement Board</td>
-</tr>
-<tr>
-<td>WEEK 03</td>
-<td>REFINE — CMF · 디테일 · Multi-view · Hero Image</td>
-<td>Product Visualization Board</td>
-</tr>
-<tr>
-<td><strong>WEEK 04</strong></td>
-<td><strong>EXPERIENCE — 시나리오 · 행동 분석 · 스토리보드 · 영상 연출 계획</strong></td>
-<td><strong>Product Experience Board</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="master-product-reference">기준 제품 (Master Product Reference)</h3>
-<p>예시는 1~3주차의 테이블 램프 한 가지다. 새 제품이나 새 기능을 만들지 않는다.</p>
-<ul>
-<li>낮고 넓은 원통형 베이스, 왼쪽에서 휘어 오르는 하나의 C자형 지지대</li>
-<li>오른쪽으로 수평 돌출된 얇은 원형 헤드와 하단의 따뜻한 확산광</li>
-<li>밝은 실버 · 웜그레이 금속성 표면(3주차 확정 CMF)</li>
-<li>조작부: 3주차에서 설계한 <strong>베이스 정면의 평평한 원형 버튼</strong>(강의 예시 기준)</li>
-</ul>
-<p>원본에서 확인되지 않는 정보(충전 방식, 후면, 내부 부품, 구체적 조작 방식)는 학생의 3주차 설계를 따르고, 없으면 <strong>"미정"으로 남긴다.</strong> AI 이미지가 구조적 정확성을 검증하지 않는다.</p>
-<h3 id="_4">수업 흐름</h3>
+
+</div></nav><main><h1 id="week-04-offline-understanding-the-web-portfolio-planning">WEEK 04 — OFFLINE · Understanding the Web &amp; Portfolio Planning</h1>
+<p><strong>From Product Design to Digital Experience</strong> · 인환 강사 · 240분 · 40장 · 코딩 없음</p>
+<p>1~3주차에 디자인한 제품을 보여 줄 웹 경험을 기획하는 수업입니다. 웹의 구조와 동작 원리를 이해하고, 포트폴리오 레퍼런스를 분석한 뒤, 사이트맵과 와이어프레임을 설계해 <strong>Website Planning Board</strong>를 완성합니다. 이 보드는 다음 온라인 수업(심선범)에서 AI로 웹사이트를 만들고 공개할 때 그대로 설계도로 씁니다.</p>
 <table>
 <thead>
 <tr>
 <th>PART</th>
 <th>주제</th>
+<th style="text-align: right;">시간</th>
 <th>슬라이드</th>
-<th>실습</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>01</td>
-<td>Product Review — 완성된 제품에서 사용 경험으로</td>
-<td>01–06</td>
-<td>Practice 01 · Product Experience Statement</td>
+<td>Understanding the Web</td>
+<td style="text-align: right;">45분</td>
+<td>01–07</td>
 </tr>
 <tr>
 <td>02</td>
-<td>User Scenario — 사용자의 상황을 구체화하기</td>
-<td>07–13</td>
-<td>Practice 02 · User Scenario Sheet</td>
+<td>How Websites Work</td>
+<td style="text-align: right;">45분</td>
+<td>08–14</td>
 </tr>
 <tr>
 <td>03</td>
-<td>Interaction Design — 사용자 행동과 제품 반응</td>
-<td>14–20</td>
-<td>Practice 03 · User Action Sequence</td>
+<td>Web Design Fundamentals</td>
+<td style="text-align: right;">30분</td>
+<td>15–20</td>
 </tr>
 <tr>
 <td>04</td>
-<td>Storyboard Design — 제품 경험을 장면으로 구성</td>
-<td>21–30</td>
-<td>Practice 04 · Product Storyboard</td>
+<td>Portfolio Reference Analysis</td>
+<td style="text-align: right;">40분</td>
+<td>21–27</td>
 </tr>
 <tr>
 <td>05</td>
-<td>Motion Direction — 움직임과 영상 연출 계획</td>
-<td>31–36</td>
-<td>Practice 05 · Motion Direction Sheet</td>
+<td>IA &amp; Wireframe</td>
+<td style="text-align: right;">50분</td>
+<td>28–35</td>
 </tr>
 <tr>
 <td>06</td>
-<td>Final Review &amp; Assignment</td>
-<td>37–40</td>
-<td>Product Experience Board</td>
+<td>Website Planning Workshop</td>
+<td style="text-align: right;">30분</td>
+<td>36–40</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="part-01-product-review">PART 01 · Product Review</h2>
-<h3 id="01-product-experience">01 · PRODUCT EXPERIENCE</h3>
-<p>좋은 제품 디자인은 형태에서 끝나지 않는다. 사용자가 제품을 어떻게 경험하는지까지 설계해야 한다. 표지 이미지는 3주차 최종 Hero Image다.</p>
-<h3 id="02-from-product-to-experience">02 · FROM PRODUCT TO EXPERIENCE</h3>
-<p>WEEK 01 IDEA → CONCEPT · WEEK 02 REVIEW → REFINE · WEEK 03 CMF → DETAIL → VISUALIZATION · <strong>WEEK 04 USER → ACTION → EXPERIENCE</strong></p>
-<p>우리는 제품을 디자인했다. 이제 그 제품이 사용자의 일상에서 어떻게 작동하는지 보여줄 차례다.</p>
-<h3 id="03-a-product-is-not-an-experience">03 · A PRODUCT IS NOT AN EXPERIENCE</h3>
-<p>제품의 외형만으로는 답하기 어렵다: 누가 · 언제 · 어디에서 사용하는가? 어떤 문제를 해결하는가? 어떻게 조작하는가? 사용 후 어떤 변화를 경험하는가?</p>
 <blockquote>
-<p><strong>강사 질문</strong> — "이 램프가 아름답다는 것 외에, 사용자에게 어떤 가치를 제공할까요?"</p>
+<p>예시 제품(크림색 부클레 라운지체어) 이미지와 웹사이트 화면은 설명을 위해 만든 예시입니다. 의자 이미지는 AI로 생성했고, 웹사이트 화면은 슬라이드 안에서 그린 목업입니다.</p>
 </blockquote>
-<p>입력: 3주차 최종 램프 이미지</p>
-<pre><code class="language-text">Place the exact lamp from the uploaded
-reference image on a minimal wooden desk
-in a quiet bedroom at night.
-
-Preserve the original lamp geometry,
-C-shaped support,
-cylindrical base,
-thin circular lamp head,
-approved CMF and details.
-
-Soft warm ambient lighting,
-realistic interior photography.
-
-Do not redesign the lamp.
-No additional product components.
-</code></pre>
-<h3 id="04-product-value">04 · PRODUCT VALUE</h3>
-<table>
-<thead>
-<tr>
-<th>가치</th>
-<th>의미</th>
-<th>램프 예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FUNCTIONAL</td>
-<td>제품이 수행하는 기능</td>
-<td>책을 읽을 수 있도록 빛을 제공</td>
-</tr>
-<tr>
-<td>USABILITY</td>
-<td>쉽게 사용할 수 있는가</td>
-<td>쉽게 조명을 켜고 끌 수 있음</td>
-</tr>
-<tr>
-<td>EMOTIONAL</td>
-<td>사용 중 느끼는 분위기와 감정</td>
-<td>편안하고 차분한 분위기</td>
-</tr>
-<tr>
-<td>CONTEXTUAL</td>
-<td>사용 환경에 얼마나 적합한가</td>
-<td>개인 책상과 침실에 어울림</td>
-</tr>
-</tbody>
-</table>
-<h3 id="05-what-should-the-user-experience">05 · WHAT SHOULD THE USER EXPERIENCE?</h3>
-<p>제품의 핵심 경험을 한 문장으로 정의한다. 예: <em>"A calm personal lighting experience for evening reading."</em></p>
-<p>정리 항목: Target User · Use Context · Main Action · Desired Experience. 좋은 사용 경험은 우연히 만들어지지 않는다 — 무엇을 경험하게 할지 먼저 결정한다.</p>
-<h3 id="06-practice-01-product-experience-review">06 · Practice 01 · Product Experience Review</h3>
-<ol>
-<li>3주차 최종 제품 이미지 확인</li>
-<li>제품의 핵심 기능 정리</li>
-<li>주요 사용자 정의</li>
-<li>대표 사용 환경 선정</li>
-<li>사용자에게 제공할 핵심 경험 한 문장 작성</li>
-</ol>
-<p><strong>제출물</strong> Product Experience Statement · <strong>완료 기준</strong> 제품이 누구에게 어떤 상황에서 어떤 경험을 제공하는지 설명할 수 있어야 한다.</p>
 <hr />
-<h2 id="part-02-user-scenario">PART 02 · User Scenario</h2>
-<h3 id="07-design-the-context">07 · DESIGN THE CONTEXT</h3>
-<p>사용 경험은 특정한 상황에서 발생한다. WHO(누가) · WHERE(어디서) · WHEN(언제) · WHY(왜) · WHAT(무엇을).</p>
-<h3 id="08-who-where-when-why-what">08 · WHO · WHERE · WHEN · WHY · WHAT</h3>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>램프 예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>WHO</td>
-<td>저녁에 독서하는 사용자</td>
-</tr>
-<tr>
-<td>WHERE</td>
-<td>개인 침실의 책상</td>
-</tr>
-<tr>
-<td>WHEN</td>
-<td>늦은 저녁</td>
-</tr>
-<tr>
-<td>WHY</td>
-<td>주변을 방해하지 않고 책을 읽기 위해</td>
-</tr>
-<tr>
-<td>WHAT</td>
-<td>램프를 켜고 책을 읽는다</td>
-</tr>
-</tbody>
-</table>
-<p>사용 시나리오는 분위기 설명이 아니라 실제 행동을 설명해야 한다.</p>
-<h3 id="09-experience-has-a-sequence">09 · EXPERIENCE HAS A SEQUENCE</h3>
-<p>BEFORE(책상에 앉아 책을 읽으려는 사용자) → DURING(램프를 켜고 책을 읽음) → AFTER(편안한 조명 아래에서 독서에 집중). 세 장면은 같은 책상과 같은 램프로 만든다.</p>
-<p><strong>BEFORE</strong></p>
-<pre><code class="language-text">Use the uploaded lamp as the exact
-product reference.
-
-Show the lamp on a quiet wooden desk
-before the user begins reading.
-
-The lamp is switched off.
-
-Preserve the original product geometry,
-CMF, and details.
-
-Soft low ambient lighting,
-cinematic interior photography.
+<h2 id="part-01-understanding-the-web">PART 01 — Understanding the Web: 제품 디자인에서 디지털 경험으로</h2>
+<h3 id="01-understanding-the-web-portfolio-planning">01 · UNDERSTANDING THE WEB &amp; PORTFOLIO PLANNING</h3>
+<p><em>Week 04 — Offline · AI × Industrial Design</em></p>
+<p>안녕하세요, 4주차 오프라인 수업 시작하겠습니다. 오늘은 조금 다른 이야기를 해요.</p>
+<p>지난 3주 동안은 제품 자체를 디자인했죠. 형태를 잡고, CMF를 정하고, 사용 경험까지 설계했어요. 오늘은 그렇게 만든 제품을 "어떻게 보여 줄 것인가", 즉 웹사이트와 포트폴리오를 기획합니다.</p>
+<p>오른쪽 의자는 오늘 계속 쓸 예시 제품, 크림색 부클레 라운지체어예요. 이 의자 하나를 소개하는 웹사이트를 처음부터 기획해 볼 거예요.</p>
+<p>그리고 오늘은 코딩을 하지 않습니다. 코드는 다음 온라인 수업에서 AI가 만들어 줄 거고, 오늘 우리는 "무엇을, 어떤 순서로, 어떻게 보여 줄지"를 결정하는 디자이너의 일을 합니다.</p>
+<h3 id="02-from-product-to-web">02 · FROM PRODUCT TO WEB</h3>
+<p><em>제품 디자인에서 웹으로</em></p>
+<p>지금까지의 흐름을 한번 짚고 갈게요. 1주차에 스케치로 콘셉트를 만들었고, 2주차에 형태와 CMF, 디테일, Hero 이미지까지 다듬었어요. 3주차에는 사람이 이 제품을 어떻게 쓰는지, 사용 경험과 제품 영상을 설계했죠.</p>
+<p>그러면 이제 남은 질문은 하나예요. "이걸 누군가에게 어떻게 보여 줄 거냐." 교수님, 면접관, 클라이언트, 혹은 그냥 내 작업을 처음 보는 사람이요.</p>
+<p>그게 오늘 다룰 디지털 경험, 웹사이트입니다. 제품 디자인에서 했던 사고방식을 화면으로 그대로 가져가는 거라고 생각하시면 돼요.</p>
+<h3 id="03-todays-goal">03 · TODAY'S GOAL</h3>
+<p><em>오늘의 목표</em></p>
+<p>오늘 목표는 세 가지예요. 먼저 웹이 뭔지, 웹사이트가 어떻게 동작하는지 큰 그림으로 이해하고요. 다음으로 잘 만든 포트폴리오 사이트를 보면서 "왜 좋은지"를 구조적으로 읽어 내는 연습을 하고요. 마지막으로 내 프로젝트를 위한 웹사이트를 직접 기획합니다.</p>
+<p>오늘 끝날 때 손에 남는 건 Website Planning Board 한 장이에요. 이 보드가 중요한 이유는, 다음 주 온라인 수업에서 심선범 강사님과 AI로 실제 웹사이트를 만들 때 이게 그대로 설계도가 되기 때문이에요. 기획이 탄탄할수록 AI 결과물도 좋아집니다.</p>
+<h3 id="04-what-is-the-web">04 · WHAT IS THE WEB?</h3>
+<p><em>웹이란 무엇인가</em></p>
+<p>인터넷과 웹, 같은 말처럼 쓰지만 사실 달라요. 인터넷은 전 세계 컴퓨터를 연결한 네트워크, 말하자면 도로망이에요. 카톡, 이메일, 온라인 게임도 다 이 도로를 써요.</p>
+<p>웹은 그 도로 위에 지어진 건물들이라고 생각하면 돼요. 크롬이나 사파리 같은 브라우저로 여는 페이지들, 그리고 그 페이지들이 링크로 서로 이어진 공간이 웹이에요.</p>
+<p>그러니까 웹사이트는 "주소로 찾아가서, 브라우저로 열어 보는, 링크로 연결된 페이지 묶음"이에요. 오늘 우리가 기획할 포트폴리오도 결국 이 건물 하나를 짓는 일입니다.</p>
+<h3 id="05-why-designers-need-a-website">05 · WHY DESIGNERS NEED A WEBSITE</h3>
+<p><em>디자이너에게 웹사이트가 필요한 이유</em></p>
+<p>그럼 디자이너한테 왜 웹사이트가 필요할까요. 첫째, 링크 하나면 끝이에요. 파일 보내고 용량 걱정할 필요 없이 언제든 열려요.</p>
+<p>둘째, 이야기를 담을 수 있어요. PDF는 페이지 수 제약이 있지만, 웹은 스케치부터 최종 결과까지 과정을 길게 풀 수 있어요.</p>
+<p>셋째, 3주차에 만든 제품 영상처럼 움직이는 결과물을 그대로 넣을 수 있죠.</p>
+<p>넷째가 제일 중요한데요, 사이트 자체가 내 디자인 감각을 보여 줘요. 여백을 어떻게 썼는지, 사진을 어떤 순서로 보여 주는지, 그게 다 평가 대상이에요. 그래서 오늘 기획이 중요합니다.</p>
+<h3 id="06-product-design-web-design">06 · PRODUCT DESIGN ≈ WEB DESIGN</h3>
+<p><em>제품 디자인과 웹 디자인은 같은 사고를 쓴다</em></p>
+<p>여기서 안심하셔도 되는 게, 웹 디자인이 완전히 새로운 분야가 아니에요. 여러분이 해 온 제품 디자인의 사고를 그대로 쓸 수 있어요.</p>
+<p>형태와 비례를 잡던 감각은 레이아웃과 그리드가 되고요, CMF는 화면의 컬러와 타이포, 이미지 톤이 돼요. 3주차 사용 시나리오는 사용자가 사이트를 어떤 순서로 둘러보는지, 사용자 흐름이 되고요. 인터랙션은 버튼과 스크롤 반응이 되고, Hero Image는 사이트의 첫 화면이 됩니다.</p>
+<p>재료만 바뀌는 거예요. 의자가 오크와 부클레로 만들어진다면, 웹사이트는 레이아웃과 글자와 이미지로 만들어지는 거죠.</p>
+<h3 id="07-types-of-websites">07 · TYPES OF WEBSITES</h3>
+<p><em>웹사이트의 종류</em></p>
+<p>웹사이트는 목적에 따라 종류가 나뉘어요. 포트폴리오, 프로젝트 하나를 깊게 보여 주는 케이스 스터디, 제품 하나를 소개하는 랜딩 페이지, 브랜드 사이트, 쇼핑몰.</p>
+<p>우리가 오늘 기획할 건 앞의 세 개가 섞인 형태예요. 메인에서 나를 소개하고 작업 목록을 보여 주고, 라운지체어 프로젝트를 누르면 그 제품의 과정과 결과를 깊게 보여 주는 상세 페이지로 들어가는 구조요.</p>
+<p>브랜드 사이트나 쇼핑몰은 레퍼런스로는 참고할 수 있지만, 우리 목적과는 달라요. 목적이 다르면 구조가 달라진다, 이것만 기억해 주세요. 여기까지 PART 01이었습니다.</p>
+<hr />
+<h2 id="part-02-how-websites-work-htmlcssjs">PART 02 — How Websites Work: 서버 · 도메인 · HTML/CSS/JS · 반응형</h2>
+<h3 id="08-how-websites-work">08 · HOW WEBSITES WORK</h3>
+<p><em>PART 02</em></p>
+<p>PART 02로 넘어갈게요. 이번 파트는 45분 정도예요. 여기서는 웹사이트가 실제로 어떻게 동작하는지를 봅니다.</p>
+<p>걱정하실 필요는 없어요. 코드를 짜는 게 아니라 "읽어 보는" 수준이에요. 개발자와 대화할 때, 그리고 다음 주에 AI에게 웹사이트를 만들어 달라고 할 때 이 개념들을 알면 훨씬 정확하게 말할 수 있어요.</p>
+<h3 id="09-client-server">09 · CLIENT &amp; SERVER</h3>
+<p><em>브라우저와 서버</em></p>
+<p>웹의 기본 구조는 아주 단순해요. 클라이언트와 서버, 둘이 있어요. 클라이언트는 여러분 컴퓨터나 휴대폰의 브라우저고요, 서버는 웹사이트 파일이 저장되어 있는 인터넷 어딘가의 컴퓨터예요.</p>
+<p>브라우저가 "이 페이지 주세요" 하고 요청을 보내면, 서버가 그 페이지를 만드는 파일들, HTML, CSS, 이미지 같은 걸 돌려줘요. 이게 응답이에요.</p>
+<p>식당으로 생각하면 쉬워요. 손님이 주문하면 주방이 음식을 내 주죠. 웹사이트를 연다는 건 결국 이 주문과 서빙이 빠르게 일어나는 거예요.</p>
+<h3 id="10-domain-hosting-files">10 · DOMAIN · HOSTING · FILES</h3>
+<p><em>웹사이트에 필요한 세 가지</em></p>
+<p>웹사이트 하나가 인터넷에 존재하려면 세 가지가 필요해요. 도메인, 호스팅, 그리고 파일이에요.</p>
+<p>도메인은 주소예요. studio-name.com 같은, 사람이 기억하기 쉬운 이름이죠. 호스팅은 그 파일들을 올려 두는 서버 공간, 집으로 치면 땅과 건물이에요. 파일은 그 안을 채우는 가구와 인테리어고요.</p>
+<p>옛날엔 이걸 하나하나 따로 준비해야 했는데, 요즘은 AI 웹 빌더가 파일 만드는 것부터 호스팅까지 한 번에 해 줘요. 다음 주 온라인 수업이 바로 그거예요. 그래서 여러분이 정말 고민해야 하는 건 "그 안에 무엇을 어떻게 담을지", 즉 가구 배치예요.</p>
+<h3 id="11-what-happens-when-you-open-a-page">11 · WHAT HAPPENS WHEN YOU OPEN A PAGE</h3>
+<p><em>주소를 입력하면 일어나는 일</em></p>
+<p>이번엔 주소창에 주소를 치고 엔터를 누르는 순간 무슨 일이 일어나는지 다섯 단계로 볼게요.</p>
+<p>주소를 입력하면, 브라우저가 먼저 그 도메인이 어느 서버에 있는지 찾아요. 이걸 DNS라고 하는데, 이름만 알아 두시면 돼요. 서버를 찾으면 페이지를 요청하고, 서버가 파일을 보내 주고, 마지막으로 브라우저가 그 파일을 읽어서 화면으로 조립해요. 이걸 렌더링이라고 해요.</p>
+<p>이게 1~2초 안에 다 일어나요. 그런데 디자이너가 알아야 할 포인트가 하나 있어요. 4번, 파일 전달 단계에서 이미지가 너무 크면 시간이 오래 걸려요. 고해상도 렌더 이미지를 그대로 올리면 첫 화면이 늦게 떠요. 포트폴리오에서 첫인상은 3초 안에 결정되니까, 이미지 용량은 꼭 신경 써 주세요.</p>
+<h3 id="12-html-css-javascript">12 · HTML · CSS · JAVASCRIPT</h3>
+<p><em>화면을 만드는 세 가지 언어</em></p>
+<p>서버가 보내 주는 파일 중 핵심은 세 가지 언어예요. HTML, CSS, 자바스크립트.</p>
+<p>의자로 비유해 볼게요. HTML은 구조예요. 의자의 프레임처럼, 제목이 있고 그 아래 이미지가 있고 버튼이 있다는 뼈대를 정해요. CSS는 표현이에요. 같은 프레임이라도 부클레를 씌우느냐 가죽을 씌우느냐에 따라 완전히 달라 보이죠. 색, 글꼴, 여백이 여기서 정해져요. 자바스크립트는 동작이에요. 버튼을 누르면 뭔가 열리고, 스크롤하면 이미지가 바뀌는 반응이요.</p>
+<p>디자이너로서 여러분이 주로 결정하는 건 앞의 두 개예요. 무엇을 어떤 순서로 둘지, 그리고 어떻게 보이게 할지. 다음 장에서 실제 코드를 한번 읽어 볼게요. 짜는 게 아니라 읽기만 해요.</p>
+<h3 id="13-reading-the-code">13 · READING THE CODE</h3>
+<p><em>코드 읽어 보기 · 짜지 않고 읽기만</em></p>
+<p>자, 겁먹지 마시고 그냥 읽어만 볼게요. 라운지체어 소개 화면 하나를 만드는 코드예요.</p>
+<p>왼쪽 HTML부터 볼게요. section 안에 img, h1, p, button이 차례로 있죠. 그러니까 "이미지, 제목, 설명, 버튼이 이 순서로 있다"는 뜻이에요. 꺾쇠 안의 단어가 각각 무엇인지를 말해 줘요.</p>
+<p>가운데 CSS는 표현이에요. hero 영역 배경은 크림색, 여백 80픽셀, 제목은 48픽셀에 진한 브라운, 버튼은 모서리를 둥글게. 읽어 보면 거의 디자인 스펙 문서랑 똑같아요.</p>
+<p>오른쪽 자바스크립트는 동작이에요. 버튼을 클릭하면 상세 영역으로 부드럽게 스크롤해라.</p>
+<p>보시면 알겠지만, 각 줄이 결국 디자인 결정이에요. "버튼은 둥글게", "클릭하면 아래로 부드럽게." 다음 주에 AI에게 이 문장을 말로 전달하면, AI가 이 코드를 써 줘요. 그래서 오늘 기획을 정확하게 할수록 다음 주 결과물이 정확해집니다.</p>
+<p><strong>HTML</strong></p>
+<pre><code class="language-html">&lt;section class=&quot;hero&quot;&gt;
+  &lt;img src=&quot;chair.jpg&quot;
+     alt=&quot;Bouclé Lounge Chair&quot;&gt;
+  &lt;h1&gt;Bouclé Lounge Chair&lt;/h1&gt;
+  &lt;p&gt;부드러운 곡선의 1인 라운지체어&lt;/p&gt;
+  &lt;button&gt;자세히 보기&lt;/button&gt;
+&lt;/section&gt;
 </code></pre>
-<p><strong>DURING</strong></p>
-<pre><code class="language-text">Use the uploaded lamp as the exact
-product reference.
-
-Show the same lamp on the same desk
-while the user is reading an open book.
-
-The lamp is switched on,
-casting a soft warm light onto the book.
-
-Preserve the original geometry,
-CMF, details, and desk arrangement.
-
-Consistent cinematic composition.
+<p><strong>CSS</strong></p>
+<pre><code class="language-css">.hero {
+  background: #F4F0EA;
+  padding: 80px;
+}
+h1 {
+  font-size: 48px;
+  color: #2B2622;
+}
+button {
+  border-radius: 24px;
+}
 </code></pre>
-<p><strong>AFTER</strong></p>
-<pre><code class="language-text">Use the uploaded lamp as the exact
-product reference.
+<p><strong>JS</strong></p>
+<pre><code class="language-javascript">const btn =
+  document.querySelector('button');
 
-Show the same lamp on the same desk
-after the reading session.
-
-The book is closed
-and the lamp is switched off.
-
-Preserve the original geometry,
-CMF, details, and environment.
-
-Consistent cinematic composition.
+btn.addEventListener('click', () =&gt; {
+  detail.scrollIntoView({
+    behavior: 'smooth'
+  });
+});
 </code></pre>
-<h3 id="10-why-does-the-user-need-it">10 · WHY DOES THE USER NEED IT?</h3>
+<h3 id="14-responsive-web">14 · RESPONSIVE WEB</h3>
+<p><em>하나의 사이트, 여러 개의 화면</em></p>
+<p>마지막으로 반응형이라는 개념이에요. 같은 사이트가 컴퓨터, 태블릿, 휴대폰에서 각각 다르게 배치돼요. 데스크톱에서는 메뉴가 쭉 펼쳐져 있다가, 모바일에서는 햄버거 메뉴, 줄 세 개짜리 아이콘으로 접히죠. 이미지와 글도 가로로 나란히 있다가 세로로 쌓여요.</p>
+<p>중요한 건, 포트폴리오를 처음 보는 사람 중 상당수가 휴대폰으로 링크를 연다는 거예요. 카톡으로 링크 받으면 그냥 폰으로 열잖아요. 그래서 오늘 와이어프레임을 그릴 때도 데스크톱 하나만 그리지 말고 모바일도 같이 생각할 거예요. 여기까지 PART 02였습니다. 잠깐 쉬었다 갈게요.</p>
+<hr />
+<h2 id="part-03-web-design-fundamentals">PART 03 — Web Design Fundamentals: 레이아웃 · 타이포 · 컬러 · 위계 · 내비게이션</h2>
+<h3 id="15-web-design-fundamentals">15 · WEB DESIGN FUNDAMENTALS</h3>
+<p><em>PART 03</em></p>
+<p>PART 03, 웹 디자인 기본 요소예요. 30분 정도 진행합니다.</p>
+<p>앞에서 제품 디자인과 웹 디자인이 같은 사고를 쓴다고 했죠. 여기서는 화면을 만드는 재료 다섯 가지, 레이아웃, 타이포, 컬러와 이미지, 위계와 여백, 내비게이션을 하나씩 짚어요. 각각 라운지체어 사이트에 어떻게 적용되는지 같이 볼게요.</p>
+<h3 id="16-layout-grid">16 · LAYOUT &amp; GRID</h3>
+<p><em>보이지 않는 질서</em></p>
+<p>첫 번째 재료는 레이아웃과 그리드예요. 화면 위에 투명한 세로 칸들이 깔려 있다고 생각해 보세요. 웹에서는 보통 12칸을 많이 써요.</p>
+<p>칸을 컬럼, 칸 사이 간격을 거터, 화면 가장자리 여백을 마진이라고 해요. 예시를 보면 왼쪽에 텍스트가 6칸, 오른쪽에 의자 이미지가 5칸 정도를 차지하죠.</p>
+<p>제품 디자인에서 비례가 맞으면 정돈되어 보이듯이, 화면도 요소들이 이 칸에 맞춰 있으면 깔끔해 보여요. 와이어프레임 그릴 때도 이 그리드를 염두에 두고 그리시면 됩니다.</p>
+<h3 id="17-typography">17 · TYPOGRAPHY</h3>
+<p><em>글자의 크기가 곧 순서다</em></p>
+<p>두 번째는 타이포그래피예요. 웹에서는 글자 크기가 곧 읽는 순서예요. 큰 제목을 먼저 보고, 그 다음 섹션 제목, 그 다음 본문, 마지막에 캡션을 봐요.</p>
+<p>기준 크기를 보면, 메인 제목은 48에서 72픽셀, 섹션 제목은 32에서 40, 본문은 16에서 18, 캡션은 12에서 14 정도예요. 크기 단계는 3~4개면 충분하고, 글꼴도 한두 개면 돼요. 너무 많으면 산만해져요.</p>
+<p>그리고 글꼴 선택은 CMF 고르듯이 하시면 돼요. 이 의자처럼 둥글고 부드러운 제품이라면, 날카로운 글꼴보다 여유 있는 글꼴이 어울리겠죠.</p>
+<h3 id="18-color-image">18 · COLOR &amp; IMAGE</h3>
+<p><em>제품의 CMF에서 화면의 색을 가져온다</em></p>
+<p>세 번째는 컬러와 이미지예요. 여기서 꿀팁 하나 드릴게요. 사이트 색을 새로 고민하지 마시고, 제품의 CMF에서 그대로 뽑아 오세요.</p>
+<p>이 의자라면 부클레의 크림색을 배경으로, 한 톤 어두운 샌드를 면 구분에, 오크 다리 색을 포인트로, 진한 브라운을 글자와 버튼에 써요. 비율은 대략 70, 20, 5, 5 정도요.</p>
+<p>그리고 포트폴리오에서 이미지는 주인공이에요. 2주차에 만든 이미지들, 조명과 배경 톤이 들쭉날쭉하면 사이트가 산만해 보여요. 같은 톤으로 맞춰 두면 사이트 전체가 하나의 제품처럼 보입니다. 참고로 왼쪽 텍스처 이미지는 설명용으로 AI가 만든 예시예요.</p>
+<h3 id="19-hierarchy-whitespace">19 · HIERARCHY &amp; WHITESPACE</h3>
+<p><em>무엇을 먼저 보게 할 것인가</em></p>
+<p>네 번째는 위계와 여백이에요. 두 화면을 비교해 볼게요. 왼쪽은 보여 주고 싶은 게 많아서 이미지 세 장, 긴 제목, 긴 본문, 버튼 세 개를 다 넣었어요. 그런데 어디부터 봐야 할지 모르겠죠.</p>
+<p>오른쪽은 제목, 의자, 버튼 하나. 여백이 많은데도 오히려 의자가 훨씬 고급스러워 보여요. 시선이 위에서 아래로 자연스럽게 흘러요.</p>
+<p>산업디자인 하시는 분들은 이 감각 이미 있으실 거예요. 제품 사진 찍을 때도 배경을 비우잖아요. 웹도 똑같아요. 한 화면에 하나의 메시지. 이것만 지켜도 포트폴리오 수준이 확 올라갑니다.</p>
+<h3 id="20-navigation-interaction">20 · NAVIGATION &amp; INTERACTION</h3>
+<p><em>길을 잃지 않게 하는 장치</em></p>
+<p>마지막 다섯 번째 재료는 내비게이션과 인터랙션이에요.</p>
+<p>내비게이션은 길 안내예요. 메뉴는 3개에서 5개 정도. 포트폴리오라면 Work, About, Contact 정도면 충분해요. CTA는 행동 유도 버튼인데, "프로젝트 보기", "연락하기"처럼 다음 행동을 알려 주는 거예요. 한 화면에 주 버튼은 하나만 두세요.</p>
+<p>스크롤은 이야기의 순서고, 피드백은 마우스를 올리거나 눌렀을 때의 반응이에요.</p>
+<p>3주차 기억나시죠? 사용자 행동, 제품 반응, 사용자 피드백. 웹도 똑같아요. 사용자가 버튼을 누르면, 화면이 반응하고, 사용자가 그걸 알아차리는 것. 여러분이 이미 설계해 본 구조입니다. 여기까지 PART 03이었습니다.</p>
+<hr />
+<h2 id="part-04-portfolio-reference-analysis">PART 04 — Portfolio Reference Analysis: 레퍼런스를 다섯 관점으로 읽기</h2>
+<h3 id="21-portfolio-reference-analysis">21 · PORTFOLIO REFERENCE ANALYSIS</h3>
+<p><em>PART 04</em></p>
+<p>PART 04, 포트폴리오 레퍼런스 분석이에요. 40분 정도 진행하고, 중간에 직접 분석하는 실습이 있어요.</p>
+<p>여기서 목표는 "이 사이트 예쁘다"에서 멈추지 않고, 왜 좋은지를 말로 설명할 수 있게 되는 거예요. 그래야 내 사이트에 가져올 수 있거든요.</p>
+<h3 id="22-why-references">22 · WHY REFERENCES</h3>
+<p><em>따라 하기가 아니라 읽어 내기</em></p>
+<p>레퍼런스를 보는 방법은 두 가지가 있어요. 하나는 "이 사이트처럼 만들어 주세요", 따라 하기예요. 이러면 겉모습만 옮겨 와서 내 제품이랑 안 맞기도 하고, 결국 남의 사이트랑 똑같아져요.</p>
+<p>다른 하나는 분석이에요. "첫 화면에 제품 사진 한 장만 크게 둬서 제품이 주인공이 되게 했다." 이렇게 이유를 문장으로 정리하면, 그 원리만 가져와서 내 의자에 맞게 다시 쓸 수 있어요.</p>
+<p>그리고 이 문장이 다음 주에 그대로 AI에게 주는 지시문이 돼요. AI한테 "이 사이트처럼"이라고 하면 엉뚱한 게 나오지만, "첫 화면에 제품 사진 한 장, 여백 넓게"라고 하면 정확하게 나와요.</p>
+<h3 id="23-three-portfolio-patterns">23 · THREE PORTFOLIO PATTERNS</h3>
+<p><em>포트폴리오 사이트의 세 가지 패턴</em></p>
+<p>디자이너 포트폴리오 사이트를 많이 보다 보면 크게 세 가지 패턴이 보여요.</p>
+<p>A는 갤러리형이에요. 작업 썸네일을 격자로 쭉 깔아요. 프로젝트가 여러 개일 때 한눈에 보여 주기 좋아요.</p>
+<p>B는 케이스 스터디형이에요. 프로젝트 하나를 길게 스크롤하면서, 문제, 콘셉트, 과정, 결과 순서로 이야기해요. 산업디자인 포트폴리오에서 제일 중요한 형식이에요.</p>
+<p>C는 제품 랜딩형이에요. 제품 하나를 크게, 정보는 적게. 브랜드 제품 페이지 같은 느낌이죠.</p>
+<p>우리는 이걸 섞어 쓸 거예요. 메인은 갤러리, 라운지체어 상세 페이지는 케이스 스터디, 그리고 상세 페이지 첫 화면 분위기는 랜딩형처럼. 실습 때 레퍼런스를 찾을 때도 이 세 패턴 중 뭔지 먼저 구분해 보세요.</p>
+<h3 id="24-analysis-framework">24 · ANALYSIS FRAMEWORK</h3>
+<p><em>다섯 가지 관점으로 읽는다</em></p>
+<p>레퍼런스를 볼 때는 이 다섯 가지 관점으로 나눠서 보세요. 구조, 레이아웃, 타이포그래피, 이미지와 컬러, 인터랙션. 앞 PART 03에서 배운 재료들이랑 같죠.</p>
+<p>각 관점마다 "무엇을, 왜"를 한 문장으로 적는 게 핵심이에요. 예를 들어 "깔끔하다"라고 쓰면 분석이 아니에요. "배경을 거의 흰색으로 두고 글꼴을 하나만 써서 이미지가 돋보인다", 이렇게 무엇이 그렇게 보이게 만드는지를 적어야 해요.</p>
+<p>처음엔 어려워도, 다섯 칸을 채우다 보면 자연스럽게 눈이 생겨요.</p>
+<h3 id="25-example-analysis">25 · EXAMPLE ANALYSIS</h3>
+<p><em>분석 예시 · 케이스 스터디 페이지</em></p>
+<p>예시를 하나 같이 분석해 볼게요. 라운지체어를 주제로 한 케이스 스터디 페이지라고 가정한 화면이에요. 실제 사이트가 아니라 설명용 목업입니다.</p>
+<p>구조부터 보면, Hero 이미지, 콘셉트, 소재, 사용 장면 순서로 내려가요. 3주차에 짠 사용 시나리오 흐름이랑 거의 같죠.</p>
+<p>레이아웃은 첫 화면에 이미지 한 장을 꽉 채우고, 아래쪽은 글이 좁고 이미지가 넓어요.</p>
+<p>타이포는 제목은 크고 굵게, 섹션 번호는 작은 대문자에 오크색 포인트.</p>
+<p>이미지와 컬러는 모든 사진이 같은 따뜻한 오후 빛이고, 크림 배경이랑 톤이 맞아요.</p>
+<p>인터랙션은 스크롤하면 섹션이 하나씩 나타나고 메뉴는 위에 고정.</p>
+<p>이렇게 다섯 줄이 나오면 분석 끝이에요. 다음 장에서 여러분이 직접 해 봅니다.</p>
+<h3 id="26-reference-analysis">26 · REFERENCE ANALYSIS</h3>
+<p><em>PRACTICE 01</em></p>
+<p>실습 1번, 레퍼런스 분석이에요. 산업디자인이나 제품디자인 포트폴리오 사이트를 세 개 찾아 주세요. Behance, 디자이너 개인 사이트, 디자인 스튜디오 사이트 다 괜찮아요.</p>
+<p>먼저 각 사이트가 갤러리형인지, 케이스 스터디형인지, 랜딩형인지 표시하고요, 다섯 가지 관점으로 한 문장씩 적어 주세요. 화면 캡처도 같이 붙여 두시고요.</p>
+<p>마지막으로 내 사이트에 가져오고 싶은 것 두 개, 피하고 싶은 것 하나를 골라 주세요. 이 KEEP과 AVOID가 오늘 기획 보드에 그대로 들어가요.</p>
+<p>[진행] 진행하면서 돌아다니며 "예쁘다, 깔끔하다" 같은 문장이 보이면 "무엇이 그렇게 보이게 하나요?"라고 다시 물어봐 주세요.</p>
+<h3 id="27-from-reference-to-direction">27 · FROM REFERENCE TO DIRECTION</h3>
+<p><em>레퍼런스에서 나의 방향으로</em></p>
+<p>분석이 끝났으면 내 방향으로 바꿔야 해요. KEEP, ADAPT, AVOID 세 칸으로 정리하면 쉬워요.</p>
+<p>라운지체어 예시로 보면, KEEP은 "첫 화면은 제품 사진 한 장", "섹션 번호 라벨". ADAPT는 원리는 가져오되 내 제품에 맞게 바꾸는 거예요. 레퍼런스가 흰 배경이었다면 우리는 부클레 크림 배경으로, 차가운 조명이었다면 따뜻한 오후 빛으로. AVOID는 한 화면에 이미지 여러 장 나열하기.</p>
+<p>그리고 이걸 키워드 서너 개로 압축해요. 이 의자는 Soft, Warm, Quiet, Tactile. 이 키워드가 기획 보드의 비주얼 방향이 되고, 다음 주 AI 프롬프트에도 그대로 들어가요. 여기까지 PART 04였습니다.</p>
+<hr />
+<h2 id="part-05-ia-wireframe">PART 05 — IA &amp; Wireframe: 사이트맵과 와이어프레임 설계</h2>
+<h3 id="28-ia-wireframe">28 · IA &amp; WIREFRAME</h3>
+<p><em>PART 05</em></p>
+<p>PART 05, 정보 구조와 와이어프레임이에요. 오늘 수업에서 제일 긴 50분 파트고, 실제 설계를 하는 핵심 파트예요.</p>
+<p>두 가지를 해요. 하나는 IA, 사이트 전체에 어떤 페이지가 있는지 지도를 그리는 거고요, 다른 하나는 와이어프레임, 한 페이지 안에 무엇이 어떤 순서로 놓이는지 뼈대를 그리는 거예요. 제품으로 치면 IA는 전체 구성도, 와이어프레임은 단면 스케치 같은 거예요.</p>
+<h3 id="29-information-architecture">29 · INFORMATION ARCHITECTURE</h3>
+<p><em>사이트의 지도</em></p>
+<p>IA, Information Architecture, 정보 구조예요. 쉽게 말해 사이트의 지도예요.</p>
+<p>맨 위에 HOME이 있고, 그 아래 메인 메뉴로 WORK, ABOUT, PROCESS, CONTACT가 있어요. WORK 아래에 프로젝트 상세 페이지들이 달려요. 라운지체어 프로젝트, 그리고 1~3주차에 했던 램프 프로젝트 같은 거요.</p>
+<p>몇 가지 원칙만 기억하세요. 메인 메뉴는 3~5개, 깊이는 2단계 안쪽. 어떤 페이지든 세 번 클릭 안에 도착할 수 있게. 그리고 욕심내지 말고 작게 시작하세요. 프로젝트 하나, 두 개로 시작해도 충분해요. 다음 주에 한 번에 다 만들어야 하니까요. PROCESS 같은 메뉴는 필요 없으면 빼도 돼요.</p>
+<h3 id="30-content-inventory">30 · CONTENT INVENTORY</h3>
+<p><em>내가 가진 재료부터 확인한다</em></p>
+<p>구조를 짜기 전에 재료부터 확인해요. 콘텐츠 인벤토리라고 하는데, 그냥 내가 가진 걸 다 펼쳐 놓는 거예요.</p>
+<p>여러분은 이미 재료가 많아요. 1주차 스케치, 2주차 Refined Concept, CMF, 디테일, Multi-view, Hero 이미지, 3주차 시나리오와 제품 영상. 이게 각각 사이트의 어느 섹션에 들어갈지 매칭해 보세요.</p>
+<p>그리고 부족한 것도 적어요. 보통 연락처, 프로필 사진, 프로젝트를 한 줄로 설명하는 문장이 없어요. 이건 다음 주 전까지 준비해 오셔야 해요.</p>
+<p>순서가 중요해요. 섹션을 먼저 정하고 재료를 찾으면 빈칸이 생겨요. 재료를 먼저 펼쳐 놓고 섹션을 정하세요.</p>
+<h3 id="31-page-story">31 · PAGE STORY</h3>
+<p><em>프로젝트 페이지는 하나의 이야기다</em></p>
+<p>이제 라운지체어 프로젝트 상세 페이지 하나를 이야기로 짜 볼게요. 위에서 아래로 스크롤하면서 읽히는 순서예요.</p>
+<p>첫 화면 HERO에서 제품 사진과 한 줄 소개. 그 다음 CONCEPT, 왜 이 의자를 만들었고 누구를 위한 건지. PROCESS에서 스케치부터 다듬는 과정. DESIGN에서 형태와 디테일. MATERIAL에서 CMF. EXPERIENCE에서 3주차 사용 장면과 영상. OUTCOME에서 최종 이미지. 마지막 NEXT에서 다른 프로젝트 보기나 연락하기.</p>
+<p>각 칸 아래 금색 글씨가 그 섹션에 들어갈 재료의 출처예요. 앞 장 인벤토리랑 연결되죠.</p>
+<p>3주차 스토리보드 짤 때처럼 시작, 전개, 결말이 있어야 해요. 특히 첫 화면 3초가 계속 볼지 말지를 결정하고, 마지막 섹션이 다음 행동을 결정해요. 이 여덟 개가 기본형이고, 재료에 따라 빼거나 합쳐도 됩니다.</p>
+<h3 id="32-what-is-a-wireframe">32 · WHAT IS A WIREFRAME</h3>
+<p><em>화면의 뼈대 스케치</em></p>
+<p>와이어프레임은 화면의 뼈대 스케치예요. 정밀도에 따라 세 단계가 있어요.</p>
+<p>로우 피델리티는 박스와 선만으로 위치와 순서를 정하는 단계예요. 이미지 자리는 엑스자 박스, 글자는 회색 선. 미드 피델리티는 실제 문구와 글자 크기가 들어가고, 하이 피델리티는 실제 이미지, 컬러, 글꼴까지 들어간 완성 시안이에요.</p>
+<p>오늘 우리는 로우 피델리티까지만 해요. 색이랑 이미지는 다음 주에 AI가 입혀 줄 거예요. 오늘 손으로 정할 건 딱 하나, "무엇이 어디에, 어떤 순서로"예요. 제품 디자인에서 렌더링 전에 형태 스케치부터 하는 것과 같아요.</p>
+<h3 id="33-desktop-wireframe">33 · DESKTOP WIREFRAME</h3>
+<p><em>라운지체어 페이지 · 데스크톱 와이어프레임</em></p>
+<p>앞에서 짠 페이지 스토리를 실제 와이어프레임으로 옮기면 이렇게 돼요. 로우 피델리티예요. 색도 사진도 없고 박스뿐이죠.</p>
+<p>맨 위에 상단 고정 메뉴. 그 아래 HERO는 화면을 꽉 채우는 제품 사진이랑 제목, 한 줄 소개. CONCEPT는 왼쪽에 글, 오른쪽에 스케치, 비율은 4대 6 정도. DESIGN과 MATERIAL은 이미지 세 장을 나란히 놓는 3열 그리드. EXPERIENCE는 3주차 영상을 전체 폭으로. 마지막에 이전 프로젝트 링크와 연락하기 버튼.</p>
+<p>오른쪽 금색 라벨처럼, 각 박스에 이름과 짧은 메모를 꼭 붙여 주세요. 다음 주에 AI한테 이걸 설명할 때 이 메모가 그대로 지시문이 돼요.</p>
+<h3 id="34-mobile-wireframe">34 · MOBILE WIREFRAME</h3>
+<p><em>같은 페이지 · 모바일 와이어프레임</em></p>
+<p>같은 페이지를 모바일로 그리면 이렇게 돼요. 원칙 네 가지만 기억하세요.</p>
+<p>첫째, 가로로 나란히 있던 건 세로로 쌓아요. 글과 이미지가 옆에 있었다면 이미지가 위, 글이 아래로.</p>
+<p>둘째, 메뉴는 햄버거 아이콘으로 접어요.</p>
+<p>셋째, 우선순위가 낮은 건 줄여요. 3열 이미지 그리드는 1열로, 이미지 수도 줄이고요.</p>
+<p>넷째, 버튼은 손가락으로 누르기 좋게 충분히 크게.</p>
+<p>앞에서 말했듯이 포트폴리오 링크는 휴대폰으로 많이 열려요. 실습할 때 데스크톱 옆에 모바일도 꼭 같이 그려 주세요. 거창하게 그릴 필요 없이 박스 순서만 보여 주면 돼요.</p>
+<h3 id="35-sitemap-wireframe">35 · SITEMAP &amp; WIREFRAME</h3>
+<p><em>PRACTICE 02</em></p>
+<p>실습 2번이에요. 오늘 핵심 실습이니까 시간 넉넉하게 드릴게요.</p>
+<p>순서대로 가요. 먼저 1~3주차 결과물을 펼쳐 놓고 어느 섹션에 들어갈지 분류해 주세요. 그 다음 사이트맵, HOME 아래 메뉴 3~5개와 프로젝트 페이지 연결. 그 다음 프로젝트 페이지 섹션 순서. 마지막으로 와이어프레임, 데스크톱 한 장, 모바일 한 장이요.</p>
+<p>손으로 그리셔도 되고, 박스 위주로 빠르게 그리세요. 예쁘게 그리는 시간이 아니라 순서를 정하는 시간이에요. 박스마다 이름이랑 짧은 메모 꼭 달아 주시고요.</p>
+<p>[진행] 돌아다니면서 "이 섹션에 들어갈 재료가 실제로 있나요?"를 확인해 주세요. 재료가 없는 섹션은 빼거나 다음 주 전까지 준비할 목록으로 옮기게 해 주세요.</p>
+<hr />
+<h2 id="part-06-website-planning-workshop">PART 06 — Website Planning Workshop: 기획 보드와 다음 온라인 수업 연결</h2>
+<h3 id="36-website-planning-workshop">36 · WEBSITE PLANNING WORKSHOP</h3>
+<p><em>PART 06</em></p>
+<p>마지막 PART 06, 웹사이트 기획 워크숍이에요. 30분 정도 진행해요.</p>
+<p>지금까지 레퍼런스 분석, 사이트맵, 와이어프레임을 했죠. 이제 이걸 한 장의 보드로 정리할 거예요. 이 보드 한 장이 다음 주에 AI로 웹사이트를 만들 때 설계도가 됩니다.</p>
+<h3 id="37-website-planning-board">37 · WEBSITE PLANNING BOARD</h3>
+<p><em>오늘의 결과물 · 여덟 칸</em></p>
+<p>이게 오늘의 최종 결과물, Website Planning Board예요. 여덟 칸이에요.</p>
+<p>윗줄 네 칸은 전략이에요. 사이트 목적, 보는 사람, 첫 화면의 핵심 메시지, 레퍼런스. 아랫줄 네 칸은 설계예요. 사이트맵, 섹션 순서, 와이어프레임, 비주얼 방향.</p>
+<p>중요한 건 윗줄이 아랫줄의 근거가 된다는 거예요. 예를 들어 보는 사람이 면접관이라면, 바쁘니까 첫 화면에서 바로 대표 작업이 보여야 하겠죠. 그럼 와이어프레임이 달라져요. 전략 없이 와이어프레임부터 그리면 "왜 이렇게 했어요?"라는 질문에 답을 못 해요.</p>
+<h3 id="38-board-example">38 · BOARD EXAMPLE</h3>
+<p><em>작성 예시 · 라운지체어 포트폴리오</em></p>
+<p>라운지체어로 채운 예시예요. 목적은 졸업 포트폴리오, 제품 하나의 과정을 깊게 보여 주는 것. 보는 사람은 디자인 스튜디오 면접관, 짧은 시간에 판단하는 사람이에요. 그래서 핵심 메시지는 짧게, "Soft form, quiet comfort."</p>
+<p>레퍼런스에서 KEEP은 사진 한 장짜리 Hero와 섹션 번호, AVOID는 이미지 나열. 사이트맵은 HOME, WORK, ABOUT, CONTACT 네 개. 섹션 순서는 Hero부터 Next까지. 와이어프레임은 아까 본 데스크톱 한 장, 모바일 한 장. 비주얼 방향은 키워드 네 개랑 크림, 오크, 딥브라운.</p>
+<p>보드에는 대표 이미지도 두세 장 붙여 주세요. 다음 주에 AI 웹 빌더에 그대로 올릴 이미지들이에요. 참고로 이 의자 이미지는 설명용으로 AI가 만든 예시예요. 여러분은 2~3주차에 만든 본인 이미지를 쓰시면 돼요.</p>
+<h3 id="39-website-planning-board">39 · WEBSITE PLANNING BOARD</h3>
+<p><em>PRACTICE 03</em></p>
+<p>마지막 실습, Website Planning Board를 완성하는 시간이에요.</p>
+<p>윗줄 전략 칸은 꼭 문장으로 써 주세요. 키워드만 쓰면 다음 주에 AI한테 전달이 안 돼요. 아랫줄은 실습 2에서 그린 사이트맵이랑 와이어프레임을 옮겨 붙이면 되고요. 비주얼 방향에는 키워드, 컬러, 대표 이미지 두세 장.</p>
+<p>다 쓰고 나면 옆 사람이랑 바꿔서 보세요. 질문은 하나예요. "첫 화면 3초 안에 이 사람이 무엇을 하는 디자이너인지 보이나요?" 안 보인다면 3번 핵심 메시지나 Hero 이미지를 다시 다듬어 주세요.</p>
+<p>[진행] 다 완성한 보드는 사진이나 파일로 꼭 저장해 두라고 안내해 주세요. 다음 주 온라인 수업에서 바로 씁니다.</p>
+<h3 id="40-build-publish-with-ai">40 · BUILD &amp; PUBLISH WITH AI</h3>
+<p><em>NEXT · WEEK 04 ONLINE</em></p>
+<p>오늘 수고 많으셨어요. 정리하면, 오늘은 웹이 어떻게 동작하는지 이해하고, 포트폴리오 레퍼런스를 분석하고, 사이트맵과 와이어프레임을 그려서 Website Planning Board 한 장을 완성했어요.</p>
+<p>다음 온라인 수업은 심선범 강사님이 진행하세요. 오늘 만든 보드를 가지고 AI로 실제 웹사이트를 만들고, 링크로 공개까지 하는 시간이에요.</p>
+<p>준비물 네 가지 챙겨 주세요. 오늘 만든 기획 보드, 1~3주차 대표 이미지와 영상 원본, 프로젝트 소개 글 3~5문장, 그리고 프로필 사진과 연락처.</p>
+<p>마지막으로 하나만 기억해 주세요. 좋은 웹사이트는 코드가 아니라 기획에서 시작돼요. 오늘 여러분이 한 게 바로 그 일이에요. 다음 주에 뵙겠습니다.</p>
+<hr />
+<h2 id="_1">다음 수업 준비물</h2>
 <ul>
-<li>좋지 않은 예: "사용자가 멋진 램프를 사용한다."</li>
-<li>개선된 예: "늦은 저녁 책을 읽고 싶지만 주변 공간 전체를 밝히고 싶지는 않다."</li>
-</ul>
-<p>사용 상황과 문제를 이해해야 제품의 역할이 명확해진다.</p>
-<h3 id="11-what-changes-after-use">11 · WHAT CHANGES AFTER USE?</h3>
-<p>BEFORE 독서하기에 불편한 조명 환경 → AFTER 책을 읽기에 적합한 개인 조명 환경.</p>
-<blockquote>
-<p><strong>강사 질문</strong> — "이 제품을 사용한 후 사용자의 상황은 어떻게 달라지나요?"</p>
-</blockquote>
-<pre><code class="language-text">Create a realistic before-and-after
-lighting comparison of the same desk
-with the exact lamp from the reference.
-
-Before:
-The lamp is off and the reading area
-is dimly illuminated.
-
-After:
-The lamp is on and softly illuminates
-the open book.
-
-Preserve the exact product geometry,
-CMF, position, and room composition.
-
-Only the lighting state changes.
-</code></pre>
-<h3 id="12-from-context-to-story">12 · FROM CONTEXT TO STORY</h3>
-<p>구조: ① 사용자 소개 ② 사용 상황 ③ 문제 또는 목적 ④ 제품과의 상호작용 ⑤ 사용 후 경험</p>
-<blockquote>
-<p>"늦은 저녁, 사용자는 침실 책상에서 책을 읽으려 한다. 주변을 밝히지 않으면서 독서에 집중하기 위해 책상 위 램프를 켠다. 부드러운 조명이 책을 비추고, 사용자는 편안하게 독서를 이어간다."</p>
-</blockquote>
-<p>영상은 시나리오를 시각적으로 전달하는 수단이다.</p>
-<h3 id="13-practice-02-user-scenario">13 · Practice 02 · User Scenario</h3>
-<ol>
-<li>사용자 정의</li>
-<li>사용 환경 정의</li>
-<li>사용 목적 작성</li>
-<li>Before / During / After 구성</li>
-<li>3~5문장으로 사용 시나리오 작성</li>
-</ol>
-<p><strong>제출물</strong> User Scenario Sheet · <strong>완료 기준</strong> 사용자가 어떤 상황에서 제품을 사용하고 어떤 경험을 얻는지 명확해야 한다.</p>
-<hr />
-<h2 id="part-03-interaction-design">PART 03 · Interaction Design</h2>
-<h3 id="14-experience-is-action">14 · EXPERIENCE IS ACTION</h3>
-<p>USER ACTION(사용자가 전원을 조작한다) → PRODUCT RESPONSE(조명이 켜진다) → USER FEEDBACK(사용자가 빛을 확인한다).</p>
-<h3 id="15-map-the-actions">15 · MAP THE ACTIONS</h3>
-<p>01 APPROACH 제품에 접근 · 02 INTERACT 제품 조작 · 03 ACTIVATE 제품 작동 · 04 USE 제품 사용 · 05 FINISH 사용 종료</p>
-<h3 id="16-design-the-interaction">16 · DESIGN THE INTERACTION</h3>
-<table>
-<thead>
-<tr>
-<th>단계</th>
-<th>사용자 행동</th>
-<th>제품 반응</th>
-<th>사용자 피드백</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>램프에 접근</td>
-<td>변화 없음</td>
-<td>제품 위치 인지</td>
-</tr>
-<tr>
-<td>02</td>
-<td>전원 조작</td>
-<td>점등 시작</td>
-<td>빛 변화 확인</td>
-</tr>
-<tr>
-<td>03</td>
-<td>책을 펼침</td>
-<td>조명 유지</td>
-<td>독서 환경 확보</td>
-</tr>
-<tr>
-<td>04</td>
-<td>독서 진행</td>
-<td>조명 유지</td>
-<td>편안한 사용 경험</td>
-</tr>
-<tr>
-<td>05</td>
-<td>전원 종료</td>
-<td>소등</td>
-<td>사용 종료 인지</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>주의</strong> — 전원 조작 방식은 3주차에서 실제 설계한 내용을 기준으로 한다.</p>
-</blockquote>
-<h3 id="17-show-the-important-action">17 · SHOW THE IMPORTANT ACTION</h3>
-<p>핵심 기능을 전달하는 행동만 고른다: 손이 제품에 접근 · 전원 조작 · 조명 점등 · 독서 환경 변화.</p>
-<p>입력: 최종 램프 이미지 + 3주차 조작부 스케치</p>
-<pre><code class="language-text">Create a cinematic close-up
-of a human hand approaching
-the approved power control
-on the existing lamp.
-
-Use the uploaded lamp image
-as the primary product reference.
-
-Use the additional interface sketch
-to define the exact control position.
-
-Preserve the original product geometry,
-CMF, and details.
-
-Show a natural hand position
-and realistic product interaction.
-
-Do not invent new controls.
-</code></pre>
-<h3 id="18-can-the-viewer-understand-the-action">18 · CAN THE VIEWER UNDERSTAND THE ACTION?</h3>
-<p>손의 위치 · 조작부가 보이는 시점 · 제품과 사용자의 거리 · 행동 전후의 변화 · 불필요한 요소의 제거</p>
-<blockquote>
-<p><strong>강사 질문</strong> — "이 장면을 처음 보는 사람도 제품을 어떻게 사용하는지 이해할 수 있을까요?"</p>
-</blockquote>
-<h3 id="19-find-the-key-interaction">19 · FIND THE KEY INTERACTION</h3>
-<p>KEY MOMENT — 사용자가 전원을 조작하고 조명이 켜지는 순간. 선정 기준: 핵심 기능을 보여주는가? 행동이 명확한가? 반응이 시각적으로 드러나는가? 짧은 영상에서도 이해되는가?</p>
-<h3 id="20-practice-03-interaction-mapping">20 · Practice 03 · Interaction Mapping</h3>
-<ol>
-<li>사용자 행동 3~5단계 작성</li>
-<li>각 단계의 제품 반응 정리</li>
-<li>사용자 피드백 작성</li>
-<li>핵심 행동 1개 선정</li>
-<li>핵심 행동을 보여줄 카메라 시점 결정</li>
-</ol>
-<p><strong>제출물</strong> User Action Sequence · <strong>완료 기준</strong> 사용자 행동과 제품 반응이 명확하게 연결되어야 한다.</p>
-<hr />
-<h2 id="part-04-storyboard-design">PART 04 · Storyboard Design</h2>
-<h3 id="21-turn-the-experience-into-scenes">21 · TURN THE EXPERIENCE INTO SCENES</h3>
-<p>시나리오는 경험을 글로, 스토리보드는 장면으로 구성한다. 영상 제작 전에 필요한 장면을 결정한다.</p>
-<h3 id="22-storyboard">22 · STORYBOARD</h3>
-<p>각 컷에 포함할 정보: 장면의 목적 · 제품과 사용자의 위치 · 카메라 시점 · 주요 행동 · 제품의 상태 · 다음 컷과의 연결</p>
-<h3 id="23-six-shots-one-experience">23 · SIX SHOTS, ONE EXPERIENCE</h3>
-<p>01 CONTEXT · 02 PRODUCT · 03 INTERACTION · 04 RESPONSE · 05 EXPERIENCE · 06 HERO — 각 컷은 서로 다른 목적을 가져야 한다.</p>
-<h3 id="24-shot-01-establish-the-context">24 · SHOT 01 — ESTABLISH THE CONTEXT</h3>
-<p>공간 · 시간 · 사용자 상황 · 제품이 필요한 이유. 예: 늦은 저녁, 조용한 침실의 책상.</p>
-<pre><code class="language-text">Create a cinematic wide shot
-of a quiet modern bedroom at night.
-
-A minimal wooden desk,
-an open book,
-soft low ambient lighting.
-
-Include the exact lamp
-from the uploaded product reference.
-
-Preserve its original geometry,
-CMF, and approved details.
-
-The lamp is switched off.
-
-Realistic interior photography.
-No text or labels.
-</code></pre>
-<h3 id="25-shot-02-introduce-the-product">25 · SHOT 02 — INTRODUCE THE PRODUCT</h3>
-<p>제품 전체 실루엣 · 주요 디자인 특징 · 사용 환경과의 관계.</p>
-<pre><code class="language-text">Create a cinematic medium shot
-of the exact lamp from the uploaded reference
-on the same wooden desk.
-
-Preserve the C-shaped support,
-cylindrical base,
-thin circular lamp head,
-approved CMF and details.
-
-Show the complete product silhouette.
-
-Soft evening interior lighting.
-
-Do not redesign the lamp.
-</code></pre>
-<h3 id="26-shot-03-show-the-action">26 · SHOT 03 — SHOW THE ACTION</h3>
-<p>손의 접근 · 조작부의 위치 · 제품과 손의 관계.</p>
-<p>입력: 기존 램프 이미지 + 조작부 스케치</p>
-<pre><code class="language-text">Create a realistic cinematic close-up
-of a human hand interacting
-with the approved control
-on the existing lamp.
-
-Use the uploaded product image
-and interface sketch as references.
-
-Preserve the exact lamp geometry,
-CMF, and details.
-
-Show a natural hand position.
-
-Do not invent additional controls.
-
-No text or labels.
-</code></pre>
-<h3 id="27-shot-04-show-the-response">27 · SHOT 04 — SHOW THE RESPONSE</h3>
-<p>전원 조작 후 조명이 켜짐. 행동과 반응이 명확하게 연결되어야 한다.</p>
-<pre><code class="language-text">Create a cinematic close-up
-of the exact lamp from the uploaded reference.
-
-The lamp is switched on,
-emitting a soft warm light
-onto the desk surface.
-
-Preserve the original geometry,
-CMF, proportions, and details.
-
-Show realistic light diffusion
-and a natural lighting transition.
-
-Do not redesign the product.
-</code></pre>
-<h3 id="28-shot-05-show-the-benefit">28 · SHOT 05 — SHOW THE BENEFIT</h3>
-<p>사용자가 따뜻한 조명 아래에서 독서하는 장면.</p>
-<pre><code class="language-text">Create a cinematic medium shot
-of a person reading a book
-at a minimal wooden desk at night.
-
-The exact lamp from the uploaded reference
-is placed beside the book.
-
-The lamp emits soft warm light
-onto the reading area.
-
-Preserve the original lamp geometry,
-CMF, and approved details.
-
-Calm atmosphere,
-realistic interior photography.
-
-Do not redesign the lamp.
-</code></pre>
-<h3 id="29-shot-06-end-with-the-design">29 · SHOT 06 — END WITH THE DESIGN</h3>
-<p>제품 전체 실루엣 · 핵심 형태 · CMF · 조명 · 최종 이미지 완성도.</p>
-<pre><code class="language-text">Create a premium cinematic hero shot
-of the exact lamp
-from the uploaded product reference.
-
-Preserve the original C-shaped support,
-cylindrical base,
-thin horizontal circular lamp head,
-approved CMF and details.
-
-Refined three-quarter camera angle,
-soft studio lighting,
-subtle rim light,
-neutral warm gray background.
-
-Show the full product silhouette.
-
-Do not redesign the lamp.
-No text or branding.
-</code></pre>
-<h3 id="30-practice-04-storyboard">30 · Practice 04 · Storyboard</h3>
-<ol>
-<li>User Scenario 확인</li>
-<li>핵심 행동 선정</li>
-<li>5~6컷 장면 구성</li>
-<li>각 컷의 목적 작성</li>
-<li>카메라 시점 지정</li>
-<li>제품 상태와 사용자 행동 표시</li>
-<li>컷별 스케치 제작</li>
-</ol>
-<p><strong>제출물</strong> 5~6컷 Product Storyboard · <strong>완료 기준</strong> 스토리보드만 보아도 사용 상황과 핵심 기능을 이해할 수 있어야 한다.</p>
-<hr />
-<h2 id="part-05-motion-direction">PART 05 · Motion Direction</h2>
-<h3 id="31-from-image-to-motion">31 · FROM IMAGE TO MOTION</h3>
-<p>정지 이미지는 한 순간을, 영상은 시간에 따른 변화를 보여준다. 움직일 수 있는 요소: 카메라 · 사용자 · 제품 · 조명 · 주변 환경. 움직임은 장면의 목적을 전달하기 위해 쓴다.</p>
-<h3 id="32-camera-movement">32 · CAMERA MOVEMENT</h3>
-<table>
-<thead>
-<tr>
-<th>움직임</th>
-<th>의미</th>
-<th>램프 적용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PUSH-IN</td>
-<td>가까워지며 디테일 강조</td>
-<td>조명 헤드 디테일</td>
-</tr>
-<tr>
-<td>PAN</td>
-<td>좌우 이동</td>
-<td>책상 환경에서 제품 소개</td>
-</tr>
-<tr>
-<td>ORBIT</td>
-<td>주위를 돌며 형태 표현</td>
-<td>C자형 지지대의 곡률 강조</td>
-</tr>
-<tr>
-<td>STATIC</td>
-<td>고정해 행동과 변화 강조</td>
-<td>조명 점등 장면</td>
-</tr>
-</tbody>
-</table>
-<h3 id="33-what-actually-moves">33 · WHAT ACTUALLY MOVES?</h3>
-<p>CAMERA MOVEMENT(카메라가 움직이고 제품은 정지) · PRODUCT MOVEMENT(제품 자체의 위치나 형태 변화) · USER MOVEMENT(사용자가 조작) · STATE CHANGE(제품의 상태 변화). 램프 예시: 제품은 정지, 카메라 접근 → 사용자가 전원 조작 → 램프가 켜짐. <strong>제품의 실제 기능에 없는 움직임을 임의로 추가하지 않는다.</strong></p>
-<h3 id="34-motion-direction-sheet">34 · MOTION DIRECTION SHEET</h3>
-<p>기록 항목: Shot Number · Shot Purpose · Camera Angle · Camera Movement · User Action · Product Response · Duration · Design Constraints</p>
-<p>예: SHOT 04 — Purpose 조명 점등 표현 · Camera Static Close-up · Action 전원 조작 후 점등 · Duration 약 3초 · Constraint 제품 형태 유지</p>
-<h3 id="35-keep-the-product-consistent">35 · KEEP THE PRODUCT CONSISTENT</h3>
-<p>AI 영상 문제: 지지대 곡률 변형 · 헤드 두께 변화 · 베이스 비율 변화 · 버튼 위치 변경 · 없는 부품 생성 · 손과 제품의 부자연스러운 상호작용.</p>
-<p>설계 단계 대응: 복잡한 움직임을 피한다 · 중요한 행동은 명확하게 · 필요하면 컷을 나눈다 · 형태가 잘 보이는 시점 · 기존 Multi-view 참고. 영상의 화려함보다 디자인의 정확성과 전달력이 중요하다.</p>
-<h3 id="36-practice-05-motion-planning">36 · Practice 05 · Motion Planning</h3>
-<ol>
-<li>스토리보드 5~6컷 확인</li>
-<li>각 컷의 카메라 움직임 지정</li>
-<li>사용자 행동과 제품 반응 정리</li>
-<li>컷별 예상 길이 설정</li>
-<li>제품 유지 조건 작성</li>
-<li>복잡한 움직임이 있는 컷 수정</li>
-</ol>
-<p><strong>제출물</strong> Motion Direction Sheet · <strong>완료 기준</strong> 다음 온라인 수업에서 각 컷을 어떤 이미지와 영상으로 제작할지 명확해야 한다.</p>
-<hr />
-<h2 id="part-06-final-review-assignment">PART 06 · Final Review &amp; Assignment</h2>
-<h3 id="37-product-experience-board">37 · PRODUCT EXPERIENCE BOARD (최종 제출물)</h3>
-<table>
-<thead>
-<tr>
-<th>번호</th>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>FINAL PRODUCT</td>
-<td>3주차 최종 제품 이미지</td>
-</tr>
-<tr>
-<td>02</td>
-<td>EXPERIENCE STATEMENT</td>
-<td>사용자에게 제공할 핵심 경험</td>
-</tr>
-<tr>
-<td>03</td>
-<td>USER SCENARIO</td>
-<td>사용자 · 환경 · 사용 목적</td>
-</tr>
-<tr>
-<td>04</td>
-<td>USER ACTION SEQUENCE</td>
-<td>사용자 행동과 제품 반응</td>
-</tr>
-<tr>
-<td>05</td>
-<td>STORYBOARD</td>
-<td>5~6컷 장면 설계</td>
-</tr>
-<tr>
-<td>06</td>
-<td>MOTION DIRECTION</td>
-<td>컷별 카메라 · 사용자 · 제품 움직임</td>
-</tr>
-<tr>
-<td>07</td>
-<td>DESIGN CONSTRAINTS</td>
-<td>영상에서도 유지해야 할 제품 특징</td>
-</tr>
-</tbody>
-</table>
-<h3 id="38-does-the-story-communicate-the-design">38 · DOES THE STORY COMMUNICATE THE DESIGN?</h3>
-<p>사용 목적이 명확한가? · 시나리오가 현실적인가? · 핵심 기능이 드러나는가? · 행동과 반응이 연결되는가? · 스토리보드 흐름이 자연스러운가? · 모든 컷에서 같은 제품인가? · 영상으로 구현 가능한 움직임인가?</p>
-<p>학생 활동: 자신의 Product Experience Board를 발표하고 피드백을 받는다.</p>
-<h3 id="39-ready-for-video-generation">39 · READY FOR VIDEO GENERATION</h3>
-<p>준비물: Final Product Hero Image · Final CMF &amp; Detail Images · Multi-view Images · User Scenario · Storyboard · Motion Direction Sheet · Design Constraints. 이미지와 영상을 생성하기 전에 무엇을 보여줄지 결정한다.</p>
-<h3 id="40-next-visualize-the-experience">40 · NEXT — VISUALIZE THE EXPERIENCE (다음 온라인 수업)</h3>
-<p>심선범 강사 · Higgsfield: 01 Scene Visualization · 02 Image-to-Video · 03 Motion Control · 04 Video Consistency · 05 Product Film(15~30초) · 06 Final Portfolio(1~4주차 정리)</p>
-<blockquote>
-<p>Design the experience. Tell the product story.</p>
-</blockquote>
-<hr />
-<h2 id="higgsfield">부록 · Higgsfield 공통 지침</h2>
-<p>제품이 포함된 모든 이미지는 아래 공통 지침 뒤에 슬라이드별 지침을 붙여 사용한다. 기준 이미지는 3주차 최종 Hero Image이며, 같은 책상 장면이 필요한 컷은 SHOT 01(Context) 이미지를 함께 참조했다.</p>
-<pre><code class="language-text">Use the uploaded product image as the
-primary and authoritative design reference.
-
-This is an existing industrial design concept
-developed during previous design sessions.
-
-Do not create a new lamp design.
-
-Preserve the original product identity:
-
-- Low, wide cylindrical base
-- One continuous C-shaped curved support
-- Thin horizontal circular disc-shaped lamp head
-- Warm diffused light beneath the head
-- Original product proportions and silhouette
-- Approved CMF and product details
-
-Only change the environment,
-camera composition, user interaction,
-or presentation elements
-explicitly requested in the task.
-
-Do not redesign the product.
-
-Do not add new buttons, charging ports,
-mechanical joints, or decorative components.
-
-Maintain the same product identity
-across all generated images.
-
-No text, no labels, no logos.
-</code></pre></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
+<li>Website Planning Board (사진 또는 파일)</li>
+<li>1~3주차 대표 이미지 · 영상 원본</li>
+<li>프로젝트 소개 글 3~5문장</li>
+<li>프로필 사진 · 연락처</li>
+</ul></main></div><script>document.querySelectorAll('main pre').forEach(p=>{const b=document.createElement('button');b.className='cp';b.textContent='복사';
 b.onclick=()=>{navigator.clipboard.writeText(p.querySelector('code').innerText.trim()).then(()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)})};p.appendChild(b)})</script></body></html>
